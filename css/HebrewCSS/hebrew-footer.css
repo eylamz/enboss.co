@@ -1,0 +1,243 @@
+
+
+/*       Footer CSS     */
+footer {
+    display: block;
+    direction: rtl;
+
+}
+.footer-main {
+    background-color: var(--anti-white);
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#enbossLogo {
+    width: 100%;
+    max-width: 180px;
+    height: 50px;
+    fill: var(--blue);
+    margin-bottom: 20px;
+}
+
+.logo #enbossLogo:hover{
+    fill: var(--light-blue);
+    transition: linear 0.3s;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.05rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo-des {
+    color:var(--light-blue);
+    line-height: 1.25rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+    margin-top: -5px;
+}
+.logo a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.logo a:hover {
+    color: var(--light-blue);
+    font-weight: 700;
+    transition: linear 0.3s;
+}
+
+.social-icons {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    margin-top: 21px;
+    gap: 15px;
+}
+.back-Icon {
+    fill: hsla(219, 50%, 22%, .1);
+}
+.front-Icon {
+    fill: hsla(219, 50%, 22%, .7);
+}
+.back-Icon:hover {
+    fill: hsla(219, 50%, 22%, .2);
+}
+.front-Icon:hover {
+    fill: hsla(219, 50%, 22%, 1);
+
+}
+
+#skatepark1 {
+    padding-top: 75px;
+}
+
+#skatepark2 {
+    padding-top: 75px;
+}
+.row h3 {
+    font-weight: 700;
+    margin: 25px 0 20px;
+    color: var(--blue);}
+
+.skateparks-des a {
+    color: var(--light-blue);
+    line-height: 1.3rem;
+}
+
+.main-foot h3:hover {
+    color: var(--light-blue);
+    transition: linear 0.3s;
+}
+
+
+.main-foot {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    max-height: 550px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.footer-header{
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skateparks-des {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skateparks-des a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.skateparks-des a:hover{
+    color: var(--dark-blue);
+    transition: linear 0.3s;
+}
+
+
+#link-all {
+    color: var(--sham);
+    font-weight: 800;
+}
+
+
+.foot{
+    width: 20%;
+    margin: 2px auto;
+    opacity: 0.4;
+    border: 0.5px solid var(--anti-white);
+}
+
+
+
+
+
+@media (max-width: 960px) {
+    footer {
+        width: 100%;
+        top: 120px;
+    }
+
+    .main-foot {
+        margin: 5px;
+        margin-top: 30px;    }
+
+    .logo{
+        grid-column: 1/2;
+    }
+ 
+    #skatepark {
+        grid-column: 1/3;
+    }
+    #skatepark1 {
+        grid-column: 2/3;
+    }
+
+    #skatepark2 {
+        grid-column: 3/3;
+    }
+    
+    
+}
+
+@media (max-width: 850px) {
+    
+#skatepark2 {
+    display: none;
+}
+}
+
+
+
+@media (max-width: 660px) {
+    .main-foot {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skateparks {
+        display: none;
+    }
+    .logo a {
+        fill: var(--green);
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+}
+.copyright {
+    max-width: 100%;
+    background-color: var(--anti-white);
+}
+
+.copyright p{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 15px 0;
+    color: var(--blue);
+    text-align: center;
+    background-color: hsla(219, 50%, 22%, .1);
+
+}
+
+@media only screen and (max-width: 660px) {
+    .copyright p{
+        padding: 15px 0;
+    }
+}
+
+#rishon {
+    margin-top: 10px;
+}
+
+/*            End of Footer CSS            */

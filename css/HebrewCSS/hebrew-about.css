@@ -1,0 +1,121 @@
+
+body {
+    background: var(--blue);
+    margin: 0px;
+
+}
+
+.about-container {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.about {
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    color: var(--anti-white);
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 0 30px;
+    direction: rtl;
+}
+
+.about svg{
+    width: 150px;
+    fill: var(--amber);
+}
+
+.about h1 {
+    color: var(--anti-white);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.about h2 {
+    color: var(--amber);
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 30px 0 5px;
+    line-height: 1.2;
+}
+
+.about h3 {
+    color: var(--amber);
+    font-weight:700;
+    font-size: 1.5rem;
+    margin: 30px 0 5px;
+    line-height: 1.2;
+}
+
+.about p {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.about h4{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 50px;
+
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 8%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.social button {
+    padding: 5px 15px;
+    background: var(--amber);
+    color: var(--blue);
+    font-size: 1.25rem;
+    border: 0;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.social button:hover {
+    background: var(--light-amber);
+    color: var(--light-blue);
+    transition: linear .3s;
+}
+
+@media only screen and (max-width: 480px) {
+    .social {
+
+        column-gap: 4vw;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .social button {
+        padding: 2.5px 10px;
+
+    }
+    .about svg{
+        width: 200px;
+    }
+}
