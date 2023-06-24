@@ -1,0 +1,32 @@
+cwebp "jeruGanHapaamon.jpg" -q 100 -o "jeruGanHapaamon.webp"
+cwebp "jeruGanSacher.jpg" -q 100 -o "jeruGanSacher.webp"
+cwebp "kadima-zoran.jpg" -q 100 -o "kadima-zoran.webp"
+cwebp "kfar-saba.jpg" -q 100 -o "kfar-saba.webp"
+cwebp "kfar-yona.jpg" -q 100 -o "kfar-yona.webp"
+cwebp "kiryat-ata.jpg" -q 100 -o "kiryat-ata.webp"
+cwebp "lod.jpg" -q 100 -o "lod.webp"
+cwebp "mitzpe-ramon.jpg" -q 100 -o "mitzpe-ramon.webp"
+cwebp "modiinBuchman.jpg" -q 100 -o "modiinBuchman.webp"
+cwebp "modiinMoriah.jpg" -q 100 -o "modiinMoriah.webp"
+cwebp "nahariya.jpg" -q 100 -o "nahariya.webp"
+cwebp "netanya.jpg" -q 100 -o "netanya.webp"
+cwebp "petah-tikva.jpg" -q 100 -o "petah-tikva.webp"
+cwebp "raanana.jpg" -q 100 -o "raanana.webp"
+cwebp "ramat-gan(2).jpg" -q 100 -o "ramat-gan(2).webp"
+cwebp "ramat-gan.jpg" -q 100 -o "ramat-gan.webp"
+cwebp "ramla.jpg" -q 100 -o "ramla.webp"
+cwebp "rishon-lezion.jpg" -q 100 -o "rishon-lezion.webp"
+cwebp "rosh-haayin.jpg" -q 100 -o "rosh-haayin.webp"
+cwebp "tel-aviv.jpg" -q 100 -o "tel-aviv.webp"
+cwebp "tzur-yigal.jpg" -q 100 -o "tzur-yigal.webp"
+cwebp "zichron-yaakov.jpg" -q 100 -o "zichron-yaakov.webp"
+cwebp ".jpg" -q 100 -o ".webp"
+cwebp ".jpg" -q 100 -o ".webp"
+
+
+
+if you type :
+                            cd <!--file path--->
+                            for %f in (*.jpg) do cwebp "%f" -q 100 -o "%~nf.webp"
+
+it will convert all the files in the folder to .webp in the best quality available
