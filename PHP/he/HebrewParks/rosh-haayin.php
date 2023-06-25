@@ -328,7 +328,7 @@
     <div class="iconBox2">
       <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 56.69 56.69"><path class="b" d="M41.23,37.3l-11.17-19.69c-.68-1.21-2.42-1.22-3.12-.02l-11.47,19.69c-.7,1.2,.17,2.7,1.55,2.7h22.63c1.38,0,2.24-1.49,1.56-2.69Zm-12.88-.34c-1.13,0-2.04-.92-2.04-2.04s.92-2.05,2.04-2.05,2.05,.92,2.05,2.05-.92,2.04-2.05,2.04Zm1.56-5.57c0,.47-.33,.85-.73,.85h-1.9c-.4,0-.73-.38-.73-.85l-.37-5.76c0-.47,.33-.85,.73-.85h2.86c.4,0,.73,.38,.73,.85l-.6,5.76Z"/></svg>
       <br>
-      <span>סירטון אינו זמין</span>
+      <span>סרטון אינו זמין</span>
     </div>
     <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27042.250175643036!2d34.968747!3d32.088683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d30df709275c1%3A0x3d34922949d48b3!2z16HXp9eZ15nXmNek15DXqNen!5e0!3m2!1sen!2sus!4v1684789377555!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

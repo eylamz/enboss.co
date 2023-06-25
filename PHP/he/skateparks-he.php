@@ -406,8 +406,8 @@ function shuffle(array) {
               </a>
           </div>
 
-          <div class="item center">
-                <a href="/he/skateparks/ariel">
+          <div class="item south">
+          <a href="/he/skateparks/sderot">
                   <img src="/images/Park480-webp/sderot.webp" alt="סקייטפארק שדרות" loading="lazy">
                   <div class="gallery-text"><h2>שדרות</h2></div>
               </a>
