@@ -41,6 +41,7 @@ let availableKeywords = [
   "Kidron",
   "Yehud-Monosson",
   "Ari'el",
+  "Sderot",
   'אשדוד',
   "באר שבע",
   "באר שבע בייק פארק",
@@ -77,7 +78,8 @@ let availableKeywords = [
   'תל אביב',
   'קדרון',
   'יהוד-מונוסון',
-  'אריאל'
+  'אריאל',
+  'שדרות'
 ];
 
 const resultsBox = document.querySelector(".result-box");
@@ -187,6 +189,7 @@ const urlMap = {
 "Kidron": '/en/skateparks/kidron',
 "Yehud-Monosson": '/en/skateparks/yehud',
 "Ari'el": '/en/skateparks/ariel',
+"Sderot": '/en/skateparks/sderot',
 'אשדוד': '/he/skateparks/ashdod',
 "באר שבע": '/he/skateparks/beer-sheva',
 "באר שבע בייק פארק": '/he/skateparks/beer-sheva-bike-park',
@@ -223,7 +226,8 @@ const urlMap = {
 "זכרון יעקב": '/he/skateparks/zichron-yaakov',
 "קדרון": '/he/skateparks/kidron',
 "יהוד": '/he/skateparks/yehud',
-"אריאל": '/he/skateparks/ariel'
+"אריאל": '/he/skateparks/ariel',
+"שדרות": '/he/skateparks/sderot'
 };
 
 function selectInput(list, index) {

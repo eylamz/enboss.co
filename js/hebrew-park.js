@@ -34,7 +34,8 @@ const items = [
   {img: "/images/Park480-webp/gedera.webp", heading: "גדרה", link: "/he/skateparks/gedera"},
   {img: "/images/Park480-webp/kidron.webp", heading: "קדרון", link: "/he/skateparks/kidron"},
   {img: "/images/Park480-webp/yehud.webp", heading: "יהוד-מונוסון", link: "/he/skateparks/yehud"},
-  {img: "/images/Park480-webp/ariel.webp", heading: "אריאל", link: "/he/skateparks/ariel"}
+  {img: "/images/Park480-webp/ariel.webp", heading: "אריאל", link: "/he/skateparks/ariel"},
+  {img: "/images/Park480-webp/sderot.webp", heading: "שדרות", link: "/he/skateparks/sderot"}
 ];
  
 
