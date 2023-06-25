@@ -20,7 +20,7 @@ cwebp "rosh-haayin.jpg" -q 100 -o "rosh-haayin.webp"
 cwebp "tel-aviv.jpg" -q 100 -o "tel-aviv.webp"
 cwebp "tzur-yigal.jpg" -q 100 -o "tzur-yigal.webp"
 cwebp "zichron-yaakov.jpg" -q 100 -o "zichron-yaakov.webp"
-cwebp ".jpg" -q 100 -o ".webp"
+cwebp "sderot.jpg" -q 100 -o "sderot.webp"
 cwebp ".jpg" -q 100 -o ".webp"
 
 
@@ -28,5 +28,8 @@ cwebp ".jpg" -q 100 -o ".webp"
 if you type :
                             cd <!--file path--->
                             for %f in (*.jpg) do cwebp "%f" -q 100 -o "%~nf.webp"
+
+                            FOR %F IN (*.jpg) DO cwebp "%F" -q 100 -o "%~nF.webp"
+
 
 it will convert all the files in the folder to .webp in the best quality available
