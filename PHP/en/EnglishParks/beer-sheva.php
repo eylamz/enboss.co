@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Be'er Sheva | ENBOSS</title>
-  <meta name="description" content="Unleash Your Skills at Be'er Sheva Skatepark: An Urban Haven for Extreme Sports Enthusiasts. Get ready for an adrenaline-fueled experience at Beer Sheva Skatepark. Whether you're into skateboarding, BMX, or rollerblading, this cutting-edge facility offers the perfect playground to showcase your skills. From ramps and rails to bowls and street sections, challenge yourself in a dynamic environment that caters to all levels of expertise. Join the vibrant community of thrill-seekers and embrace the excitement of extreme sports at Be'er Sheva Skatepark.">  
+  <meta name="description" content="Unleash Your Skills at Be'er Sheva Skatepark: An Urban Haven for Extreme Sports Enthusiasts. Get ready for an adrenaline-fueled experience at Be'er Sheva Skatepark. Whether you're into skateboarding, BMX, or rollerblading, this cutting-edge facility offers the perfect playground to showcase your skills. From ramps and rails to bowls and street sections, challenge yourself in a dynamic environment that caters to all levels of expertise. Join the vibrant community of thrill-seekers and embrace the excitement of extreme sports at Be'er Sheva Skatepark.">  
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Be'er Sheva Skatepark">
