@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en_US">
+<html lang="he_IL">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Kiryat Gat | ENBOSS</title>
-  <meta name="description" content="Unleash Your Skills at Kiryat Gat Skatepark: An Urban Haven for Extreme Sports Enthusiasts. Get ready for an adrenaline-fueled experience at Kiryat Gat Skatepark. Whether you're into skateboarding, BMX, or rollerblading, this cutting-edge facility offers the perfect playground to showcase your skills. From ramps and rails to bowls and street sections, challenge yourself in a dynamic environment that caters to all levels of expertise. Join the vibrant community of thrill-seekers and embrace the excitement of extreme sports at Kiryat Gat Skatepark.">  
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>קרית גת | ENBOSS</title>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kiryat Gat Skatepark">
+  <meta property="og:title" content="סקייטפארק קרית גת">
   <meta property="og:image" content="http://www.enboss.co/images/ParkFav/kiryat-gat.png">
   <meta property="og:image:secure_url" content="https://www.enboss.co/images/ParkFav/kiryat-gat.png">
-  <meta property="og:description" content="Unleash Your Skills at Kiryat Gat Skatepark - Extreme Urban Playground!">  
-  <meta property="og:url" content="http://www.enboss.co/en/skateparks/kiryat-gat">
+  <meta property="og:description" content="ENBOSS - Unite & Ride">
+  <meta property="og:url" content="http://www.enboss.co/he/skateparks/kiryat-gat">
   <meta property="og:site_name" content="ENBOSS">
   <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
-  <meta property="og:locale" content="en_US">
-  <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, kiryat gat, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
+  <meta property="og:locale" content="he_IL">
+  <meta name="keywords" content="ישראל, סקייטפארק, רולרבלייד, סקייט, עברית, קרית גת, רולר, ישראלי, קרוקינט, המזרח התיכון, enboss.co">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,12 +29,15 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+          <!--- Hebrew Header CSS File -->
+          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
-           <!--English PrimaryYellow CSS File-->
-<link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryYellow.css" />
+           <!--Hebrew PrimaryYellow CSS File-->
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryYellow.css" />
 
+           <!--- Hebrew Footer CSS File -->
+           <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
+           
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
                     <script>
@@ -49,20 +50,16 @@
                     <!-- End of Google Tag -->
                     
       </head>
-
-      
 <body class="parkBody">
   <div class="background-image"></div>
 
-
   <!-- Header Section -->
-  <?php include('../../../view/en/english-header.php'); ?>
+  <?php include('../../../view/he/hebrew-header.php'); ?>
 
   
 <main class="parkMain body-move">
-    
-  <div class="parkHead">
-    <h1>Kiryat Gat</h1>
+<div class="parkHead">
+  <h1>קרית גת</h1>
         <!-- slideshow html -->
         <div class="slideshowDiv" >
             <div class="carousel-container">
@@ -183,33 +180,32 @@
   
   <div class="icon-list-div">
   <hr class="desktop-hr">
-    <ul class="icon-list">
-      <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.08 23.27"><g id="a"/><g id="b"><g id="c"><g><path d="M20.08,0c-1.1,0-2,.9-2,2v15.68s-.05,.69-.46,1.09c-.41,.4-1.09,.49-1.33,.5h-6.33V9.04c0-1.1-.9-2-2-2s-2,.9-2,2v12.23c0,1.1,.9,2,2,2h8.35c.41,0,2.5-.08,4.1-1.62,1.63-1.58,1.68-3.72,1.68-3.96V2C22.08,.9,21.18,0,20.08,0Z"/><path d="M12.12,14.23c0,1.1,.9,2,2,2s2-.9,2-2V2C16.12,.9,15.23,0,14.12,0H5.83c-.26-.02-2.47,0-4.15,1.62C.05,3.2,0,5.35,0,5.59v15.68c0,1.1,.9,2,2,2s2-.9,2-2V5.59s.05-.69,.46-1.09c.41-.4,1.09-.49,1.33-.5h6.33V14.23Z"/></g></g></g></svg>
-          Free entry</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><g><path d="M12.81,8.15h-2.33v3.49h2.33c.64,0,1.16-.52,1.16-1.16v-1.16c0-.64-.52-1.16-1.16-1.16Z"/><path d="M11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm4.66,10.48c0,1.93-1.56,3.49-3.49,3.49h-2.33v2.33c0,.64-.52,1.16-1.16,1.16s-1.16-.52-1.16-1.16V6.99c0-.64,.52-1.16,1.16-1.16h3.49c1.93,0,3.49,1.56,3.49,3.49v1.16Z"/></g></g></g></svg>
-          Parking available</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg>
-          Water fountain</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.93 23.42"><g id="a"/><g id="b"><g id="c"><g><path d="M22.93,15.42c0-1.27-1.04-2.31-2.31-2.31H2.31c-1.27,0-2.31,1.04-2.31,2.31,0,1.16,.88,2.12,2,2.28v5.72h3.69v-5.69h11.54v5.69h3.69v-5.72c1.12-.15,2-1.11,2-2.28Z"/><path d="M4.98,11.41c0-.08-.01-.16-.01-.24v-3.63c0-2.04,1.1-3.82,2.74-4.79V11.41h1.97V2.04c.28-.04,.57-.07,.86-.07h2c.19,0,.37,0,.55,.03V11.41h1.97V2.58c1.81,.92,3.05,2.8,3.05,4.96v3.63c0,.08,0,.16-.01,.24h1.97c0-.08,.01-.16,.01-.24v-3.63c0-4.15-3.39-7.54-7.54-7.54h-2C6.39,0,3,3.39,3,7.54v3.63c0,.08,0,.16,.01,.24h1.97Z"/></g></g></g></svg>
-          Seating area</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 28.2 23.3"><g id="a"/><g id="b"><g id="c"><g><path d="M4.48,6.12c1.69,0,3.06-1.37,3.06-3.06S6.17,0,4.48,0,1.42,1.37,1.42,3.06s1.37,3.06,3.06,3.06Z"/><path d="M22.12,6.12c1.69,0,3.06-1.37,3.06-3.06s-1.37-3.06-3.06-3.06-3.06,1.37-3.06,3.06,1.37,3.06,3.06,3.06Z"/><path d="M7.77,6.95h-1.74c-.48,.19-1,.3-1.55,.3s-1.07-.11-1.55-.3H1.19c-.66,0-1.19,.54-1.19,1.19v7.09c0,.66,.54,1.19,1.19,1.19h.22v5.54c0,.73,.6,1.33,1.33,1.33h3.47c.73,0,1.33-.6,1.33-1.33v-5.54h.22c.66,0,1.19-.54,1.19-1.19v-7.09c0-.66-.54-1.19-1.19-1.19Z"/><path d="M26.59,8.14c0-.66-.54-1.19-1.19-1.19h-1.72c-.48,.19-1,.3-1.55,.3s-1.07-.11-1.55-.3h-1.75c-.66,0-1.19,.54-1.19,1.19l-1.59,8.66c0,.66,.54,1.19,1.19,1.19h1.83v3.98c0,.73,.6,1.33,1.33,1.33h3.47c.73,0,1.33-.6,1.33-1.33v-3.98h1.83c.66,0,1.19-.54,1.19-1.19l-1.62-8.66Z"/><rect x="11.63" width="3.06" height="23.28"/></g></g></g></svg>
-          Nearby bathrooms</li>
+  <ul class="icon-list">
+    <li>שירותים<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 28.2 23.3"><g id="a"/><g id="b"><g id="c"><g><path d="M4.48,6.12c1.69,0,3.06-1.37,3.06-3.06S6.17,0,4.48,0,1.42,1.37,1.42,3.06s1.37,3.06,3.06,3.06Z"/><path d="M22.12,6.12c1.69,0,3.06-1.37,3.06-3.06s-1.37-3.06-3.06-3.06-3.06,1.37-3.06,3.06,1.37,3.06,3.06,3.06Z"/><path d="M7.77,6.95h-1.74c-.48,.19-1,.3-1.55,.3s-1.07-.11-1.55-.3H1.19c-.66,0-1.19,.54-1.19,1.19v7.09c0,.66,.54,1.19,1.19,1.19h.22v5.54c0,.73,.6,1.33,1.33,1.33h3.47c.73,0,1.33-.6,1.33-1.33v-5.54h.22c.66,0,1.19-.54,1.19-1.19v-7.09c0-.66-.54-1.19-1.19-1.19Z"/><path d="M26.59,8.14c0-.66-.54-1.19-1.19-1.19h-1.72c-.48,.19-1,.3-1.55,.3s-1.07-.11-1.55-.3h-1.75c-.66,0-1.19,.54-1.19,1.19l-1.59,8.66c0,.66,.54,1.19,1.19,1.19h1.83v3.98c0,.73,.6,1.33,1.33,1.33h3.47c.73,0,1.33-.6,1.33-1.33v-3.98h1.83c.66,0,1.19-.54,1.19-1.19l-1.62-8.66Z"/><rect x="11.63" width="3.06" height="23.28"/></g></g></g></svg></li>
+    <li>ברזייה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg></li>
 
-  </ul>
+    <li>אזור ישיבה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.93 23.42"><g id="a"/><g id="b"><g id="c"><g><path d="M22.93,15.42c0-1.27-1.04-2.31-2.31-2.31H2.31c-1.27,0-2.31,1.04-2.31,2.31,0,1.16,.88,2.12,2,2.28v5.72h3.69v-5.69h11.54v5.69h3.69v-5.72c1.12-.15,2-1.11,2-2.28Z"/><path d="M4.98,11.41c0-.08-.01-.16-.01-.24v-3.63c0-2.04,1.1-3.82,2.74-4.79V11.41h1.97V2.04c.28-.04,.57-.07,.86-.07h2c.19,0,.37,0,.55,.03V11.41h1.97V2.58c1.81,.92,3.05,2.8,3.05,4.96v3.63c0,.08,0,.16-.01,.24h1.97c0-.08,.01-.16,.01-.24v-3.63c0-4.15-3.39-7.54-7.54-7.54h-2C6.39,0,3,3.39,3,7.54v3.63c0,.08,0,.16,.01,.24h1.97Z"/></g></g></g></svg></li>
+
+    <li>חניה זמינה<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><g><path d="M12.81,8.15h-2.33v3.49h2.33c.64,0,1.16-.52,1.16-1.16v-1.16c0-.64-.52-1.16-1.16-1.16Z"/><path d="M11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm4.66,10.48c0,1.93-1.56,3.49-3.49,3.49h-2.33v2.33c0,.64-.52,1.16-1.16,1.16s-1.16-.52-1.16-1.16V6.99c0-.64,.52-1.16,1.16-1.16h3.49c1.93,0,3.49,1.56,3.49,3.49v1.16Z"/></g></g></g></svg></li>
+
+    <li>כניסה חופשית<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.08 23.27"><g id="a"/><g id="b"><g id="c"><g><path d="M20.08,0c-1.1,0-2,.9-2,2v15.68s-.05,.69-.46,1.09c-.41,.4-1.09,.49-1.33,.5h-6.33V9.04c0-1.1-.9-2-2-2s-2,.9-2,2v12.23c0,1.1,.9,2,2,2h8.35c.41,0,2.5-.08,4.1-1.62,1.63-1.58,1.68-3.72,1.68-3.96V2C22.08,.9,21.18,0,20.08,0Z"/><path d="M12.12,14.23c0,1.1,.9,2,2,2s2-.9,2-2V2C16.12,.9,15.23,0,14.12,0H5.83c-.26-.02-2.47,0-4.15,1.62C.05,3.2,0,5.35,0,5.59v15.68c0,1.1,.9,2,2,2s2-.9,2-2V5.59s.05-.69,.46-1.09c.41-.4,1.09-.49,1.33-.5h6.33V14.23Z"/></g></g></g></svg></li>
+
+
+</ul>
   <hr class="mobile-hr">
   
   <div class="list-img">
     <ul>
-        <li><strong>Opening hours :</strong> 24/7</li>
-        <hr>
-        <li><strong>Lighting hours :</strong></li>
-        <li>From sunset until 22:00.</li>
-        <hr>
-        <li><strong>Address :</strong></li>
-        <li>Avnei HaHoshen Boulevard/Nofech St, Kiryat Gat.</li>
-        <hr>
-        <li>Open since 2022.</li>
-      </ul>
+      <li><strong>שעות פתיחה :</strong> 24/7</li>
+      <hr>
+      <li><strong>שעות תאורה :</strong></li>
+      <li>משקיעת השמש עד 22:00.</li>
+      <hr>
+      <li><strong>כתובת :</strong></li>
+      <li>שדרות אבני החושן פינת נופך, קרית גת.</li>
+      <hr>
+      <li>נפתח בשנת 2022.</li>
+    </ul>
       
   </div>
   </div>
@@ -234,7 +230,7 @@
   </svg>
   
     <br>
-    <span><strong>Address :</strong><br>Avnei HaHoshen Boulevard/Nofech St, Kiryat Gat​</span>
+    <span><strong>כתובת :</strong><br>שדרות אבני החושן פינת נופך, קרית גת.</span>
   </div>
   <div class="social-maps"> 
     <div class="map-icon">
@@ -354,24 +350,23 @@
   </div>
   <script src="/js/socialMapsAnimate.js"></script>
   </div>
-  
+    
   <div class="vid-map">
     <div class="iconBox2">
       <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 56.69 56.69"><path class="b" d="M41.23,37.3l-11.17-19.69c-.68-1.21-2.42-1.22-3.12-.02l-11.47,19.69c-.7,1.2,.17,2.7,1.55,2.7h22.63c1.38,0,2.24-1.49,1.56-2.69Zm-12.88-.34c-1.13,0-2.04-.92-2.04-2.04s.92-2.05,2.04-2.05,2.05,.92,2.05,2.05-.92,2.04-2.05,2.04Zm1.56-5.57c0,.47-.33,.85-.73,.85h-1.9c-.4,0-.73-.38-.73-.85l-.37-5.76c0-.47,.33-.85,.73-.85h2.86c.4,0,.73,.38,.73,.85l-.6,5.76Z"/></svg>
       <br>
-      <span>Video unavailable</span>
+      <span>סרטון אינו זמין</span>
     </div>
     <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d13589.486620993239!2d34.770965!3d31.623673!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzI1LjIiTiAzNMKwNDYnMTUuNSJF!5e0!3m2!1sen!2sil!4v1688124327052!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d13589.486620993239!2d34.770965!3d31.623673!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM3JzI1LjIiTiAzNMKwNDYnMTUuNSJF!5e0!3m2!1sen!2sil!4v1688124327052!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-
+ <!--   otherParks Section    -->
+ <?php include('../../../view/he/hebrewOtherParks.php'); ?>
+<!--   Footer Section    -->
+<?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
- <!--   otherParks Section    -->
- <?php include('../../../view/en/englishOtherParks.php'); ?>
-<!--   Footer Section    -->
-<?php include('../../../view/en/english-footer.php'); ?>
 
 </body>
 </html>
