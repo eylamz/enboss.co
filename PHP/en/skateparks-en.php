@@ -411,6 +411,15 @@ function shuffle(array) {
               </a>
           </div>
 
+          <div class="item south">
+                <a href="/en/skateparks/kiryat-gat">
+                  <img src="/images/Park480-webp/kiryat-gat.webp" alt="Kiryat Gat" loading="lazy">
+                  <div class="gallery-text"><h2>Kiryat Gat</h2></div>
+              </a>
+          </div>
+
+
+
         </div>
     </div>
 

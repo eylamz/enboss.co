@@ -412,6 +412,15 @@ function shuffle(array) {
                   <div class="gallery-text"><h2>שדרות</h2></div>
               </a>
           </div>
+          
+          <div class="item south">
+          <a href="/he/skateparks/kiryat-gat">
+                  <img src="/images/Park480-webp/kiryat-gat.webp" alt="סקייטפארק קרית גת" loading="lazy">
+                  <div class="gallery-text"><h2>קרית גת</h2></div>
+              </a>
+          </div>
+
+
 
         </div>
     </div>
