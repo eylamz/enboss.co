@@ -12,13 +12,13 @@
     var observer = new IntersectionObserver(function(entries, observer) {
       if (entries[0].isIntersecting) {
         var intervalId = setInterval(function() {
-          if (count <= 38) {
+          if (count <= 39) {
             counterElement.innerHTML = count;
             count++;
           } else {
             clearInterval(intervalId);
           }
-        }, 80); // update the counter every second (1000 milliseconds)
+        }, 50); // update the counter every second (1000 milliseconds)
         observer.unobserve(counterElement);
       }
     }, options);
