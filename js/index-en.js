@@ -12,7 +12,7 @@
     var observer = new IntersectionObserver(function(entries, observer) {
       if (entries[0].isIntersecting) {
         var intervalId = setInterval(function() {
-          if (count <= 39) {
+          if (count <= 40) {
             counterElement.innerHTML = count;
             count++;
           } else {

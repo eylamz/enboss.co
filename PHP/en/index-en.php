@@ -143,7 +143,7 @@
 <div class="newParks-div">
   <div class="newParks">
     <p class="newParksTitle">New Skateparks</p>
-    <a href="/en/skateparks"><button class="viewMore">View more</button></a>
+    <a href="/en/skateparks" title="View skateparks page"><button class="viewMore">View more</button></a>
   </div>
 </div>
 
@@ -308,7 +308,7 @@
           <p>Do you know of another park?<br>Let us know, so we can share with the world.</p>
         </div>
         <div class="contact">
-          <a href="/en/contact"><button  aria-label="contact us button">Contact us</button></a>
+          <a href="/en/contact" title="Contact ENBOSS team"><button  aria-label="contact us button">Contact us</button></a>
         </div>
       </div>
     </section>
