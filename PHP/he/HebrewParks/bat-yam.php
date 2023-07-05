@@ -357,6 +357,7 @@
     <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1196.1775556929535!2d34.7358555422783!3d32.00695807362564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b35edc6aff5f%3A0xcb29deb0bf3482c6!2sSkate%20park%20Bat-Yam!5e0!3m2!1sen!2sil!4v1688466511062!5m2!1sen!2sil" 600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        
     </div>
  <!--   otherParks Section    -->
  <?php include('../../../view/he/hebrewOtherParks.php'); ?>
