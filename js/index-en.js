@@ -18,7 +18,7 @@
           } else {
             clearInterval(intervalId);
           }
-        }, 80); // update the counter every second (1000 milliseconds)
+        }, 50); // update the counter every second (1000 milliseconds)
         observer.unobserve(counterElement);
       }
     }, options);

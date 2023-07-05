@@ -68,6 +68,10 @@ table {
       --light-blue: hsla(219, 50%, 40%, 1);
       --lighter-blue: hsla(219, 50%, 95%, 1);
       --anti-white: hsl(210, 15%, 95%);
+
+      --anti-text:hsl(210, 15%, 95%);
+      --anti-text-2:hsl(210, 15%, 95%);
+      
       --anti-grey: hsla(210, 14%, 90%, 1);
       --dark-grey: hsla(210, 14%, 85%, 1);
       --darker-grey: hsl(210, 0%, 35%);
@@ -85,6 +89,7 @@ table {
       --light-sham: hsl(140, 33%, 56%);
               /*   g#7DDF64    */
     }
+
 
     *,
     *::before,
@@ -171,12 +176,12 @@ header {
       z-index: 100;
       box-shadow:  var(--shadow-bottom);
       transition: linear 1s;
-
     }
     .navi.active {
       box-shadow:  none;
 
     }
+    
     .navbar {
       display: flex;
       flex-direction: row;
@@ -186,8 +191,9 @@ header {
       height: 64px;
       margin: 0 auto;
       background: var(--anti-white);
-
     }
+
+
     
     .brand {
       width: 140px;
@@ -199,6 +205,9 @@ header {
     .brand:hover{
       fill: var(--light-blue);
     }
+
+
+
 
     .menu {
       position: fixed;
@@ -219,6 +228,7 @@ header {
       z-index: 10;
 
     }
+
     .menu-inner {
       display: flex;
       flex-direction: column;
@@ -238,6 +248,7 @@ header {
       color: var(--light-blue);
     }
 
+
     .menu-block {
       fill: var(--blue);
       text-align: center;
@@ -246,6 +257,7 @@ header {
       margin-top: 5px;
       padding: 0;
     }
+
 
     .menu-block:hover{
       fill: var(--light-blue);
@@ -260,7 +272,7 @@ header {
     }
 
 
-    
+
     .nav-icons {
       position: static;
       height: 100%;
@@ -296,6 +308,8 @@ header {
     .search-icon svg:hover {
       fill: var(--light-blue);
     }
+
+
 
     @media only screen and (min-width: 950px) {
 
@@ -725,4 +739,78 @@ header {
 }
 .front-Icon1 {
   fill: hsla(219, 50%, 22%, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .navi {
+    background-color: var(--blue);
+  }
+  .navbar {
+    background-color: var(--blue);
+  }
+
+  .brand {
+    fill: var(--anti-grey);
+  }
+  .brand:hover {
+    fill: var(--anti-white);
+  }
+  .menu.is-active {
+    background-color: var(--blue);
+  }
+  .menu-link {
+    color: var(--anti-grey);
+  }
+  .menu-link:hover {
+    color: var(--anti-white);
+  }
+  .menu-block {
+    fill: var(--anti-grey);
+  }
+
+  .menu-block:hover{
+    fill: var(--anti-white);
+  }
+
+  .menu-item:hover{
+    color: var(--anti-white);
+  }
+
+  .is-active.menu-item:hover{
+    color: var(--anti-white);
+  }
+  .search-icon svg:hover {
+    fill: var(--anti-white);
+  }
+  .back-Icon1 {
+    fill: hsla(219, 50%, 22%, .2);
+  }
+  .front-Icon1 {
+  fill: hsla(219, 50%, 22%, 1);
+  }
+  #my-svg {
+    stroke: var(--anti-white);
+  }
+  #my-svg:hover {
+    stroke: var(--anti-grey);
+  }
+  .burger-line {
+    background-color: var(--anti-white);
+  }
+  .search-test {
+    background-color: var(--blue);
+  }
+  .search-box {
+    background-color: var(--blue);
+  }
+  .searchRow input{
+    color: var(--anti-white);
+    background: hsl(219, 50%, 32%);
+  }
+  .result-box ul {
+    background: var(--blue);
+  }
+  .result-box ul li:hover{
+    color: var(--anti-blue);
+  } 
 }
