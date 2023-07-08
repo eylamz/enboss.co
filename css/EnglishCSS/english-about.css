@@ -3,6 +3,11 @@ body {
     background: var(--blue);
     margin: 0px;
 }
+
+body.dark {
+    background-color: var(--body-dark);
+  }
+  
 .about-container {
     padding-top: 100px;
     width: 100%;

@@ -286,8 +286,8 @@ hr {
 /*
 /////////////////////////////////////////*/
    
-  img {
-    border-radius: 15px;
+main img {
+  border-radius: 15px;
     box-shadow: var(--img-shadow);
     background-color: var(--img-back);
   }

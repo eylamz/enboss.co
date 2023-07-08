@@ -7,8 +7,8 @@
   <title>Info Zone | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Info Zone | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="Explore Urban Sports: Articles, Guides, Information, History, and More">  
   <meta property="og:url" content="http://www.enboss.co/en/info-zone">
   <meta property="og:site_name" content="ENBOSS">

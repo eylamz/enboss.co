@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- hi dear-->
 <html dir="ltr" lang="en_US" class="notranslate" translate="no">
 <head>
   <meta charset="UTF-8">
@@ -143,52 +144,13 @@
 <div class="newParks-div">
   <div class="newParks">
     <p class="newParksTitle">New Skateparks</p>
-    <a href="/en/skateparks" title="View skateparks page"><button class="viewMore">View more</button></a>
+    <a href="/en/skateparks"><button class="viewMore">View more</button></a>
   </div>
 </div>
 
 <section class="image-scroll">
   <div class="center">
-      <style> /* New Park Logo */
-              .images .text2 {
-              font-family: 'Open Sans', sans-serif;
-              color: var(--anti-white); 
-              background-color: var(--sham); 
-              box-shadow: var(--img-shadow);
-              border-radius: 50%; 
-              text-shadow: none; 
-              font-size: 1.2rem;
-              padding:18px 10px; 
-              position:absolute;
-              top: 0;
-              left: 0;
-              font-weight: 700;
-              animation: pulse 1s infinite ease-in-out alternate;
-              }
-
-              @keyframes pulse {
-                from { transform: scale(0.8) rotate(-25deg);
-                  background-color: var(--sham);
-                }
-                to { transform: scale(1.2)rotate(-17.5deg);
-                  background-color: var(--light-sham); 
-                }
-              }
-            </style>
     <div class="scroll-parent" id="scroll">
-      <div class="images">
-        <a href="/en/skateparks/bat-yam">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/images/Park480-webp/bat-yam.webp">
-            <source media="(max-width: 768px)" srcset="/images/Park768-webp/bat-yam.webp">
-            <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/bat-yam.webp">
-            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/bat-yam.webp">
-            <img src="/images/ParkGallery-webp/bat-yam.webp" alt="bat yam skatepark" />
-        </picture>
-      </a>
-          <div class="text1"><h2>Bat Yam</h2></div>
-          <div class="text2"><h2>NEW</h2></div>
-      </div>
       <div class="images">
         <a href="/en/skateparks/ramat-gan-2">
           <picture>
@@ -199,6 +161,33 @@
             <img src="/images/ParkGallery-webp/ramat-gan(2).webp" alt="ramat gan skatepark" />
         </picture>
       </a>
+        <style> /* New Park Logo */
+          .images .text2 {
+            font-family: 'Open Sans', sans-serif;
+         color: var(--anti-white); 
+         background-color: var(--sham); 
+         box-shadow: var(--img-shadow);
+         border-radius: 50%; 
+         text-shadow: none; 
+         font-size: 1.2rem;
+         padding:18px 10px; 
+         position:absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        animation: pulse 1s infinite ease-in-out alternate;
+        }
+
+        @keyframes pulse {
+          from { transform: scale(0.8) rotate(-25deg);
+            background-color: var(--sham);
+          }
+           to { transform: scale(1.2)rotate(-17.5deg);
+            background-color: var(--light-sham); 
+          }
+        }
+        </style>
+
           <div class="text1"><h2>Ramat Gan</h2></div>
           <div class="text2"><h2>NEW</h2></div>
       </div>
@@ -320,7 +309,7 @@
           <p>Do you know of another park?<br>Let us know, so we can share with the world.</p>
         </div>
         <div class="contact">
-          <a href="/en/contact" title="Contact ENBOSS team"><button  aria-label="contact us button">Contact us</button></a>
+          <a href="/en/contact"><button  aria-label="contact us button">Contact us</button></a>
         </div>
       </div>
     </section>

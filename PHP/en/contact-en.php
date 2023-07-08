@@ -7,8 +7,8 @@
   <title>Contact us | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact us | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="Contact us for exceptional service and personalized solutions.">
   <meta property="og:url" content="http://www.enboss.co/en/contact">
   <meta property="og:site_name" content="ENBOSS">
@@ -103,7 +103,7 @@
         </svg> Team</h3>
         <p>Questions, Adding a Park, Recommendations, and Collaboration</p>
         <p class="parag">For a faster response, please send us a message on<a href="https://instagram.com/enboss_official" target="_blank">Instagram</a></p>            
-        <form method="post" onsubmit="handleSubmit(event)">
+        <form class="contact-page" method="post" onsubmit="handleSubmit(event)">
             <input type="text" id="name" placeholder="Your name" required>
             <input type="email" id="email" placeholder="Email id" required>
             <input type="tel" id="phone" placeholder="Phone no." pattern="[0-9]{9,}" title="Please enter a valid phone number" required>            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>

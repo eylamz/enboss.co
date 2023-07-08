@@ -3,8 +3,11 @@ body {
     background: var(--white);
     margin: 0px;
     font-family: 'Poppins',sans-serif !important;
-
 }
+body.dark {
+  background-color: var(--body-dark);
+}
+
 .background-image{
           position: fixed;
           top: 0;
@@ -56,7 +59,7 @@ body {
 }
 
 form {
-    background: var(--white);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -146,7 +149,7 @@ form button {
     border-radius: 30px;
 }
 
-form button:hover {
+ form button:hover {
     background: var(--light-blue);
     color: var(--anti-white);
     transition: linear .3s;

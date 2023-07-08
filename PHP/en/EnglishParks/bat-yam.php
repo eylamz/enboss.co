@@ -198,7 +198,7 @@
     <li><strong>Opening hours :</strong> 24/7</li>
     <hr>
     <li><strong>Lighting hours :</strong></li>
-    <li>From sunset until 22:00.</li>
+    <li>From sunset until 23:00.</li>
     <hr>
     <li><strong>Address :</strong></li>
       <li></li>There is no street for arrival, please follow the navigation links below.​</li>

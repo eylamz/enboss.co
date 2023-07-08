@@ -145,15 +145,6 @@ footer {
 }
 
 
-
-.foot{
-    width: 20%;
-    margin: 2px auto;
-    opacity: 0.4;
-    border: 0.5px solid var(--anti-white);
-}
-
-
 @media (max-width: 960px) {
     footer {
         width: 100%;
@@ -219,8 +210,6 @@ footer {
     text-align: center;
     z-index: 100;
     background-color: hsla(219, 50%, 22%, .1);
-
-
 }
 
 #rishon {
@@ -228,3 +217,11 @@ footer {
 }
 
 /*            End of Footer CSS            */
+
+.dark #copyright {
+    background-color: var(--ne-light-grey);
+  }
+
+.dark #copyright p{
+    color: var(--ne-light-anti);
+  }

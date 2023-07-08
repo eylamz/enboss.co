@@ -8,6 +8,10 @@ body{
   background-color: var(--blue);
 }
 
+body.dark {
+  background-color: var(--body-dark);
+}
+
 .background-image{
   position: absolute;
   top: 0;

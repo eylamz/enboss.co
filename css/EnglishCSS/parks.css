@@ -1,10 +1,14 @@
-img {
+main img {
   background-color: var(--img-back);
 }
 
 
 body {
     background-color: var(--blue);
+}
+
+body.dark {
+  background-color: var(--body-dark);
 }
 
 
@@ -229,3 +233,4 @@ body {
         max-height: 180px;
       }
   }
+

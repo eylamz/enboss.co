@@ -1,4 +1,4 @@
-img {
+main img {
     background-color: var(--img-back);
   }
   
@@ -7,6 +7,9 @@ img {
       background-color: var(--blue);
   }
   
+  body.dark {
+    background-color: var(--body-dark);
+  }
 
   .background-image{
     position: fixed;
