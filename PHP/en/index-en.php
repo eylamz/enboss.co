@@ -60,8 +60,6 @@
     <div class="toggle-circle"></div>
   </button>
   <section class= "pageContainer" id="firstCon">
-  <div class="background-image"></div>
-
   <div class="top-container" id="contain1">
     <div class="topEnboss" aria-label="enboss">
 <svg version="1.1" id="Layer_1" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

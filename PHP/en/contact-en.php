@@ -30,7 +30,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Contact CSS File-->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-contact.css" />
+<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-contact.css" />
 
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -45,8 +45,6 @@
 </head>
 
 <body>
-<div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../view/en/english-header.php'); ?>
 

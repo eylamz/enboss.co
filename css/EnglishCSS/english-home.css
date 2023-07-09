@@ -5,16 +5,47 @@ body {
   max-height: 100%;
   overflow-x: hidden;
   background-color: var(--blue);
+  background-repeat: repeat;
+  background-size: 25%;  
+  background-image: url('/svg/EnbossWallpaperLight.1.svg');
+  background-attachment: fixed;
+  content: "";
 }
 
+
 body.dark {
-  background-color: var(--body-dark);
+background-color: var(--ne-blue);
+}
+
+@media only screen and (max-width: 1440px){
+body {
+  background-size: 30%;  
+}
+}
+
+@media only screen and (max-width: 1024px){
+body{
+  background-size: 35%;  
+}
+}
+
+@media only screen and (max-width: 768px){
+body{
+  background-size: 50%;  
+}
+}
+
+@media only screen and (max-width: 480px){
+body {
+  background-size: 100%;  
+}
 }
 
 main {
     padding-top: 64px;
     
 }
+
 /* first and second Container CSS */
 .pageContainer {
     width: 100%;
@@ -22,6 +53,7 @@ main {
 
   }
 
+  
   #firstCon {
     width: 100%;
         background-color: var(--blue);

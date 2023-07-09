@@ -620,6 +620,17 @@ header {
     transition: all 0.3s ease-in-out;
   }  
 
+  #my-svg-he:hover[class="disable"]
+  line.handle {
+    stroke: var(--light-blue) !important;
+  }
+
+    #my-svg-he[class="disable"]
+    line.handle {
+    stroke: var(--blue) !important;
+  }
+
+
 
 
   @keyframes zoom-out-rev {

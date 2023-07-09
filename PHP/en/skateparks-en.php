@@ -27,7 +27,8 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Skateparks CSS File-->
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/parks.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/parks.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 <script> // filtering parks function
   // Wait for the document to load
@@ -122,8 +123,6 @@ function shuffle(array) {
 </head>
 
 <body>
-<div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../view/en/english-header.php'); ?>
 <!-- End of Header Section-->
@@ -142,56 +141,72 @@ function shuffle(array) {
 
                   <div class="item center">
                     <a href="/en/skateparks/ramat-gan-2">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ramat-gan(2).webp" alt="Ramat Gan - National Park" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>Ramat Gan - National Park</h2></div>
                     </a>
                   </div>
 
                     <div class="item north">
                       <a href="/en/skateparks/kiryat-ata">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/kiryat-ata.webp" alt="Kiryat Ata" loading="lazy">
-                        <div class="gallery-text"><h2>Kiryat Ata</h2></div>
+                        </div>
+                      <div class="gallery-text"><h2>Kiryat Ata</h2></div>
                       </a>
                     </div>
 
                     <div class="item north">
                       <a href="/en/skateparks/zichron-yaakov">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/zichron-yaakov.webp" alt="Zichron Yaakov" loading="lazy">
-                        <div class="gallery-text"><h2>Zichron Ya'akov</h2></div>
+                        </div>
+                       <div class="gallery-text"><h2>Zichron Ya'akov</h2></div>
                     </a>
                 </div>
                     
                 <div class="item south">
                   <a href="/en/skateparks/dimona">
+                  <div class="itemImg">
                       <img src="/images/Park480-webp/dimona.webp" alt="Dimona" loading="lazy">
-                      <div class="gallery-text"><h2>Dimona</h2></div>
+                      </div>
+                    <div class="gallery-text"><h2>Dimona</h2></div>
                   </a>
               </div>    
 
                     <div class="item north">
                       <a href="/en/skateparks/nahariya">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/nahariya.webp" alt="Nahariya" loading="lazy">
-                        <div class="gallery-text"><h2>Nahariya</h2></div>
+                        </div>
+                      <div class="gallery-text"><h2>Nahariya</h2></div>
                     </a>
                   </div>
 
                     <div class="item center">
                       <a href="/en/skateparks/raanana">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/raanana.webp" alt="Raanana" loading="lazy">
-                        <div class="gallery-text"><h2>Ra'anana</h2></div>
+                        </div>
+                      <div class="gallery-text"><h2>Ra'anana</h2></div>
                     </a>
                 </div> 
                 
                     <div class="item south">
                       <a href="/en/skateparks/jerusalem-gan-sacher">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/jeruGanSacher.webp" alt="Jerusalem Gan Sacher" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>Jerusalem Gan Sacher</h2></div>
                       </a>
                   </div>
 
                   <div class="item center">
                     <a href="/en/skateparks/holon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/holon.webp" alt="Holon" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Holon</h2></div>
                   </a>
               </div> 
@@ -199,7 +214,9 @@ function shuffle(array) {
 
                   <div class="item north">
                     <a href="/en/skateparks/hadera">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/hadera.webp" alt="Hadera" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Hadera</h2></div>
                     </a>
                 </div>  
@@ -207,118 +224,152 @@ function shuffle(array) {
 
                   <div class="item center">
                     <a href="/en/skateparks/lod">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/lod.webp" alt="Lod" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Lod</h2></div>
                   </a>
               </div>
 
                   <div class="item south">
                     <a href="/en/skateparks/mitzpe-ramon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/mitzpe-ramon.webp" alt="Mitzpe Ramon" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Mitzpe Ramon</h2></div>
                   </a>
               </div>  
 
                   <div class="item south">
                     <a href="/en/skateparks/beer-sheva">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/beer-sheva.webp" alt="Beer Sheva" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Be'er Sheva</h2></div>
                     </a>
                   </div>  
 
                   <div class="item south">
                     <a href="/en/skateparks/jerusalem-gan-hapaamon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/jeruGanHapaamon.webp" alt="Jerusalem Gan Hapa'amon" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Jerusalem Gan Haapa'amon</h2></div>
                   </a>
               </div>
 
                   <div class="item south">
                     <a href="/en/skateparks/ashdod">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ashdod.webp" alt="Ashdod" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Ashdod</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/en/skateparks/kfar-saba">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/kfar-saba.webp" alt="Kfar Saba" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Kfar Saba</h2></div>
                   </a>
               </div>  
 
                   <div class="item south">
                     <a href="/en/skateparks/beer-sheva-bike-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/beer-sheva-bike.webp" alt="Beer Sheva Bike Park" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Be'er Sheva Bike Park</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/en/skateparks/givatayim">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/givatayim.webp" alt="Givatayim" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Giv'atayim</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/en/skateparks/herzliya">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/herzliya.webp" alt="Herzliya" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Herzliya</h2></div>
                   </a>
               </div>  
                   <div class="item center">
                     <a href="/en/skateparks/netanya">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/netanya.webp" alt="Netanya" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Netanya</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/tel-aviv">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/tel-aviv.webp" alt="Tel Aviv" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Tel Aviv</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/rosh-haayin">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/rosh-haayin.webp" alt="Rosh Haayin" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Rosh Ha'ayin</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/modiin-moriah-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/modiinMoriah.webp" alt="Modiin Moriah Park" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Modi'in Moriah Park</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/hod-hasharon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/hod-hasharon.webp" alt="Hod Hasharon" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Hod Hasharon</h2></div>
                   </a>
               </div>   
 
                   <div class="item north">
                     <a href="/en/skateparks/haifa">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/haifa.webp" alt="Haifa" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Haifa</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/en/skateparks/rishon-lezion">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/rishon-lezion.webp" alt="Rishon LeZion" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Rishon LeZion</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/petah-tikva">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/petah-tikva.webp" alt="Petah Tika" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Petah Tikva</h2></div>
                   </a>
               </div>
@@ -326,91 +377,117 @@ function shuffle(array) {
               
                   <div class="item center">
                     <a href="/en/skateparks/ramat-gan">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ramat-gan.webp" alt="Ramat Gan" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Ramat Gan - Kiryat Krinitsi<!-- <strong style="font-size: 0.75rem; text-transform: uppercase;"> - permanently closed</strong> --></h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/modiin-buchman-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/modiinBuchman.webp" alt="Modiin Buchman Park" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Modi'in Buchman Park</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/en/skateparks/kfar-yona">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/kfar-yona.webp" alt="Kfar Yona" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Kfar Yona</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/en/skateparks/tzur-yigal">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/tzur-yigal.webp" alt="Tzur Yigal" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Tzur Yigal</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/en/skateparks/ramla">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ramla.webp" alt="Ramla" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Ramla</h2></div>
                   </a>
               </div>
 
                   <div class="item north">
                     <a href="/en/skateparks/caesarea">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/caesarea.webp" alt="Caesarea" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Caesarea</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/en/skateparks/gedera">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/gedera.webp" alt="Gedera" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Gedera</h2></div>
                   </a>
               </div>
 
               <div class="item center">
                 <a href="/en/skateparks/kadima-zoran">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kadima-zoran.webp" alt="Kadima Zoran" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Kadima Tzoran</h2></div>
               </a>
           </div>
           
           <div class="item south">
                 <a href="/en/skateparks/kidron">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kidron.webp" style="filter: saturate(1.2);" alt="Kidron" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Kidron</h2></div>
               </a>
           </div>
 
           <div class="item center">
                 <a href="/en/skateparks/yehud">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/yehud.webp" style="filter: saturate(1.2);" alt="Yehud-Monosson" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Yehud-Monosson</h2></div>
               </a>
           </div>
 
           <div class="item center">
                 <a href="/en/skateparks/ariel">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/ariel.webp" style="filter: saturate(1.2);" alt="Ari'el" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Ari'el</h2></div>
               </a>
           </div>
 
           <div class="item south">
                 <a href="/en/skateparks/sderot">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/sderot.webp" alt="Sderot" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Sderot</h2></div>
               </a>
           </div>
 
           <div class="item south">
                 <a href="/en/skateparks/kiryat-gat">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kiryat-gat.webp" alt="Kiryat Gat" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Kiryat Gat</h2></div>
               </a>
           </div>
@@ -418,7 +495,9 @@ function shuffle(array) {
 
           <div class="item center">
                 <a href="/en/skateparks/bat-yam">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/bat-yam.webp" alt="Bat Yam" loading="lazy">
+                      </div>
                   <div class="gallery-text"><h2>Bat Yam</h2></div>
               </a>
           </div>
