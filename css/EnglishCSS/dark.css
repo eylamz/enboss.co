@@ -51,13 +51,17 @@
               --ne-anti: #F1F3F4;
               --anti-white: hsl(210, 15%, 95%);
               --ne-blue: #0C1017;
+              --ne-light-blue : hsl(219 60% 50%);
+              --ne-lighter-blue : hsl(219 60% 50%);
               --ne-dark-anti: #9AA0A6;
               --ne-light-grey: #35363A;
               --ne-light-anti: #BDC1C6;
               --ne-sec-text: #cacaca;
-              --ne-amber: hsla(45, 100%, 40%, 1);
+              --ne-amber: hsl(45 100% 48% / 1);
               --ne-amber-act: hsla(45, 100%, 50%, 1);
-              
+              --ne-conq: hsl(13 76% 52% / 1);
+              --gold: #d7c179;
+              --gold-hover: #e9cb67;
               
 
     }
@@ -76,12 +80,12 @@
   }
 
   .brand {
-    fill: var(--ne-logo);
+    fill: var(--ne-light-blue);
 
   }
 
   .brand:hover{
-    fill: var(--light-blue);
+    fill: var(--ne-lighter-blue);
   }
 
   .menu-link {
@@ -385,12 +389,12 @@
 
   /* HOME DARK CSS */
 
-  .pageContainer {
-
+  .topEnboss {
+    fill: var(--ne-light-blue);
   }
-
-  #firstCon {
-    background-color: var(--ne-blue);
+  
+  #line1 {
+    border-color: var(--ne-light-blue);
   }
 
   .heading{
@@ -402,8 +406,65 @@
   }
 
   #contain1 button {
+    color: var(--ne-blue);
+    background-color: var(--ne-light-blue);
+  }
+
+  .image-scroll {
+    background-color: var(--ne-light-anti);
+  }
+
+  .newParks-div {
+    background-color: var(--ne-light-anti);
+  }
+
+  .newParksTitle {
+    color: var(--ne-blue);
+  }
+
+  .viewMore {
+    color: var(--ne-blue);
+    background-color: var(--ne-light-blue);
+  }
+
+  #contain2 {
+    background-color: var(--ne-conq);
+  }
+
+  #secondCon {
+    background-color: var(--ne-conq);
+  }
+
+  .pageContainer {
+    background-color: var(--ne-amber);
+  }
+
+  #contain3 {
+    background-color: var(--ne-amber);
+  }
+
+  #headCount {
     color: var(--ne-grey);
   }
+
+  #heading3 {
+    color: var(--ne-grey);
+  }
+
+  #thisIs {
+    color: var(--ne-light-grey);
+  }
+
+  #doYou {
+    color: var(--ne-light-grey);
+  }
+
+  .contact button {
+    color: var(--ne-anti);
+    background-color: var(--ne-conq);
+  }
+
+
 
 
 
@@ -414,11 +475,11 @@
   
 
   #enbossLogo {
-    fill: var(--ne-logo);
+    fill: var(--ne-light-blue);
   }
 
   .logo #enbossLogo:hover{
-    fill: var(--anti-white);
+    fill: var(--ne-lighter-blue);
   }
 
   .logo-des {
@@ -430,7 +491,7 @@
   }
 
   .logo a:hover {
-    color: var(--light-blue);
+    color: var(--ne-light-blue);
   }
 
   .back-Icon {

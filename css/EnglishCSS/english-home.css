@@ -5,41 +5,11 @@ body {
   max-height: 100%;
   overflow-x: hidden;
   background-color: var(--blue);
-  background-repeat: repeat;
-  background-size: 25%;  
-  background-image: url('/svg/EnbossWallpaperLight.1.svg');
-  background-attachment: fixed;
-  content: "";
+
 }
 
 
-body.dark {
-background-color: var(--ne-blue);
-}
 
-@media only screen and (max-width: 1440px){
-body {
-  background-size: 30%;  
-}
-}
-
-@media only screen and (max-width: 1024px){
-body{
-  background-size: 35%;  
-}
-}
-
-@media only screen and (max-width: 768px){
-body{
-  background-size: 50%;  
-}
-}
-
-@media only screen and (max-width: 480px){
-body {
-  background-size: 100%;  
-}
-}
 
 main {
     padding-top: 64px;
@@ -50,7 +20,7 @@ main {
 .pageContainer {
     width: 100%;
     background-color: var(--amber);
-
+    transition: background-color 0.2s ease-in-out;
   }
 
   
@@ -58,49 +28,47 @@ main {
     width: 100%;
         background-color: var(--blue);
         position: relative;
+        background-repeat: repeat;
+        background-size: 25%;  
+        background-image: url('/svg/EnbossWallpaperLight.1.svg');
+        background-attachment: fixed;
+        transition: background-color 0.2s ease-in-out;
   }
   
-  .background-image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-repeat: repeat;
-    background-size: 25%;  
-    background-image: url("/svg/EnbossWallpaperLight.svg");
-    background-attachment: fixed;
-    opacity: 0.1;
-  }
-
-  @media only screen and (max-width: 1440px){
-    .background-image {
+  body.dark #firstCon {
+    background-color: var(--ne-blue);
+    }
+  
+    
+    @media only screen and (max-width: 1440px){
+      #firstCon {
       background-size: 30%;  
     }
-  }
-
-  @media only screen and (max-width: 1024px){
-    .background-image {
+    }
+    
+    @media only screen and (max-width: 1024px){
+      #firstCon{
       background-size: 35%;  
     }
-  }
-
-  @media only screen and (max-width: 768px){
-    .background-image {
+    }
+    
+    @media only screen and (max-width: 768px){
+    bo#firstCondy{
       background-size: 50%;  
     }
-  }
-
-  @media only screen and (max-width: 480px){
-    .background-image {
+    }
+    
+    @media only screen and (max-width: 480px){
+      #firstCon {
       background-size: 100%;  
     }
-  }
+    }
+
 
   #secondCon {
     background-color: var(--conq);
     width: 100%;
+    transition: background-color 0.2s ease-in-out;
 
   }
 
@@ -122,6 +90,7 @@ main {
     max-width: 681px;
     height: 500px;
     background-color: var(--conq);
+    transition: background-color 0.2s ease-in-out;
   }
 
   #contain3 {
@@ -129,6 +98,8 @@ main {
     max-width: 635px;
     height: 450px;
     background-color: var(--amber);
+    transition: background-color 0.2s ease-in-out;
+
   }
 
   .topEnboss {
@@ -341,6 +312,8 @@ main {
     font-size: 1.375rem;
     padding-top: 30px;
     background-color: var(--anti-white);
+    transition: background-color 0.2s ease-in-out;
+
   }
   
   .newParks {
@@ -722,6 +695,7 @@ main {
 .image-scroll {
   background-color: var(--anti-white);
   height: 650px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .center {
