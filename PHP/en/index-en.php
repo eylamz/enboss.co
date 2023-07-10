@@ -54,11 +54,6 @@
   <?php include('../../view/en/english-header.php'); ?>
 <main class="body-move">
   <!--- First Container-->
-  <button id="colorButton" class="toggle-button">
-    <span class="active-mode"><img src="https://enboss.co/images/SVG/lightMode.svg" style="vertical-align: middle;" alt="light mode"></span>
-    <span class="inactive-mode"><img src="https://enboss.co/images/SVG/darkMode.svg" style="vertical-align: middle;" alt="dark mode"></span>
-    <div class="toggle-circle"></div>
-  </button>
   <section class= "pageContainer" id="firstCon">
   <div class="top-container" id="contain1">
     <div class="topEnboss" aria-label="enboss">

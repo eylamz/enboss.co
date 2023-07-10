@@ -69,18 +69,42 @@
           <span class="burger-line"></span>
         </div>
        <div class="menu" id="menu" aria-label="navigation links">
-       <button id="colorButton" class="toggle-button">
-          <span class="active-mode"><img src="/images/SVG/lightMode.svg" style="vertical-align: middle;" alt="light mode"></span>
-          <span class="inactive-mode"><img src="/images/SVG/darkMode.svg" style="vertical-align: middle;" alt="dark mode"></span>
-          <div class="toggle-circle"></div>
-        </button>
-        <ul class="menu-inner" id="in-menu" aria-label="navigation links">
-           <li class="menu-item"><a href="/en" class="menu-link" aria-label="home page">Home</a></li>
-           <li class="menu-item"><a href="/en/skateparks" class="menu-link" aria-label="skateparks page">Skateparks</a></li>
-           <li class="menu-item"><a href="/en/info-zone" class="menu-link" aria-label="articles page">Info Zone</a></li>
-           <li class="menu-item"><a href="/en/contact" class="menu-link" aria-label="contact page">Contact</a></li>
-           <li class="menu-item"><a href="/en/about" class="menu-link" aria-label="about us page">About</a></li>
-        </ul>
+
+       <ul class="menu-inner" id="in-menu" aria-label="navigation links">
+   <li class="menu-item"><a href="/en" class="menu-link" aria-label="home page">Home</a></li>
+   <li class="menu-item"><a href="/en/skateparks" class="menu-link" aria-label="skateparks page">Skateparks</a></li>
+   <li class="menu-item"><a href="/en/info-zone" class="menu-link" aria-label="articles page">Info Zone</a></li>
+   <li class="menu-item"><a href="/en/contact" class="menu-link" aria-label="contact page">Contact</a></li>
+   <li class="menu-item"><a href="/en/about" class="menu-link" aria-label="about us page">About</a></li>
+   <button id="colorButton" class="toggle-button">
+      <span class="active-mode"><img src="http://localhost/PROJECTS/enboss.co/images/SVG/lightMode.svg" style="vertical-align: middle;" alt="light mode"></span>
+      <span class="inactive-mode"><img src="http://localhost/PROJECTS/enboss.co/images/SVG/darkMode.svg" style="vertical-align: middle;" alt="dark mode"></span>
+      <div class="toggle-circle"></div>
+   </button>
+</ul>
+
+<script>
+   function moveButton() {
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var button = document.getElementById('colorButton');
+      var homePage = document.querySelector('#in-menu .menu-item a[href="/en"]');
+      var aboutPage = document.querySelector('#in-menu .menu-item a[href="/en/about"]');
+      var ul = document.getElementById('in-menu');
+
+      if (screenWidth < 999 && !button.parentNode.classList.contains('moved')) {
+         ul.insertBefore(button, homePage.parentNode);
+         button.parentNode.classList.add('moved');
+      } else if (screenWidth >= 999 && button.parentNode.classList.contains('moved')) {
+         ul.insertBefore(button, aboutPage.parentNode.nextSibling);
+         button.parentNode.classList.remove('moved');
+      }
+   }
+
+   // Call the moveButton function initially and whenever the window is resized
+   moveButton();
+   window.addEventListener('resize', moveButton);
+</script>
+
 
         <ul class="social-ul">
            <li class="social-item"><a href="https://www.youtube.com/@enboss2136" target="_blank" aria-label="enboss youtube page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><defs><style>.front-icon1{fill-rule:evenodd;}</style></defs><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><path class="front-Icon1" d="M32.37,15.45h0s-.24-1.66-.99-2.38c-.94-.96-1.99-.96-2.48-1.02-3.46-.24-8.65-.24-8.65-.24,0,0-5.19,0-8.65,.24-.48,.06-1.53,.06-2.48,1.02-.75,.73-.99,2.39-.99,2.39-.15,1.29-.23,2.59-.24,3.9v1.82c.01,1.3,.09,2.6,.24,3.9,0,0,.24,1.66,.98,2.4,.94,.96,2.18,.93,2.73,1.03,1.98,.18,8.41,.24,8.41,.24,0,0,5.2,0,8.65-.25,.48-.06,1.54-.06,2.48-1.02,.74-.73,.98-2.39,.98-2.39,.15-1.29,.23-2.59,.24-3.9v-1.83c-.01-1.3-.1-2.6-.25-3.9h0Zm-14.67,7.93v-6.76l6.68,3.39-6.68,3.37Z"/></g></g></svg></a></li>
