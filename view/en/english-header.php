@@ -71,7 +71,7 @@
        <div class="menu" id="menu" aria-label="navigation links">
 
        <ul class="menu-inner" id="in-menu" aria-label="navigation links">
-   <li class="menu-item"><a href="/en" class="menu-link" aria-label="home page">Home</a></li>
+   <li class="menu-item" ><a href="/en" class="menu-link" aria-label="home page">Home</a></li>
    <li class="menu-item"><a href="/en/skateparks" class="menu-link" aria-label="skateparks page">Skateparks</a></li>
    <li class="menu-item"><a href="/en/info-zone" class="menu-link" aria-label="articles page">Info Zone</a></li>
    <li class="menu-item"><a href="/en/contact" class="menu-link" aria-label="contact page">Contact</a></li>
@@ -146,91 +146,91 @@
    </div>
   <?php include('english-search.php'); ?>
   </header>
-<script> // Dark Mode switcher 
-const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+<script> // Dark Mode switcher  
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-document.addEventListener('DOMContentLoaded', function() {
-  if (prefersDark) {
-    document.body.classList.add('dark');
+  document.addEventListener('DOMContentLoaded', function() {
+    if (prefersDark) {
+      document.body.classList.add('dark');
+      var toggleCircle = document.querySelector('.toggle-circle');
+      var colorButton = document.getElementById('colorButton');
+      toggleCircle.style.backgroundColor = 'var(--ne-logo)';
+      colorButton.classList.add('active');
+      colorButton.style.backgroundColor = 'var(--ne-light-grey)';
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
+    }
+
+    const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
+    if (darkModeSwitcher) {
+      darkModeSwitcher.addEventListener('click', function(e) {
+        document.body.classList.toggle('dark');
+        e.preventDefault();
+        const isDarkMode = document.body.classList.contains('dark');
+        updateMetaThemeColor(isDarkMode ? '#202124' : '#f0f2f4');
+      });
+    }
+  });
+
+  var colorButton = document.getElementById('colorButton');
+  var isColorChanged = false;
+  var isActive = false;
+
+  colorButton.addEventListener('click', function() {
+    var body = document.body;
+    var activeMode = document.querySelector('.active-mode');
+    var inactiveMode = document.querySelector('.inactive-mode');
     var toggleCircle = document.querySelector('.toggle-circle');
-    var colorButton = document.getElementById('colorButton');
-    toggleCircle.style.backgroundColor = 'var(--ne-logo)';
-    colorButton.classList.add('active');
-    colorButton.style.backgroundColor = 'var(--ne-light-grey)';
-    updateMetaThemeColor('#202124'); // var(--ne-grey)
+    var toggleButton = document.querySelector('.toggle-button');
+
+    isActive = !isActive;
+
+    if (isColorChanged) {
+      toggleButton.style.backgroundColor = 'var(--text-light)';
+      isColorChanged = false;
+    } else {
+      toggleButton.style.backgroundColor = 'var(--ne-light-grey)';
+      isColorChanged = true;
+    }
+
+    if (isActive) {
+      toggleCircle.style.backgroundColor = 'var(--ne-logo)';
+      colorButton.classList.add('active');
+      body.classList.add('dark');
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
+    } else {
+      toggleCircle.style.backgroundColor = '#f0f2f4';
+      colorButton.classList.remove('active');
+      body.classList.remove('dark');
+      updateMetaThemeColor('#f0f2f4');
+    }
+  });
+
+  // Function to update the meta theme-color value
+  function updateMetaThemeColor(color) {
+    var metaThemeColor = document.querySelector("meta[name='theme-color']");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', color);
+    } else {
+      var newMetaTag = document.createElement('meta');
+      newMetaTag.setAttribute('name', 'theme-color');
+      newMetaTag.setAttribute('content', color);
+      document.head.appendChild(newMetaTag);
+    }
   }
 
-  const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
-  if (darkModeSwitcher) {
-    darkModeSwitcher.addEventListener('click', function(e) {
-      document.body.classList.toggle('dark');
-      e.preventDefault();
-      const isDarkMode = document.body.classList.contains('dark');
-      updateMetaThemeColor(isDarkMode ? '#202124' : '#f0f2f4');
-    });
-  }
-});
-
-var colorButton = document.getElementById('colorButton');
-var isColorChanged = false;
-var isActive = false;
-
-colorButton.addEventListener('click', function() {
-  var body = document.body;
-  var activeMode = document.querySelector('.active-mode');
-  var inactiveMode = document.querySelector('.inactive-mode');
-  var toggleCircle = document.querySelector('.toggle-circle');
-  var toggleButton = document.querySelector('.toggle-button');
-
-  isActive = !isActive;
-
-  if (isColorChanged) {
-    toggleButton.style.backgroundColor = 'var(--text-light)';
-    isColorChanged = false;
-  } else {
-    toggleButton.style.backgroundColor = 'var(--ne-light-grey)';
+  // Set the button to active if the user is already in dark mode
+  if (prefersDark) {
+    isActive = true;
     isColorChanged = true;
-  }
-
-  if (isActive) {
-    toggleCircle.style.backgroundColor = 'var(--ne-logo)';
-    colorButton.classList.add('active');
-    body.classList.add('dark');
-    updateMetaThemeColor('#202124'); // var(--ne-grey)
+    colorButton.style.backgroundColor = 'var(--ne-light-grey)';
+    updateMetaThemeColor('#000000');
   } else {
-    toggleCircle.style.backgroundColor = '#f0f2f4';
-    colorButton.classList.remove('active');
-    body.classList.remove('dark');
+    colorButton.style.backgroundColor = 'var(--text-light)';
     updateMetaThemeColor('#f0f2f4');
   }
-});
 
-// Function to update the meta theme-color value
-function updateMetaThemeColor(color) {
-  var metaThemeColor = document.querySelector("meta[name='theme-color']");
-  if (metaThemeColor) {
-    metaThemeColor.setAttribute('content', color);
-  } else {
-    var newMetaTag = document.createElement('meta');
-    newMetaTag.setAttribute('name', 'theme-color');
-    newMetaTag.setAttribute('content', color);
-    document.head.appendChild(newMetaTag);
-  }
-}
-
-// Set the button to active if the user is already in dark mode
-if (prefersDark) {
-  isActive = true;
-  isColorChanged = true;
-  colorButton.style.backgroundColor = 'var(--ne-light-grey)';
-  updateMetaThemeColor('#000000');
-} else {
-  colorButton.style.backgroundColor = 'var(--text-light)';
-  updateMetaThemeColor('#f0f2f4');
-}
-
-</script>
-  <script>
+  </script>  
+<script>// URL CHAGNER BUTTON SCRIPT
     document.getElementById("urlChanger").addEventListener("click", function(event) {
       event.preventDefault();
       
@@ -262,7 +262,7 @@ if (prefersDark) {
 
 
 
-<script>
+<script> //SIDE MENU SCRIPT
         const navbarMenu = document.getElementById("menu");
     const burgerMenu = document.getElementById("burger");
     const headerMenu = document.getElementById("header");
@@ -332,6 +332,9 @@ if (prefersDark) {
     
     // End of Header JavaScript
     </script>
+
+
+
 
 </body>
 </html>
