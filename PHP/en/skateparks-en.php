@@ -27,7 +27,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Skateparks CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/parks.css" />
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/parks.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 <script> // filtering parks function

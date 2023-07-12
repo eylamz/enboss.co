@@ -13,6 +13,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -131,12 +132,12 @@ footer {
     text-decoration: none;
     font-size: 1rem;
     color: var(--light-blue);
+    transition: color 0.15s ease-in-out
 
 }
 
 .skateparks-des a:hover{
     color: var(--dark-blue);
-    transition: linear 0.3s;
 }
 
 #link-all {
@@ -197,8 +198,9 @@ footer {
 
 
 .copyright {
-    max-width: 100%;
+    max-width: 100vw;
     background-color: var(--anti-white);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .copyright p{
