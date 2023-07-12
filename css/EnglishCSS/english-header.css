@@ -509,15 +509,12 @@ header {
       .is-active .social-ul {
         display: block;
         position: fixed;
-        bottom: 0;
+        bottom: 0; 0; */
         right: 7px;
         padding: 20px;
         animation: fade-in 1.70s ease forwards;
- 
- 
         transform: translateY(200px);
         max-width: 185.5px;
-
       }
 
       .social-ul li {
@@ -774,8 +771,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     background-color: #f0f2f4;
     border-radius: 20px;
     padding: 2px;
@@ -820,7 +817,7 @@ header {
 @media only screen and (max-width: 999px) {
     /*  ColorMode Button  */
     #colorButton {
-      padding: 0;
+      margin-top: -20px;
   }
   
   #colorButton img {
@@ -831,8 +828,8 @@ header {
   
   .toggle-button {
       width: 60px;
-      height: 30px;
-      border-radius: 20px;
+      height: 60px;
+      border-radius: 10px;
       padding: 2px;
       transition: all 0.3s ease;
     }
@@ -850,15 +847,25 @@ header {
     .active-mode {
       padding-left: 3px;
       margin-right: 2px;
+      display: block;
+            transition: all 0.3s ease;
+
   
     }
     
     .inactive-mode {
       padding-right: 0px;
       margin-left: 2px;
+      display: none;
+
     }
   
-    #colorButton.active .toggle-circle {
-      transform: translateX(30px);
+    #colorButton.active .active-mode {
+       display: none;
     }
+  
+    #colorButton.active .inactive-mode {
+      display: block;
+    }
+
 }
