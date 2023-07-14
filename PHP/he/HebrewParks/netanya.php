@@ -166,8 +166,8 @@
   <div class="list-img">
     <ul>
       <li><strong>שעות פתיחה :</strong></li>
-      <li><strong>כל השבוע :</strong> 08:00-00:00</li>
-      <li><strong>חופשות וחגים :</strong> 08:00-01:00</li>
+      <li><strong>כל השבוע :</strong> 08:00-23:00</li>
+      <li><strong>חופשות וחגים :</strong> 08:00-00:00</li>
       <hr>
       <li><strong>כתובת :</strong></li>
       <li>פארק אגם שלולית החורף, שדרות בן גוריון, נתניה.</li>

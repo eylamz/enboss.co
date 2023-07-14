@@ -170,8 +170,8 @@
 <div class="list-img">
   <ul>
     <li><strong>Opening hours :</strong></li>
-    <li><strong>Every day :</strong> 08:00-00:00</li>
-    <li><strong>Holidays :</strong> 08:00-01:00</li>
+    <li><strong>Every day :</strong> 08:00-23:00</li>
+    <li><strong>Holidays :</strong> 08:00-00:00</li>
     <hr>
     <li><strong>Address :</strong></li>
       <li>Winter Puddle Park, Sderot Ben Gurion, Netanya.</li>
