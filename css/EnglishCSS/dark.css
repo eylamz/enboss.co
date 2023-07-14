@@ -1,236 +1,236 @@
 
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-    :root {
-      --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-         0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-top: -10px -150px 60px 0px rgba(0, 0, 0, 0.1),
-         0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --text-shadow: 0px 0px 13px rgba(0,0,0,0.3);
-      --svg-black-shadow: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.25));
-      --svg-white-shadow: drop-shadow(0px 0px 5px rgb(255 255 255 / 0.2));
-      --img-shadow-white: 0px 0px 14px 3px rgba(255,255,255,0.15);
-      --img-shadow: 0px 0px 14px 3px rgba(0,0,0,0.15);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+:root {
+  --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-top: -10px -150px 60px 0px rgba(0, 0, 0, 0.1),
+     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --text-shadow: 0px 0px 13px rgba(0,0,0,0.3);
+  --svg-black-shadow: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.25));
+  --svg-white-shadow: drop-shadow(0px 0px 5px rgb(255 255 255 / 0.2));
+  --img-shadow-white: 0px 0px 14px 3px rgba(255,255,255,0.15);
+  --img-shadow: 0px 0px 14px 3px rgba(0,0,0,0.15);
 
 
-      --white: #fff;
-      --img-back: #eaeaea;
-      --text: #a5a5a7;
-      --text-dark: #545459;
-      --text-light: #bfbfc0;
+  --white: #fff;
+  --img-back: #eaeaea;
+  --text: #a5a5a7;
+  --text-dark: #545459;
+  --text-light: #bfbfc0;
 
-      --dark-blue: hsl(219, 50%, 15%);
-      --blue: hsl(219, 50%, 22%);
-      --light-blue: hsla(219, 50%, 40%, 1);
-      --lighter-blue: hsla(219, 50%, 95%, 1);
-      --anti-white: hsl(210, 15%, 95%);
+  --dark-blue: hsl(219, 50%, 15%);
+  --blue: hsl(219, 50%, 22%);
+  --light-blue: hsla(219, 50%, 40%, 1);
+  --lighter-blue: hsla(219, 50%, 95%, 1);
+  --anti-white: hsl(210, 15%, 95%);
 
-      --anti-text:hsl(210, 15%, 95%);
-      --anti-text-2:hsl(210, 15%, 95%);
-      
-      --anti-grey: hsla(210, 14%, 90%, 1);
-      --dark-grey: hsla(210, 14%, 85%, 1);
-      --darker-grey: hsl(210, 0%, 35%);
+  --anti-text:hsl(210, 15%, 95%);
+  --anti-text-2:hsl(210, 15%, 95%);
+  
+  --anti-grey: hsla(210, 14%, 90%, 1);
+  --dark-grey: hsla(210, 14%, 85%, 1);
+  --darker-grey: hsl(210, 0%, 35%);
 
-      --zomp: hsla(168, 58%, 41%, 1);
-      --light-munsell: hsla(192, 73%,46%,1);
-      --munsell: hsla(192, 73%, 36%,1);
-      --light-amber: hsl(45, 100%, 60%);
-      --amber: hsl(45, 100%, 50%);
-      --light-conq: hsl(13, 90%, 61%);
-      --dark-conq: hsl(13, 90%, 41%);
-      --conq: hsl(13, 90%, 51%); 
-      --dark-sham: hsl(140, 33%, 36%);
-      --sham: hsl(140, 33%, 46%);
-      --light-sham: hsl(140, 33%, 56%);
-              /*   g#7DDF64    */
+  --zomp: hsla(168, 58%, 41%, 1);
+  --light-munsell: hsla(192, 73%,46%,1);
+  --munsell: hsla(192, 73%, 36%,1);
+  --light-amber: hsl(45, 100%, 60%);
+  --amber: hsl(45, 100%, 50%);
+  --light-conq: hsl(13, 90%, 61%);
+  --dark-conq: hsl(13, 90%, 41%);
+  --conq: hsl(13, 90%, 51%); 
+  --dark-sham: hsl(140, 33%, 36%);
+  --sham: hsl(140, 33%, 46%);
+  --light-sham: hsl(140, 33%, 56%);
+          /*   g#7DDF64    */
 
 
-              --body-dark: #1a1a1a;
-              --ne-logo: #D9E1F2;
-              --ne-grey: #202124;
-              --ne-anti: #F1F3F4;
-              --anti-white: hsl(210, 15%, 95%);
-              --ne-blue: #0C1017;
-              --ne-light-blue : hsl(219 60% 50%);
-              --ne-lighter-blue : hsl(219 60% 50%);
-              --ne-dark-anti: #9AA0A6;
-              --ne-light-grey: #35363A;
-              --ne-light-anti: #BDC1C6;
-              --ne-sec-text: #cacaca;
-              --ne-amber: hsl(45 100% 48% / 1);
-              --ne-amber-act: hsla(45, 100%, 50%, 1);
-              --ne-conq: hsl(13 76% 52% / 1);
-              --gold: #d7c179;
-              --gold-hover: #e9cb67;
-              
+          --body-dark: #1a1a1a;
+          --ne-logo: #D9E1F2;
+          --ne-grey: #202124;
+          --ne-anti: hsl(200, 12%, 95%);
+          --anti-white: hsl(210, 15%, 95%);
+          --ne-blue: #0C1017;
+          --ne-light-blue : hsl(219 60% 50%);
+          --ne-lighter-blue : hsl(219 60% 60%);
+          --ne-dark-anti: #9AA0A6;
+          --ne-light-grey: #35363A;
+          --ne-light-anti: #BDC1C6;
+          --ne-sec-text: #cacaca;
+          --ne-amber: hsl(45 100% 48% / 1);
+          --ne-amber-act: hsla(45, 100%, 50%, 1);
+          --ne-conq: hsl(13 76% 52% / 1);
+          --gold: #d7c179;
+          --gold-hover: #e9cb67;
+          
 
-    }
+}
 
 
 
 
 .dark{ 
 
-  .navbar, .navi {/*dark header*/
-    background: var(--ne-grey);  
-  }
+.navbar, .navi {/*dark header*/
+background: var(--ne-grey);  
+}
 
-  .menu.is-active {
-    background: var(--ne-grey);
-  }
+.menu.is-active {
+background: var(--ne-grey);
+}
 
-  .brand {
-    fill: var(--ne-logo);
+.brand {
+fill: var(--ne-logo);
 
-  }
+}
 
-  .brand:hover{
-    fill: var(--anti-white);
-  }
+.brand:hover{
+fill: var(--anti-white);
+}
 
-  .menu-link {
-    color: var(--ne-logo);
-  }
+.menu-link {
+color: var(--ne-logo);
+}
 
-  .menu-link:hover{
-    color: var(--anti-white);
-  }
+.menu-link:hover{
+color: var(--anti-white);
+}
 
-  .menu-block {
-    fill: var(--ne-logo);
-  }
+.menu-block {
+fill: var(--ne-logo);
+}
 
-  .menu-block:hover{
-    fill: var(--anti-white);
-  }
+.menu-block:hover{
+fill: var(--anti-white);
+}
 
-  .menu-item:hover{
-    color: var(--anti-white);
-  }
+.menu-item:hover{
+color: var(--anti-white);
+}
 
-  .is-active.menu-item:hover{
-    color: var(--anti-white);
-  }
+.is-active.menu-item:hover{
+color: var(--anti-white);
+}
 
-  .search-icon svg {
-    fill: var(--ne-logo);
-  }
+.search-icon svg {
+fill: var(--ne-logo);
+}
 
-  .search-icon svg:hover {
-    fill: var(--anti-white);
-  }
+.search-icon svg:hover {
+fill: var(--anti-white);
+}
 
-  .burger-line {
-    background-color: var(--ne-logo);
-  }
+.burger-line {
+background-color: var(--ne-logo);
+}
 
-  .burger.is-active > .burger-line:nth-child(1) {
-    background-color: var(--ne-dark-anti);
-  }
+.burger.is-active > .burger-line:nth-child(1) {
+background-color: var(--ne-dark-anti);
+}
 
-  .burger.is-active > .burger-line:nth-child(3) {
-    background-color: var(--ne-dark-anti);
-  }
+.burger.is-active > .burger-line:nth-child(3) {
+background-color: var(--ne-dark-anti);
+}
 
-  #my-svg {
-    stroke: var(--ne-logo);
-  }
+#my-svg {
+stroke: var(--ne-logo);
+}
 
-  #my-svg:hover {
-    stroke: var(--anti-white);
-  }
+#my-svg:hover {
+stroke: var(--anti-white);
+}
 
-  #my-svg:hover[class="disable"]
-  line.handle {
-    stroke: var(--anti-white) !important;
-  }
+#my-svg:hover[class="disable"]
+line.handle {
+stroke: var(--anti-white) !important;
+}
 
-  #my-svg[class="disable"]
-    line.handle {
-    stroke: var(--ne-logo) !important;
-  }
+#my-svg[class="disable"]
+line.handle {
+stroke: var(--ne-logo) !important;
+}
 
-  .back-Icon1 {
-    fill: hsla(221, 49%, 90%, .2);
-  }
+.back-Icon1 {
+fill: hsla(221, 49%, 90%, .2);
+}
 
-  .front-Icon1 {
-    fill: hsla(221, 49%, 90%, .7);
-  }
+.front-Icon1 {
+fill: hsla(221, 49%, 90%, .7);
+}
 
-  #my-svg.clicked .glass { 
-    animation-name: zoom-out;
-    animation-duration: .4s;
-      animation-fill-mode: forwards;
-    transition: all 0.3s ease-in-out
-  }
-  
-  #my-svg.clicked .handle { 
-    animation-name: move-up;
-    animation-duration: .4s;
-      animation-fill-mode: forwards;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  
-  #my-svg.clicked .handle3 {
-    animation-name: move-spin;
-    animation-duration: .4s;
-      animation-fill-mode: forwards;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  @keyframes zoom-outDark {
-    0% {
+#my-svg.clicked .glass { 
+animation-name: zoom-out;
+animation-duration: .4s;
+  animation-fill-mode: forwards;
+transition: all 0.3s ease-in-out
+}
+
+#my-svg.clicked .handle { 
+animation-name: move-up;
+animation-duration: .4s;
+  animation-fill-mode: forwards;
+transition: all 0.3s ease-in-out;
+}
+
+
+#my-svg.clicked .handle3 {
+animation-name: move-spin;
+animation-duration: .4s;
+  animation-fill-mode: forwards;
+transition: all 0.3s ease-in-out;
+}
+
+@keyframes zoom-outDark {
+0% {
+  transform: scale(1);
+}
+
+100% {
+  stroke-width: 1.5px;
+  transform: scale(1.125);
+  stroke: var(--light-blue);
+}
+}
+
+@keyframes move-up {
+0% {
+  transform: translate(0, 0) rotate(0deg);
+      stroke-width:2.1px;
       transform: scale(1);
-    }
+}
+50% {
+  transform: scale(1);
+  stroke-width:1.8px;
 
-    100% {
-      stroke-width: 1.5px;
-      transform: scale(1.125);
-      stroke: var(--light-blue);
-    }
-  }
-  
-  @keyframes move-up {
-    0% {
-      transform: translate(0, 0) rotate(0deg);
-          stroke-width:2.1px;
-          transform: scale(1);
-    }
-    50% {
-      transform: scale(1);
-      stroke-width:1.8px;
+}
+100% {
+  transform-origin: 165% 165%;
+  transform: translate(-37%, -37%);
+  stroke-width:1.1px;
+  transform: scale(1.4);
+  stroke: var(--light-blue);
+}
+}
 
-    }
-    100% {
-      transform-origin: 165% 165%;
-      transform: translate(-37%, -37%);
-      stroke-width:1.1px;
-      transform: scale(1.4);
-      stroke: var(--light-blue);
-    }
-  }
-  
-  @keyframes move-spin {
-    0% {
-      transform-origin: 100% 100%;
-      transform: translate(-50%, 50%);
-      stroke: var(--blue);
-      opacity: 0;
-    }
+@keyframes move-spin {
+0% {
+  transform-origin: 100% 100%;
+  transform: translate(-50%, 50%);
+  stroke: var(--blue);
+  opacity: 0;
+}
 
-    80% {
-      opacity: 0;
-      transform: translate(-20%, 20%);
+80% {
+  opacity: 0;
+  transform: translate(-20%, 20%);
 
-    }
-    100% {
-      stroke: var(--light-blue);
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
+}
+100% {
+  stroke: var(--light-blue);
+  transform: translate(0, 0);
+  opacity: 1;
+}
+}
 
 
 
@@ -240,310 +240,300 @@
 
 /* PARKS DARK CSS */
 .park-container .park-menu .btn {
-  color: var(--body-dark);
-  background-color: hsla(45, 100%, 40%, 0.788);
+color: var(--body-dark);
+background-color: hsla(45, 100%, 40%, 0.788);
 }
 
 .park-container .park-menu .btn.active {
-  background-color: hsla(45, 100%, 50%, 0.788);
-  color: var(--body-dark);
+background-color: hsla(45, 100%, 50%, 0.788);
+color: var(--body-dark);
 }
 .itemImg {
-  background-color: var(--ne-grey)!important;
+background-color: var(--ne-grey)!important;
 }
 
 
 
 /*SEARCH BAR DARK CSS */
 
-  .search-box {
-    background-color: var(--ne-grey);
-  }
+.search-box {
+background-color: var(--ne-grey);
+}
 
-  .searchRow input {
-    color: var(--ne-logo);
-    background: var(--ne-light-grey);
-  }
+.searchRow input {
+color: var(--ne-logo);
+background: var(--ne-light-grey);
+}
 
-  .result-box ul {
-    background: var(--ne-grey);
-  }
+.result-box ul {
+background: var(--ne-grey);
+}
 
-  .result-box ul li {
-    color: var(--ne-dark-anti);
-  }
+.result-box ul li {
+color: var(--ne-dark-anti);
+}
 
-  .result-box ul li:hover {
-    color: var(--ne-logo);
-  }
+.result-box ul li:hover {
+color: var(--ne-logo);
+}
 
 
 
 
-  /* ABOUT DARK CSS */
-
-  .about-container {
-    background-color: var(--ne-blue);
-  }
+/* ABOUT DARK CSS */
 
-  .about {
-    background-color: var(--ne-blue);
-    color: var(--ne-logo);
-    }
+.about-container {
+background-color: transparent;
+}
 
-  .about svg{
-    fill: var(--ne-amber);
-  }
+.about {
+color: var(--ne-logo);
+}
 
-  .about h2 {
-    color: var(--ne-amber);
-  }
-  
-  .about h3 {
-    color: var(--ne-amber);
-  }
+.about svg{
+fill: var(--ne-amber);
+}
 
-  .about h4 {
-    color: var(--ne-logo);
-  }
+.about h2 {
+color: var(--ne-amber);
+}
 
-  .about p {
-    color: var(--ne-sec-text);
+.about h3 {
+color: var(--ne-amber);
+}
 
-  }
-  .social button {
-    background: var(--ne-amber);
-    color: var(--ne-blue);
-  }
+.about h4 {
+color: var(--ne-logo);
+}
 
-  .social button:hover {
-    background: var(--ne-amber-act);
-    color: var(--ne-blue);
-  }
-  
+.about p {
+color: var(--ne-sec-text);
 
-  /* CONTACT DARK CSS */
+}
+.social button {
+background: var(--ne-amber);
+color: var(--ne-blue);
+}
 
-  .container-con {
-    background: var(--body-dark);
-    background-image: url('/svg/EnbossWallpaperLight.1.svg');
+.social button:hover {
+background: var(--ne-amber-act);
+color: var(--ne-blue);
+}
 
-  }
 
+/* CONTACT DARK CSS */
 
-  
-  .container-con svg{
-    fill: var(--anti-white);
-  }
 
-  .container-con h3 {
-    color: var(--anti-white);
-  }
+.container-con svg{
+fill: var(--anti-white);
+}
 
-  .container-con p {
-    color: var(--anti-white);
-  }
+.container-con h3 {
+color: var(--anti-white);
+}
 
-  .container-con p a {
-    background: var(--anti-white);
-    color: var(--ne-grey);
-  }
+.container-con p {
+color: var(--anti-white);
+}
 
-  .container-con p a:hover {
-    color: var(--anti-white);
-    background: var(--light-blue);
-  }
+.container-con p a {
+color: var(--white);
+}
 
-  .contact-page form input, form textarea {
-    background: var(--ne-light-grey);
-    color: var(--white);
-  }
+.container-con p a:hover {
+color: var(--ne-light-blue);
+}
 
-  .contact-page input{
-    background: var(--ne-light-grey);
-    color: var(--white);
-  }
+.contact-page form input, form textarea {
+background: var(--ne-light-grey);
+color: var(--white);
+}
 
-  .contact-page form ::placeholder {
-    color: var(--ne-dark-anti);
-  } 
+.contact-page input{
+background: var(--ne-light-grey);
+color: var(--white);
+}
 
-  .contact-page form:focus ::placeholder {
-    color: var(--ne-dark-anti);
-  }
+.contact-page form ::placeholder {
+color: var(--ne-dark-anti);
+} 
 
-  .contact-page button {
-    background: var(--ne-light-grey);
-    color: var(--anti-white);
-  }
+.contact-page form:focus ::placeholder {
+color: var(--ne-dark-anti);
+}
 
-  .contact-page button:hover {
-    background: var(--light-blue);
-    color: var(--anti-white);
-  }
+.contact-page button {
+background: var(--ne-light-grey);
+color: var(--anti-white);
+}
 
+.contact-page button:hover {
+background: var(--light-blue);
+color: var(--anti-white);
+}
 
 
 
 
 
-  /* HOME DARK CSS */
 
-  .topEnboss {
-    fill: var(--ne-light-blue);
-  }
-  
-  #line1 {
-    border-color: var(--ne-light-blue);
-  }
+/* HOME DARK CSS */
 
-  .heading{
-    color: var(--ne-anti);
-  }
+.topEnboss {
+fill: var(--ne-light-blue);
+}
 
-  .para {
-    color: var(--ne-sec-text);
-  }
+#line1 {
+border-color: var(--ne-light-blue);
+}
 
-  #contain1 button {
-    color: var(--ne-blue);
-    background-color: var(--ne-light-blue);
-  }
+.heading{
+color: var(--ne-anti);
+}
 
-  .image-scroll {
-    background-color: var(--ne-light-anti);
-  }
+.para {
+color: var(--ne-sec-text);
+}
 
-  .newParks-div {
-    background-color: var(--ne-light-anti);
-  }
+#contain1 button {
+color: var(--ne-blue);
+background-color: var(--ne-light-blue);
+}
 
-  .newParksTitle {
-    color: var(--ne-blue);
-  }
+.image-scroll {
+background-color: var(--ne-light-anti);
+}
 
-  .viewMore {
-    color: var(--ne-blue);
-    background-color: var(--ne-light-blue);
-  }
+.newParks-div {
+background-color: var(--ne-light-anti);
+}
 
-  #contain2 {
-    background-color: var(--ne-conq);
-  }
+.newParksTitle {
+color: var(--ne-blue);
+}
 
-  #secondCon {
-    background-color: var(--ne-conq);
-  }
+.viewMore {
+color: var(--ne-blue);
+background-color: var(--ne-light-blue);
+}
 
-  .pageContainer {
-    background-color: var(--ne-amber);
-  }
+#contain2 {
+background-color: var(--ne-conq);
+}
 
-  #contain3 {
-    background-color: var(--ne-amber);
-  }
+#secondCon {
+background-color: var(--ne-conq);
+}
 
-  #headCount {
-    color: var(--ne-grey);
-  }
+.pageContainer {
+background-color: var(--ne-amber);
+}
 
-  #heading3 {
-    color: var(--ne-grey);
-  }
+#contain3 {
+background-color: var(--ne-amber);
+}
 
-  #thisIs {
-    color: var(--ne-light-grey);
-  }
+#headCount {
+color: var(--ne-grey);
+}
 
-  #doYou {
-    color: var(--ne-light-grey);
-  }
+#heading3 {
+color: var(--ne-grey);
+}
 
-  .contact button {
-    color: var(--ne-anti);
-    background-color: var(--ne-conq);
-  }
+#thisIs {
+color: var(--ne-light-grey);
+}
 
+#doYou {
+color: var(--ne-light-grey);
+}
 
+.contact button {
+color: var(--ne-anti);
+background-color: var(--ne-conq);
+}
 
 
 
 
-  .footer-main {  /* FOOTER DARK CSS */
 
-    background-color: var(--ne-grey);
-  
 
-  #enbossLogo {
-    fill: var(--ne-light-blue);
-  }
+.footer-main {  /* FOOTER DARK CSS */
 
-  .logo #enbossLogo:hover{
-    fill: var(--ne-lighter-blue);
-  }
+background-color: var(--ne-grey);
 
-  .logo-des {
-    color:var(--ne-dark-anti);
-  }
 
-  .logo a {
-    color: var(--ne-logo);
-  }
+#enbossLogo {
+fill: var(--ne-light-blue);
+}
 
-  .logo a:hover {
-    color: var(--ne-light-blue);
-  }
+.logo #enbossLogo:hover{
+fill: var(--ne-lighter-blue);
+}
 
-  .back-Icon {
-      fill: hsla(221, 49%, 90%, .1);
-  }
-  .front-Icon {
-      fill: hsla(221, 49%, 90%, .7);
-  }
-  .back-Icon:hover {
-    fill: hsla(221, 49%, 90%, .15);
-  }
-  .front-Icon:hover {
-    fill: hsla(221, 49%, 90%, 1);
-  }
+.logo-des {
+color:var(--ne-dark-anti);
+}
 
-  .row h3 {
-    color: var(--ne-anti);
-  }
+.logo a {
+color: var(--ne-logo);
+}
 
-  .main-foot h3:hover {
-    color: var(--anti-white);
-  }
+.logo a:hover {
+color: var(--ne-light-blue);
+}
 
-  .footer-header{
-    color: var(--ne-anti);
-  }
+.back-Icon {
+  fill: hsla(221, 49%, 90%, .1);
+}
+.front-Icon {
+  fill: hsla(221, 49%, 90%, .7);
+}
+.back-Icon:hover {
+fill: hsla(221, 49%, 90%, .15);
+}
+.front-Icon:hover {
+fill: hsla(221, 49%, 90%, 1);
+}
 
-  .skateparks-des a{
-    color: var(--ne-anti);
-  }
+.row h3 {
+color: var(--ne-anti);
+}
 
-  .skateparks-des a:hover{
-    color: var(--ne-dark-anti);
-  }
+.main-foot h3:hover {
+color: var(--anti-white);
+}
 
-  #link-all {
-    color: var(--anti-white);
-  }
+.footer-header{
+color: var(--ne-anti);
+}
 
-  /* EDITED IN ENLIGSH-FOOTER.CSS
-   .copyright {
-    background-color: var(--ne-light-grey);
-  }
+.skateparks-des a{
+color: var(--ne-anti);
+}
 
-  .copyright p{
-    color: var(--ne-light-anti);
-  } */     
+.skateparks-des a:hover{
+color: var(--ne-dark-anti);
+}
+
+#link-all {
+color: var(--anti-white);
+}
+
+/* EDITED IN ENLIGSH-FOOTER.CSS
+.copyright {
+background-color: var(--ne-light-grey);
+}
+
+.copyright p{
+color: var(--ne-light-anti);
+} */     
 }
 /*            --ne-anti: #d9e1f2;
-              --anti-white: hsl(210, 15%, 95%);
-              --ne-blue: #0C1017;
-              --ne-dark-anti: #C7D1E6; 
+          --anti-white: hsl(210, 15%, 95%);
+          --ne-blue: #0C1017;
+          --ne-dark-anti: #C7D1E6; 
 */
 
 

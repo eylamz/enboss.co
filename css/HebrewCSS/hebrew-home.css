@@ -125,8 +125,8 @@ body {
   #heading1 {
     opacity: 0;
     animation-name: fade-in-up;
-    animation-duration: 1s;
-    animation-delay: 0.5s; 
+    animation-duration: .8s;
+    animation-delay: 0.35s; 
     animation-fill-mode: forwards;
   }
 
@@ -139,8 +139,8 @@ body {
     margin-top: 25px;
     opacity: 0;
     animation-name: fade-in-up;
-    animation-duration: 1.5s;
-    animation-delay: 2s; 
+    animation-duration: .6s;
+    animation-delay: .65s; 
     animation-fill-mode: forwards;
     font-size: 1.25rem;
   }
@@ -151,15 +151,15 @@ body {
 #atEnboss {
   opacity: 0;
   animation-name: fade-in-up;
-  animation-duration: 1.5s;
-  animation-delay: 1.5s; 
+  animation-duration: .8s;
+  animation-delay: .5s; 
   animation-fill-mode: forwards;
 }
  #line1 {
   opacity: 0;
   animation-name: line-fade-in-up;
-  animation-duration: 1s;
-  animation-delay: 1s; 
+  animation-duration: .8s;
+  animation-delay: .4s; 
   animation-fill-mode: forwards;
  }
 

@@ -57,7 +57,7 @@ table {
       --img-shadow: 0px 0px 14px 3px rgba(0,0,0,0.15);
 
 
-      
+      --white: #fff;
       --img-back: #eaeaea;
       --text: #a5a5a7;
       --text-dark: #545459;
@@ -345,7 +345,7 @@ header {
         position: fixed;
         flex-direction: row;
         column-gap: 1.75rem;
-        top: -95px;
+        top: -105px;
         left: 35vw;        
       }
     }
@@ -502,19 +502,20 @@ header {
         align-items: end;
         padding: 0 20px;
         row-gap: 1.25rem;
-        margin-top: 5rem;
+        margin-top: 65px;
       }
 
       @media only screen and (min-height: 480px) {
       .is-active .social-ul {
         display: block;
         position: fixed;
-        bottom: 0; 
+        bottom: 0;
         right: 7px;
         padding: 20px;
-        animation: fade-in 1.1s ease forwards;
-        transform: translateY(260px);
+        animation: fade-in 1.70s ease forwards;
+        transform: translateY(200px);
         max-width: 185.5px;
+
       }
 
       .social-ul li {
@@ -530,7 +531,7 @@ header {
         opacity: 0;
       }
       75%{
-        transform: translateY(240px);
+        transform: translateY(200px);
       }
       100% {
         opacity: 1;
@@ -763,15 +764,20 @@ header {
 
   /*  ColorMode Button  */
    #colorButton {
-    position: fixed;
+    position: relative;
     border: none;
     cursor: pointer;
     outline: none;
     padding: 0;
+    overflow: visible;
+    background-color: hsla(219, 50%, 22%, .1);
+    transition: all 0.3s ease;
+
 }
 
-#colorButton img {
-    margin: 0;
+#colorButton svg {
+    margin-bottom: -6px;
+  margin-left: 0px;
     padding: 0;
     width: 70%;
 }
@@ -779,12 +785,10 @@ header {
 .toggle-button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60px;
-    height: 60px;
-    background-color: #f0f2f4;
-    border-radius: 20px;
-    padding: 2px;
+    vertical-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     transition: all 0.3s ease;
   }
   
@@ -792,94 +796,50 @@ header {
   .inactive-mode {
     user-select: none;
     pointer-events: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
   
-  .toggle-circle {
-    position: absolute;
-    top: 1.5px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  .active#colorButton {
+    background-color: hsla(221, 49%, 90%, .075);
   }
-  
   .active-mode {
-    padding-left: 2px;
-    margin-right: 0px;
-
+    display:none;
   }
+
   
   .inactive-mode {
-    padding-right: 0px;
-    margin-left: 0px;
+    display:block;
+    animation: zom-in .3s ease forwards;
   }
-  
-  #colorButton.active .toggle-circle {
-    transform: translateX(20px);
+
+
+  .active .active-mode {
+    display:block;
+    animation: zom-in .3s ease forwards;
+
   }
+
+  .active .inactive-mode {
+    display:none;
+  }
+
+  @keyframes zom-in { 
+    0% {
+      transform: scale(0);
+    }
+
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 
 
 @media only screen and (max-width: 999px) {
-    /*  ColorMode Button  */
-    #colorButton {
-      display: none;
-    }
-   .is-active #colorButton {
-    display: block;
-  margin-top: 0;
-  bottom: 174px;
-  right: 33px;
-  animation: fade-in 1.1s ease forwards;
-  transform: translateY(260px);
-  }
-  
-  #colorButton img {
-      margin: 0;
-      padding: 0;
-      width: 60%;
-  }
-  
-  .toggle-button {
-      width: 60px;
-      height: 60px;
-      border-radius: 10px;
-      padding: 2px;
-      transition: all 0.3s ease;
-    }
-    
-    .toggle-circle {
-      top: 2px;
-      left: 2px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-    
-    .active-mode {
-      padding-left: 3px;
-      margin-right: 2px;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    
-    .inactive-mode {
-      padding-right: 0px;
-      margin-left: 2px;
-      display: none;
-    }
-  
-    #colorButton.active .active-mode {
-       display: none;
-    }
-  
-    #colorButton.active .inactive-mode {
-      display: block;
-    }
-
+  /*  ColorMode Button  */
+   #colorButton {
+    margin-bottom: -5px;
 }

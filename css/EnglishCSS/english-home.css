@@ -30,38 +30,39 @@ main {
         position: relative;
         background-repeat: repeat;
         background-size: 25%;  
-        background-image: url('/svg/EnbossWallpaperLight.1.svg');
+        background-image: url('/svg/EnbossWallpaperLight.1.png');
         background-attachment: fixed;
         transition: background-color 0.2s ease-in-out;
   }
   
-  body.dark #firstCon {
-    background-color: var(--ne-blue);
+    .dark #firstCon {
+      background-color: var(--ne-blue);
+      background-image: url('/svg/EnbossWallpaperLight.1.png');
+    
     }
-  
     
     @media only screen and (max-width: 1440px){
-      #firstCon {
-      background-size: 30%;  
-    }
+      .dark#firstCon, #firstCon{
+        background-size: 30%;  
+      }
     }
     
     @media only screen and (max-width: 1024px){
-      #firstCon{
-      background-size: 35%;  
-    }
+      .dark#firstCon, .#firstCon{
+        background-size: 35%;  
+      }
     }
     
     @media only screen and (max-width: 768px){
-    bo#firstCondy{
-      background-size: 50%;  
-    }
+      .dark#firstCon, #firstCon{
+        background-size: 50%;  
+      }
     }
     
     @media only screen and (max-width: 480px){
-      #firstCon {
-      background-size: 100%;  
-    }
+      .dark#firstCon, #firstCon{
+        background-size: 100%;  
+      }
     }
 
 
@@ -145,8 +146,8 @@ main {
   #heading1 {
       opacity: 0;
       animation-name: fade-in-up;
-      animation-duration: 1s;
-      animation-delay: 0.5s; 
+      animation-duration: .8s;
+      animation-delay: 0.35s; 
       animation-fill-mode: forwards;
     }
 
@@ -160,8 +161,8 @@ main {
       margin-top: 25px;
       opacity: 0;
       animation-name: fade-in-up;
-      animation-duration: 1.5s;
-      animation-delay: 2s; 
+      animation-duration: .6s;
+      animation-delay: .65s; 
       animation-fill-mode: forwards;
     }
     #contain1 button:hover {
@@ -171,15 +172,15 @@ main {
   #atEnboss {
     opacity: 0;
     animation-name: fade-in-up;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s; 
+    animation-duration: .8s;
+    animation-delay: .5s; 
     animation-fill-mode: forwards;
   }
    #line1 {
     opacity: 0;
     animation-name: line-fade-in-up;
-    animation-duration: 1s;
-    animation-delay: 1s; 
+    animation-duration: .8s;
+    animation-delay: .4s; 
     animation-fill-mode: forwards;
 
    }
@@ -665,17 +666,17 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 90%);
+  background: #d9d7d7;
  }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 76%);
+  background: hsl(0, 0%, 100%);
   border-radius: 15px;
-  opacity: 0.5 ;
+  opacity: 0.75 ;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 66%);
+  background: #e7e7e7;
 }
 
 /* image scroll section */

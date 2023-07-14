@@ -1,175 +1,169 @@
 
 body {
-    background: var(--white);
-    margin: 0px;
-    font-family: 'Poppins',sans-serif !important;
+  background: hsl(0 0% 98% / 1);
+  margin: 0px;
+  font-family: 'Poppins',sans-serif !important;
 }
 body.dark {
-  background-color: var(--body-dark);
+background-color: var(--body-dark);
 }
 
 
 
 
-  
+
 .container-con {
-    padding-top: 100px;
-    width: 100%;
-    height: 100%;
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 50px;
-    background-repeat: repeat;
-    background-size: 25%;  
-    background-image: url('/svg/EnbossWallpaper0.1.svg');
-    background-attachment: fixed;
-    content: "";
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  background: hsl(0 0% 98% / 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background-repeat: repeat;
+  background-size: 25%;  
+  background-image: url('/svg/EnbossWallpaper0.1.png');
+  background-attachment: fixed;
+}
+
+.dark .container-con {
+background-color: var(--body-dark);
+background-image: url('/svg/EnbossWallpaperLight.1.png');
+
 }
 
 @media only screen and (max-width: 1440px){
-  .dark.container-con, .container-con{
-    background-size: 30%;  
-  }
+.dark.container-con, .container-con{
+  background-size: 30%;  
+}
 }
 
 @media only screen and (max-width: 1024px){
-  .dark.container-con, .container-con{
-    background-size: 35%;  
-  }
+.dark.container-con, .container-con{
+  background-size: 35%;  
+}
 }
 
 @media only screen and (max-width: 768px){
-  .dark.container-con, .container-con{
-    background-size: 50%;  
-  }
+.dark.container-con, .container-con{
+  background-size: 50%;  
+}
 }
 
 @media only screen and (max-width: 480px){
-  .dark.container-con, .container-con{
-    background-size: 100%;  
-  }
+.dark.container-con, .container-con{
+  background-size: 100%;  
+}
 }
 
 form {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 0 auto 50px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 0 auto 50px;
 }
 
 .container-con svg{
-    width: 105px;
-    fill: var(--blue);
-    margin: 10px auto 0;
+  width: 105px;
+  fill: var(--blue);
+  margin: 10px auto 0;
 }
 
 .container-con h3 {
-    color: var(--blue);
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+  text-align: center;
 }
 .container-con p {
-    color: var(--blue);
-    font-weight: 700;
-    font-size: 1.15rem;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.5rem;
+  color: var(--light-blue);
+  font-weight: 500;
+  font-size: 1.15rem;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .container-con p a {
-    padding: 2px 9px 3px;
-    background: var(--blue);
-    color: var(--anti-white);
-    font-size: 1rem;
-    line-height: 1rem;
-    border: 0;
-    font-weight: 700;
-    outline: none;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 30px;
+  color: var(--blue);
+  font-size: 1.3rem;
+  line-height: 1rem;
+  border: 0;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 30px;
 }
 
 .container-con p a:hover {
-        background: var(--light-blue);
-        transition: linear .3s;
-    }
+      transition: color .3s ease-in-out;
+      color: var(--ne-light-blue);
+  }
 
 .parag {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
 }
 
 form input, form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: var(--anti-white);
-    font-size: 1.15rem;
-    border-radius: 15px;
-    color: var(--white);
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: var(--white);
+  font-size: 1.15rem;
+  border-radius: 15px;
+  color: var(-ne-grey);
 }
 
 
 form ::placeholder {
-    color: #8b8b8b;
+  color: #8b8b8b;
 }
 
 form:focus ::placeholder {
-    color: #8b8b8b;
+  color: #8b8b8b;
 }
 
 form button {
-    padding: 5px;
-    background: var(--blue);
-    color: var(--anti-white);
-    font-size: 1.25rem;
-    border: 0;
-    font-weight: 600;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 30px;
+  padding: 5px;
+  background: var(--white);
+  color: var(--blue);
+  font-size: 1.25rem;
+  border: 0;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
 }
 
- form button:hover {
-    background: var(--light-blue);
-    color: var(--anti-white);
-    transition: linear .3s;
+form button:hover {
+  background: var(--ne-light-blue);
+  color: var(--white);
+  transition: background-color .3s ease-in-out;
 }
 
 @media only screen and (max-width: 480px) {
-    .container-con p {
-        font-size: 1.1rem;
-        line-height: 1.2rem;
-    }
+  .container-con p {
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+  }
 
-    .container-con .parag {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-    }
-    
-    .container-con p a {
-        padding: 0 8px 2px;
-        font-size: 0.8rem;
-        border: 0;
-        font-weight: 700;
-        outline: none;
-        cursor: pointer;
-        width: 100px;
-        margin-left: 1px;
-        border-radius: 30px;
-    }
+  .container-con .parag {
+      line-height: 1.5rem;
+  }
+  
+  .container-con p a {
+      font-size: 1.1rem;
+      font-weight: 700;
+  }
 }

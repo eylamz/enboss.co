@@ -99,8 +99,8 @@
   </g>
   </g>
         </svg> Team</h3>
-        <p>Questions, Adding a Park, Recommendations, and Collaboration</p>
-        <p class="parag">For a faster response, please send us a message on<a href="https://instagram.com/enboss_official" target="_blank">Instagram</a></p>            
+        <p>Questions, Adding a Park, Recommendations, and Collaboration.</p>
+        <p class="parag">For a faster response, please send us a message on <a href="https://instagram.com/enboss_official" target="_blank">Instagram</a></p>            
         <form class="contact-page" method="post" onsubmit="handleSubmit(event)">
             <input type="text" id="name" placeholder="Your name" required>
             <input type="email" id="email" placeholder="Email id" required>
