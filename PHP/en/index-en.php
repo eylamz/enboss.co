@@ -31,6 +31,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Home CSS File-->
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/english-footer.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />

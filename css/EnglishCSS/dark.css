@@ -80,12 +80,12 @@
   }
 
   .brand {
-    fill: var(--ne-light-blue);
+    fill: var(--ne-logo);
 
   }
 
   .brand:hover{
-    fill: var(--ne-lighter-blue);
+    fill: var(--anti-white);
   }
 
   .menu-link {
