@@ -52,12 +52,13 @@ footer {
     text-decoration: none;
     color: var(--blue);
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .logo a:hover {
     color: var(--light-blue);
     font-weight: 700;
-    transition: linear 0.3s;
 }
 
 .social-icons {
@@ -226,4 +227,10 @@ footer {
 
 .dark #copyright p{
     color: var(--ne-light-anti);
+  }
+
+
+  .main-foot {
+    transition: all 0.3s ease-in-out;
+
   }
