@@ -509,11 +509,11 @@ header {
       .is-active .social-ul {
         display: block;
         position: fixed;
-        bottom: 0; 0; */
+        bottom: 0; 
         right: 7px;
         padding: 20px;
-        animation: fade-in 1.70s ease forwards;
-        transform: translateY(200px);
+        animation: fade-in 1.1s ease forwards;
+        transform: translateY(260px);
         max-width: 185.5px;
       }
 
@@ -530,7 +530,7 @@ header {
         opacity: 0;
       }
       75%{
-        transform: translateY(200px);
+        transform: translateY(240px);
       }
       100% {
         opacity: 1;
@@ -763,7 +763,7 @@ header {
 
   /*  ColorMode Button  */
    #colorButton {
-    position: relative;
+    position: fixed;
     border: none;
     cursor: pointer;
     outline: none;
@@ -826,7 +826,15 @@ header {
 @media only screen and (max-width: 999px) {
     /*  ColorMode Button  */
     #colorButton {
-      margin-top: -20px;
+      display: none;
+    }
+   .is-active #colorButton {
+    display: block;
+  margin-top: 0;
+  bottom: 174px;
+  right: 33px;
+  animation: fade-in 1.1s ease forwards;
+  transform: translateY(260px);
   }
   
   #colorButton img {
@@ -857,16 +865,13 @@ header {
       padding-left: 3px;
       margin-right: 2px;
       display: block;
-            transition: all 0.3s ease;
-
-  
+      transition: all 0.3s ease;
     }
     
     .inactive-mode {
       padding-right: 0px;
       margin-left: 2px;
       display: none;
-
     }
   
     #colorButton.active .active-mode {

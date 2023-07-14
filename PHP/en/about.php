@@ -30,7 +30,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English About CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/english-about.css" />
+           <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co//css/EnglishCSS/english-about.css" />
   
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
