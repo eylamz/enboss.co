@@ -61,6 +61,7 @@
           --ne-amber: hsl(45 100% 48% / 1);
           --ne-amber-act: hsla(45, 100%, 50%, 1);
           --ne-conq: hsl(13 76% 52% / 1);
+          --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
           
@@ -403,6 +404,10 @@ color: var(--ne-blue);
 background-color: var(--ne-light-blue);
 }
 
+#contain1 button:hover {
+  background-color: var(--ne-lighter-blue);
+}
+
 .image-scroll {
 background-color: var(--ne-light-anti);
 }
@@ -418,6 +423,10 @@ color: var(--ne-blue);
 .viewMore {
 color: var(--ne-blue);
 background-color: var(--ne-light-blue);
+}
+
+.viewMore:hover {
+  background-color: var(--ne-lighter-blue);
 }
 
 #contain2 {
@@ -456,6 +465,12 @@ color: var(--ne-light-grey);
 color: var(--ne-anti);
 background-color: var(--ne-conq);
 }
+
+.contact button:hover {
+  color: var(--ne-anti);
+  background-color: var(--ne-light-conq);
+  }
+
 
 
 

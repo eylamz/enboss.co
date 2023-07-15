@@ -842,4 +842,10 @@ header {
   /*  ColorMode Button  */
    #colorButton {
     margin-bottom: -5px;
+  }
+}
+
+
+header.g:hover {
+  fill: var(--ne-light-blue);
 }

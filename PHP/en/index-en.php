@@ -187,11 +187,12 @@
             <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/bat-yam.webp">
             <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/bat-yam.webp">
             <img src="/images/ParkGallery-webp/bat-yam.webp" alt="bat yam skatepark" />
-        </picture>
-      </a>
+          </picture>
+        </a>
           <div class="text1"><h2>Bat Yam</h2></div>
           <div class="text2"><h2>NEW</h2></div>
       </div>
+
       <div class="images">
         <a href="/en/skateparks/ramat-gan-2">
           <picture>
@@ -200,46 +201,75 @@
             <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ramat-gan(2).webp">
             <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ramat-gan(2).webp">
             <img src="/images/ParkGallery-webp/ramat-gan(2).webp" alt="ramat gan skatepark" />
-        </picture>
-      </a>
-          <div class="text1"><h2>Ramat Gan</h2></div>
-          <div class="text2"><h2>NEW</h2></div>
-      </div>
-        <div class="images">
-          <a href="/en/skateparks/hadera">
-            <picture>
-                <source media="(max-width: 480px)" srcset="/images/Park480-webp/hadera.webp">
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/hadera.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/hadera.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/hadera.webp">
-                <img src="/images/ParkGallery-webp/hadera.webp" alt="hadera skatepark" />
-            </picture>
-          </a>
-            <div class="text1"><h2>Hadera</h2></div>
-        </div>
-        <div class="images ">
-          <a href="/en/skateparks/zichron-yaakov">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/zichron-yaakov.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/zichron-yaakov.webp">
-              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/zichron-yaakov.webp">
-              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/zichron-yaakov.webp">
-              <img src="/images/ParkGallery-webp/zichron-yaakov.webp" alt="zichron yaakov skatepark" />
           </picture>
         </a>
-            <div class="text1"><h2>Zichron Ya'akov</h2></div>
+        <div class="text1"><h2>Ramat Gan</h2></div>
+        <div class="text2"><h2>NEW</h2></div>
+      </div>
+
+      <div class="images">
+            <a href="/en/skateparks/kiryat-ata">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
+                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="kiryat ata skatepark" />
+              </picture>
+            </a>
+            <div class="text1"><h2>Kiryat Ata</h2></div>
         </div>
+
         <div class="images">
+        <a href="/en/skateparks/dimona">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
+            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
+            <img src="/images/ParkGallery-webp/dimona.webp" alt="dimona skatepark" />
+          </picture>
+        </a>
+        <div class="text1"><h2>Dimona</h2></div>
+    </div>
+
+    <div class="images ">
+          <a href="/en/skateparks/kiryat-gat">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-gat.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-gat.webp">
+              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-gat.webp">
+              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-gat.webp">
+              <img src="/images/ParkGallery-webp/kiryat-gat.webp" alt="kiryat gat skatepark" />
+            </picture>
+          </a>
+          <div class="text1"><h2>Kiryat Gat</h2></div>
+        </div>
+
+    <div class="images">
+          <a href="/en/skateparks/nahariya">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
+              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
+              <img src="/images/ParkGallery-webp/nahariya.webp" alt="nahariya skatepark" />
+          </picture>
+        </a>
+          <div class="text1"><h2>Nahariya</h2></div>
+      </div>
+
+      <div class="images">
           <a href="/en/skateparks/lod">
             <picture>
               <source media="(max-width: 480px)" srcset="/images/Park480-webp/lod.webp">
               <source media="(max-width: 768px)" srcset="/images/Park768-webp/lod.webp">
               <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/lod.webp">
               <img src="/images/ParkGallery-webp/lod.webp" alt="lod skatepark" />
-          </picture>
-        </a>
+            </picture>
+          </a>
             <div class="text1"><h2>Lod</h2></div>
         </div>
+
         <div class="images">
           <a href="/en/skateparks/raanana">
             <picture>
@@ -252,41 +282,21 @@
         </a>
             <div class="text1"><h2>Ra'anana</h2></div>
         </div>
+
         <div class="images">
-            <a href="/en/skateparks/kiryat-ata">
-              <picture>
-                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
-                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="kiryat ata skatepark" />
+          <a href="/en/skateparks/hadera">
+            <picture>
+                <source media="(max-width: 480px)" srcset="/images/Park480-webp/hadera.webp">
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/hadera.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/hadera.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/hadera.webp">
+                <img src="/images/ParkGallery-webp/hadera.webp" alt="hadera skatepark" />
             </picture>
           </a>
-            <div class="text1"><h2>Kiryat Ata</h2></div>
+          <div class="text1"><h2>Hadera</h2></div>
         </div>
-        <div class="images">
-          <a href="/en/skateparks/nahariya">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
-              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
-              <img src="/images/ParkGallery-webp/nahariya.webp" alt="nahariya skatepark" />
-          </picture>
-        </a>
-          <div class="text1"><h2>Nahariya</h2></div>
-      </div>
-      <div class="images">
-        <a href="/en/skateparks/dimona">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
-            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
-            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
-            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
-            <img src="/images/ParkGallery-webp/dimona.webp" alt="dimona skatepark" />
-        </picture>
-      </a>
-        <div class="text1"><h2>Dimona</h2></div>
-    </div>
+
+
     </div>
 </div>
 

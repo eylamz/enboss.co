@@ -12,7 +12,6 @@
   <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="403, israel, skatepark, rollerblade, skate, hebrew, jewish, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">

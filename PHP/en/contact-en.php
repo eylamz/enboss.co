@@ -12,7 +12,6 @@
   <meta property="og:description" content="Contact us for exceptional service and personalized solutions.">
   <meta property="og:url" content="http://www.enboss.co/en/contact">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="contact, israel, skatepark, rollerblade, skate, hebrew, jewish, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
@@ -28,9 +27,10 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
  
            <!--English Contact CSS File-->
-<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-contact.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/english-contact.css" />
 
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

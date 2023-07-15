@@ -13,7 +13,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
 }
 
 
@@ -27,7 +27,6 @@ footer {
 
 .logo #enbossLogo:hover{
     fill: var(--light-blue);
-    transition: linear 0.3s;
 }
 
 .logo {
@@ -155,7 +154,7 @@ footer {
 
     .main-foot {
         margin: 5px;
-        margin-top: 30px;
+        margin-top: 13px;
     }
 
     .logo{

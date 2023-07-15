@@ -25,7 +25,7 @@ main {
 
   
   #firstCon {
-    width: 100%;
+        width: 100%;
         background-color: var(--blue);
         position: relative;
         background-repeat: repeat;
@@ -164,6 +164,7 @@ main {
       animation-duration: .6s;
       animation-delay: .65s; 
       animation-fill-mode: forwards;
+      transition: background-color .2s ease-in-out;
     }
     #contain1 button:hover {
       background-color: var(--light-amber);
@@ -300,8 +301,8 @@ main {
     padding: 7px 20px;
     font-weight: 500;
   }
+  
   .contact button:hover {
-    transition: linear 0.3s;
     background-color: var(--light-conq);
   }
 

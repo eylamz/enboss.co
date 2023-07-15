@@ -77,8 +77,10 @@
    <li class="menu-item"><a href="/en/contact" class="menu-link" aria-label="contact page">Contact</a></li>
    <li class="menu-item"><a href="/en/about" class="menu-link" aria-label="about us page">About</a></li>
    <button id="colorButton" class="toggle-button">
-      <span class="active-mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.82 29.82"><defs>
-        <style>.g{opacity:1;}.g{fill:#d9e1f2;}
+      <span class="active-mode"><svg id="lightMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.82 29.82"><defs>
+        <style>
+          .g{opacity:1;}
+          .g{fill:#d9e1f2;}
         </style></defs><g id="a"/><g id="b"><g id="c"><g id="d" class="f"><g id="e"><g><circle class="g" cx="14.91" cy="14.91" r="6.59"/><path class="g" d="M14.9,0h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97h0c-.53,0-.97-.43-.97-.97V.97c0-.54,.43-.97,.97-.97Z"/><path class="g" d="M14.91,29.82h0c-.53,0-.97-.43-.97-.97v-3.69c0-.54,.43-.97,.97-.97h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97Z"/><path class="g" d="M29.82,14.91h0c0,.53-.43,.97-.97,.97h-3.69c-.54,0-.97-.43-.97-.97h0c0-.53,.43-.97,.97-.97h3.69c.54,0,.97,.43,.97,.97Z"/><path class="g" d="M0,14.9H0c0-.53,.43-.96,.97-.96h3.69c.54,0,.97,.43,.97,.96h0c0,.53-.43,.97-.97,.97H.97c-.54,0-.97-.43-.97-.97Z"/><path class="g" d="M25.46,4.37h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0Z"/><path class="g" d="M4.37,25.45h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0Z"/><path class="g" d="M25.46,25.46h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37Z"/><path class="g" d="M4.37,4.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37Z"/></g></g></g></g></g></svg></span>
       <span class="inactive-mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.57 30.32"><defs>
         <style>.f{fill:#1c3054;}</style>

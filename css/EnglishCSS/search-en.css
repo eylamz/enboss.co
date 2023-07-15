@@ -54,6 +54,7 @@
     color: var(--dark-blue);
     margin-left: 2vw;
     background: hsl(210, 15%, 90%);
+    transition: all 0.3s ease-in-out;
 }
 
 
