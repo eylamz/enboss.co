@@ -14,7 +14,6 @@
   <meta property="og:description" content="Experience the Thrill of Extreme Sports in Bat Yam.">
   <meta property="og:url" content="http://www.enboss.co/en/skateparks/bat-yam">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, bat yam, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
@@ -36,6 +35,7 @@
  
            <!--English PrimaryBlue CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -52,8 +52,6 @@
 
       
 <body class="parkBody">
-  <div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../../view/en/english-header.php'); ?>
 

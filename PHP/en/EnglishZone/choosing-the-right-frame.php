@@ -15,7 +15,6 @@
   <meta property="og:description" content="Discover the Secrets to Perfect Frame Selection for Aggressive Skating">  
   <meta property="og:url" content="http://www.enboss.co/en/info-zone/choosing-the-right-frame">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="article, frame, size, flat, anti, rocker, israel, skatepark, rollerblade, skate, hebrew, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
@@ -31,6 +30,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
  
            <!--English article CSS File-->
            <link rel="StyleSheet" href="/css/infoZoneCSS/en/anti-or-flat.css" />

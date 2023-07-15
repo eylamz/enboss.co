@@ -29,6 +29,7 @@
          
           <!--- English 404 CSS File -->
           <link rel="StyleSheet" href="/css/errorCss/500.css" />
+          <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
         <!-- Enboss.co Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -43,7 +44,7 @@
         
   </head>
 
-<body>
+  <body class="Body500">
   <!-- Header Section -->
   <?php include('../view/en/english-header.php'); ?>
   <main class="body-move">
@@ -54,7 +55,7 @@
 	.st0{display:none;}
 	.st1{display:inline;fill:#013B7C;}
 	.st2{fill:var(--anti-grey);}
-	.st3{fill:var(--light-sham);}
+	.st3{fill:var(--light-munsell);}
 	.st4{fill:var(--dark-blue);}
 	.st5{display:inline;}
 	.st6{fill:#ff00cc;}

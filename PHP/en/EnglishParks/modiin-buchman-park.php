@@ -14,7 +14,6 @@
   <meta property="og:description" content="Discover the Excitement of an Adrenaline-Fueled Skatepark Experience">
   <meta property="og:url" content="http://www.enboss.co/en/skateparks/modiin-buchman-park">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, modiin, buchman, park, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
@@ -33,6 +32,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
  
            <!--English PrimaryBlue CSS File-->
 <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
@@ -52,7 +52,6 @@
 
       
 <body class="parkBody">
-  <div class="background-image"></div>
 
 
   <!-- Header Section -->

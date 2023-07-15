@@ -12,7 +12,6 @@
   <meta property="og:description" content="Explore Urban Sports: Articles, Guides, Information, History, and More">  
   <meta property="og:url" content="http://www.enboss.co/en/info-zone">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +27,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
  
            <!--English Skateparks CSS File-->
 <link rel="StyleSheet" href="/css/infoZoneCSS/en/infoZone.css" />
@@ -127,8 +127,6 @@ function shuffle(array) {
 </head>
 
 <body>
-<div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../view/en/english-header.php'); ?>
 <!-- End of Header Section-->

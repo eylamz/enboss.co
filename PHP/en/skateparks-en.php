@@ -12,6 +12,7 @@
   <meta property="og:description" content="Discover the perfect skatepark for your next thrilling adventure!">  
   <meta property="og:url" content="http://www.enboss.co/en/skateparks">
   <meta property="og:site_name" content="ENBOSS">
+  <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Skateparks CSS File-->
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/parks.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/parks.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 <script> // filtering parks function

@@ -29,6 +29,7 @@
 
           <!--- English 404 CSS File -->
           <link rel="StyleSheet" href="/css/errorCss/403.css" />
+          <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 
         <!-- Enboss.co Google tag (gtag.js) -->
@@ -44,7 +45,7 @@
         
   </head>
 
-<body>
+<body class="Body403">
   <!-- Header Section -->
   <?php include('../view/en/english-header.php'); ?>
   <main class="body-move">

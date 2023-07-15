@@ -14,7 +14,6 @@
   <meta property="og:description" content="Unleash Your Skills in an Action-Packed Urban Playground">  
   <meta property="og:url" content="http://www.enboss.co/en/skateparks/ramla">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
   <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, ramla, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
@@ -32,9 +31,10 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
- 
-           <!--English PrimaryBlue CSS File-->
+<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" /> 
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+
+<!--English PrimaryBlue CSS File-->
 <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
@@ -52,9 +52,6 @@
 
       
 <body class="parkBody">
-  <div class="background-image"></div>
-
-
   <!-- Header Section -->
   <?php include('../../../view/en/english-header.php'); ?>
 

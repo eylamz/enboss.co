@@ -1,9 +1,11 @@
 
-body {
-  background: rgb(51,87,153);
-  background: radial-gradient(circle, rgba(51,87,153,1) 56%, rgba(28,48,84,1) 100%);
-      overflow: hidden;
+.Body404 {
+  background: var(--light-blue);
+      overflow-x: hidden;
+      transition: all 0.3s ease-in-out ;
+
 }
+
 .div404 svg {
   height: 100vh;
   width:100vw;
@@ -34,7 +36,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: linear 0.4s;
 
       }
       
@@ -52,13 +53,14 @@ body {
         background: var(--blue);
         border-radius: 1000px;
         padding: 10px 50px;
+        transition: all 0.3s ease-in-out ;
+
         }
 
       
       .Btn:hover{
-        background: var(--light-blue);
-        transition: linear 0.4s;
-  
+        background: hsla(219, 50%, 50%, 1);
+        color: var(--anti-white);
       }
       
 .Btn {
@@ -118,3 +120,27 @@ body {
     80% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
   }
+
+
+  /* DARK 404 CSS */
+
+
+
+    .dark.Body404 {
+      background: var(--ne-blue);
+    }
+
+    .dark .st7 {
+      fill: var(--ne-logo);
+    }
+    
+    .dark .Btn {
+      background-color: var(--dark-blue);
+      color: var(--ne-logo);
+    }
+
+    .dark .Btn:hover {
+      background-color: var(--ne-light-blue);
+      color: var(--anti-white);
+    }
+  

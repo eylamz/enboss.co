@@ -1,8 +1,8 @@
 
 body {
-  background: rgb(79,156,104);
-  background: radial-gradient(circle, rgba(79,156,104,1) 56%, rgba(62,122,82,1) 100%);
-      overflow: hidden;
+  background: var(--munsell);
+  transition: all .3s ease-in-out;
+  overflow: hidden;
 }
 .div500 svg {
   height: 100vh;
@@ -34,7 +34,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: linear 0.4s;
 
       }
       
@@ -49,16 +48,17 @@ body {
         letter-spacing: 0.15rem;
         font-weight: 700;
         color: var(--anti-white);
-        background: var(--blue);
+        background: var(--dark-munsell);
         border-radius: 1000px;
         padding: 10px 50px;
+        transition: all .3s ease-in-out;
+
         }
 
       
       .Btn:hover{
-        background: var(--light-blue);
-        transition: linear 0.4s;
-  
+        color: var(--white);
+        background: var(--light-munsell);
       }
       
       .Btn {
@@ -121,4 +121,31 @@ body {
     }
     80% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
+  }
+
+  
+  /* DARK 500 CSS */
+
+
+
+  .dark.Body500 {
+    background: var(--dark-munsell);
+  }
+
+  .dark .st3 {
+    fill: var(--munsell);
+  }
+
+  .dark .st2 {
+    fill: var(--ne-logo);
+  }
+  
+  .dark .Btn {
+    background-color: var(--munsell);
+    color: var(--ne-logo);
+  }
+
+  .dark .Btn:hover {
+    background-color: var(--light-munsell);
+    color: var(--white);
   }

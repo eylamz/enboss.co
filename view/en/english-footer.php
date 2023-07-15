@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
           <!--- English Footer CSS File -->
-<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-footer.css" />
-<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/dark.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/english-footer.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 </head>
 <body>

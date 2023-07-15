@@ -1,8 +1,8 @@
 
 body {
-  background: rgb(62,122,82);
-  background: radial-gradient(circle, rgba(62,122,82,1) 56%, rgba(34,68,45,1) 100%);
-        overflow: hidden;
+  background: var(--sham);
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out ;
 }
 .div403 svg {
   height: 100vh;
@@ -34,7 +34,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: linear 0.4s;
 
       }
       
@@ -48,16 +47,16 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.15rem;
         font-weight: 700;
-        color: #303B48;
-        background: var(--light-sham);
+        color: var(--anti-white);
+        background: var(--dark-sham);
         border-radius: 1000px;
         padding: 10px 50px;
+        transition: all 0.3s ease-in-out ;
         }
 
       
       .Btn:hover{
-        background: var(--sham);
-        transition: linear 0.1s;
+        background: var(--light-sham);
       }
       
 .Btn {
@@ -117,3 +116,30 @@ body {
     80% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
   }
+
+
+    /* DARK 403 CSS */
+
+
+
+    .dark.Body403 {
+      background: #2f6a42;
+    }
+
+    .dark .st0 {
+      fill: var(--ne-logo);
+    }
+    .dark .st2 {
+      fill: var(--sham);
+    }
+    
+    .dark .Btn {
+      background-color: var(--dark-sham);
+      color: var(--ne-logo);
+    }
+
+    .dark .Btn:hover {
+      background-color: var(--light-sham);
+      color: var(--anti-white);
+    }
+  

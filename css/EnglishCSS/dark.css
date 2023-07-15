@@ -34,6 +34,7 @@
   --zomp: hsla(168, 58%, 41%, 1);
   --light-munsell: hsla(192, 73%,46%,1);
   --munsell: hsla(192, 73%, 36%,1);
+  --dark-munsell: hsla(192, 73%, 26%,1);
   --light-amber: hsl(45, 100%, 60%);
   --amber: hsl(45, 100%, 50%);
   --light-conq: hsl(13, 90%, 61%);
@@ -373,6 +374,8 @@ color: var(--anti-white);
 }
 
 
+
+/* ERRORS DARK CSS */
 
 
 

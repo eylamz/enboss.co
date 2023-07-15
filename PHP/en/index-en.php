@@ -19,6 +19,7 @@
   <meta property="og:description" content="Discover the captivating story of ENBOSS - Unite & Ride">
   <meta property="og:site_name" content="ENBOSS">
   <meta property="og:locale" content="en_US">
+  <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, jewish, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,6 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Home CSS File-->
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/english-footer.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
