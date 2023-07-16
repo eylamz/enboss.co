@@ -735,22 +735,19 @@ header {
   }
   
   .menu.is-active li:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .menu.is-active li:nth-child(3) {
     animation-delay: 0.25s;
   }
   
+  .menu.is-active li:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
   .menu.is-active li:nth-child(4) {
-    animation-delay: 0.4s;
+    animation-delay: 0.75s;
   }
 
   .menu.is-active li:nth-child(5) {
-    animation-delay: 0.55s;
-  }
-    .menu.is-active li:nth-child(6) {
-    animation-delay: 0.7s;
+    animation-delay: 1s;
   }
 
 
@@ -797,22 +794,22 @@ header {
     user-select: none;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 2px;
   }
   
   .active#colorButton {
     background-color: hsla(221, 49%, 90%, .075);
   }
+
   .active-mode {
     display:none;
   }
 
-  
   .inactive-mode {
     display:block;
     animation: zom-in .3s ease forwards;
   }
-
-
+ 
   .active .active-mode {
     display:block;
     animation: zom-in .3s ease forwards;
@@ -843,9 +840,4 @@ header {
    #colorButton {
     margin-bottom: -5px;
   }
-}
-
-
-header.g:hover {
-  fill: var(--ne-light-blue);
 }

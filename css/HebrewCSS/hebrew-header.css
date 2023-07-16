@@ -167,6 +167,7 @@ header {
       background-color: var(--anti-white);
       z-index: 100;
       box-shadow:  var(--shadow-bottom);
+      transition: all .3s ease-in-out;
 
     }
     .navi-he.active {
@@ -181,12 +182,15 @@ header {
       width: 100%;
       height: 64px;
       margin: 0 auto;
+      transition: all .3s ease-in-out;
     }
     
     .brand {
       width: 140px;
       height: 55px;
       fill: var(--blue);
+      transition: all .3s ease-in-out;
+
     }
 
     .brand:hover{
@@ -210,7 +214,7 @@ header {
       font-weight: 700;
       background-color: var(--anti-white);
       z-index: 10;
-
+      transition: all .3s ease-in-out;
     }
     .menu-inner {
       display: flex;
@@ -223,7 +227,7 @@ header {
 
     .menu-link {
       line-height: 1;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
       color: var(--blue);
     }
 
@@ -238,6 +242,7 @@ header {
       height: 26px;
       margin-top: 5px;
       padding: 0;
+      transition: all .3s ease-in-out;
     }
 
 
@@ -292,7 +297,7 @@ header {
       fill: var(--light-blue);
     }
 
-    @media only screen and (min-width: 820px) {
+    @media only screen and (min-width: 850px) {
 
       .navbar {
         height: 80px;
@@ -323,7 +328,7 @@ header {
         position: fixed;
         flex-direction: row;
         column-gap: 1.75rem;
-        top: -95px;
+        top: -105px;
         left: 35vw;        
       }
     }
@@ -348,7 +353,7 @@ header {
       padding: 20px;
 
     }
-    @media only screen and (min-width: 820px) {
+    @media only screen and (min-width: 850px) {
       .burger {
         display: none;
         visibility: hidden;
@@ -461,13 +466,13 @@ header {
     .social-ul {
       display: none;
     }
-    @media only screen and (min-width: 820px) {
+    @media only screen and (min-width: 850px) {
       .nav-icons {
         margin-top: 5px;
       }
     }
 
-    @media only screen and (max-width: 819px) {
+    @media only screen and (max-width: 849px) {
       .nav-icons {
         position: fixed;
         top: 12px;
@@ -482,7 +487,7 @@ header {
         align-items: end;
         padding: 0 20px;
         row-gap: 1.25rem;
-        margin-top: 8rem;
+        margin-top: 65px;
       }
       @media only screen and (min-height: 480px) {
       .is-active .social-ul {
@@ -729,4 +734,89 @@ header {
 }
 .front-Icon1 {
   fill: hsla(219, 50%, 22%, 1);
+}
+
+
+  /*  ColorMode Button  */
+  #colorButton {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    overflow: visible;
+    background-color: hsla(219, 50%, 22%, .1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#colorButton svg {
+    margin-bottom: -6px;
+  margin-left: 0px;
+    padding: 0;
+    width: 70%;
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .active-mode,
+  .inactive-mode {
+    user-select: none;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2px;
+  }
+  
+  .active#colorButton {
+    background-color: hsla(221, 49%, 90%, .075);
+  }
+  .active-mode {
+    display:none;
+  }
+
+  
+  .inactive-mode {
+    display:block;
+    animation: zom-in .3s ease forwards;
+  }
+
+
+  .active .active-mode {
+    display:block;
+    animation: zom-in .3s ease forwards;
+
+  }
+
+  .active .inactive-mode {
+    display:none;
+  }
+
+  @keyframes zom-in { 
+    0% {
+      transform: scale(0);
+    }
+
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+@media only screen and (max-width: 850px) {
+  /*  ColorMode Button  */
+   #colorButton {
+    margin-bottom: -5px;
+  }
 }

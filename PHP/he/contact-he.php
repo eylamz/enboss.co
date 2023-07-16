@@ -31,6 +31,10 @@
  
            <!--English Contact CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-contact.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
+
+<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-contact.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
 
            <!--- English Footer CSS File -->
            <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />

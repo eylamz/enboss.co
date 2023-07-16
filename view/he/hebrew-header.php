@@ -3,6 +3,13 @@
 <meta name="google" content="notranslate">
 <head>
     <link rel="stylesheet" href="/css/HebrewCSS/hebrew-header.css">
+    <link rel="stylesheet" href="/css/HebrewCSS/dark.css">
+
+    <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/dark.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-header.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-footer.css" />
+
+
     <!-- Google Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +81,40 @@
            <li class="menu-item"><a href="/he/info-zone" class="menu-link" aria-label="עמוד מידע">אזור מידע</a></li>
            <li class="menu-item"><a href="/he/contact" class="menu-link" aria-label="עמוד צור קשר">צור קשר</a></li>
            <li class="menu-item"><a href="/he/about" class="menu-link" aria-label="עמוד אודות">עלינו</a></li>
-        </ul>
+   <button id="colorButton" class="toggle-button">
+      <span class="active-mode"><svg id="lightMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.82 29.82"><defs>
+        <style>
+          .g{opacity:1;}
+          .g{fill:#d9e1f2;}
+        </style></defs><g id="a"/><g id="b"><g id="c"><g id="d" class="f"><g id="e"><g><circle class="g" cx="14.91" cy="14.91" r="6.59"/><path class="g" d="M14.9,0h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97h0c-.53,0-.97-.43-.97-.97V.97c0-.54,.43-.97,.97-.97Z"/><path class="g" d="M14.91,29.82h0c-.53,0-.97-.43-.97-.97v-3.69c0-.54,.43-.97,.97-.97h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97Z"/><path class="g" d="M29.82,14.91h0c0,.53-.43,.97-.97,.97h-3.69c-.54,0-.97-.43-.97-.97h0c0-.53,.43-.97,.97-.97h3.69c.54,0,.97,.43,.97,.97Z"/><path class="g" d="M0,14.9H0c0-.53,.43-.96,.97-.96h3.69c.54,0,.97,.43,.97,.96h0c0,.53-.43,.97-.97,.97H.97c-.54,0-.97-.43-.97-.97Z"/><path class="g" d="M25.46,4.37h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0Z"/><path class="g" d="M4.37,25.45h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0Z"/><path class="g" d="M25.46,25.46h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37Z"/><path class="g" d="M4.37,4.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37Z"/></g></g></g></g></g></svg></span>
+      <span class="inactive-mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.57 30.32"><defs>
+        <style>.f{fill:#1c3054;}</style>
+      </defs><g id="a"/><g id="b"><g id="c"><g id="d"><g id="e"><path class="f" d="M23.96,20.8c-8.2,0-14.84-6.65-14.84-14.84,0-2.12,.45-4.13,1.25-5.96C4.33,2.16,0,7.92,0,14.7c0,8.63,7,15.62,15.62,15.62,7.05,0,13.01-4.68,14.95-11.1-1.99,1-4.24,1.57-6.62,1.57h0Z"/></g></g></g></g></svg></span>
+   </button>
+</ul>
+
+<script>
+   function moveButton() {
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var button = document.getElementById('colorButton');
+      var homePage = document.querySelector('#in-menu .menu-item a[href="/he"]');
+      var aboutPage = document.querySelector('#in-menu .menu-item a[href="/he/about"]');
+      var ul = document.getElementById('in-menu');
+
+      if (screenWidth < 850 && !button.parentNode.classList.contains('moved')) {
+         ul.insertBefore(button, homePage.parentNode);
+         button.parentNode.classList.add('moved');
+      } else if (screenWidth >= 850 && button.parentNode.classList.contains('moved')) {
+         ul.insertBefore(button, aboutPage.parentNode.nextSibling);
+         button.parentNode.classList.remove('moved');
+      }
+   }
+
+   // Call the moveButton function initially and whenever the window is resized
+   moveButton();
+   window.addEventListener('resize', moveButton);
+</script>
+
         <ul class="social-ul">
              <li class="social-item"><a href="https://www.youtube.com/@enboss2136" target="_blank" aria-label="enboss youtube page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><defs><style>.front-icon1{fill-rule:evenodd;}</style></defs><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><path class="front-Icon1" d="M32.37,15.45h0s-.24-1.66-.99-2.38c-.94-.96-1.99-.96-2.48-1.02-3.46-.24-8.65-.24-8.65-.24,0,0-5.19,0-8.65,.24-.48,.06-1.53,.06-2.48,1.02-.75,.73-.99,2.39-.99,2.39-.15,1.29-.23,2.59-.24,3.9v1.82c.01,1.3,.09,2.6,.24,3.9,0,0,.24,1.66,.98,2.4,.94,.96,2.18,.93,2.73,1.03,1.98,.18,8.41,.24,8.41,.24,0,0,5.2,0,8.65-.25,.48-.06,1.54-.06,2.48-1.02,.74-.73,.98-2.39,.98-2.39,.15-1.29,.23-2.59,.24-3.9v-1.83c-.01-1.3-.1-2.6-.25-3.9h0Zm-14.67,7.93v-6.76l6.68,3.39-6.68,3.37Z"/></g></g></svg></a></li>
              <li class="social-item"><a href="https://www.tiktok.com/@enboss_official" target="_blank" aria-label="enboss tik-tok page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><defs><style>.front-icon1{fill-rule:evenodd;}</style></defs><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><path class="front-Icon1" d="M23.61,19.68v2.72c0,6.42-7,8.43-9.82,3.83-1.81-2.96-.7-8.16,5.1-8.37v2.85c-.44,.07-.91,.18-1.35,.33-1.29,.44-2.02,1.25-1.82,2.7,.39,2.76,5.46,3.58,5.04-1.82V11.8h2.8c.28,2.4,1.62,3.83,3.95,3.98v2.7c-1.35,.13-2.54-.31-3.91-1.14v2.34Z"/></g></g></svg></a></li>
@@ -114,6 +154,74 @@
   <?php include('hebrew-search.php'); ?>
   </header>
 
+  <script> // Dark Mode switcher  
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (prefersDark) {
+      document.body.classList.add('dark');
+      var colorButton = document.getElementById('colorButton');
+      colorButton.classList.add('active');
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
+    }
+
+    const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
+    if (darkModeSwitcher) {
+      darkModeSwitcher.addEventListener('click', function(e) {
+        document.body.classList.toggle('dark');
+        e.preventDefault();
+        const isDarkMode = document.body.classList.contains('dark');
+        updateMetaThemeColor(isDarkMode ? '#202124' : '#f0f2f4');
+      });
+    }
+  });
+
+  var colorButton = document.getElementById('colorButton');
+  var isColorChanged = false;
+  var isActive = false;
+
+  colorButton.addEventListener('click', function() {
+    var body = document.body;
+    var activeMode = document.querySelector('.active-mode');
+    var inactiveMode = document.querySelector('.inactive-mode');
+    var toggleButton = document.querySelector('.toggle-button');
+
+    isActive = !isActive;
+
+    if (isActive) {
+      colorButton.classList.add('active');
+      body.classList.add('dark');
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
+    } else {
+      colorButton.classList.remove('active');
+      body.classList.remove('dark');
+      updateMetaThemeColor('#f0f2f4');
+    }
+  });
+
+  // Function to update the meta theme-color value
+  function updateMetaThemeColor(color) {
+    var metaThemeColor = document.querySelector("meta[name='theme-color']");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', color);
+    } else {
+      var newMetaTag = document.createElement('meta');
+      newMetaTag.setAttribute('name', 'theme-color');
+      newMetaTag.setAttribute('content', color);
+      document.head.appendChild(newMetaTag);
+    }
+  }
+
+  // Set the button to active if the user is already in dark mode
+  if (prefersDark) {
+    isActive = true;
+    isColorChanged = true;
+    updateMetaThemeColor('#000000');
+  } else {
+    updateMetaThemeColor('#f0f2f4');
+  }
+
+  </script>  
   <script>
     document.getElementById("urlChanger").addEventListener("click", function(event) {
       event.preventDefault();

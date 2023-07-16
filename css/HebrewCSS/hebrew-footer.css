@@ -15,7 +15,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
-
+    transition: all .3s ease-in-out;
 }
 
 
@@ -29,7 +29,7 @@ footer {
 
 .logo #enbossLogo:hover{
     fill: var(--light-blue);
-    transition: linear 0.3s;
+    transition: all .3s ease-in-out;
 }
 
 .logo {
@@ -54,12 +54,12 @@ footer {
     text-decoration: none;
     color: var(--blue);
     font-weight: 600;
+    transition: all .3s ease-in-out;
 }
 
 .logo a:hover {
     color: var(--light-blue);
     font-weight: 700;
-    transition: linear 0.3s;
 }
 
 .social-icons {
@@ -95,7 +95,9 @@ footer {
 .row h3 {
     font-weight: 700;
     margin: 25px 0 20px;
-    color: var(--blue);}
+    color: var(--blue);
+    transition: all .3s ease-in-out;
+}
 
 .skateparks-des a {
     color: var(--light-blue);
@@ -104,7 +106,6 @@ footer {
 
 .main-foot h3:hover {
     color: var(--light-blue);
-    transition: linear 0.3s;
 }
 
 
@@ -135,11 +136,11 @@ footer {
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.3rem;
+    transition: all .3s ease-in-out;
 }
 
 .skateparks-des a:hover{
     color: var(--dark-blue);
-    transition: linear 0.3s;
 }
 
 
@@ -241,3 +242,19 @@ footer {
 }
 
 /*            End of Footer CSS            */
+
+
+
+.dark #copyright {
+    background-color: var(--ne-light-grey);
+  }
+
+.dark #copyright p{
+    color: var(--ne-light-anti);
+  }
+
+
+  .main-foot {
+    transition: all 0.3s ease-in-out;
+
+  }

@@ -4,53 +4,56 @@
 body {
   overflow-x: hidden;
   background-color: var(--blue);
-
 }
 
 /* first and second Container CSS */
-
 .pageContainer {
-    width: 100%;
-    background-color: var(--amber);
-  }
+  width: 100%;
+  background-color: var(--amber);
+  transition: all 0.3s ease-in-out;
+}
 
-  #firstCon {
-    width: 100%;
-        background-color: var(--blue);
-        position: relative;
-          background-repeat: repeat;
-          background-size: 25%;  
-          background-image: url('/svg/EnbossWallpaperLight.1.svg');
-          background-attachment: fixed;
-        }
+
+#firstCon {
+      width: 100%;
+      background-color: var(--blue);
+      position: relative;
+      background-repeat: repeat;
+      background-size: 25%;  
+      background-image: url('/svg/EnbossWallpaperLight.1.png');
+      background-attachment: fixed;
+      transition: all 0.3s ease-in-out;
+    }
+
+  .dark #firstCon {
+    background-color: var(--ne-blue);
+    background-image: url('/svg/EnbossWallpaperLight.1.png');
   
-
-
-
+  }
+  
   @media only screen and (max-width: 1440px){
-    .background-image {
+    .dark#firstCon, #firstCon{
       background-size: 30%;  
     }
   }
-
+  
   @media only screen and (max-width: 1024px){
-    .background-image {
+    .dark#firstCon, #firstCon{
       background-size: 35%;  
     }
   }
-
+  
   @media only screen and (max-width: 768px){
-    .background-image {
+    .dark#firstCon, #firstCon{
       background-size: 50%;  
     }
   }
-
+  
   @media only screen and (max-width: 480px){
-    .background-image {
+    .dark#firstCon, #firstCon{
       background-size: 100%;  
     }
   }
-
 
 
   #secondCon {
@@ -79,12 +82,14 @@ body {
     max-width: 635px;
     height: 500px;
     background-color: var(--conq);
+    transition: background-color 0.3s ease-in-out;
   }
 
   #contain3 {
     width: 100%;
     max-width: 635px;
     height: 450px;
+    transition: background-color 0.3s ease-in-out;
   }
 
   .topEnboss {
@@ -93,10 +98,8 @@ body {
     max-width: 350px;
     fill: var(--amber);
     z-index: 1;
-  }
-
-  .topEnboss {
     animation: bounce 0.5s ease;
+    transition: all .3s ease-in-out;
   }
 
   @keyframes bounce {
@@ -143,6 +146,7 @@ body {
     animation-delay: .65s; 
     animation-fill-mode: forwards;
     font-size: 1.25rem;
+    transition: all 0.3s ease-in-out;
   }
   #contain1 button:hover {
     background-color: var(--light-amber);
@@ -154,13 +158,16 @@ body {
   animation-duration: .8s;
   animation-delay: .5s; 
   animation-fill-mode: forwards;
+  transition: all 0.3s ease-in-out;
 }
+
  #line1 {
   opacity: 0;
   animation-name: line-fade-in-up;
   animation-duration: .8s;
   animation-delay: .4s; 
   animation-fill-mode: forwards;
+  transition: all 0.3s ease-in-out;
  }
 
  @keyframes fade-in-up {
@@ -256,9 +263,9 @@ body {
     background-color: var(--conq);
     border-radius: 36px;
     padding: 7px 20px;
+    transition: all .3s ease-in-out;
   }
   .contact button:hover {
-    transition: linear 0.3s;
     background-color: var(--light-conq);
   }
 
@@ -271,6 +278,7 @@ body {
     font-size: 1.5rem;
     padding-top: 30px;
     background-color: var(--anti-white);
+    transition: all .3s ease-in-out;
   }
   
   .newParks {
@@ -281,12 +289,14 @@ body {
     align-items: center;
     box-sizing: border-box;
     padding: 0 15px;
+    transition: all .3s ease-in-out;
   }
   
   .newParksTitle {
     margin: 0;
     color: var(--blue);
     font-weight: 700;
+    transition: all .3s ease-in-out;
   }
   
   .viewMore {
@@ -299,6 +309,8 @@ body {
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.15rem;
+    transition: all .3s ease-in-out;
+
   }
 
   .viewMore:hover {
@@ -626,6 +638,7 @@ body {
 .image-scroll {
   background-color: var(--anti-white);
   height: 650px;
+  transition: all .3s ease-in-out;
 }
 
 .center {
@@ -645,7 +658,7 @@ body {
   padding: 1rem 20px;
   margin-left: -10vw;
   margin-right: -10vw;
-  transition: all .3s ease;
+  transition: all .3s ease-in-out;
   gap: 2rem;
 }
 
@@ -664,13 +677,12 @@ body {
   justify-content: center;
   align-items: center;
   filter: saturate(125%);
-  transition: all .3s ease; 
+  transition: all .3s ease-in-out;
   position: relative;
 }
 
 .images:hover {
   filter: saturate(200%);
-  transition: linear 0.3s;
 }
 
 .images img {
