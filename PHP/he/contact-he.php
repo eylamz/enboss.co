@@ -33,8 +33,8 @@
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-contact.css" />
 <link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
 
-<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-contact.css" />
-<link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-contact.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/dark.css" />
 
            <!--- English Footer CSS File -->
            <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
@@ -53,7 +53,6 @@
 </head>
 
 <body>
-<div class="background-image"></div>
 
   <!-- Header Section -->
   <?php include('../../view/he/hebrew-header.php'); ?>
@@ -111,7 +110,7 @@
         </svg></h3>
             <p>שאלות, הוספת פארק, המלצות ושיתוף פעולה</p>
             <p class="parag">למענה מהיר יותר מוזמנים לשלוח לנו הודעה ב<a href="https://instagram.com/enboss_official" target="_blank">אינסטגרם</a></p>            
-        <form method="post" onsubmit="handleSubmit(event)">
+        <form class="contact-page" method="post" onsubmit="handleSubmit(event)">
             <input type="text" id="name" placeholder="שם מלא" required>
             <input type="email" id="email" placeholder="כתובת אימייל" required>
             <input type="tel" id="phone" placeholder="מספר טלפון" pattern="[0-9]{9,}" title="הכנס מספר טלפון תקני" required>

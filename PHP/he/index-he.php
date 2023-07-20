@@ -30,7 +30,6 @@ ini_set('display_errors', 1);
     
            <!--Hebrew Home CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-home.css" />
-<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-home.css" />
              <!--Hebrew Header CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
 

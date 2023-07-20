@@ -4,12 +4,10 @@ body {
   margin: 0px;
   font-family: 'Poppins',sans-serif !important;
 }
+
 body.dark {
 background-color: var(--body-dark);
 }
-
-
-
 
 
 .container-con {
