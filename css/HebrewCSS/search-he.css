@@ -55,6 +55,7 @@
     color: var(--dark-blue);
     margin-right: 2vw;
     background: hsl(210, 15%, 90%);
+    transition: all .3s ease-in-out;
 }
 
 ::placeholder {

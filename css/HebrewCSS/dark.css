@@ -72,7 +72,6 @@
 
 
 .dark{ 
-
 .navbar, .navi, .navi-he {/*dark header*/
 background: var(--ne-grey);  
 }
@@ -199,7 +198,7 @@ background-color: var(--ne-grey)!important;
 
 /*SEARCH BAR DARK CSS */
 
-.search-box {
+.search-box, .search-box-he {
 background-color: var(--ne-grey);
 }
 
