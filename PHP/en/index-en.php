@@ -296,7 +296,7 @@
           <div class="text1"><h2>Hadera</h2></div>
         </div>
 
-
+         
     </div>
 </div>
 

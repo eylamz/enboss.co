@@ -21,16 +21,65 @@
   --hr: hsl(210, 15%, 95%);
 }
 
+.dark {
+    --map-front-icons: hsl(210, 15%, 95%);
+    --map-back-icons: hsl(219, 50%, 15%);
+    --h4: hsl(210, 15%, 95%);
+    --hr-text: hsl(210, 15%, 95%);
+    --video-text: #9AA0A6;
+    --video-svg: #9AA0A6;
+    --box1-svg: hsl(210, 15%, 95%);
+    --box1-strong: hsl(210, 15%, 95%);
+    --box1-txt: #cacaca;
+    --close-btn: hsl(210, 15%, 95%);
+    --img-back: #eaeaea;
+    --icon-list-svg: hsl(210, 15%, 95%);
+    --icon-list: #cacaca;
+    --list: #cacaca;
+    --list-strong:hsl(210, 15%, 95%);
+    --head : hsl(210, 15%, 95%);
+    --background: #2F6A42;
+    --hr: hsl(210, 15%, 95%);
+  }
 
-.parkBody {
+
+  body {
     background-color: var(--background);
-    margin-top: 100px;
+    background-repeat: repeat;
+    background-size: 25%;  
     overflow-x: hidden;
-}
+    background-image: url('/svg/EnbossWallpaperLight.075.png');
+    background-attachment: fixed;
+    }
+    
+    @media only screen and (max-width: 1440px){
+    body {
+    background-size: 30%;  
+    }
+    }
+    
+    @media only screen and (max-width: 1024px){
+    body{
+    background-size: 35%;  
+    }
+    }
+    
+    @media only screen and (max-width: 768px){
+    body{
+    background-size: 50%;  
+    }
+    }
+    
+    @media only screen and (max-width: 480px){
+    body {
+    background-size: 100%;  
+    }
+    }
 
 .parkMain {
   font-family: 'Open Sans', sans-serif;
   display: grid;
+  padding-top: 100px;
 
 }
 

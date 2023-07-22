@@ -127,7 +127,7 @@
 
 
     .dark.Body404 {
-      background: var(--ne-blue);
+      background: var(--dark-blue);
     }
 
     .dark .st7 {
@@ -135,7 +135,7 @@
     }
     
     .dark .Btn {
-      background-color: var(--dark-blue);
+      background-color: var(--blue);
       color: var(--ne-logo);
     }
 

@@ -12,7 +12,6 @@
   <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/skateparks/mitzpe-ramon">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="he_IL">
   <meta name="keywords" content="ישראל, סקייטפארק, רולרבלייד, סקייט, עברית, מצפה רמון, רולר, ישראלי, קרוקינט, המזרח התיכון, enboss.co">
@@ -53,8 +52,6 @@
 
       
 <body class="parkBody">
-  <div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../../view/he/hebrew-header.php'); ?>
 

@@ -8,6 +8,8 @@
     <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/dark.css" />
 <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-header.css" />
 <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-footer.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/parks.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-about.css" />
 
 
     <!-- Google Fonts link -->

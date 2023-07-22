@@ -148,49 +148,63 @@ function shuffle(array) {
                 <div class="items">
                     <div class="item north">
                       <a href="/he/skateparks/kiryat-ata">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/kiryat-ata.webp" alt="סקייטפארק קרית אתא" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>קרית אתא</h2></div>
                       </a>
                     </div>
 
                     <div class="item north">
                       <a href="/he/skateparks/zichron-yaakov">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/zichron-yaakov.webp" alt="סקייטפארק זכרון יעקב" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>זכרון יעקב</h2></div>
                     </a>
                 </div>
                     
                 <div class="item south">
                   <a href="/he/skateparks/dimona">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/dimona.webp" alt="סקייטפארק דימונה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>דימונה</h2></div>
                   </a>
               </div>    
 
                     <div class="item north">
                       <a href="/he/skateparks/nahariya">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/nahariya.webp" alt="סקייטפארק נהריה" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>נהריה</h2></div>
                     </a>
                   </div>
 
                     <div class="item center">
                       <a href="/he/skateparks/raanana">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/raanana.webp" alt="סקייטפארק רעננה" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>רעננה</h2></div>
                     </a>
                 </div> 
                 
                     <div class="item south">
                       <a href="/he/skateparks/jerusalem-gan-sacher">
+                      <div class="itemImg">
                         <img src="/images/Park480-webp/jeruGanSacher.webp" alt="סקייטפארק ירושלים גן סאקר" loading="lazy">
+                        </div>
                         <div class="gallery-text"><h2>ירושלים גן סאקר</h2></div>
                       </a>
                   </div>
 
                   <div class="item center">
                     <a href="/he/skateparks/holon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/holon.webp" alt="סקייטפארק חולון" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>חולון</h2></div>
                   </a>
               </div> 
@@ -198,7 +212,9 @@ function shuffle(array) {
 
                   <div class="item north">
                     <a href="/he/skateparks/hadera">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/hadera.webp" alt="סקייטפארק חדרה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>חדרה</h2></div>
                     </a>
                 </div>  
@@ -206,216 +222,278 @@ function shuffle(array) {
 
                   <div class="item center">
                     <a href="/he/skateparks/lod">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/lod.webp" alt="סקייטפארק לוד" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>לוד</h2></div>
                   </a>
               </div>
 
-                  <div class="item south"
+                  <div class="item south">
                     <a href="/he/skateparks/mitzpe-ramon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/mitzpe-ramon.webp" alt="סקייטפארק מצפה רמון" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>מצפה רמון</h2></div>
                   </a>
               </div>  
 
                   <div class="item south">
                     <a href="/he/skateparks/beer-sheva">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/beer-sheva.webp" alt="סקייטפארק באר שבע" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>באר שבע</h2></div>
                     </a>
                   </div>  
 
                   <div class="item south">
                     <a href="/he/skateparks/jerusalem-gan-hapaamon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/jeruGanHapaamon.webp" alt="סקייטפארק ירושלים גן הפעמון" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>ירושלים גן הפעמון</h2></div>
                   </a>
               </div>
 
                   <div class="item south">
                     <a href="/he/skateparks/ashdod">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ashdod.webp" alt="סקייטפארק אשדוד" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>אשדוד</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/he/skateparks/kfar-saba">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/kfar-saba.webp" alt="סקייטפארק כפר סבא" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>כפר סבא</h2></div>
                   </a>
               </div>  
 
                   <div class="item south">
                     <a href="/he/skateparks/beer-sheva-bike-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/beer-sheva-bike.webp" alt="בייקפארק באר שבע" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>באר שבע בייק פארק</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/he/skateparks/givatayim">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/givatayim.webp" alt="סקייטפארק גבעתיים" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>גבעתיים</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/he/skateparks/herzliya">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/herzliya.webp" alt="סקייטפארק הרצליה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>הרצליה</h2></div>
                   </a>
               </div>  
                   <div class="item center">
                     <a href="/he/skateparks/netanya">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/netanya.webp" alt="סקייטפארק נתניה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>נתניה</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/tel-aviv">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/tel-aviv.webp" alt="סקייטפארק תל אביב" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>תל אביב</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/rosh-haayin">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/rosh-haayin.webp" alt="סקייטפארק ראש העין" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>ראש העין</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/modiin-moriah-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/modiinMoriah.webp" alt="סקייטפארק מוריה מודיעין" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>מודיעין פארק מוריה</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/hod-hasharon">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/hod-hasharon.webp" alt="סקייטפארק הוד השרון" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>הוד השרון</h2></div>
                   </a>
               </div>   
 
                   <div class="item north">
                     <a href="/he/skateparks/haifa">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/haifa.webp" alt="סקייטפארק חיפה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>חיפה</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/he/skateparks/rishon-lezion">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/rishon-lezion.webp" alt="סקייטפארק ראשון לציון" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>ראשון לציון</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/petah-tikva">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/petah-tikva.webp" alt="סקייטפארק פתח תקווה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>פתח תקווה</h2></div>
                   </a>
               </div>
 
               <div class="item center">
                 <a href="/he/skateparks/ramat-gan-2">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/ramat-gan(2).webp" alt="סקייטפארק רמת גן" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>רמת גן</h2></div>
               </a>
           </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/ramat-gan">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ramat-gan.webp" alt="סקייטפארק רמת גן - קרית קריניצי" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>רמת גן -קרית קריניצי<!--<strong style="font-size: 0.75rem;">- נסגר לצמיתות</strong>--></h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/modiin-buchman-park">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/modiinBuchman.webp" alt="סקייטפארק בוכמן מודיעין" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>מודיעין פארק בוכמן</h2></div>
                   </a>
               </div>  
 
                   <div class="item center">
                     <a href="/he/skateparks/kfar-yona">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/kfar-yona.webp" alt="סקייטפארק כפר יונה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>כפר יונה</h2></div>
                   </a>
               </div> 
 
                   <div class="item center">
                     <a href="/he/skateparks/tzur-yigal">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/tzur-yigal.webp" alt="סקייטפארק צור יגאל" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>צור יגאל</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/he/skateparks/ramla">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/ramla.webp" alt="סקייטפארק רמלה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>רמלה</h2></div>
                   </a>
               </div>
 
                   <div class="item north">
                     <a href="/he/skateparks/caesarea">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/caesarea.webp" alt="סקייטפארק קיסריה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>קיסריה</h2></div>
                   </a>
               </div>
 
                   <div class="item center">
                     <a href="/he/skateparks/gedera">
+                      <div class="itemImg">
                       <img src="/images/Park480-webp/gedera.webp" alt="סקייטפארק גדרה" loading="lazy">
+                        </div>
                       <div class="gallery-text"><h2>גדרה</h2></div>
                   </a>
               </div>
 
               <div class="item center">
                 <a href="/he/skateparks/kadima-zoran">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kadima-zoran.webp" alt="סקייטפארק קדימה צורן" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>קדימה צורן</h2></div>
               </a>
           </div>
 
           <div class="item south">
                 <a href="/he/skateparks/kidron">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kidron.webp" style="filter: saturate(1.2);" alt="סקייטפארק קדרון" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>קדרון</h2></div>
               </a>
           </div>
 
           <div class="item center">
                 <a href="/he/skateparks/yehud">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/yehud.webp" style="filter: saturate(1.2);" alt="סקייטפארק יהוד-מונוסון" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>יהוד-מונוסון</h2></div>
               </a>
           </div>
 
           <div class="item center">
                 <a href="/he/skateparks/ariel">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/ariel.webp" style="filter: saturate(1.2);" alt="סקייטפארק אריאל" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>אריאל</h2></div>
               </a>
           </div>
 
           <div class="item south">
           <a href="/he/skateparks/sderot">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/sderot.webp" alt="סקייטפארק שדרות" loading="lazy">
+                        </div>
                   <div class="gallery-text"><h2>שדרות</h2></div>
               </a>
           </div>
           
           <div class="item south">
           <a href="/he/skateparks/kiryat-gat">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/kiryat-gat.webp" alt="סקייטפארק קרית גת" loading="lazy">
+                    </div>
                   <div class="gallery-text"><h2>קרית גת</h2></div>
               </a>
           </div>
@@ -423,7 +501,9 @@ function shuffle(array) {
 
           <div class="item center">
                 <a href="/he/skateparks/bat-yam">
+                      <div class="itemImg">
                   <img src="/images/Park480-webp/bat-yam.webp" alt="סקייטפארק בת ים" loading="lazy">
+                  </div>
                   <div class="gallery-text"><h2>בת ים</h2></div>
               </a>
           </div>

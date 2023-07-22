@@ -1,38 +1,87 @@
 /* Start of English-Park CSS */
 
 :root {
-    --map-front-icons: hsla(219, 50%, 15%, 1);
-    --map-back-icons: hsl(45, 100%, 50%);
-    --h4:hsla(219, 50%, 22%, 1);
-    --hr-text: hsla(219, 50%, 15%, 1); 
-    --video-text: hsla(219, 50%, 15%, 1); 
-    --video-svg: hsla(219, 50%, 15%, 1); 
-    --box1-svg: hsla(219, 50%, 15%, 1);
-    --box1-strong: hsla(219, 50%, 15%, 1); 
-    --box1-txt: hsl(219, 50%, 22%);
-    --close-btn: hsla(219, 50%, 15%, 1); 
-    --img-back: #eaeaea;
-    --icon-list-svg: hsla(219, 50%, 15%, 1);
-    --icon-list: hsl(219, 50%, 22%);
-    --list: hsl(219, 50%, 22%);
-    --list-strong: hsl(219, 50%, 15%);
-    --head: hsl(219, 50%, 22%);
-    --background: hsl(45, 100%, 60%);
-    --hr:hsl(219, 50%, 22%);
+  --map-front-icons: hsla(219, 50%, 15%, 1);
+  --map-back-icons: hsl(45, 100%, 50%);
+  --h4:hsla(219, 50%, 22%, 1);
+  --hr-text: hsla(219, 50%, 15%, 1); 
+  --video-text: hsla(219, 50%, 15%, 1); 
+  --video-svg: hsla(219, 50%, 15%, 1); 
+  --box1-svg: hsla(219, 50%, 15%, 1);
+  --box1-strong: hsla(219, 50%, 15%, 1); 
+  --box1-txt: hsl(219, 50%, 22%);
+  --close-btn: hsla(219, 50%, 15%, 1); 
+  --img-back: #eaeaea;
+  --icon-list-svg: hsla(219, 50%, 15%, 1);
+  --icon-list: hsl(219, 50%, 22%);
+  --list: hsl(219, 50%, 22%);
+  --list-strong: hsl(219, 50%, 15%);
+  --head: hsl(219, 50%, 22%);
+  --background: hsl(45, 100%, 60%);
+  --hr:hsl(219, 50%, 22%);
+}
+
+.dark {
+  --map-front-icons: hsla(219, 50%, 15%, 1);
+  --map-back-icons: hsl(45, 100%, 50%);
+  --h4:hsla(219, 50%, 22%, 1);
+  --hr-text: hsla(219, 50%, 15%, 1); 
+  --video-text: hsla(219, 50%, 15%, 1); 
+  --video-svg: hsla(219, 50%, 15%, 1); 
+  --box1-svg: hsla(219, 50%, 15%, 1);
+  --box1-strong: hsla(219, 50%, 15%, 1); 
+  --box1-txt: hsl(219, 50%, 22%);
+  --close-btn: hsla(219, 50%, 15%, 1); 
+  --img-back: #eaeaea;
+  --icon-list-svg: hsla(219, 50%, 15%, 1); 
+  --icon-list: hsl(219, 50%, 22%);
+  --list: hsl(219, 50%, 22%);
+  --list-strong: hsl(219, 50%, 22%);
+  --head: hsl(219, 50%, 22%);
+  --background: hsl(45 100% 48% / 1);
+  --hr:#0C1017;
+}
+
+
+body {
+  background-color: var(--background);
+  background-repeat: repeat;
+  background-size: 25%;  
+  overflow-x: hidden;
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+  background-attachment: fixed;
   }
   
-  
-  
-  .parkBody {
-      background-color: var(--background);
-      margin-top: 100px;
-      overflow-x: hidden;
+  @media only screen and (max-width: 1440px){
+  body {
+  background-size: 30%;  
   }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  body{
+  background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  body{
+  background-size: 50%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  body {
+  background-size: 100%;  
+  }
+  }
+  
   
   .parkMain {
     font-family: 'Open Sans', sans-serif;
     display: grid;
-  
+    padding-top: 100px;
+
   }
   
   .parkHead h1{

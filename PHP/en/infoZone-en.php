@@ -143,14 +143,18 @@ function shuffle(array) {
 
                   <div class="item roller">
                     <a href="/en/info-zone/choosing-rollerblading-wheels">
+                      <div class="itemImg">
                       <img src="/images/SVG/ChooseYourWheelThumb.svg" alt="Choosing rollerblading wheels" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Choosing Rollerblading Wheels</h2></div>
                     </a>
                   </div>
 
                   <div class="item roller">
                     <a href="/en/info-zone/choosing-the-right-frame">
+                      <div class="itemImg">
                       <img src="/images/SVG/ChooseYourFrameThumb.svg" alt="Choosing the right frame" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>Choosing the Right Frame</h2></div>
                     </a>
                   </div>

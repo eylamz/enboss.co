@@ -128,8 +128,6 @@ function shuffle(array) {
 </head>
 
 <body>
-<div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../view/he/hebrew-header.php'); ?>
 <!-- End of Header Section-->
@@ -146,14 +144,18 @@ function shuffle(array) {
                     
                     <div class="item roller">
                         <a href="/he/info-zone/choosing-the-perfect-rollerblading-wheels">
+                      <div class="itemImg">
                           <img src="/images/SVG/ChooseYourWheelThumb-he.svg" alt="איך לבחור הגלגלים לרולר שלכם" loading="lazy">
+                      </div>
                           <div class="gallery-text"><h2>איך לבחור גלגלים לרולר שלכם</h2></div>
                         </a>
                       </div>
 
                     <div class="item roller">
                     <a href="/he/info-zone/choosing-the-right-frame">
+                      <div class="itemImg">
                       <img src="/images/SVG/ChooseYourFrameThumb.svg" alt="בחירת הפריים הנכון בשבילך" loading="lazy">
+                      </div>
                       <div class="gallery-text"><h2>בחירת הפריים הנכון בשבילך</h2></div>
                     </a>
                   </div>

@@ -2,14 +2,17 @@
 body {
     background: var(--blue);
     margin: 0px;
-
+    transition: background-color .3s ease-in-out;
 }
+
+body.dark {
+    background-color: var(--ne-blue);
+  }
 
 .about-container {
     padding-top: 100px;
     width: 100%;
     height: 100%;
-    background: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +22,6 @@ body {
 .about {
     font-family: 'Noto Sans Hebrew', sans-serif;
     color: var(--anti-white);
-    background: var(--blue);
     display: flex;
     flex-direction: column;
     max-width: 700px;

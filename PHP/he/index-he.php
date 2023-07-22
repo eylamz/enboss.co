@@ -150,82 +150,124 @@ ini_set('display_errors', 1);
 
 <section class="image-scroll">
   <div class="center">
+      <style> /* New Park Logo */
+               .images .text2 {
+                  font-family: 'Open Sans', sans-serif;
+                  color: var(--anti-white); 
+                  background-color: var(--sham); 
+                  box-shadow: var(--img-shadow);
+                  border-radius: 50%; 
+                  text-shadow: none; 
+                  font-size: 1.2rem;
+                  padding:18px 10px; 
+                  position:absolute;
+                  top: 0;
+                  right: 0;
+                  font-weight: 700;
+                  animation: pulse 1s infinite ease-in-out alternate;
+              }
+
+              @keyframes pulse {
+                from { transform: scale(0.8) rotate(-25deg);
+                  background-color: var(--sham);
+                }
+                to { transform: scale(1.2)rotate(-17.5deg);
+                  background-color: var(--light-sham); 
+                }
+              }
+            </style>
     <div class="scroll-parent" id="scroll">
       <div class="images">
+        <a href="/he/skateparks/bat-yam">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/bat-yam.webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/bat-yam.webp">
+            <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/bat-yam.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/bat-yam.webp">
+            <img src="/images/ParkGallery-webp/bat-yam.webp" alt="סקייטפארק בת ים" />
+          </picture>
+        </a>
+          <div class="text1"><h2>בת ים</h2></div>
+          <div class="text2"><h2>חדש</h2></div>
+      </div>
+
+      <div class="images">
         <a href="/he/skateparks/ramat-gan-2">
-        <picture>
+          <picture>
             <source media="(max-width: 480px)" srcset="/images/Park480-webp/ramat-gan(2).webp">
             <source media="(max-width: 768px)" srcset="/images/Park768-webp/ramat-gan(2).webp">
             <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ramat-gan(2).webp">
             <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ramat-gan(2).webp">
             <img src="/images/ParkGallery-webp/ramat-gan(2).webp" alt="סקייטפארק רמת גן" />
-        </picture>
-      </a>       
-        <style> /* New Park Logo */
-          .images .text2 {
-            font-family: 'Open Sans', sans-serif;
-         color: var(--anti-white); 
-         background-color: var(--sham); 
-         box-shadow: var(--img-shadow);
-         border-radius: 50%; 
-         text-shadow: none; 
-         font-size: 1.2rem;
-         padding:18px 10px; 
-         position:absolute;
-        top: 0;
-        right: 0;
-        font-weight: 700;
-        animation: pulse 1s infinite ease-in-out alternate;
-        }
-
-        @keyframes pulse {
-          from { transform: scale(0.8) rotate(-25deg);
-            background-color: var(--sham);
-          }
-           to { transform: scale(1.2)rotate(-17.5deg);
-            background-color: var(--light-sham); 
-          }
-        }
-        </style>
-
-          <div class="text1"><h2>רמת גן</h2></div>
-          <div class="text2"><h2>חדש</h2></div>
-      </div>
-        <div class="images">
-          <a href="/he/skateparks/hadera">
-            <picture>
-                <source media="(max-width: 480px)" srcset="/images/Park480-webp/hadera.webp">
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/hadera.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/hadera.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/hadera.webp">
-                <img src="/images/ParkGallery-webp/hadera.webp" alt="סקייטפארק חדרה" />
-            </picture>
-          </a>
-            <div class="text1"><h2>חדרה</h2></div>
-        </div>
-        <div class="images ">
-          <a href="/he/skateparks/zichron-yaakov">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/zichron-yaakov.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/zichron-yaakov.webp">
-              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/zichron-yaakov.webp">
-              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/zichron-yaakov.webp">
-              <img src="/images/ParkGallery-webp/zichron-yaakov.webp" alt="סקייטפארק זכרון יעקב" />
           </picture>
         </a>
-            <div class="text1"><h2>זכרון יעקב</h2></div>
+        <div class="text1"><h2>רמת גן</h2></div>
+        <div class="text2"><h2>חדש</h2></div>
+      </div>
+
+      <div class="images">
+            <a href="/he/skateparks/kiryat-ata">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
+                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="סקייטפארק קרית אתא" />
+              </picture>
+            </a>
+            <div class="text1"><h2>קרית אתא</h2></div>
         </div>
+
         <div class="images">
+        <a href="/he/skateparks/dimona">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
+            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
+            <img src="/images/ParkGallery-webp/dimona.webp" alt="סקייטפארק דימונה" />
+          </picture>
+        </a>
+        <div class="text1"><h2>דימונה</h2></div>
+    </div>
+
+    <div class="images ">
+          <a href="/he/skateparks/kiryat-gat">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-gat.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-gat.webp">
+              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-gat.webp">
+              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-gat.webp">
+              <img src="/images/ParkGallery-webp/kiryat-gat.webp" alt="סקייטפארק קרית גת" />
+            </picture>
+          </a>
+          <div class="text1"><h2>קרית גת</h2></div>
+        </div>
+
+    <div class="images">
+          <a href="/he/skateparks/nahariya">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
+              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
+              <img src="/images/ParkGallery-webp/nahariya.webp" alt="סקייטפארק נהריה" />
+          </picture>
+        </a>
+          <div class="text1"><h2>נהריה</h2></div>
+      </div>
+
+      <div class="images">
           <a href="/he/skateparks/lod">
             <picture>
               <source media="(max-width: 480px)" srcset="/images/Park480-webp/lod.webp">
               <source media="(max-width: 768px)" srcset="/images/Park768-webp/lod.webp">
               <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/lod.webp">
               <img src="/images/ParkGallery-webp/lod.webp" alt="סקייטפארק לוד" />
-          </picture>
-        </a>
+            </picture>
+          </a>
             <div class="text1"><h2>לוד</h2></div>
         </div>
+
         <div class="images">
           <a href="/he/skateparks/raanana">
             <picture>
@@ -238,41 +280,21 @@ ini_set('display_errors', 1);
         </a>
             <div class="text1"><h2>רעננה</h2></div>
         </div>
+
         <div class="images">
-            <a href="/he/skateparks/kiryat-ata">
-              <picture>
-                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
-                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="סקייטפארק קרית אתא" />
+          <a href="/he/skateparks/hadera">
+            <picture>
+                <source media="(max-width: 480px)" srcset="/images/Park480-webp/hadera.webp">
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/hadera.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/hadera.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/hadera.webp">
+                <img src="/images/ParkGallery-webp/hadera.webp" alt="סקייטפארק חדרה" />
             </picture>
           </a>
-            <div class="text1"><h2>קרית אתא</h2></div>
+          <div class="text1"><h2>חדרה</h2></div>
         </div>
-        <div class="images">
-          <a href="/he/skateparks/nahariya">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
-              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
-              <img src="/images/ParkGallery-webp/nahariya.webp" alt="סקייטפארק נהריה" />
-          </picture>
-        </a>
-          <div class="text1"><h2>נהריה</h2></div>
-      </div>
-      <div class="images">
-        <a href="/he/skateparks/dimona">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
-            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
-            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
-            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
-            <img src="/images/ParkGallery-webp/dimona.webp" alt="סקייטפארק דימונה" />
-        </picture>
-      </a>
-        <div class="text1"><h2>דימונה</h2></div>
-    </div>
+
+
     </div>
 </div>
 

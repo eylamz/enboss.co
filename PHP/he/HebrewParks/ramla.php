@@ -12,7 +12,6 @@
   <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/skateparks/ramla">
   <meta property="og:site_name" content="ENBOSS">
-  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
   <meta property="og:locale" content="he_IL">
@@ -51,8 +50,6 @@
 
       
 <body class="parkBody">
-  <div class="background-image"></div>
-
   <!-- Header Section -->
   <?php include('../../../view/he/hebrew-header.php'); ?>
 
@@ -327,9 +324,9 @@
     
   <div class="vid-map">
     <div class="iconBox2">
-      <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 56.69 56.69"><path class="b" d="M41.23,37.3l-11.17-19.69c-.68-1.21-2.42-1.22-3.12-.02l-11.47,19.69c-.7,1.2,.17,2.7,1.55,2.7h22.63c1.38,0,2.24-1.49,1.56-2.69Zm-12.88-.34c-1.13,0-2.04-.92-2.04-2.04s.92-2.05,2.04-2.05,2.05,.92,2.05,2.05-.92,2.04-2.05,2.04Zm1.56-5.57c0,.47-.33,.85-.73,.85h-1.9c-.4,0-.73-.38-.73-.85l-.37-5.76c0-.47,.33-.85,.73-.85h2.86c.4,0,.73,.38,.73,.85l-.6,5.76Z"/></svg>
-      <br>
-      <span>סרטון אינו זמין</span>
+    <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 56.69 56.69"><path class="b" d="M41.23,37.3l-11.17-19.69c-.68-1.21-2.42-1.22-3.12-.02l-11.47,19.69c-.7,1.2,.17,2.7,1.55,2.7h22.63c1.38,0,2.24-1.49,1.56-2.69Zm-12.88-.34c-1.13,0-2.04-.92-2.04-2.04s.92-2.05,2.04-2.05,2.05,.92,2.05,2.05-.92,2.04-2.05,2.04Zm1.56-5.57c0,.47-.33,.85-.73,.85h-1.9c-.4,0-.73-.38-.73-.85l-.37-5.76c0-.47,.33-.85,.73-.85h2.86c.4,0,.73,.38,.73,.85l-.6,5.76Z"/></svg>
+    <br>
+        <span>סרטון בקרוב</span>
     </div>
     <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d13543.68180700454!2d34.878528!3d31.935917!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDU2JzA5LjMiTiAzNMKwNTInNDIuNyJF!5e0!3m2!1sen!2sus!4v1684758114598!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
