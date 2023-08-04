@@ -423,7 +423,7 @@ header {
       top: 1rem;
       rotate: 135deg;
       width: 80%;
-      background-color: var(--light-blue);
+      background-color: var(--ne-conq);
 
  
     }
@@ -443,7 +443,7 @@ header {
       top: 1rem;
       rotate: -135deg;
       width: 80%;
-      background-color: var(--light-blue);
+      background-color: var(--ne-conq);
 
 
     }
@@ -576,7 +576,7 @@ header {
     100% {
       stroke-width: 1.5px;
       transform: scale(1.125);
-      stroke: var(--light-blue);
+      stroke: var(--ne-conq);
     }
   }
   
@@ -596,7 +596,7 @@ header {
       transform: translate(-37%, -37%);
       stroke-width:1.1px;
       transform: scale(1.4);
-      stroke: var(--light-blue);
+      stroke: var(--conq);
     }
   }
   
@@ -614,7 +614,7 @@ header {
 
     }
     100% {
-      stroke: var(--light-blue);
+      stroke: var(--conq);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -691,7 +691,7 @@ header {
 
   @keyframes move-spin-rev {
     0% {
-      stroke: var(--blue);
+      stroke: var(--conq);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -794,7 +794,6 @@ header {
     user-select: none;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
-    margin-bottom: 2px;
   }
   
   .active#colorButton {

@@ -115,71 +115,81 @@ color: var(--anti-white);
 }
 
 .search-icon svg {
-fill: var(--ne-logo);
+  fill: var(--ne-logo);
 }
 
 .search-icon svg:hover {
-fill: var(--anti-white);
+  fill: var(--anti-white);
 }
 
 .burger-line {
-background-color: var(--ne-logo);
+  background-color: var(--ne-logo);
 }
-
+  
 .burger.is-active > .burger-line:nth-child(1) {
-background-color: var(--ne-dark-anti);
+  background-color: var(--ne-conq);
 }
-
+  
 .burger.is-active > .burger-line:nth-child(3) {
-background-color: var(--ne-dark-anti);
+  background-color: var(--ne-conq);
 }
-
 #my-svg {
-stroke: var(--ne-logo);
+  stroke: var(--ne-logo);
 }
 
 #my-svg:hover {
-stroke: var(--anti-white);
+  stroke: var(--anti-white);
 }
 
 #my-svg:hover[class="disable"]
 line.handle {
-stroke: var(--anti-white) !important;
+  stroke: var(--anti-white) !important;
 }
 
 #my-svg[class="disable"]
 line.handle {
-stroke: var(--ne-logo) !important;
+  stroke: var(--ne-logo) !important;
 }
 
+#my-svg-he:hover[class="disable"]
+line.handle {
+  stroke: var(--anti-white) !important;
+}
+
+#my-svg-he[class="disable"]
+line.handle {
+  stroke: var(--ne-logo) !important;
+}
+
+
 .back-Icon1 {
-fill: hsla(221, 49%, 90%, .2);
+  fill: hsla(221, 49%, 90%, .2);
 }
 
 .front-Icon1 {
-fill: hsla(221, 49%, 90%, .7);
+  fill: hsla(221, 49%, 90%, .7);
 }
 
 #my-svg.clicked .glass { 
-animation-name: zoom-out;
-animation-duration: .4s;
+  animation-name: zoom-out;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
 }
 
 #my-svg.clicked .handle { 
-animation-name: move-up;
-animation-duration: .4s;
+  animation-name: move-up;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 
 #my-svg.clicked .handle3 {
-animation-name: move-spin;
-animation-duration: .4s;
+  animation-name: move-spin;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes zoom-outDark {
@@ -195,43 +205,43 @@ transition: all 0.3s ease-in-out;
 }
 
 @keyframes move-up {
-0% {
-  transform: translate(0, 0) rotate(0deg);
-      stroke-width:2.1px;
-      transform: scale(1);
-}
-50% {
-  transform: scale(1);
-  stroke-width:1.8px;
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    troke-width:2.1px;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+    stroke-width:1.8px;
 
-}
-100% {
-  transform-origin: 165% 165%;
-  transform: translate(-37%, -37%);
-  stroke-width:1.1px;
-  transform: scale(1.4);
-  stroke: var(--light-blue);
-}
+  }
+  100% {
+    transform-origin: 165% 165%;
+    transform: translate(-37%, -37%);
+    stroke-width:1.1px;
+    transform: scale(1.4);
+    stroke: var(--light-blue);
+  }
 }
 
 @keyframes move-spin {
-0% {
-  transform-origin: 100% 100%;
-  transform: translate(-50%, 50%);
-  stroke: var(--blue);
-  opacity: 0;
-}
+  0% {
+    transform-origin: 100% 100%;
+    transform: translate(-50%, 50%);
+    stroke: var(--blue);
+    opacity: 0;
+  }
 
-80% {
-  opacity: 0;
-  transform: translate(-20%, 20%);
+  80% {
+    opacity: 0;
+    transform: translate(-20%, 20%);
 
-}
-100% {
-  stroke: var(--light-blue);
-  transform: translate(0, 0);
-  opacity: 1;
-}
+  }
+  100% {
+    stroke: var(--light-blue);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 
 

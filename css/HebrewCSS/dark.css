@@ -151,6 +151,8 @@ line.handle {
 stroke: var(--ne-logo) !important;
 }
 
+
+
 #my-svg-he:hover {
 stroke: var(--anti-white);
 }
@@ -164,6 +166,17 @@ stroke: var(--anti-white) !important;
 line.handle {
 stroke: var(--ne-logo) !important;
 }
+
+#my-svg-he:hover[class="disable"]
+line.handle {
+stroke: var(--anti-white) !important;
+}
+
+#my-svg-he[class="disable"]
+line.handle {
+stroke: var(--ne-logo) !important;
+}
+
 
 .back-Icon1 {
 fill: hsla(221, 49%, 90%, .2);
