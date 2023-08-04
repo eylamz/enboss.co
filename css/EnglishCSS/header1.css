@@ -1,0 +1,219 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  touch-action: manipulation;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+    :root {
+      --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+         0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-top: -10px -150px 60px 0px rgba(0, 0, 0, 0.1),
+         0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --text-shadow: 0px 0px 13px rgba(0,0,0,0.3);
+      --svg-black-shadow: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.25));
+      --svg-white-shadow: drop-shadow(0px 0px 5px rgb(255 255 255 / 0.2));
+      --img-shadow-white: 0px 0px 14px 3px rgba(255,255,255,0.15);
+      --img-shadow: 0px 0px 14px 3px rgba(0,0,0,0.15);
+
+
+      --white: #fff;
+      --img-back: #eaeaea;
+      --text: #a5a5a7;
+      --text-dark: #545459;
+      --text-light: #bfbfc0;
+
+      --dark-blue: hsl(219, 50%, 15%);
+      --blue: hsl(219, 50%, 22%);
+      --light-blue: hsla(219, 50%, 40%, 1);
+      --lighter-blue: hsla(219, 50%, 95%, 1);
+      --anti-white: hsl(210, 15%, 95%);
+
+      --anti-text:hsl(210, 15%, 95%);
+      --anti-text-2:hsl(210, 15%, 95%);
+      
+      --anti-grey: hsla(210, 14%, 90%, 1);
+      --dark-grey: hsla(210, 14%, 85%, 1);
+      --darker-grey: hsl(210, 0%, 35%);
+
+      --zomp: hsla(168, 58%, 41%, 1);
+      --light-munsell: hsla(192, 73%,46%,1);
+      --munsell: hsla(192, 73%, 36%,1);
+      --light-amber: hsl(45, 100%, 60%);
+      --amber: hsl(45, 100%, 50%);
+      --light-conq: hsl(13, 90%, 61%);
+      --dark-conq: hsl(13, 90%, 41%);
+      --conq: hsl(13, 90%, 51%); 
+      --dark-sham: hsl(140, 33%, 36%);
+      --sham: hsl(140, 33%, 46%);
+      --light-sham: hsl(140, 33%, 56%);
+              /*   g#7DDF64    */
+    }
+
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      list-style: unset;
+      list-style-type: unset;
+      text-decoration: none;
+      font-weight: unset;
+      word-spacing: unset;
+      letter-spacing: unset;
+      font-family: unset;
+      resize: none;
+ 
+    }
+        
+    html {
+      line-height: normal;
+      font-size: 16px;
+      box-sizing: inherit;
+      scroll-behavior: smooth;
+      width: -webkit-fill-available;
+    }
+    
+    a,
+    button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      padding: 0;
+    }
+
+
+
+    .container {
+      max-width: 75rem;
+      height: 84px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    
+    .centered {
+      text-align: center;
+      vertical-align: middle;
+      margin-bottom: 1rem;
+    }
+    
+::selection {
+  background-color: var(--anti-white);
+  color: var(--blue);
+}
+
+body{
+  caret-color: transparent;
+}
+
+input {
+  caret-color: auto;
+}
+
+
+
+header {
+  font-family: "Poppins", Sans-serif;
+  /* font-family: "Inter", system-ui, ui-sans-serif, sans-serif; */
+}
+    
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      z-index: 100;
+    }
+    
+    .navi { 
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--anti-white);
+      z-index: 100;
+      box-shadow:  var(--shadow-bottom);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navi.active {
+      box-shadow:  none;
+    }
+
+nav {
+     display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.brand {
+    max-width: 140px;
+    fill: var(--blue);
+    z-index: 100;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .brand:hover{
+    fill: var(--light-blue);
+  }
+
+.menu-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+  }
+
+  .nav-icons {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
