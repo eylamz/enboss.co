@@ -336,13 +336,9 @@ color: var(--anti-white);
 
 /* HOME DARK CSS */
 
-.topEnboss {
-fill: var(--ne-light-blue);
-}
+.topEnboss {fill: var(--yellow);}
 
-#line1 {
-border-color: var(--ne-light-blue);
-}
+#line1 {border-color: var(--light-violet);}
 
 .heading{
 color: var(--ne-anti);
@@ -352,59 +348,35 @@ color: var(--ne-anti);
 color: var(--ne-sec-text);
 }
 
-#contain1 button {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
-}
+#contain1 button {color: var(--ne-blue);background-color: var(--light-violet);}
 
 #contain1 button:hover {
-  background-color: var(--ne-lighter-blue);
+  background-color: var(--lighter-violet);
 }
 
-.image-scroll {
-background-color: var(--ne-light-anti);
-}
+.image-scroll {background-color: var(--ne-dark-anti);}
 
-.newParks-div {
-background-color: var(--ne-light-anti);
-}
+.newParks-div {background-color: var(--ne-dark-anti);}
 
-.newParksTitle {
-color: var(--ne-blue);
-}
+.newParksTitle {color: var(--navy);}
 
-.viewMore {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
-}
+.viewMore {color: var(--navy);background-color: var(--light-violet);}
 
 .viewMore:hover {
-  background-color: var(--ne-lighter-blue);
+  background-color: var(--lighter-violet);
 }
 
-#contain2 {
-background-color: var(--ne-conq);
-}
+#contain2 {background-color: var(--ne-dark-anti);}
 
-#secondCon {
-background-color: var(--ne-conq);
-}
+#secondCon {background-color: var(--ne-dark-anti);}
 
-.pageContainer {
-background-color: var(--ne-amber);
-}
+.pageContainer {background-color: var(--ne-dark-anti);}
 
-#contain3 {
-background-color: var(--ne-amber);
-}
+#contain3 {background-color: var(--ne-dark-anti);}
 
-#headCount {
-color: var(--ne-grey);
-}
+#headCount {color: var(--navy);}
 
-#heading3 {
-color: var(--ne-grey);
-}
+#heading3 {color: var(--navy);}
 
 #thisIs {
 color: var(--ne-light-grey);
@@ -414,14 +386,11 @@ color: var(--ne-light-grey);
 color: var(--ne-light-grey);
 }
 
-.contact button {
-color: var(--ne-anti);
-background-color: var(--ne-conq);
-}
+.contact button {color: var(--ne-anti);background-color: var(--navy);}
 
 .contact button:hover {
   color: var(--ne-anti);
-  background-color: var(--ne-light-conq);
+  background-color: #041E33;
   }
 
 
@@ -432,63 +401,87 @@ background-color: var(--ne-conq);
 
 .footer-main {  /* FOOTER DARK CSS */
 
-background-color: var(--ne-grey);
+background-color: var(--dark-violet);
 
 
 #enbossLogo {
-fill: var(--ne-light-blue);
+
+fill: var(--yellow);
 }
 
-.logo #enbossLogo:hover{
+.logo #enbossLogo:
+
+hover{
 fill: var(--ne-lighter-blue);
 }
 
 .logo-des {
+
 color:var(--ne-dark-anti);
 }
 
-.logo a {
+.logo
+
+a {
 color: var(--ne-logo);
 }
 
-.logo a:hover {
+.logo
+
+a:hover {
 color: var(--ne-light-blue);
 }
 
 .back-Icon {
-  fill: hsla(221, 49%, 90%, .1);
+
+fill: hsla(221, 49%, 90%, .1);
 }
 .front-Icon {
-  fill: hsla(221, 49%, 90%, .7);
+
+fill: hsla(221, 49%, 90%, .7);
 }
-.back-Icon:hover {
+.back-Icon:
+
+hover {
 fill: hsla(221, 49%, 90%, .15);
 }
-.front-Icon:hover {
+.front-Icon:
+
+hover {
 fill: hsla(221, 49%, 90%, 1);
 }
 
-.row h3 {
+.row
+
+h3 {
 color: var(--ne-anti);
 }
 
-.main-foot h3:hover {
+.main-foot
+
+h3:hover {
 color: var(--anti-white);
 }
 
 .footer-header{
+
 color: var(--ne-anti);
 }
 
-.skateparks-des a{
+.skateparks-des
+
+a{
 color: var(--ne-anti);
 }
 
-.skateparks-des a:hover{
+.skateparks-des
+
+a:hover{
 color: var(--ne-dark-anti);
 }
 
 #link-all {
+
 color: var(--anti-white);
 }
 
@@ -499,7 +492,7 @@ background-color: var(--ne-light-grey);
 
 .copyright p{
 color: var(--ne-light-anti);
-} */     
+} */
 }
 /*            --ne-anti: #d9e1f2;
           --anti-white: hsl(210, 15%, 95%);

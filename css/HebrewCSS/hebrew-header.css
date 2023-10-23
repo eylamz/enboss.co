@@ -70,6 +70,14 @@ table {
       --anti-grey: hsla(210, 14%, 90%, 1);
       --dark-grey: hsla(210, 14%, 85%, 1);
       --darker-grey: hsl(210, 0%, 35%);
+      --dark-violet: #262671;
+      --violet: #292977;
+      --light-violet: #AB7FFB;
+      --lighter-violet: #BB96FD;
+      --yellow: #FDC632;
+      --light-yellow: #ffd25a;
+      --new-grey: #F3F5F4;
+      --navy: #002031;
 
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);
@@ -188,9 +196,8 @@ header {
     .brand {
       width: 140px;
       height: 55px;
-      fill: var(--blue);
+      fill: var(--navy);
       transition: all .3s ease-in-out;
-
     }
 
     .brand:hover{

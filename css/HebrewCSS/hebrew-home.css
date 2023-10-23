@@ -3,20 +3,24 @@
 
 body {
   overflow-x: hidden;
-  background-color: var(--blue);
+  background-color: var(--white);
 }
 
+.dark .body-move{
+  background-color: var(--ne-light-anti);
+  }
 /* first and second Container CSS */
 .pageContainer {
   width: 100%;
-  background-color: var(--amber);
+  background-color: var(--new-grey);
   transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
 }
 
 
 #firstCon {
       width: 100%;
-      background-color: var(--blue);
+      background-color: var(--violet);
       position: relative;
       background-repeat: repeat;
       background-size: 25%;  
@@ -57,11 +61,11 @@ body {
 
 
   #secondCon {
-    background-color: var(--conq);
+    background-color: var(--new-grey);
+    margin-top: 10px;
   }
 .bottom-container {
-  background-color: var(--amber);
-
+  background-color: var(--new-grey);
 }
 
   .top-container, .bottom-container {
@@ -81,7 +85,7 @@ body {
     width: 100%;
     max-width: 635px;
     height: 500px;
-    background-color: var(--conq);
+    background-color: var(--new-grey);
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -96,7 +100,7 @@ body {
     margin-bottom: 15px;
     width: 100%;
     max-width: 350px;
-    fill: var(--amber);
+    fill: var(--light-yellow);
     z-index: 1;
     animation: bounce 0.5s ease;
     transition: all .3s ease-in-out;
@@ -120,7 +124,7 @@ body {
     font-weight: 800;
     font-size: 3.5rem;
     line-height: 3rem;
-    color: var(--anti-white);
+    color: var(--white);
     word-spacing: 0.1rem;
     letter-spacing: 0.1rem;
   }
@@ -135,21 +139,22 @@ body {
 
   #contain1 button{
     font-weight: 800;
-    color: var(--dark-blue);
-    background-color: var(--amber);
+    color: var(--white);
+    background-color: var(--light-violet);
     border-radius: 30px;
     padding: 10px 40px;
     margin-top: 25px;
+    letter-spacing: 1px;
     opacity: 0;
     animation-name: fade-in-up;
     animation-duration: .6s;
-    animation-delay: .65s; 
+    animation-delay: .65s;
     animation-fill-mode: forwards;
     font-size: 1.25rem;
     transition: all 0.3s ease-in-out;
   }
   #contain1 button:hover {
-    background-color: var(--light-amber);
+    background-color: var(--lighter-violet);
   }
 
 #atEnboss {
@@ -195,14 +200,14 @@ body {
 
   #heading2 {
     font-size: 3.2rem;
-    color: var(--anti-white);
+    color: var(--navy);
   }
 
   #headCount {
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 0px;
-    color: var(--blue);
+    color: var(--navy);
     line-height: 3rem;
     letter-spacing: -0.2rem;
   }
@@ -211,21 +216,21 @@ body {
     line-height: 4.2rem;
     letter-spacing: 0rem;
     font-weight: 900;
-    color: var(--blue);
+    color: var(--navy);
   }
 
 
 
   .top-line {
     margin: 15px 0;
-    border: 1px solid var(--amber);
+    border: 1px solid var(--light-yellow);
     border-radius: 5px;
     width: 100%;
     max-width: 120px;
   }
 
   #line2 {
-    border-color: var(--anti-white);
+    border-color: var(--navy);
   }
 
   .para {
@@ -240,7 +245,7 @@ body {
   }
 
   #weInvite {
-    color: var(--anti-white);
+    color: var(--navy);
   }
 
   #thisIs {
@@ -256,17 +261,17 @@ body {
     margin-top: 20px;
   }
   .contact button {
-    color: var(--anti-white);
+    color: var(--white);
     font-family: 'Noto Sans Hebrew', Sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
-    background-color: var(--conq);
+    background-color: var(--navy);
     border-radius: 36px;
     padding: 7px 20px;
     transition: all .3s ease-in-out;
   }
   .contact button:hover {
-    background-color: var(--light-conq);
+    background-color: var(--light-navy);
   }
 
 
@@ -294,7 +299,7 @@ body {
   
   .newParksTitle {
     margin: 0;
-    color: var(--blue);
+    color: var(--navy);
     font-weight: 700;
     transition: all .3s ease-in-out;
   }
@@ -303,18 +308,17 @@ body {
     margin: 0;
     text-align: right;
     cursor: pointer;
-    color: var(--blue);
-    background-color: var(--amber);
+    color: var(--white);
+    background-color: var(--navy);
     padding: 2.5px 15px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.15rem;
     transition: all .3s ease-in-out;
-
   }
 
   .viewMore:hover {
-    background-color: var(--light-amber);
+    background-color: var(--light-navy);
   }
   
 
@@ -648,6 +652,7 @@ body {
   width: 100%;
   height: 650px;
   margin-top: -50px;
+  margin-bottom: 10px;
 }
 
 .scroll-parent {

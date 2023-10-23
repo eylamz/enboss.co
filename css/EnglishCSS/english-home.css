@@ -1,41 +1,14 @@
 
-:root {
-  --light-grey5: #1d1d1fff;
-  --light-grey4: #424245ff;
-  --light-grey3: #85858a;
-  --light-grey2: #f5f5f7;
-  --light-grey: #f3f3f5ff;
-  --white-btn: rgba(255, 255, 255, 0.8);
-  --white: #fff;
-}
-
-.dark {
-  :root {
-    --white: #000;
-    --light-grey: #050505;
-    --light-grey3: #70706c;
-    --light-grey4: #bdbdba;
-    --light-grey5: #bdbdba;
-    --white-btn: rgba(0, 0, 0, 0.8);
-  }
-}
-
 body {
   height: 100vh;
   max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
-  background-color: var(--white);
+  background-color: var(--blue);
+
 }
 
-.body-move {
-  background-color: var(--white);
-  transition: background-color 0.2s ease-in-out;
-}
 
-.dark .body-move {
-  background-color: var(--ne-white);
-}
 
 
 main {
@@ -46,8 +19,7 @@ main {
 /* first and second Container CSS */
 .pageContainer {
     width: 100%;
-    margin: 12px 0;
-    background-color: var(--light-grey);
+    background-color: var(--amber);
     transition: background-color 0.2s ease-in-out;
   }
 
@@ -57,7 +29,7 @@ main {
         background-color: var(--blue);
         position: relative;
         background-repeat: repeat;
-        background-size: 25%;
+        background-size: 25%;  
         background-image: url('/svg/EnbossWallpaperLight.1.png');
         background-attachment: fixed;
         transition: background-color 0.2s ease-in-out;
@@ -95,13 +67,14 @@ main {
 
 
   #secondCon {
-    background-color: var(--light-grey);
+    background-color: var(--conq);
     width: 100%;
     transition: background-color 0.2s ease-in-out;
+
   }
 
   .top-container {
-    font-family: 'SFProText', "Poppins", Sans-serif;
+    font-family: "Poppins", Sans-serif;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +90,7 @@ main {
     width: 100%;
     max-width: 681px;
     height: 500px;
-    /* background-color: var(--conq); */
+    background-color: var(--conq);
     transition: background-color 0.2s ease-in-out;
   }
 
@@ -125,8 +98,9 @@ main {
     width: 100%;
     max-width: 635px;
     height: 450px;
-    /* background-color: var(--amber); */
+    background-color: var(--amber);
     transition: background-color 0.2s ease-in-out;
+
   }
 
   .topEnboss {
@@ -161,7 +135,7 @@ main {
     font-weight: 800;
     font-size: 3.5rem;
     line-height: 3rem;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     color: var(--anti-text);
     word-spacing: 0.1em;
     letter-spacing: 1px;
@@ -181,21 +155,20 @@ main {
       font-size: 1.25rem;
       font-weight: 800;
       color: var(--dark-blue);
-      background-color: var(--white);
+      background-color: var(--amber);
       border-radius: 30px;
       padding: 10px 40px;
       margin-top: 25px;
       opacity: 0;
       animation-name: fade-in-up;
       animation-duration: .6s;
-      animation-delay: .65s;
+      animation-delay: .65s; 
       animation-fill-mode: forwards;
       transition: background-color .2s ease-in-out;
     }
     #contain1 button:hover {
-    background-color: var(--white-btn);
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);    
-  }
+      background-color: var(--light-amber);
+    }
 
   #atEnboss {
     opacity: 0;
@@ -239,7 +212,7 @@ main {
 
   #heading2 {
     font-size: 3rem;
-    color: var(--conq);
+    color: var(--anti-text);
     line-height: 3.1rem;
   }
 
@@ -291,20 +264,20 @@ main {
   }
 
   #line2 {
-    border-color: var(--light-conq);
+    border-color: var(--anti-text);
   }
 
   .para {
     color: var(--anti-text-2);
     font-size: 1.375rem;
-    font-weight: 100;
+    font-weight: 400;
     word-spacing: 0rem;
-    letter-spacing: 0rem;
+    letter-spacing: 0.05rem;
     line-height: 1.5rem;
   }
 
   #weInvite {
-    color: var(--light-conq);
+    color: var(--anti-text);
   }
 
   #thisIs {
@@ -319,32 +292,30 @@ main {
   .contact {
     margin-top: 20px;
   }
-
   .contact button {
-    color: var(--blue);
-    font-family: 'SFProText', 'Poppins', sans-serif;
+    color: var(--anti-text);
+    font-family: 'Poppins', sans-serif;
     font-size: 1.05rem;
-    background-color: var(--white);
+    background-color: var(--conq);
     border-radius: 36px;
     padding: 7px 20px;
-    font-weight: 600;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+    font-weight: 500;
   }
   
   .contact button:hover {
-    background-color: var(--white-btn);
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+    background-color: var(--light-conq);
   }
 
   .newParks-div {
     display: flex;
     justify-content: center;
-    font-family: 'SFProText', "Poppins", Sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.375rem;
     padding-top: 30px;
-    background-color: var(--light-grey);
+    background-color: var(--anti-white);
     transition: background-color 0.2s ease-in-out;
+
   }
   
   .newParks {
@@ -367,13 +338,12 @@ main {
     text-align: right;
     cursor: pointer;
     color: var(--blue);
-    background-color: var(--white);
+    background-color: var(--amber);
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 1.25rem;
     font-weight:700;
     transition: background-color 0.2s ease-in-out;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
 
   }
   
@@ -662,9 +632,8 @@ main {
     font-size: 0.8rem;
     padding: 4px 12px;
   }
-  1
 
-  .contac t mncvvcvx-  {
+  .contact {
     margin-top: 10px;
   }
 
@@ -720,14 +689,14 @@ main {
   transform: translate(-50%, -50%);
   font-size: 2.2rem;
   font-weight: 600;
-    font-family: 'SFProText', "Poppins", Sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--anti-text);
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   z-index: 200;
 }
 
 .image-scroll {
-  background-color: var(--light-grey);
+  background-color: var(--anti-white);
   height: 650px;
   transition: background-color 0.2s ease-in-out;
 }

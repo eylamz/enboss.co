@@ -1,49 +1,37 @@
+<?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
-<html dir="ltr" lang="en_US" class="notranslate" translate="no">
+<html lang="he-IL" class="notranslate" translate="no">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>ENBOSS - Unite & Ride</title>
-  <meta name="description" content="Discover ENBOSS - Unite & Ride: Your Ultimate Hub for Thrilling Urban Sports and Adventure. Engage in an exhilarating community that transcends boundaries and welcomes enthusiasts of all disciplines. From skateboarding and rollerblading to scootering and more, ENBOSS is your gateway to adrenaline-pumping experiences. Join us today and embrace the spirit of unity and adventure. Explore the limitless possibilities at ENBOSS.co!">  
-
-            <!-- NO CAHCE META TAG -->
-            <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
-  <meta property="og:url" content="http://www.enboss.co/en">
-  <meta property="og:description" content="Discover the captivating story of ENBOSS - Unite & Ride">
+  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:description" content="ENBOSS - Unite & Ride">
+  <meta property="og:url" content="http://www.enboss.co/he">
   <meta property="og:site_name" content="ENBOSS">
-  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#f0f2f4">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
+  <meta property="og:locale" content="he_IL">
   <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, jewish, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
           <!--- Google Fonts -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
- 
-           <!--English Home CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
-
-
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-header.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/dark.css" />
+    
+           <!--Hebrew Home CSS File-->
+<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-home.css" />
+             <!--Hebrew Header CSS File-->
+<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
 
 
             <!-- Enboss.co Google tag (gtag.js) -->
@@ -56,17 +44,18 @@
               gtag('config', 'G-Q7RY353T78');
             </script> <!-- End of Google Tag -->
             
-
-            
+          
 </head>
-
+  
 <body>
-
   <!-- Header Section -->
-  <?php include('../../view/en/english-header.php'); ?>
-<main class="body-move">
-  <!--- First Container-->
+  <?php include('../../view/he/hebrew-header.php'); ?>
+
+  <main class="body-move">
+    <!--- First Container-->
   <section class= "pageContainer" id="firstCon">
+    <div class="background-image"></div>
+
   <div class="top-container" id="contain1">
     <div class="topEnboss" aria-label="enboss">
 <svg version="1.1" id="Layer_1" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -119,18 +108,18 @@
 
     </div>
     <div class="heading" id="heading1">
-      <h2>Unite & Ride</h2>
+      <h2>לאחד ולגלוש<br></h2>
     </div>
     <hr class="top-line" id="line1">
     <div class="para" id="atEnboss">
-      <p>unites extreme sports enthusiasts to share their passion for adventure in an inclusive, boss-free community that celebrates the transformative power of riding.</p>
+      <p>אנבוס מאחדים את חובבי ספורט האקסטרים יחד בהרפתקה כוללנית ומשותפת שאין בה בוס. הקהילה שלנו חוגגת את החופש שיש ברכיבה.</p>
     </div>
-    <button onclick="showConfirm()">Join community</button>
+    <button onclick="showConfirm()">הצטרפו לקהילה</button>
     <script>
       function showConfirm() {
         // Create a message with the button inside
         var message = document.createElement('div');
-        message.textContent = 'Do you want to go to ENBOSS instagram?';
+        message.textContent = 'מעוניינים לעבור לאינסטגרם של ENBOSS?';
       
         // Show the confirm box with the message
         var result = confirm(message.innerHTML);
@@ -141,169 +130,149 @@
       }
       </script>
   </div>
+
+
 </section>
-
-
  <!--- Image Horizontal Scroller Section-->
  <div class="scroller">
+
   <div class="responsive-scroll">
     <span class="scroll-thisico"></span>
   </div>
 </div>
 <div class="newParks-div">
   <div class="newParks">
-    <p class="newParksTitle">New Skateparks</p>
-    <a href="/en/skateparks" title="View skateparks page"><button class="viewMore">View more</button></a>
+    <a href="/he/skateparks"><button class="viewMore">הצג עוד</button></a>
+
+    <p class="newParksTitle">פארקים חדשים</p>
   </div>
 </div>
 
 <section class="image-scroll">
   <div class="center">
-      <style> /* New Park Logo */
-              .images .text2 {
-              font-family: 'Open Sans', sans-serif;
-              color: var(--anti-white); 
-              background-color: var(--sham); 
-              box-shadow: var(--img-shadow);
-              border-radius: 50%; 
-              text-shadow: none; 
-              font-size: 1.2rem;
-              padding:18px 10px; 
-              position:absolute;
-              top: 0;
-              left: 0;
-              font-weight: 700;
-              animation: pulse 1s infinite ease-in-out alternate;
-              }
-
-              @keyframes pulse {
-                from { transform: scale(0.8) rotate(-25deg);
-                  background-color: var(--sham);
-                }
-                to { transform: scale(1.2)rotate(-17.5deg);
-                  background-color: var(--light-sham); 
-                }
-              }
-            </style>
     <div class="scroll-parent" id="scroll">
       <div class="images">
-        <a href="/en/skateparks/bat-yam">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/images/Park480-webp/bat-yam.webp">
-            <source media="(max-width: 768px)" srcset="/images/Park768-webp/bat-yam.webp">
-            <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/bat-yam.webp">
-            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/bat-yam.webp">
-            <img src="/images/ParkGallery-webp/bat-yam.webp" alt="bat yam skatepark" />
-          </picture>
-        </a>
-          <div class="text1"><h2>Bat Yam</h2></div>
-          <div class="text2"><h2>NEW</h2></div>
-      </div>
-
-      <div class="images">
-        <a href="/en/skateparks/ramat-gan-2">
-          <picture>
+        <a href="/he/skateparks/ramat-gan-2">
+        <picture>
             <source media="(max-width: 480px)" srcset="/images/Park480-webp/ramat-gan(2).webp">
             <source media="(max-width: 768px)" srcset="/images/Park768-webp/ramat-gan(2).webp">
             <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ramat-gan(2).webp">
             <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ramat-gan(2).webp">
-            <img src="/images/ParkGallery-webp/ramat-gan(2).webp" alt="ramat gan skatepark" />
-          </picture>
-        </a>
-        <div class="text1"><h2>Ramat Gan</h2></div>
-        <div class="text2"><h2>NEW</h2></div>
+            <img src="/images/ParkGallery-webp/ramat-gan(2).webp" alt="סקייטפארק רמת גן" />
+        </picture>
+      </a>       
+        <style> /* New Park Logo */
+          .images .text2 {
+            font-family: 'Open Sans', sans-serif;
+         color: var(--anti-white); 
+         background-color: var(--sham); 
+         box-shadow: var(--img-shadow);
+         border-radius: 50%; 
+         text-shadow: none; 
+         font-size: 1.2rem;
+         padding:18px 10px; 
+         position:absolute;
+        top: 0;
+        right: 0;
+        font-weight: 700;
+        animation: pulse 1s infinite ease-in-out alternate;
+        }
+
+        @keyframes pulse {
+          from { transform: scale(0.8) rotate(-25deg);
+            background-color: var(--sham);
+          }
+           to { transform: scale(1.2)rotate(-17.5deg);
+            background-color: var(--light-sham); 
+          }
+        }
+        </style>
+
+          <div class="text1"><h2>רמת גן</h2></div>
+          <div class="text2"><h2>חדש</h2></div>
       </div>
-
-      <div class="images">
-            <a href="/en/skateparks/kiryat-ata">
-              <picture>
-                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
-                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="kiryat ata skatepark" />
-              </picture>
-            </a>
-            <div class="text1"><h2>Kiryat Ata</h2></div>
-        </div>
-
         <div class="images">
-        <a href="/en/skateparks/dimona">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
-            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
-            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
-            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
-            <img src="/images/ParkGallery-webp/dimona.webp" alt="dimona skatepark" />
-          </picture>
-        </a>
-        <div class="text1"><h2>Dimona</h2></div>
-    </div>
-
-    <div class="images ">
-          <a href="/en/skateparks/kiryat-gat">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-gat.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-gat.webp">
-              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-gat.webp">
-              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-gat.webp">
-              <img src="/images/ParkGallery-webp/kiryat-gat.webp" alt="kiryat gat skatepark" />
-            </picture>
-          </a>
-          <div class="text1"><h2>Kiryat Gat</h2></div>
-        </div>
-
-    <div class="images">
-          <a href="/en/skateparks/nahariya">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
-              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
-              <img src="/images/ParkGallery-webp/nahariya.webp" alt="nahariya skatepark" />
-          </picture>
-        </a>
-          <div class="text1"><h2>Nahariya</h2></div>
-      </div>
-
-      <div class="images">
-          <a href="/en/skateparks/lod">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/lod.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/lod.webp">
-              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/lod.webp">
-              <img src="/images/ParkGallery-webp/lod.webp" alt="lod skatepark" />
-            </picture>
-          </a>
-            <div class="text1"><h2>Lod</h2></div>
-        </div>
-
-        <div class="images">
-          <a href="/en/skateparks/raanana">
-            <picture>
-              <source media="(max-width: 480px)" srcset="/images/Park480-webp/raanana.webp">
-              <source media="(max-width: 768px)" srcset="/images/Park768-webp/raanana.webp">
-              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/raanana.webp">
-              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/raanana.webp">
-              <img src="/images/ParkGallery-webp/raanana.webp" alt="raanana skatepark" />
-          </picture>
-        </a>
-            <div class="text1"><h2>Ra'anana</h2></div>
-        </div>
-
-        <div class="images">
-          <a href="/en/skateparks/hadera">
+          <a href="/he/skateparks/hadera">
             <picture>
                 <source media="(max-width: 480px)" srcset="/images/Park480-webp/hadera.webp">
                 <source media="(max-width: 768px)" srcset="/images/Park768-webp/hadera.webp">
                 <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/hadera.webp">
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/hadera.webp">
-                <img src="/images/ParkGallery-webp/hadera.webp" alt="hadera skatepark" />
+                <img src="/images/ParkGallery-webp/hadera.webp" alt="סקייטפארק חדרה" />
             </picture>
           </a>
-          <div class="text1"><h2>Hadera</h2></div>
+            <div class="text1"><h2>חדרה</h2></div>
         </div>
-
-         
+        <div class="images ">
+          <a href="/he/skateparks/zichron-yaakov">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/zichron-yaakov.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/zichron-yaakov.webp">
+              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/zichron-yaakov.webp">
+              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/zichron-yaakov.webp">
+              <img src="/images/ParkGallery-webp/zichron-yaakov.webp" alt="סקייטפארק זכרון יעקב" />
+          </picture>
+        </a>
+            <div class="text1"><h2>זכרון יעקב</h2></div>
+        </div>
+        <div class="images">
+          <a href="/he/skateparks/lod">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/lod.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/lod.webp">
+              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/lod.webp">
+              <img src="/images/ParkGallery-webp/lod.webp" alt="סקייטפארק לוד" />
+          </picture>
+        </a>
+            <div class="text1"><h2>לוד</h2></div>
+        </div>
+        <div class="images">
+          <a href="/he/skateparks/raanana">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/raanana.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/raanana.webp">
+              <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/raanana.webp">
+              <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/raanana.webp">
+              <img src="/images/ParkGallery-webp/raanana.webp" alt="סקייטפארק רעננה" />
+          </picture>
+        </a>
+            <div class="text1"><h2>רעננה</h2></div>
+        </div>
+        <div class="images">
+            <a href="/he/skateparks/kiryat-ata">
+              <picture>
+                <source media="(max-width: 480px)" srcset="/images/Park480-webp/kiryat-ata.webp">
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/kiryat-ata.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/kiryat-ata.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/kiryat-ata.webp">
+                <img src="/images/ParkGallery-webp/kiryat-ata.webp" alt="סקייטפארק קרית אתא" />
+            </picture>
+          </a>
+            <div class="text1"><h2>קרית אתא</h2></div>
+        </div>
+        <div class="images">
+          <a href="/he/skateparks/nahariya">
+            <picture>
+              <source media="(max-width: 480px)" srcset="/images/Park480-webp/nahariya.webp">
+              <source media="(max-width: 768px)" srcset="/images/Park768-webp/nahariya.webp">
+              <source media="(min-width: 769px)" srcset="/images/ParkGallery-webp/nahariya.webp">
+              <img src="/images/ParkGallery-webp/nahariya.webp" alt="סקייטפארק נהריה" />
+          </picture>
+        </a>
+          <div class="text1"><h2>נהריה</h2></div>
+      </div>
+      <div class="images">
+        <a href="/he/skateparks/dimona">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/dimona.webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/dimona.webp">
+            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/dimona.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/dimona.webp">
+            <img src="/images/ParkGallery-webp/dimona.webp" alt="סקייטפארק דימונה" />
+        </picture>
+      </a>
+        <div class="text1"><h2>דימונה</h2></div>
+    </div>
     </div>
 </div>
 
@@ -314,16 +283,15 @@
   <section class = "pageContainer" id="secondCon">
     <div class="top-container" id="contain2">
       <div class="heading" id="heading2">
-        <h2>Create a positive<br>environment</h2>
+        <h2>יצירת סביבה חיובית
+        </h2>
       </div>
       <hr class="top-line" id="line2">
       <div class="para" id="weInvite">
-        <p>We invite you to come ride with us at any skatepark in Israel. Our skateparks have been thoughtfully designed by experts to facilitate progression. Whether you’re just getting rolling or you’re an advanced rider looking to push further – we’re all about helping you to take your skills to the next level.
-        </p>
+        <p>אנחנו מזמינים אותך לבוא לרכוב איתנו בכל סקייטפארק בישראל. הסקייטפארקים שלנו הונדסו בקפידה על ידי מומחים כדי לעודד התקדמות בכל הרמות. בין אם זה היום הראשון שלך על הגלגלים ובין אם הגעת כדי לפרוץ גבולות - יהיה לך מקום. אנחנו כאן כדי לתמוך בכל אחד ולדחוף כל אחד רחוק יותר ויותר.</p>
       </div>
     </div>
   </section>
-
     <!--- Third Container-->
     <section class = "pageContainer" id="ThirdCon">
       <div class="top-container" id="contain3">
@@ -331,25 +299,25 @@
           <h3 class="experience" data-textone="32">0</h3>
           </div>
         <div class="heading" id="heading3">
-          <h1>Updated Parks</h1>
+          <h1>פארקים מעודכנים
+        </h1>
         </div>
         <div class="para" id="thisIs">
-          <p>This is the number of parks in the data base -<br>it is updated in real time.</p>
+          <p>זה מספר הפארקים הקיימים במערכת-<br>המספר מתעדכן בזמן אמת.</p>
         </div>
         <div class="para" id="doYou">
-          <p>Do you know of another park?<br>Let us know, so we can share with the world.</p>
+          <p>מכירים פארק נוסף?<br>שתפו איתנו, כדי שנשתף עם העולם.</p>
         </div>
         <div class="contact">
-          <a href="/en/contact" title="Contact ENBOSS team"><button  aria-label="contact us button">Contact us</button></a>
+          <a href="/he/contact"><button  aria-label="contact us button">צור קשר</button></a>
         </div>
       </div>
     </section>
         <!--   Footer Section    -->
-  <?php include('../../view/en/english-footer.php'); ?>
-
+        <?php include('../../view/he/hebrew-footer.php'); ?>
 </main>
 
-<script type="text/javascript" src="/js/index-en.js"></script>
 
+<script src="/js/index-en.js"></script>
 </body>
 </html>

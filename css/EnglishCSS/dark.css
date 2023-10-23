@@ -64,13 +64,7 @@
           --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
-          --ne-white: #000;
-          --ne-grey: #050505;
-          --ne-grey2: #0a0a08;
-          --ne-grey3: #70706c;
-          --ne-grey4: #a6a6a5;
-          --ne-grey5: #bdbdba;
-          --ne-btn: rgba(0, 0, 0, 0.8);
+          
 
 }
 
@@ -411,66 +405,80 @@ border-color: var(--ne-light-blue);
 color: var(--ne-anti);
 }
 
-  
 .para {
 color: var(--ne-sec-text);
 }
 
-  #weInvite {
-    color: var(--ne-conq);
+#contain1 button {
+color: var(--ne-blue);
+background-color: var(--ne-light-blue);
 }
-
-  #line2 {
-    border-color: var(--conq);
-}
-#contain1 button {color: var(--ne-blue);background-color: var(--light-grey);}
 
 #contain1 button:hover {
-    background-color: var(--white-btn);
-    text-shadow: 0px 0px 5px rgba(255,255,255,0.15);
+  background-color: var(--ne-lighter-blue);
 }
 
-.image-scroll {background-color: var(--ne-grey);}
+.image-scroll {
+background-color: var(--ne-light-anti);
+}
 
-.newParks-div {background-color: var(--ne-grey);}
+.newParks-div {
+background-color: var(--ne-light-anti);
+}
 
-.newParksTitle {color: var(--light-grey3);}
+.newParksTitle {
+color: var(--ne-blue);
+}
 
 .viewMore {
-  color: var(--ne-grey4);
-  background-color: var(--ne-white);
+color: var(--ne-blue);
+background-color: var(--ne-light-blue);
 }
 
 .viewMore:hover {
-    background-color: var(--ne-btn);
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  background-color: var(--ne-lighter-blue);
 }
 
+#contain2 {
+background-color: var(--ne-conq);
+}
 
+#secondCon {
+background-color: var(--ne-conq);
+}
 
-#secondCon {background-color: var(--ne-grey);}
+.pageContainer {
+background-color: var(--ne-amber);
+}
 
-.pageContainer {background-color: var(--ne-grey);}
+#contain3 {
+background-color: var(--ne-amber);
+}
 
+#headCount {
+color: var(--ne-grey);
+}
 
+#heading3 {
+color: var(--ne-grey);
+}
 
-#headCount {color: var(--light-blue);}
+#thisIs {
+color: var(--ne-light-grey);
+}
 
-#heading2 {
-  color: var(--light-conq);
-}  
-  
-#heading3 {color: var(--light-blue);}
+#doYou {
+color: var(--ne-light-grey);
+}
 
-#thisIs {color: var(--light-grey4);}
-
-#doYou {color: var(--light-grey4);}
-
-.contact button {color: var(--light-grey3);background-color: var(--ne-white);}
+.contact button {
+color: var(--ne-anti);
+background-color: var(--ne-conq);
+}
 
 .contact button:hover {
-    background-color: var(--ne-btn);
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  color: var(--ne-anti);
+  background-color: var(--ne-light-conq);
   }
 
 
