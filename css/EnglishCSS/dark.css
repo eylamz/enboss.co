@@ -64,7 +64,13 @@
           --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
-          
+          --ne-white: #000;
+          --ne-grey: #050505;
+          --ne-grey2: #0a0a08;
+          --ne-grey3: #70706c;
+          --ne-grey4: #a6a6a5;
+          --ne-grey5: #bdbdba;
+          --ne-btn: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -405,80 +411,66 @@ border-color: var(--ne-light-blue);
 color: var(--ne-anti);
 }
 
+  
 .para {
 color: var(--ne-sec-text);
 }
 
-#contain1 button {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
+  #weInvite {
+    color: var(--ne-conq);
 }
+
+  #line2 {
+    border-color: var(--conq);
+}
+#contain1 button {color: var(--ne-blue);background-color: var(--light-grey);}
 
 #contain1 button:hover {
-  background-color: var(--ne-lighter-blue);
+    background-color: var(--white-btn);
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.15);
 }
 
-.image-scroll {
-background-color: var(--ne-light-anti);
-}
+.image-scroll {background-color: var(--ne-grey);}
 
-.newParks-div {
-background-color: var(--ne-light-anti);
-}
+.newParks-div {background-color: var(--ne-grey);}
 
-.newParksTitle {
-color: var(--ne-blue);
-}
+.newParksTitle {color: var(--light-grey3);}
 
 .viewMore {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
+  color: var(--ne-grey4);
+  background-color: var(--ne-white);
 }
 
 .viewMore:hover {
-  background-color: var(--ne-lighter-blue);
+    background-color: var(--ne-btn);
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
 }
 
-#contain2 {
-background-color: var(--ne-conq);
-}
 
-#secondCon {
-background-color: var(--ne-conq);
-}
 
-.pageContainer {
-background-color: var(--ne-amber);
-}
+#secondCon {background-color: var(--ne-grey);}
 
-#contain3 {
-background-color: var(--ne-amber);
-}
+.pageContainer {background-color: var(--ne-grey);}
 
-#headCount {
-color: var(--ne-grey);
-}
 
-#heading3 {
-color: var(--ne-grey);
-}
 
-#thisIs {
-color: var(--ne-light-grey);
-}
+#headCount {color: var(--light-blue);}
 
-#doYou {
-color: var(--ne-light-grey);
-}
+#heading2 {
+  color: var(--light-conq);
+}  
+  
+#heading3 {color: var(--light-blue);}
 
-.contact button {
-color: var(--ne-anti);
-background-color: var(--ne-conq);
-}
+#thisIs {color: var(--light-grey4);}
+
+#doYou {color: var(--light-grey4);}
+
+.contact button {color: var(--light-grey3);background-color: var(--ne-white);}
 
 .contact button:hover {
-  color: var(--ne-anti);
-  background-color: var(--ne-light-conq);
+    background-color: var(--ne-btn);
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
   }
 
 

@@ -503,6 +503,15 @@ function shuffle(array) {
               </a>
           </div>
 
+          <div class="item south">
+                <a href="/en/skateparks/eilat">
+                      <div class="itemImg">
+                  <img src="/images/Park480-webp/eilat.webp" alt="Eilat" loading="lazy">
+                      </div>
+                  <div class="gallery-text"><h2>Eilat</h2></div>
+              </a>
+          </div>
+
         </div>
     </div>
 

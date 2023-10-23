@@ -3,6 +3,10 @@
 <head>
 <link rel="StyleSheet" href="/css/EnglishCSS/header1.css" />
 <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+
+<link rel="StyleSheet" href="/css/SFProText.css" />
+<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/SFProText.css" />
+
 <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
 
@@ -16,7 +20,7 @@
   <div class="navi">
     <nav class="navbar container">
       <a href="/en" class="brand" aria-label="enboss home">
-         <svg version="1.1" aria-label="enboss logo" id="brand" width=140px height=55px fill=auto xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         <svg version="1.1" aria-label="enboss logo" id="brand" width=100px height=43px fill=auto xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 825.8 176.3" style="enable-background:new 0 0 825.8 176.3;" xml:space="preserve">
               <g id="a">
               </g>
@@ -111,12 +115,12 @@
 </script>
 
 
-        <ul class="social-ul">
+        <!-- <ul class="social-ul">
            <li class="social-item"><a href="https://www.youtube.com/@enboss2136" target="_blank" aria-label="enboss youtube page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><defs><style>.front-icon1{fill-rule:evenodd;}</style></defs><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><path class="front-Icon1" d="M32.37,15.45h0s-.24-1.66-.99-2.38c-.94-.96-1.99-.96-2.48-1.02-3.46-.24-8.65-.24-8.65-.24,0,0-5.19,0-8.65,.24-.48,.06-1.53,.06-2.48,1.02-.75,.73-.99,2.39-.99,2.39-.15,1.29-.23,2.59-.24,3.9v1.82c.01,1.3,.09,2.6,.24,3.9,0,0,.24,1.66,.98,2.4,.94,.96,2.18,.93,2.73,1.03,1.98,.18,8.41,.24,8.41,.24,0,0,5.2,0,8.65-.25,.48-.06,1.54-.06,2.48-1.02,.74-.73,.98-2.39,.98-2.39,.15-1.29,.23-2.59,.24-3.9v-1.83c-.01-1.3-.1-2.6-.25-3.9h0Zm-14.67,7.93v-6.76l6.68,3.39-6.68,3.37Z"/></g></g></svg></a></li>
            <li class="social-item"><a href="https://www.tiktok.com/@enboss_official" target="_blank" aria-label="enboss tik-tok page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><defs><style>.front-icon1{fill-rule:evenodd;}</style></defs><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><path class="front-Icon1" d="M23.61,19.68v2.72c0,6.42-7,8.43-9.82,3.83-1.81-2.96-.7-8.16,5.1-8.37v2.85c-.44,.07-.91,.18-1.35,.33-1.29,.44-2.02,1.25-1.82,2.7,.39,2.76,5.46,3.58,5.04-1.82V11.8h2.8c.28,2.4,1.62,3.83,3.95,3.98v2.7c-1.35,.13-2.54-.31-3.91-1.14v2.34Z"/></g></g></svg></a></li>
            <li class="social-item"><a href="https://www.instagram.com/enboss_official/" target="_blank" aria-label="enboss instagram page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><g class="front-Icon1"><path d="M20.26,28.69c-1.18,0-2.35,0-3.53,0-1.35-.01-2.52-.49-3.47-1.45-.92-.93-1.4-2.06-1.41-3.36-.02-2.41-.01-4.81,0-7.22,.01-2.38,1.85-4.44,4.2-4.75,.25-.03,.51-.05,.76-.05,2.33,0,4.65,0,6.98,0,1.36,0,2.53,.49,3.49,1.46,.92,.93,1.4,2.06,1.41,3.36,.02,2.39,.01,4.78,0,7.17-.01,2.39-1.74,4.4-4.1,4.79-.28,.05-.56,.06-.84,.06-1.16,0-2.32,0-3.48,0Zm.02-15.32h0c-1.15,0-2.31,0-3.46,0-.41,0-.81,.05-1.2,.19-1.38,.51-2.25,1.73-2.25,3.23,0,2.33,0,4.66,0,6.99,0,.27,.03,.54,.1,.8,.34,1.46,1.69,2.59,3.33,2.58,2.33-.01,4.66,0,6.99,0,.21,0,.42-.02,.63-.06,1.64-.33,2.75-1.69,2.75-3.37,0-2.32,0-4.64,0-6.96,0-.25-.02-.5-.07-.74-.3-1.48-1.6-2.61-3.11-2.66-1.23-.04-2.47,0-3.71,0Z"/><path d="M20.22,24.59c-2.41-.04-4.33-2.02-4.28-4.4,.05-2.39,2.02-4.3,4.4-4.25,2.38,.04,4.3,2.02,4.26,4.38-.04,2.4-2.01,4.32-4.37,4.28Zm.05-7.13c-1.54,0-2.81,1.25-2.81,2.79,0,1.55,1.25,2.81,2.8,2.82,1.54,0,2.8-1.25,2.81-2.79,.01-1.55-1.25-2.81-2.8-2.82Z"/><path d="M25.77,15.81c0,.51-.46,.97-.98,.97-.59,0-1.03-.45-1.03-1.05,0-.52,.46-.97,1-.97,.58,0,1.01,.45,1.01,1.04Z"/></g></g></g></svg></a></li>
            <li class="social-item"><a href="/en/contact" target="_blank" aria-label="enboss contact us page"><svg class="iconHover" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.53 40.53"><g id="a"/><g id="b"><g id="c"><rect class="back-Icon1" width="40.53" height="40.53" rx="5.67" ry="5.67"/><g class="front-Icon1"><g><path d="M23.64,19.5c0,4.18-3.38,7.56-7.56,7.56-1.52,0-2.94-.45-4.12-1.22h0l-3.67,1.22,1.29-3.71c-.67-1.13-1.05-2.44-1.05-3.85,0-4.18,3.38-7.56,7.56-7.56s7.56,3.38,7.56,7.56Z"/><path d="M30.96,24.88c.67-1.13,1.05-2.44,1.05-3.85,0-4.18-3.38-7.56-7.56-7.56-.77,0-1.52,.12-2.22,.33,1.39,1.5,2.24,3.5,2.24,5.7,0,3.28-1.9,6.13-4.65,7.51,1.28,.99,2.88,1.58,4.62,1.58,1.52,0,2.94-.45,4.12-1.22h0l3.67,1.22-1.29-3.71Z"/></g></g></g></g></svg></a></li>
-        </ul>
+        </ul> -->
         </div>
         <div>
 

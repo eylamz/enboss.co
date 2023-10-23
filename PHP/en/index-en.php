@@ -32,12 +32,21 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/header1.css" />
  
            <!--English Home CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/english-footer.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+
+
+                      <!--English Home CSS File-->
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/header1.css" />
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/foot-flex.css" />
+           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/dark.css" />
+
+           
 
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -314,6 +323,7 @@
         <p>We invite you to come ride with us at any skatepark in Israel. Our skateparks have been thoughtfully designed by experts to facilitate progression. Whether you’re just getting rolling or you’re an advanced rider looking to push further – we’re all about helping you to take your skills to the next level.
         </p>
       </div>
+
     </div>
   </section>
 
@@ -332,10 +342,10 @@
         <div class="para" id="doYou">
           <p>Do you know of another park?<br>Let us know, so we can share with the world.</p>
         </div>
-        <div class="contact">
+          <div class="contact">
           <a href="/en/contact" title="Contact ENBOSS team"><button  aria-label="contact us button">Contact us</button></a>
+          </div>
         </div>
-      </div>
     </section>
         <!--   Footer Section    -->
   <?php include('../../view/en/english-footer.php'); ?>
