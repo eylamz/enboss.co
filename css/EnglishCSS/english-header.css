@@ -84,6 +84,22 @@ table {
       --new-grey: #F3F5F4;
       --navy: #002031;
 
+      --black-100: #050505; /* darker black copyright background */
+      --black-200: #0A0A0A; /* darker black footer background */
+      --black-300: #111111; /* dark black background */
+      --black-400: #121212; /* black background */
+      --white-300: #E5E1DD; /* grey background */
+      --white-400: #EDEDEB; /* white text & background */
+      --orange-500: #F87434 ; /* light orange */
+      --orange-600: #F6834A; /* dark orange */
+      --blue-100: #14191D; /* even darker blue text */
+      --blue-200: #171E24; /* darker blue text */
+      --blue-500: #065AAA; /* dark blue */
+      --blue-600: #0670BA; /* light blue */
+      --cyan-500: #A7C5DD; /* light cyan */
+      --cyan-600: #A0C0D9; /* dark cyan */
+
+
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);
       --munsell: hsla(192, 73%, 36%,1);

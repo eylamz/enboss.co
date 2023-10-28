@@ -7,7 +7,7 @@ body {
 }
 
 .dark .body-move{
-  background-color: var(--ne-light-anti);
+  background-color: var(--dark-100);
   }
 /* first and second Container CSS */
 .pageContainer {
@@ -30,9 +30,8 @@ body {
     }
 
   .dark #firstCon {
-    background-color: var(--ne-blue);
+    background-color: var(--violet-100);
     background-image: url('/svg/EnbossWallpaperLight.1.png');
-  
   }
   
   @media only screen and (max-width: 1440px){
@@ -65,7 +64,6 @@ body {
     margin-top: 10px;
   }
 .bottom-container {
-  background-color: var(--new-grey);
 }
 
   .top-container, .bottom-container {
@@ -85,7 +83,6 @@ body {
     width: 100%;
     max-width: 635px;
     height: 500px;
-    background-color: var(--new-grey);
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -93,7 +90,7 @@ body {
     width: 100%;
     max-width: 635px;
     height: 450px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .topEnboss {
@@ -122,11 +119,12 @@ body {
 
   .heading {
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     line-height: 3rem;
     color: var(--white);
     word-spacing: 0.1rem;
     letter-spacing: 0.1rem;
+    transition: color .3s ease-in-out;
   }
 
   #heading1 {
@@ -140,7 +138,7 @@ body {
   #contain1 button{
     font-weight: 800;
     color: var(--white);
-    background-color: var(--light-violet);
+    background-color: var(--violet-500);
     border-radius: 30px;
     padding: 10px 40px;
     margin-top: 25px;
@@ -154,7 +152,7 @@ body {
     transition: all 0.3s ease-in-out;
   }
   #contain1 button:hover {
-    background-color: var(--lighter-violet);
+    background-color: var(--violet-550);
   }
 
 #atEnboss {
@@ -199,24 +197,26 @@ body {
 }
 
   #heading2 {
-    font-size: 3.2rem;
-    color: var(--navy);
+    font-size: 3rem;
+    color: var(--navy-300);
   }
 
   #headCount {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 0px;
-    color: var(--navy);
+    color: var(--navy-300);
     line-height: 3rem;
     letter-spacing: -0.2rem;
+    transition: color .3s ease-in-out;
   }
 
   #heading3 {
     line-height: 4.2rem;
     letter-spacing: 0rem;
     font-weight: 900;
-    color: var(--navy);
+    color: var(--navy-300);
+    transition: color .3s ease-in-out;
   }
 
 
@@ -230,7 +230,7 @@ body {
   }
 
   #line2 {
-    border-color: var(--navy);
+    border-color: var(--violet-500);
   }
 
   .para {
@@ -242,20 +242,21 @@ body {
     word-spacing: 0.05rem;
     letter-spacing: 0.05rem;
     line-height: 1.5rem;
+    transition: color .3s ease-in-out;
   }
 
   #weInvite {
-    color: var(--navy);
+    color: var(--dark-300);
   }
 
   #thisIs {
-    margin-top: 10px;
-    color: var(--black);
+    margin-top: 7.5px;
+    color: var(--dark-300);
   }
 
   #doYou {
     margin-top: 5px;
-    color: var(--black);
+    color: var(--dark-300);
   }
   .contact {
     margin-top: 20px;
@@ -265,13 +266,13 @@ body {
     font-family: 'Noto Sans Hebrew', Sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
-    background-color: var(--navy);
+    background-color: var(--navy-300);
     border-radius: 36px;
     padding: 7px 20px;
     transition: all .3s ease-in-out;
   }
   .contact button:hover {
-    background-color: var(--light-navy);
+    background-color: var(--navy-400);
   }
 
 
@@ -309,16 +310,16 @@ body {
     text-align: right;
     cursor: pointer;
     color: var(--white);
-    background-color: var(--navy);
+    background-color: var(--navy-300);
     padding: 2.5px 15px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.15rem;
-    transition: all .3s ease-in-out;
+    transition: all .15s ease-in-out;
   }
 
   .viewMore:hover {
-    background-color: var(--light-navy);
+    background-color: var(--navy-400);
   }
   
 
@@ -356,19 +357,18 @@ body {
   }
 
   #heading2 {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
   }
   
   #headCount {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 
   #heading3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 15px;
   }
 
   .top-line {
@@ -423,29 +423,29 @@ body {
   }
 
   #heading2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 
   #headCount {
-    font-size: 3.3rem;
+    font-size: 2.5rem;
   }
 
 
   .top-line {
-    margin: 15px 0;
+    margin: 10px 0;
     width: 90px;
   }
 
   .para {
-    font-size: 1.15rem;
+    font-size: 1rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
-    line-height: 1.4rem;
+    line-height: 1.25rem;
     width: 320px;
   }
 
   #weInvite {
-    line-height: 1.3rem;
+    line-height: 1.25rem;
   }
 
   .contact button {
@@ -482,34 +482,34 @@ body {
   }
 
     #contain2 {
-      width: 350px;
+      width: 300px;
       height: 400px;
     }
 
   #contain3 {
-    width: 346px;
+    width: 298px;
     height: 370px;
   }
 
   #heading2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2rem;
   }
   
   #heading3 {
-    font-size: 2.6rem;
-    line-height: 2.5rem;
+    font-size: 2.1rem;
+    line-height: 2.2rem;
     font-weight: 900;
     margin-bottom: -2.5px;
   }
 
   .contact button {
-    margin-top: -5px;
+    margin-top: 7px;
     padding: 5px 14px;
   }
 
   .para {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
@@ -544,22 +544,17 @@ body {
     letter-spacing: 0.1rem;
   }
 
-  #heading2 {
-    font-size: 2.5rem;
-    line-height: 2.2rem;
-    margin-bottom: 15px;
-  }
-
   #headCount {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
     margin-bottom: 0px;
     letter-spacing: 0.01rem;
   }
 
 
   #heading3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 2rem;
+    margin-bottom: 5px;
   }
 
   .top-line {
@@ -569,9 +564,9 @@ body {
 
   .para {
     font-size: 1rem;
-    word-spacing: 0.2rem;
+    word-spacing: 0.1rem;
     letter-spacing: 0rem;
-    line-height: 1.4rem;
+    line-height: 1.25rem;
     width: 260px;
   }
 
@@ -623,6 +618,21 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 66%);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: hsl(256, 70%, 95%);
+ }
+
+
+ .dark ::-webkit-scrollbar-thumb {
+  background: hsl(256, 70%, 75%);
+  border-radius: 15px;
+  opacity: 0.5 ;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(256, 70%, 70%);
 }
 /* image scroll section */
 
@@ -751,3 +761,73 @@ body {
   /*       End of English Home CSS */
 
 
+  .iron-swords svg {
+    width: 15px;
+    height: 15px;
+    margin: 1.125px;
+    fill: var(--white);
+  }
+  .iron-swords a{
+    color: white;
+  }
+
+
+  
+
+  .outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.centered-div {
+    max-width: 350px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Needed for horizontal lines */
+}
+
+.two-column-list {
+  font-family: 'Noto Sans Hebrew', Sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 0 10px; /* Add padding to separate columns */
+}
+
+.left-column {
+  border-right: 1px solid black; /* Vertical line between columns */
+}
+
+
+.left-column ul,
+.right-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-column ul li,
+.right-column ul li {
+    border-bottom: 1px solid black; /* Horizontal lines under each list item */
+    padding: 5px 0; /* Add padding above and below each list item */
+}
+
+.left-column ul li {
+  text-align: left; /* Align text in the left column to the left */
+}
+
+.right-column ul li {
+  text-align: right; /* Align text in the right column to the right */
+}
+
+.two-column-list li:hover{
+  padding: 10px 0;
+}

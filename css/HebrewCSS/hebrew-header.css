@@ -73,11 +73,25 @@ table {
       --dark-violet: #262671;
       --violet: #292977;
       --light-violet: #AB7FFB;
-      --lighter-violet: #BB96FD;
       --yellow: #FDC632;
       --light-yellow: #ffd25a;
       --new-grey: #F3F5F4;
-      --navy: #002031;
+      --navy-300: #002031;
+      --navy-400: hsl(200.82deg, 100%, 15%);
+      --card-bg: #212529;
+      --dark-600: #8B8B8B;
+      --dark-300: #3F3F3F;
+      --dark-200: #282828;
+      --dark-100: #121212;
+      --violet-600: #E5DBFF;
+      --violet-550: #BB96FD;
+      --violet-500: #A688FA;
+      --violet-300: #2E3366;
+      --violet-200: #282C52;
+      --violet-100: #1D172B;
+      --violet-0: #1A1721;
+      --black: #000;
+
 
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);
@@ -196,12 +210,12 @@ header {
     .brand {
       width: 140px;
       height: 55px;
-      fill: var(--navy);
-      transition: all .3s ease-in-out;
+      fill: var(--navy-300);
+      transition: all .15s ease-in-out;
     }
 
     .brand:hover{
-      fill: var(--light-blue);
+      fill: var(--navy-400);
     }
 
     .menu {
@@ -234,7 +248,7 @@ header {
 
     .menu-link {
       line-height: 1;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.15s ease-in-out;
       color: var(--blue);
     }
 
@@ -243,7 +257,7 @@ header {
     }
 
     .menu-block {
-      fill: var(--blue);
+      fill: var(--navy-300);
       text-align: center;
       width: 26px;
       height: 26px;
@@ -257,7 +271,7 @@ header {
 
 
     .menu-block:hover{
-      fill: var(--light-blue);
+      fill: var(--navy-400);
     }
 
     .menu-item:hover{
@@ -377,10 +391,8 @@ header {
       border: none;
       outline: none;
       border-radius: 1rem;
-      background-color: var(--blue);
+      background-color: var(--navy-300);
       transition: 0.25s ease-in-out;
-
-
     }
     .burger-line:nth-child(1) {
       top: 0.6rem;
@@ -530,10 +542,10 @@ header {
 
   /* ------ End of Header CSS ------ */
   #my-svg-he {
-    stroke: var(--blue);
+    stroke: var(--navy-300);
   }
   #my-svg-he:hover {
-    stroke: var(--light-blue);
+    stroke: var(--navy-400);
   }
 
   #my-svg-he.clicked .glass { 
@@ -566,7 +578,7 @@ header {
     100% {
       stroke-width: 1.5px;
       transform: scale(1.125);
-      stroke: var(--ne-conq);
+      stroke: var(--violet-500);
     }
   }
   
@@ -586,7 +598,7 @@ header {
       transform: translate(-37%, -37%);
       stroke-width:1.1px;
       transform: scale(1.4);
-      stroke: var(--ne-conq);
+      stroke: var(--violet-500);
     }
   }
   
@@ -604,7 +616,7 @@ header {
 
     }
     100% {
-      stroke: var(--ne-conq);
+      stroke: var(--violet-500);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -682,7 +694,7 @@ header {
 
   @keyframes move-spin-rev {
     0% {
-      stroke: var(--ne-conq);
+      stroke: var(--violet-500);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -787,7 +799,7 @@ header {
   }
   
   .active#colorButton {
-    background-color: hsla(221, 49%, 90%, .075);
+    background-color: hsla(256, 100%, 93%, .075);
   }
   .active-mode {
     display:none;

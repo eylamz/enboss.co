@@ -7,7 +7,7 @@ footer {
 
 }
 .footer-main {
-    background-color: var(--violet);
+    background-color: var(--violet-300);
     position: relative;
     width: 100vw;
     height: 100%;
@@ -49,16 +49,17 @@ footer {
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
     margin-top: -5px;
+    transition: color .3s ease-in-out;
 }
 .logo a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--violet-600);
     font-weight: 600;
     transition: all .3s ease-in-out;
 }
 
 .logo a:hover {
-    color: var(--light-violet);
+    color: var(--violet-500);
     font-weight: 700;
 }
 
@@ -104,7 +105,7 @@ footer {
 }
 
 .main-foot h3:hover {
-    color: var(--light-violet);
+    color: var(--violet-500);
 }
 
 
@@ -135,11 +136,11 @@ footer {
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.3rem;
-    transition: all .3s ease-in-out;
+    transition: all .15s ease-in-out;
 }
 
 .skateparks-des a:hover{
-    color: var(--light-violet);
+    color: var(--violet-500);
 }
 
 
@@ -226,7 +227,8 @@ footer {
     padding: 15px 0;
     color: var(--white);
     text-align: center;
-    background-color: var(--dark-violet);
+    background-color: var(--violet-200);
+    transition: all .3s ease-in-out;
 }
 
 @media only screen and (max-width: 660px) {
@@ -248,9 +250,8 @@ footer {
   }
 
 .dark #copyright p{
-    color: var(--new-grey);
-    background-color: var(--violet);
-
+    color: var(--white);
+    background-color: var(--violet-0);
   }
 
 

@@ -72,38 +72,23 @@
 
 
 .dark{ 
-.navbar, .navi, .navi-he {/*dark header*/
-background: var(--ne-grey);  
-}
+.navi, .navi-he {/*dark header*/background: var(--dark-100);}
 
 .menu.is-active {
 background: var(--ne-grey);
 }
 
-.brand {
-fill: var(--ne-logo);
+.brand {fill: #E5DBFF;}
 
-}
+.brand:hover{fill: var(--white);}
 
-.brand:hover{
-fill: var(--anti-white);
-}
+.menu-link {color: var(--violet-600);}
 
-.menu-link {
-color: var(--ne-logo);
-}
+.menu-link:hover{color: var(--white);}
 
-.menu-link:hover{
-color: var(--anti-white);
-}
+.menu-block {fill: var(--violet-600);}
 
-.menu-block {
-fill: var(--ne-logo);
-}
-
-.menu-block:hover{
-fill: var(--anti-white);
-}
+.menu-block:hover{fill: var(--white);}
 
 .menu-item:hover{
 color: var(--anti-white);
@@ -133,9 +118,7 @@ background-color: var(--ne-conq);
     background-color: var(--ne-conq);
 }
 
-#my-svg, #my-svg-he {
-stroke: var(--ne-logo);
-}
+#my-svg, #my-svg-he {stroke: var(--violet-600);}
 
 #my-svg:hover {
 stroke: var(--anti-white);
@@ -153,9 +136,7 @@ stroke: var(--ne-logo) !important;
 
 
 
-#my-svg-he:hover {
-stroke: var(--anti-white);
-}
+#my-svg-he:hover {stroke: var(--white);}
 
 #my-svg-he:hover[class="disable"]
 line.handle {
@@ -211,25 +192,22 @@ background-color: var(--ne-grey)!important;
 
 /*SEARCH BAR DARK CSS */
 
-.search-box, .search-box-he {
-background-color: var(--ne-grey);
-}
+.search-box, .search-box-he {background-color: var(--dark-100);}
 
-.searchRow input {
-color: var(--ne-logo);
-background: var(--ne-light-grey);
-}
+.searchRow input {color: var(--ne-logo);background: var(--dark-200);}
 
 .result-box ul {
-background: var(--ne-grey);
-}
+  background: rgba(18, 18, 18, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+   backdrop-filter: blur(5px);
+               }
 
 .result-box ul li {
-color: var(--ne-dark-anti);
+color: var(--violet-500);
 }
 
 .result-box ul li:hover {
-color: var(--ne-logo);
+color: var(--violet-550);
 }
 
 
@@ -338,59 +316,57 @@ color: var(--anti-white);
 
 .topEnboss {fill: var(--yellow);}
 
-#line1 {border-color: var(--light-violet);}
+#line1 {border-color: var(--violet-500);
+}
+
+#line2 {border-color: var(--violet-550);
+       }
 
 .heading{
 color: var(--ne-anti);
 }
 
-.para {
-color: var(--ne-sec-text);
-}
+.para {color: var(--white);}
 
-#contain1 button {color: var(--ne-blue);background-color: var(--light-violet);}
+#contain1 button {color: var(--black);background-color: var(--violet-500);}
 
 #contain1 button:hover {
-  background-color: var(--lighter-violet);
+  background-color: var(--violet-550);
 }
 
-.image-scroll {background-color: var(--ne-dark-anti);}
+.image-scroll {background-color: var(--card-bg);}
 
-.newParks-div {background-color: var(--ne-dark-anti);}
+.newParks-div {background-color: var(--card-bg);}
 
-.newParksTitle {color: var(--navy);}
+.newParksTitle {color: var(--violet-500);}
 
-.viewMore {color: var(--navy);background-color: var(--light-violet);}
+.viewMore {color: var(--black);background-color: var(--violet-500);}
 
 .viewMore:hover {
-  background-color: var(--lighter-violet);
+  background-color: var(--violet-550);
 }
 
-#contain2 {background-color: var(--ne-dark-anti);}
+#secondCon {background-color: var(--card-bg);}
 
-#secondCon {background-color: var(--ne-dark-anti);}
+.pageContainer {background-color: var(--card-bg);}
 
-.pageContainer {background-color: var(--ne-dark-anti);}
+#headCount {color: var(--white);}
 
-#contain3 {background-color: var(--ne-dark-anti);}
+#heading3 {color: var(--white);}
 
-#headCount {color: var(--navy);}
+#heading2 {color: var(--white);}
 
-#heading3 {color: var(--navy);}
+#weInvite {color: var(--dark-600);}
 
-#thisIs {
-color: var(--ne-light-grey);
-}
+#thisIs {color: var(--dark-600);}
 
-#doYou {
-color: var(--ne-light-grey);
-}
+#doYou {color: var(--dark-600);}
 
-.contact button {color: var(--ne-anti);background-color: var(--navy);}
+.contact button {color: var(--black);background-color: var(--violet-500);}
 
 .contact button:hover {
-  color: var(--ne-anti);
-  background-color: #041E33;
+  color: var(--black);
+  background-color: var(--violet-550);
   }
 
 
@@ -401,7 +377,7 @@ color: var(--ne-light-grey);
 
 .footer-main {  /* FOOTER DARK CSS */
 
-background-color: var(--dark-violet);
+background-color: var(--violet-100);
 
 
 #enbossLogo {
@@ -409,9 +385,7 @@ background-color: var(--dark-violet);
 fill: var(--yellow);
 }
 
-.logo #enbossLogo:
-
-hover{
+.logo #enbossLogo:hover{
 fill: var(--ne-lighter-blue);
 }
 
@@ -440,14 +414,10 @@ fill: hsla(221, 49%, 90%, .1);
 
 fill: hsla(221, 49%, 90%, .7);
 }
-.back-Icon:
-
-hover {
+.back-Icon:hover {
 fill: hsla(221, 49%, 90%, .15);
 }
-.front-Icon:
-
-hover {
+.front-Icon:hover {
 fill: hsla(221, 49%, 90%, 1);
 }
 
