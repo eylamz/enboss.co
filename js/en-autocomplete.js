@@ -364,14 +364,14 @@ resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
   const navi = document.querySelector('.navi');
   
   searchIcon.addEventListener('click', function() {
-    if (!searchBox.classList.contains('active')) {
-      searchBox.classList.add('active');
-      navi.classList.add('active');
+    if (!searchBox.classList.contains('activate')) {
+      searchBox.classList.add('activate');
+      navi.classList.add('activate');
       svgElement.classList.add('clicked');
       svgElement.classList.remove('disable');
     } else {
-      searchBox.classList.remove('active');
-      navi.classList.remove('active');
+      searchBox.classList.remove('activate');
+      navi.classList.remove('activate');
       if (svgElement.classList.contains('clicked')) {
         svgElement.classList.remove('clicked');
         svgElement.classList.add('disable');
@@ -382,9 +382,9 @@ resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
   });
   
   searchBtn.addEventListener('click', function() {
-    if (searchBox.classList.contains('active')) {
-      searchBox.classList.remove('active');
-      navi.classList.add('active');
+    if (searchBox.classList.contains('activate')) {
+      searchBox.classList.remove('activate');
+      navi.classList.add('activate');
       if (svgElement.classList.contains('clicked')) {
         svgElement.classList.remove('clicked');
         svgElement.classList.add('disable');

@@ -4,9 +4,14 @@ body {
   max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
-  background-color: var(--blue);
+  background-color: white;
 
 }
+
+.dark .body-move {
+  background-color: black;
+}
+
 
 
 
@@ -19,24 +24,25 @@ main {
 /* first and second Container CSS */
 .pageContainer {
     width: 100%;
-    background-color: var(--amber);
+    margin-bottom: 10px;
+    background-color: var(--white-300);
     transition: background-color 0.2s ease-in-out;
   }
 
   
   #firstCon {
         width: 100%;
-        background-color: var(--blue);
+        background-color: var(--white-400);
         position: relative;
         background-repeat: repeat;
-        background-size: 25%;  
-        background-image: url('/svg/EnbossWallpaperLight.1.png');
+        background-size: 25%;
+        background-image: url('/svg/EnbossDark0.25.png');
         background-attachment: fixed;
         transition: background-color 0.2s ease-in-out;
   }
   
     .dark #firstCon {
-      background-color: var(--ne-blue);
+      background-color: var(--black-300);
       background-image: url('/svg/EnbossWallpaperLight.1.png');
     
     }
@@ -67,11 +73,13 @@ main {
 
 
   #secondCon {
-    background-color: var(--conq);
+    background-color: var(--white-400);
     width: 100%;
     transition: background-color 0.2s ease-in-out;
-
+    margin: 10px 0;
   }
+
+section#secondCon {}
 
   .top-container {
     font-family: "Poppins", Sans-serif;
@@ -90,7 +98,6 @@ main {
     width: 100%;
     max-width: 681px;
     height: 500px;
-    background-color: var(--conq);
     transition: background-color 0.2s ease-in-out;
   }
 
@@ -98,16 +105,14 @@ main {
     width: 100%;
     max-width: 635px;
     height: 450px;
-    background-color: var(--amber);
     transition: background-color 0.2s ease-in-out;
-
   }
 
   .topEnboss {
     margin-bottom: 15px;
     width: 100%;
     max-width: 350px;
-    fill: var(--amber);
+    fill: var(--blue-500);
   }
 
   .topEnboss {
@@ -136,7 +141,7 @@ main {
     font-size: 3.5rem;
     line-height: 3rem;
     text-transform: uppercase;
-    color: var(--anti-text);
+    color: var(--orange-500);
     word-spacing: 0.1em;
     letter-spacing: 1px;
   }
@@ -154,20 +159,20 @@ main {
     #contain1 button{
       font-size: 1.25rem;
       font-weight: 800;
-      color: var(--dark-blue);
-      background-color: var(--amber);
+      color: var(--white-400);
+      background-color: var(--blue-500);
       border-radius: 30px;
       padding: 10px 40px;
       margin-top: 25px;
       opacity: 0;
       animation-name: fade-in-up;
       animation-duration: .6s;
-      animation-delay: .65s; 
+      animation-delay: .65s;
       animation-fill-mode: forwards;
       transition: background-color .2s ease-in-out;
     }
     #contain1 button:hover {
-      background-color: var(--light-amber);
+      background-color: var(--blue-500);
     }
 
   #atEnboss {
@@ -212,7 +217,7 @@ main {
 
   #heading2 {
     font-size: 3rem;
-    color: var(--anti-text);
+    color: var(--blue-500);
     line-height: 3.1rem;
   }
 
@@ -220,14 +225,11 @@ main {
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 10px;
-    color: var(--blue);
-
   }
 
   #heading3 {
     letter-spacing: 0.1rem;
     font-weight: 900;
-    color: var(--blue);    
   }
   
   #heading3.animate {
@@ -257,18 +259,18 @@ main {
 
   .top-line {
     margin: 15px 0;
-    border: 1px solid var(--amber);
+    border: 1px solid var(--orange-600);
     border-radius: 5px;
     width: 100%;
     max-width: 150px;
   }
 
   #line2 {
-    border-color: var(--anti-text);
+    border-color: var(--cyan-500);
   }
 
   .para {
-    color: var(--anti-text-2);
+    color: var(--blue-200);
     font-size: 1.375rem;
     font-weight: 400;
     word-spacing: 0rem;
@@ -277,33 +279,31 @@ main {
   }
 
   #weInvite {
-    color: var(--anti-text);
+    color: var(--blue-200);
   }
 
   #thisIs {
     margin-top: 10px;
-    color: var(--black);
   }
 
   #doYou {
     margin-top: 5px;
-    color: var(--black);
   }
   .contact {
     margin-top: 20px;
   }
   .contact button {
-    color: var(--anti-text);
+    color: var(--white-300);
     font-family: 'Poppins', sans-serif;
     font-size: 1.05rem;
-    background-color: var(--conq);
+    background-color: var(--blue-500);
     border-radius: 36px;
     padding: 7px 20px;
     font-weight: 500;
   }
   
   .contact button:hover {
-    background-color: var(--light-conq);
+    background-color: var(--blue-600);
   }
 
   .newParks-div {
@@ -313,9 +313,8 @@ main {
     font-weight: 500;
     font-size: 1.375rem;
     padding-top: 30px;
-    background-color: var(--anti-white);
+    background-color: var(--white-300);
     transition: background-color 0.2s ease-in-out;
-
   }
   
   .newParks {
@@ -329,7 +328,7 @@ main {
   }
   
   .newParksTitle {
-    color: var(--blue);
+    color: var(--blue-200);
     font-weight: 600;
   }
   
@@ -337,18 +336,17 @@ main {
     margin: 0;
     text-align: right;
     cursor: pointer;
-    color: var(--blue);
-    background-color: var(--amber);
+    color: var(--white-300);
+    background-color: var(--blue-500);
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 1.25rem;
     font-weight:700;
     transition: background-color 0.2s ease-in-out;
-
   }
   
   .viewMore:hover {
-    background-color: var(--light-amber);
+    background-color: var(--blue-600);
   }
 
 
@@ -553,7 +551,7 @@ main {
   #heading3 {
     font-size: 2.3rem;
     font-weight: 900;
-    color: var(--blue);
+    color: var(--orange-500);
     line-height: 2rem;
   }
 
@@ -696,7 +694,7 @@ main {
 }
 
 .image-scroll {
-  background-color: var(--anti-white);
+  background-color: var(--white-300);
   height: 650px;
   transition: background-color 0.2s ease-in-out;
 }

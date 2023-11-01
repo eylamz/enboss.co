@@ -13,18 +13,18 @@
     width: 100%;
     height: 50px;
     margin: 0 auto;
-    background-color: var(--anti-white);
+    background-color: var(--white-300);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,.3);    
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,.3);
     z-index: 1;
 }
 
-.search-box.active {
+.search-box.activate {
     top: 80px;
 }
 
 @media only screen and (max-width: 949px){
-    .search-box.active {
+    .search-box.activate {
         top: 64px;
     }
 }
@@ -53,7 +53,7 @@
     padding: 2px 8px 2px 15px;
     color: var(--dark-blue);
     margin-left: 2vw;
-    background: hsl(210, 15%, 90%);
+    background: var(--white-400);
     transition: all 0.3s ease-in-out;
 }
 
@@ -70,7 +70,7 @@
     max-width: 100vw;
     margin: 0 auto;
     padding: 0px 10px 10px;
-    background: var(--anti-white);
+    background: var(--white-300);
     font-size: 1.15rem;
     margin-top: -1px;
     box-shadow: 0px 15px 14px 0.5px rgba(0,0,0,0.05);
@@ -108,7 +108,7 @@
 
 @media only screen and (max-width: 819px){
 
-.search-box.active {
+.search-box.activate {
     top: 64px;
 }
 
