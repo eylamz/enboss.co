@@ -74,7 +74,9 @@
 .dark{ 
 
 .navi {/*dark header*/
-background: var(--black-200);  
+  background: hsla(0, 0%, 0%, 0.7);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 .menu.is-active {
@@ -251,42 +253,57 @@ line.handle {
 
 
 /* PARKS DARK CSS */
+
+.park-container {
+  color: var(--white-600);
+}
 .park-container .park-menu .btn {
-color: var(--body-dark);
-background-color: hsla(45, 100%, 40%, 0.788);
+color: var(--white-200);
+background-color: var(--black-500);
+}
+
+.park-container .park-menu .btn:hover {
+  background-color: var(--blue-400);
+  color: var(--white-300);
 }
 
 .park-container .park-menu .btn.active {
-background-color: hsla(45, 100%, 50%, 0.788);
-color: var(--body-dark);
+background-color: var(--blue-700);
+color: var(--white-500);
 }
 .itemImg {
 background-color: var(--ne-grey)!important;
 }
 
-
+.gallery-text h2{
+color: var(--white-500);
+}
 
 /*SEARCH BAR DARK CSS */
 
 .search-box {
-background-color: var(--ne-grey);
+  background: hsla(0, 0%, 0%, 0.7);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 .searchRow input {
-color: var(--ne-logo);
-background: var(--ne-light-grey);
+color: var(--black-400);
+background: var(--white-300);
 }
 
 .result-box ul {
-background: var(--ne-grey);
+  background: hsla(0, 0%, 0%, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .result-box ul li {
-color: var(--ne-dark-anti);
+color: var(--white-400);
 }
 
 .result-box ul li:hover {
-color: var(--ne-logo);
+color: white;
 }
 
 
@@ -393,6 +410,11 @@ color: var(--anti-white);
 
 /* HOME DARK CSS */
 
+  #firstCon {
+    background-color: var(--black-300);
+    background-image: url('/svg/EnbossWallpaperLight.075.png');
+
+  }
 .topEnboss {
 fill: var(--blue-500);
 }
@@ -494,12 +516,12 @@ background-color: var(--blue-500);
 
 .footer-main {  /* FOOTER DARK CSS */
 
-background-color: var(--black-200);
-
-
-#enbossLogo {
-fill: var(--cyan-600);
+  background: hsla(0, 0%, 0%, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(3px);
 }
+
+#enbossLogo {fill: var(--blue-700);}
 
 .logo #enbossLogo:hover{
   fill: var(--cyan-500);
@@ -571,20 +593,8 @@ color: var(--white-400);
 }
 
 
-/* EDITED IN ENLIGSH-FOOTER.CSS
-.copyright {
-background-color: var(--ne-light-grey);
 }
 
-.copyright p{
-color: var(--ne-light-anti);
-} */     
-}
-/*            --ne-anti: #d9e1f2;
-          --anti-white: hsl(210, 15%, 95%);
-          --ne-blue: #0C1017;
-          --ne-dark-anti: #C7D1E6; 
-*/
 
 
 
@@ -599,4 +609,3 @@ color: var(--ne-light-anti);
 
 
 
-}

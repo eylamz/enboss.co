@@ -44,35 +44,39 @@
   background-color: var(--background);
 }
 
-body {
-background-repeat: repeat;
+.body-move {
+  background-repeat: repeat;
 background-size: 25%;  
 overflow-x: hidden;
-background-image: url('/svg/EnbossWallpaperLight.1.png');
+background-image: url('/svg/EnbossWallpaper0.075.png');
 background-attachment: fixed;
 }
 
+.dark .body-move {
+  background-image: url('/svg/EnbossWallpaperLight.075.png');
+}
+
 @media only screen and (max-width: 1440px){
-body {
-background-size: 30%;  
+  .body-move {
+    background-size: 30%;  
 }
 }
 
 @media only screen and (max-width: 1024px){
-body{
-background-size: 35%;  
+  .body-move {
+    background-size: 35%;  
 }
 }
 
 @media only screen and (max-width: 768px){
-body{
-background-size: 50%;  
+  .body-move {
+    background-size: 50%;  
 }
 }
 
 @media only screen and (max-width: 480px){
-body {
-background-size: 100%;  
+  .body-move {
+    background-size: 100%;  
 }
 }
 
