@@ -55,7 +55,7 @@
           --ne-light-blue : hsl(219 60% 50%);
           --ne-lighter-blue : hsl(219 60% 60%);
           --ne-dark-anti: #9AA0A6;
-          --ne-light-grey: #35363A;
+          --ne-light-grey: hsl(228 3% 22% / 1);
           --ne-light-anti: #BDC1C6;
           --ne-sec-text: #cacaca;
           --ne-amber: hsl(45 100% 48% / 1);
@@ -64,8 +64,6 @@
           --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
-          
-
 }
 
 
@@ -353,35 +351,19 @@ color: var(--ne-blue);
 /* CONTACT DARK CSS */
 
 
-.container-con svg{
-fill: var(--anti-white);
-}
+.container-con svg{fill: var(--orange-600);}
 
-.container-con h3 {
-color: var(--anti-white);
-}
+.container-con h3 {color: var(--white-300);}
 
-.container-con p {
-color: var(--anti-white);
-}
+.container-con p {color: var(--white-300);}
 
-.container-con p a {
-color: var(--white);
-}
+.container-con p a {color: var(--white-400);}
 
-.container-con p a:hover {
-color: var(--ne-light-blue);
-}
+.container-con p a:hover {color: var(--white-500);}
 
-.contact-page form input, form textarea {
-background: var(--ne-light-grey);
-color: var(--white);
-}
+.contact-page form input, form textarea {background: var(--black-600);color: var(--white-500);}
 
-.contact-page input{
-background: var(--ne-light-grey);
-color: var(--white);
-}
+.contact-page input{background: var(--black-600);color: var(--white-500);}
 
 .contact-page form ::placeholder {
 color: var(--ne-dark-anti);
@@ -391,15 +373,9 @@ color: var(--ne-dark-anti);
 color: var(--ne-dark-anti);
 }
 
-.contact-page button {
-background: var(--ne-light-grey);
-color: var(--anti-white);
-}
+.contact-page button {background: var(--blue-500);color: var(--white-300);}
 
-.contact-page button:hover {
-background: var(--light-blue);
-color: var(--anti-white);
-}
+.contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
 
 
 
@@ -516,9 +492,11 @@ background-color: var(--blue-500);
 
 .footer-main {  /* FOOTER DARK CSS */
 
-  background: hsla(0, 0%, 0%, 0.1);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(3px);
+background: hsla(0, 0%, 0%, 0.1);
+
+-webkit-backdrop-filter: blur(15px);
+
+backdrop-filter: blur(3px);
 }
 
 #enbossLogo {fill: var(--blue-700);}

@@ -90,6 +90,7 @@ table {
       --black-400: #121212; /* black background */
       --black-500: #292929; /* black background */
       --black-500: #292929; /* black background */
+      --black-600: hsl(228 3% 22% / 1); /* black background */
       --white-200: #A1A1A1; /* grey background */
       --white-300: #e0e0e0; /* grey background */
       --white-400: #EDEDEB; /* white text & background */
@@ -104,6 +105,7 @@ table {
       --blue-600: #0670BA; /* light blue */
       --blue-700: #0580D6; /* light blue */
       --blue-800: #0694f9; /* light blue */
+      --cyan-400: #6c9dc6; /* light cyan */
       --cyan-500: #A7C5DD; /* light cyan */
       --cyan-600: #A0C0D9; /* dark cyan */
 
@@ -204,7 +206,7 @@ header {
       position: fixed;
       top: 0;
       width: 100%;
-      background: hsla(0, 0%, 93%, 0.8);
+      background: hsla(0, 0%, 90%, 0.8);
       -webkit-backdrop-filter: blur(15px);
       backdrop-filter: blur(15px);          
       z-index: 100;

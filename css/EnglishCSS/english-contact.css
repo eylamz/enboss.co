@@ -1,12 +1,18 @@
 
 body {
-  background: hsl(0 0% 98% / 1);
+  background: var(--white-400);
   margin: 0px;
   font-family: 'Poppins',sans-serif !important;
+    background-repeat: repeat;
+  background-size: 25%;  
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+  background-attachment: fixed;
 }
 
 body.dark {
-background-color: var(--body-dark);
+background-color: var(--black-400);
+  background-image: url('/svg/EnbossWallpaperLight.1.png');
+
 }
 
 
@@ -14,44 +20,36 @@ background-color: var(--body-dark);
   padding-top: 100px;
   width: 100%;
   height: 100%;
-  background: hsl(0 0% 98% / 1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 50px;
-  background-repeat: repeat;
-  background-size: 25%;  
-  background-image: url('/svg/EnbossWallpaper0.1.png');
-  background-attachment: fixed;
-}
-
-.dark .container-con {
-background-color: var(--body-dark);
-background-image: url('/svg/EnbossWallpaperLight.1.png');
 
 }
+
+
 
 @media only screen and (max-width: 1440px){
-.dark.container-con, .container-con{
+.dark body, body{
   background-size: 30%;  
 }
 }
 
 @media only screen and (max-width: 1024px){
-.dark.container-con, .container-con{
+.dark body, body{
   background-size: 35%;  
 }
 }
 
 @media only screen and (max-width: 768px){
-.dark.container-con, .container-con{
+.dark body, body{
   background-size: 50%;  
 }
 }
 
 @media only screen and (max-width: 480px){
-.dark.container-con, .container-con{
+.dark body, body{
   background-size: 100%;  
 }
 }
@@ -69,19 +67,19 @@ form {
 
 .container-con svg{
   width: 105px;
-  fill: var(--blue);
+  fill: var(--orange-500);
   margin: 10px auto 0;
 }
 
 .container-con h3 {
-  color: var(--blue);
+  color: var(--blue-200);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 14px;
   text-align: center;
 }
 .container-con p {
-  color: var(--light-blue);
+  color: var(--blue-100);
   font-weight: 500;
   font-size: 1.15rem;
   text-align: center;
@@ -89,7 +87,7 @@ form {
 }
 
 .container-con p a {
-  color: var(--blue);
+  color: var(--blue-500);
   font-size: 1.3rem;
   line-height: 1rem;
   border: 0;
@@ -102,7 +100,7 @@ form {
 
 .container-con p a:hover {
       transition: color .3s ease-in-out;
-      color: var(--ne-light-blue);
+      color: var(--blue-700);
   }
 
 .parag {
@@ -115,25 +113,25 @@ form input, form textarea {
   margin: 10px 0;
   padding: 20px;
   outline: none;
-  background: var(--white);
+  background: var(--white-400);
   font-size: 1.15rem;
   border-radius: 15px;
-  color: var(-ne-grey);
+  color: var(--black-100);
 }
 
 
 form ::placeholder {
-  color: #8b8b8b;
+  color: var(--white-200);
 }
 
 form:focus ::placeholder {
-  color: #8b8b8b;
+  color: var(--white-200);
 }
 
 form button {
   padding: 5px;
-  background: var(--white);
-  color: var(--blue);
+  background: var(--blue-500);
+  color: var(--white-400);
   font-size: 1.25rem;
   border: 0;
   font-weight: 600;
@@ -145,8 +143,8 @@ form button {
 }
 
 form button:hover {
-  background: var(--ne-light-blue);
-  color: var(--white);
+  background: var(--blue-600);
+  color: var(--white-400);
   transition: background-color .3s ease-in-out;
 }
 
