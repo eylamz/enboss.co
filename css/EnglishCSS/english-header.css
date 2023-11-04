@@ -88,27 +88,34 @@ table {
       --black-200: #0A0A0A; /* darker black footer background */
       --black-300: #111111; /* dark black background */
       --black-400: #121212; /* black background */
-      --black-500: #292929; /* black background */
-      --black-500: #292929; /* black background */
-      --black-600: hsl(228 3% 22% / 1); /* black background */
+      --black-500: #292929; 
+      --black-600: hsl(228 3% 22% / 1); 
+      --black-700: #545459; /* grey text for white background */
+
       --white-200: #A1A1A1; /* grey background */
       --white-300: #e0e0e0; /* grey background */
       --white-400: #EDEDEB; /* white text & background */
       --white-500: #f8f8f7; /* whiter  background */
       --white-600: #fefefe; /* grey background */
+
       --orange-500: #F87434 ; /* light orange */
       --orange-600: #F6834A; /* dark orange */
+      --orange-700: hsl(20, 91%, 73%); /* dark orange */
+
       --blue-100: #14191D; /* even darker blue text */
       --blue-200: #171E24; /* darker blue text */
+      --blue-300: hsl(209, 91%, 20%); /* dark blue */
       --blue-400: #074E92; /* dark blue */
       --blue-500: #065AAA; /* dark blue */
       --blue-600: #0670BA; /* light blue */
       --blue-700: #0580D6; /* light blue */
       --blue-800: #0694f9; /* light blue */
+
+      --cyan-200: hsl(207, 44%, 40%); /* light cyan */
       --cyan-400: #6c9dc6; /* light cyan */
       --cyan-500: #A7C5DD; /* light cyan */
       --cyan-600: #A0C0D9; /* dark cyan */
-
+      --cyan-700: hsl(206, 43%, 84%); 
 
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);

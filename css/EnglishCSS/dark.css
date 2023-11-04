@@ -574,13 +574,46 @@ color: var(--white-400);
 }
 
 
+/* Anti or Flat DARK CSS - - - infoZone Dark CSS*/
 
 
+.dark.articleLinks{
+  color: var(--orange-600);
+}
 
+.dark.articleLinks:hover {
+  color: var(--orange-700);
+}
 
+.dark.article {
+  color: var(--white-300);
+}
 
+.dark.article h1{
+  color: var(--cyan-500);
+}
 
+.dark.titleHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
 
+.dark.article h2 {
+  color: var(--cyan-700);
+}
+
+.dark.article h3 {
+  color: var(--cyan-700);
+}
+
+.dark.strongSubs {
+  color: var(--cyan-400);
+}
+
+.dark .secHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
 
 
 
