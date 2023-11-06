@@ -3,10 +3,6 @@
 <head>
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
 <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
-
-<link rel="StyleSheet" href="/css/SFProText.css" />
-<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/english-header.css"" />
-
 <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
 

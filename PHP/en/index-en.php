@@ -40,12 +40,6 @@
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-header.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/dark.css" />
-
-
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
             <script>
