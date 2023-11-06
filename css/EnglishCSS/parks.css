@@ -8,7 +8,7 @@ body {
 }
 
 body.dark {
-background-color: var(--black-400);      
+background-color: var(--black-450);      
 background-image: url('/svg/EnbossWallpaperLight.1.png');
 
 }

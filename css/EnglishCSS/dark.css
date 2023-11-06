@@ -72,9 +72,9 @@
 .dark{ 
 
 .navi {/*dark header*/
-  background: hsla(0, 0%, 0%, 0.7);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  background: hsla(0, 0%, 13%, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .menu.is-active {
@@ -257,7 +257,7 @@ line.handle {
 }
 .park-container .park-menu .btn {
 color: var(--white-200);
-background-color: var(--black-500);
+background-color: var(--black-600);
 }
 
 .park-container .park-menu .btn:hover {
@@ -280,9 +280,9 @@ color: var(--white-500);
 /*SEARCH BAR DARK CSS */
 
 .search-box {
-  background: hsla(0, 0%, 0%, 0.7);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  background: hsla(0, 0%, 13%, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .searchRow input {
@@ -291,7 +291,7 @@ background: var(--white-300);
 }
 
 .result-box ul {
-  background: hsla(0, 0%, 0%, 0.5);
+  background: hsla(0, 0%, 13%, 1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -317,34 +317,23 @@ background-color: transparent;
 color: var(--ne-logo);
 }
 
-.about svg{
-fill: var(--ne-amber);
-}
+.about svg{fill: var(--orange-600);}
 
-.about h2 {
-color: var(--ne-amber);
-}
+.about h2 {color: var(--cyan-700);}
 
-.about h3 {
-color: var(--ne-amber);
-}
+.about h3 {color: var(--cyan-700);}
 
-.about h4 {
-color: var(--ne-logo);
-}
+.about h4 {color: var(--cyan-600);}
 
-.about p {
-color: var(--ne-sec-text);
-
-}
+.about p {color: var(--white-200);}
 .social button {
-background: var(--ne-amber);
-color: var(--ne-blue);
+  background: var(--blue-600);
+  color: var(--white-300);
 }
 
 .social button:hover {
-background: var(--ne-amber-act);
-color: var(--ne-blue);
+  background: var(--blue-700);
+  color: var(--white-300);
 }
 
 
@@ -387,9 +376,8 @@ color: var(--ne-dark-anti);
 /* HOME DARK CSS */
 
   #firstCon {
-    background-color: var(--black-300);
+    background-color: var(--black-450);
     background-image: url('/svg/EnbossWallpaperLight.075.png');
-
   }
 .topEnboss {
 fill: var(--blue-500);
@@ -416,12 +404,10 @@ background-color: var(--orange-600);
   background-color: var(--orange-500);
 }
 
-.image-scroll {
-background-color: var(--black-300);
-}
+.image-scroll {background-color: var(--black-450);}
 
 .newParks-div {
-  background-color: var(--black-300);
+  background-color: var(--black-450);
 }
 
 .newParksTitle {
@@ -439,7 +425,8 @@ background-color: var(--blue-500);
 
 
 #secondCon {
-  background-color: var(--black-300);}
+  background-color: var(--black-450);
+  }
 
 
 
@@ -456,7 +443,7 @@ background-color: var(--blue-500);
 }
 
 .pageContainer {/* thirdCon */
-  background-color: var(--black-300);
+  background-color: var(--black-450);
 }
 
 #headCount {
@@ -491,11 +478,7 @@ background-color: var(--blue-500);
 
 
 .footer-main {  /* FOOTER DARK CSS */
-
-background: hsla(0, 0%, 0%, 0.1);
--webkit-backdrop-filter: blur(3px);
-backdrop-filter: blur(3px);
-}
+  background: hsla(0, 0%, 13%, .1);-webkit-backdrop-filter: blur(15px);backdrop-filter: blur(3px);}
 
 #enbossLogo {fill: var(--blue-700);}
 
@@ -560,12 +543,12 @@ color: var(--white-400);
  }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(0, 100%, 1%);
+  background: hsla(0, 0%, 0%, 0.5);
   opacity: 0.75 ;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 12%, 1%);
+  background: hsl(0, 0%, 0%);
 }
 
 

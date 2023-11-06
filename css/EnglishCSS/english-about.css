@@ -5,7 +5,7 @@
 }
 
 .dark .body-move {
-    background-color: var(--black-500);
+    background-color: var(--black-450);
   }
   
 .about-container {
@@ -85,7 +85,8 @@
     color: var(--white-400);
     font-size: 1.25rem;
     border: 0;
-    font-weight: 560;
+    font-weight: 400;
+    letter-spacing: 0.5px;
     outline: none;
     cursor: pointer;
     width: 100%;
