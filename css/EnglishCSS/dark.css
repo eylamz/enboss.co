@@ -1,3 +1,4 @@
+/* English dark.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
@@ -286,9 +287,8 @@ color: var(--white-500);
 }
 
 .searchRow input {
-color: var(--black-400);
-background: var(--white-300);
-}
+  color: var(--white-600);
+  background: var(--black-600);}
 
 .result-box ul {
   background: hsla(0, 0%, 13%, 1);
@@ -321,9 +321,11 @@ color: var(--ne-logo);
 
 .about h2 {color: var(--cyan-700);}
 
+.about h1 {color: var(--cyan-600);}
+
 .about h3 {color: var(--cyan-700);}
 
-.about h4 {color: var(--cyan-600);}
+.about h4 {color: var(--orange-600);}
 
 .about p {color: var(--white-200);}
 .social button {
@@ -352,17 +354,22 @@ color: var(--ne-logo);
 
 .contact-page form input, form textarea {background: var(--black-600);color: var(--white-500);}
 
-.contact-page input{background: var(--black-600);color: var(--white-500);}
+.contact-page input{
+  background: var(--black-600);
+  color: var(--white-500);
+}
 
 .contact-page form ::placeholder {
-color: var(--ne-dark-anti);
+color: var(--white-200);
 } 
 
 .contact-page form:focus ::placeholder {
-color: var(--ne-dark-anti);
+color: var(--white-400);
 }
 
-.contact-page button {background: var(--blue-500);color: var(--white-300);}
+.contact-page button {
+  background: var(--blue-500);
+  color: var(--white-300);}
 
 .contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
 

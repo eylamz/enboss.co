@@ -1,3 +1,5 @@
+/* english-home.css */
+
 body {
   height: 100vh;
   max-width: 100%;
@@ -60,7 +62,7 @@ body {
     
     @media only screen and (max-width: 480px){
       .dark#firstCon, #firstCon{
-        background-size: 100%;  
+        background-size: 80%;  
       }
     }
 

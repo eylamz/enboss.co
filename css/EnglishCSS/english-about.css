@@ -1,3 +1,4 @@
+/* english-about.css */
 
 .body-move {
     background: var(--white-400);
@@ -63,12 +64,11 @@
     font-weight: 400;
 }
 .about h4{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2rem;
     text-align: center;
     line-height: 1.2;
     margin-top: 50px;
-
 }
 .social {
     display: flex;

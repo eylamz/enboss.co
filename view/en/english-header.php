@@ -163,7 +163,7 @@
       document.body.classList.add('dark');
       var colorButton = document.getElementById('colorButton');
       colorButton.classList.add('active');
-      updateMetaThemeColor('var(--black-200)'); // var(--ne-grey)
+      updateMetaThemeColor('var(--black-450)'); // var(--ne-grey)
     }
 
     const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
@@ -172,7 +172,7 @@
         document.body.classList.toggle('dark');
         e.preventDefault();
         const isDarkMode = document.body.classList.contains('dark');
-        updateMetaThemeColor(isDarkMode ? '#0a0a0a' : '#e5e1dd');
+        updateMetaThemeColor(isDarkMode ? '#202020' : '#e0e0e0'); 
       });
     }
   });
@@ -192,11 +192,11 @@
     if (isActive) {
       colorButton.classList.add('active');
       body.classList.add('dark');
-      updateMetaThemeColor('#0a0a0a'); // var(--ne-grey)
+      updateMetaThemeColor('#202020'); // black notification bar color
     } else {
       colorButton.classList.remove('active');
       body.classList.remove('dark');
-      updateMetaThemeColor('#e5e1dd');
+      updateMetaThemeColor('#e0e0e0'); // white notification bar color
     }
   });
 
@@ -217,9 +217,9 @@
   if (prefersDark) {
     isActive = true;
     isColorChanged = true;
-    updateMetaThemeColor('#000000');
+    updateMetaThemeColor('#202020'); // black notification bar color
   } else {
-    updateMetaThemeColor('#f0f2f4');
+    updateMetaThemeColor('#e0e0e0'); // white notification bar color
   }
 
   </script>  
