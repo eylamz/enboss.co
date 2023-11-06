@@ -22,25 +22,25 @@ background-color: var(--black-400);
 }
 
 @media only screen and (max-width: 1440px){
-body {
+.body-move {
   background-size: 30%;  
 }
 }
 
 @media only screen and (max-width: 1024px){
-body{
+.body-move {
   background-size: 35%;  
 }
 }
 
 @media only screen and (max-width: 768px){
-body{
+.body-move {
   background-size: 50%;  
 }
 }
 
 @media only screen and (max-width: 480px){
-body {
+.body-move {
   background-size: 100%;  
 }
 }
@@ -105,7 +105,7 @@ color: var(--white-500);
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 20px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 0 10px;
   }
@@ -115,10 +115,11 @@ color: var(--white-500);
     height: 100%;
     max-width: 280px;
     max-height: 200px;
+    
   }
 
   .itemImg {
-    width: 280px;
+    width: 100%;
     height: 190px;
     background-color: var(--white-400);
     box-shadow: var(--img-shadow);
@@ -238,8 +239,11 @@ color: var(--blue-100);
 
   @media only screen and ( max-width:480px) {
       .park-container .items {
-          row-gap: 80px;
+          row-gap: 20px;
+          padding: 0 20px;
         }
+
+.items {}
   
       .park-container .items .item {
           width: 100%;

@@ -88,6 +88,7 @@ table {
       --black-200: #0A0A0A; /* darker black footer background */
       --black-300: #111111; /* dark black background */
       --black-400: #121212; /* black background */
+      --black-450: #202020;  /*test black background test */
       --black-500: #292929; 
       --black-600: hsl(228 3% 22% / 1); 
       --black-700: #545459; /* grey text for white background */
@@ -214,8 +215,8 @@ header {
       top: 0;
       width: 100%;
       background: hsla(0, 0%, 90%, 0.8);
-      -webkit-backdrop-filter: blur(15px);
-      backdrop-filter: blur(15px);          
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);      
       z-index: 100;
       transition: all 0.3s ease-in-out;
     }

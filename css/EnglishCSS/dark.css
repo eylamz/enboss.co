@@ -73,8 +73,8 @@
 
 .navi {/*dark header*/
   background: hsla(0, 0%, 0%, 0.7);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .menu.is-active {
@@ -493,9 +493,7 @@ background-color: var(--blue-500);
 .footer-main {  /* FOOTER DARK CSS */
 
 background: hsla(0, 0%, 0%, 0.1);
-
--webkit-backdrop-filter: blur(15px);
-
+-webkit-backdrop-filter: blur(3px);
 backdrop-filter: blur(3px);
 }
 
@@ -577,36 +575,36 @@ color: var(--white-400);
 /* Anti or Flat DARK CSS - - - infoZone Dark CSS*/
 
 
-.dark.articleLinks{
+.dark .articleLinks{
   color: var(--orange-600);
 }
 
-.dark.articleLinks:hover {
+.dark .articleLinks:hover {
   color: var(--orange-700);
 }
 
-.dark.article {
+.dark .article {
   color: var(--white-300);
 }
 
-.dark.article h1{
+.dark .article h1{
   color: var(--cyan-500);
 }
 
-.dark.titleHr {
+.dark .titleHr {
   border-color: var(--orange-600);
   opacity: 0.5;
 }
 
-.dark.article h2 {
+.dark .article h2 {
   color: var(--cyan-700);
 }
 
-.dark.article h3 {
+.dark .article h3 {
   color: var(--cyan-700);
 }
 
-.dark.strongSubs {
+.dark .strongSubs {
   color: var(--cyan-400);
 }
 

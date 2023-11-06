@@ -112,7 +112,7 @@ body.dark {
 .dynamic-flat {
     content: url("/images/SVG/flatBlue.svg"); 
 }
-.flat-amber {
+.dark .dynamic-flat {
     content: url("/images/SVG/flatAmber.svg"); 
 }
 
@@ -120,7 +120,7 @@ body.dark {
 .dynamic-plastic {
     content: url("/images/SVG/plasticAntiBlue.svg"); 
 }
-.plastic-amber {
+.dark .dynamic-plastic {
     content: url("/images/SVG/plasticAntiAmber.svg");
 }
 
@@ -128,7 +128,7 @@ body.dark {
 .dynamic-anti {
     content: url("/images/SVG/antiBlue.svg"); 
 }
-.anti-amber {
+.dark .dynamic-anti {
     content: url("/images/SVG/antiAmber.svg"); 
 }
 
@@ -136,7 +136,7 @@ body.dark {
 .dynamic-hub {
     content: url("/images/SVG/hub.svg"); 
 }
-.hub-amber {
+.dark .dynamic-hub {
     content: url("/images/SVG/hubAmber.svg");
 }
 
@@ -209,3 +209,5 @@ hr {
         padding: 0 20px;
       }
     }
+
+
