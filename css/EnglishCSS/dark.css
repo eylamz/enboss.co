@@ -79,7 +79,7 @@
 }
 
 .menu.is-active {
-background: var(--ne-grey);
+background: var(--black-450);
 }
 
 .brand {
@@ -271,7 +271,7 @@ background-color: var(--blue-700);
 color: var(--white-500);
 }
 .itemImg {
-background-color: var(--ne-grey)!important;
+background-color: var(--black-450)!important;
 }
 
 .gallery-text h2{

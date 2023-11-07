@@ -1,10 +1,68 @@
+/* Choosing-the-perfect-rollerblading-wheels.css */
+:root {
+    --article-body: var(--white-600);
+    --article-dark-back: var(--black-450);
+
+    --article-link:var(--blue-500);
+    --article-link-hover:var(--blue-500);
+
+    --article-text: var(--black-700);
+    --article-h1: var(--blue-300);
+    --title-hr: var(--orange-500);
+    --article-h2: var(--blue-400);
+    --article-h3: var(--blue-400);
+    --strong-subs: var(--blue-200);
+    --article-hr: var(--orange-500);
+ }
+
 
 body {
-    background: white;
-    margin: 0px;
-    transition: 0.2s ease-in-out;
+    background-color: var(--article-body);
+    background-repeat: repeat;
+    background-size: 17.5%;  
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+    background-attachment: fixed;
+  }
+  
+  body.dark {
+  background-color: var(--article-dark-back);     
+    background-image: url('/svg/EnbossWallpaperLight.1.png');
+  
+  }
+  
+  @media only screen and (max-width: 1440px){
+  body.dark, body {
+    background-size: 25%;  
+  }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  body.dark, body {
+    background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  body.dark, body {
+    background-size: 45%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  body.dark, body {
+    background-size: 60%;  
+  }
+  }
+
+.articleLinks{
+    color: var(--article-link);
+    font-weight: 500;
+    transition: color 0.15s ease-in-out;
 }
 
+.articleLinks:hover {
+    color: var(--articel-link-hover);
+}
 
 
 .article-container {
@@ -14,21 +72,15 @@ body {
     align-items: center;
     justify-content: center;
     padding: 150px 0;
+    backdrop-filter:blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
 
-.articleLinks{
-    color: var(--light-blue);
-    font-weight: 500;
-    transition: color 0.15s ease-in-out;
-}
 
-.articleLinks:hover {
-    color: var(--light-conq);
-}
 
 .article {
-    font-family: 'Poppins',sans-serif ;
-    color: var(--text-dark);
+    font-family: 'Poppins',sans-serif;
+    color: var(--article-text);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -38,22 +90,24 @@ body {
 }
 
 .article h1 {
+    align-self: center; /* Center horizontally within the .article container */
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     line-height: 1.2;
-    color: var(--dark-blue);
+    color: var(--article-h1);
+    word-wrap: break-word;
 }
 
 .titleHr {
     margin: 10px auto 20px;
-    border: 1px solid  var(--light-blue);
+    border: 1px solid  var(--title-hr);
     width: 75%;
     padding: 0 20px;
   }
 
 .article h2 {
-    color: var(--light-blue);
+    color: var(--article-h2);
     font-weight: 600;
     font-size: 2.125rem;
     margin: 30px 0 5px;
@@ -61,7 +115,7 @@ body {
 }
 
 .article h3 {
-    color: var(--light-blue);
+    color: var(--article-h3);
     font-weight: 600;
     font-size: 1.75rem;
     margin: 30px 0 5px;
@@ -81,7 +135,7 @@ body {
 }
 
 .strongSubs {
-    color: var(--dark-blue);
+    color: var(--strong-subs);
     font-weight: 500;
 }
 
@@ -107,7 +161,7 @@ body {
 .dynamic-size {
     content: url("/images/SVG/wheelSize.svg"); 
 }
-.size-amber {
+.dark .dynamic-size {
     content: url("/images/SVG/wheelSizeAmber.svg"); 
 }
 
@@ -115,7 +169,7 @@ body {
 .dynamic-hardness {
     content: url("/images/SVG/hardness.svg"); 
 }
-.hardness-amber {
+.dark .dynamic-hardness {
     content: url("/images/SVG/hardnessAmber.svg"); 
 }
 
@@ -123,7 +177,7 @@ body {
 .dynamic-profile {
     content: url("/images/SVG/ProfileBlue.svg"); 
 }
-.profile-amber {
+.dark .dynamic-profile {
     content: url("/images/SVG/ProfileAmber.svg"); 
 }
 
@@ -131,80 +185,15 @@ body {
 .dynamic-hub {
     content: url("/images/SVG/hub.svg"); 
 }
-.hub-amber {
+.dark .dynamic-hub {
     content: url("/images/SVG/hubAmber.svg"); 
 }
 
 hr {
     margin: 50px auto 0;
-    border: 1px solid  var(--amber);
+    border: 1px solid  var(--article-hr);
     width: 100%;
     padding: 0 20px;
-  }
-
-
-  /*  ColorMode Button  */
-  
-#colorButton {
-    position: absolute;
-    top: 100px;
-    left: 20vw;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-}
-
-#colorButton img {
-    margin: 0;
-    padding: 0;
-    width: 75%;
-}
-
-.toggle-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80px;
-    height: 40px;
-    background-color: #f0f2f4;
-    border-radius: 20px;
-    padding: 2px;
-    transition: all 0.3s ease;
-  }
-  
-  .active-mode,
-  .inactive-mode {
-    user-select: none;
-    pointer-events: none;
-    transition: color 0.3s ease;
-  }
-  
-  .toggle-circle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .active-mode {
-    padding-left: 10px;
-    margin-right: 2px;
-
-  }
-  
-  .inactive-mode {
-    padding-right: 10px;
-    margin-left: 2px;
-  }
-  
-  #colorButton.active .toggle-circle {
-    transform: translateX(40px);
   }
 
 
@@ -261,51 +250,23 @@ hr {
         margin: 10px 0 20px;
         padding: 0 20px;
     }
-    
-    
-    hr {
-        margin: 50px auto 0;
-        border: 1px solid  var(--amber);
-        width: 100%;
-        padding: 0 20px;
-      }
-
-      #colorButton {
-        position: absolute;
-        top: 80px;
-        left: 20px;
     }
-    .toggle-button {
-        width: 65px;
-        height: 31px;
-        padding: 2px;
-      }
-      
-      .toggle-circle {
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 27px;
-        height: 27px;
-      }
 
-      .active-mode {
-        padding-left: 7px;
-        margin-bottom: 2px;
-    
-      }
-      
-      .inactive-mode {
-        padding-right: 6px;
-        margin-bottom: 2px;
-      }
 
-      #colorButton img {
-        margin: 0;
-        padding: 0;
-        width: 80%;
+@media (max-width: 674px) {
+    .article h1 {
+        width: 470px; /* Allow HEADER text to wrap onto multiple lines */
     }
-    #colorButton.active .toggle-circle {
-        transform: translateX(34px);
-      }
+}
+
+@media (max-width: 480px) {
+    .article h1 {
+        width: 330px; /* Allow HEADER text to wrap onto multiple lines */
     }
+}
+
+@media (max-width: 349px) {
+    .article h1 {
+        width: 280px; /* Allow HEADER text to wrap onto multiple lines */
+    }
+}

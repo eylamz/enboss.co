@@ -4,7 +4,7 @@
 body {
   background-color: var(--white-600);
   background-repeat: repeat;
-  background-size: 25%;  
+  background-size: 17.5%;  
 background-image: url('/svg/EnbossWallpaper0.075.png');
   background-attachment: fixed;
 }
@@ -17,7 +17,7 @@ background-color: var(--black-450);
 
 @media only screen and (max-width: 1440px){
 body.dark, body {
-  background-size: 30%;  
+  background-size: 25%;  
 }
 }
 
@@ -29,13 +29,13 @@ body.dark, body {
 
 @media only screen and (max-width: 768px){
 body.dark, body {
-  background-size: 50%;  
+  background-size: 45%;  
 }
 }
 
 @media only screen and (max-width: 480px){
 body.dark, body {
-  background-size: 100%;  
+  background-size: 60%;  
 }
 }
 

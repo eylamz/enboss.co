@@ -25,6 +25,8 @@ background-color: var(--black-450);
   justify-content: center;
   flex-direction: column;
   padding-bottom: 50px;
+  backdrop-filter:blur(0.5px);
+  -webkit-backdrop-filter: blur(.5px);
 
 }
 
@@ -63,6 +65,7 @@ form {
   max-width: 600px;
   border-radius: 10px;
   margin: 0 auto 50px;
+  
 }
 
 .container-con svg{
@@ -109,6 +112,7 @@ form {
 }
 
 form input, form textarea {
+  font-family: 'Poppins', sans-serif;
   border: 0;
   margin: 10px 0;
   padding: 20px;
