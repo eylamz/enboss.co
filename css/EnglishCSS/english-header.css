@@ -453,7 +453,6 @@ header {
     .body-move.slide {
       transform: translateX(-200px); 
       overflow-x: hidden;
-      filter: blur(5px);
 
     }
 

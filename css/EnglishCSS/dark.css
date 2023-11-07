@@ -70,115 +70,115 @@
 
 
 
-.dark{ 
 
-.navi {/*dark header*/
+.dark .navi {/*dark header*/
   background: hsla(0, 0%, 13%, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
-.menu.is-active {
+.dark .menu.is-active {
 background: var(--black-450);
 }
 
-.brand {
+.dark .brand {
 fill: var(--white-400);
 
 }
 
-.brand:hover{
+.dark .brand:hover{
 fill: white;
 }
 
-.menu-link {
+.dark .menu-link {
 color: var(--white-400);
 }
 
-.menu-link:hover{
+.dark .menu-link:hover{
 color: white;
 }
 
-.menu-block {
+.dark .menu-block {
   fill: var(--white-400);
 }
 
-.menu-block:hover{
+.dark .dark .menu-block:hover{
 fill: white;
 }
 
-.menu-item:hover{
+.dark .menu-item:hover{
   color: white;
 }
 
-.is-active.menu-item:hover{
+.dark .is-active.menu-item:hover{
   color: white;
 }
 
-.search-icon svg {
+.dark .search-icon svg {
   fill: var(--white-400);
 }
 
-.search-icon svg:hover {
+.dark .search-icon svg:hover {
   fill: white;
 }
 
-.burger-line {
+.dark .burger-line {
   background-color: var(--white-400);
 }
   
-.burger.is-active > .burger-line:nth-child(1) {
+.dark .burger.is-active > .burger-line:nth-child(1) {
   background-color: var(--white-400);
 }
   
-.burger.is-active > .burger-line:nth-child(3) {
+.dark .burger.is-active > .burger-line:nth-child(3) {
   background-color: var(--white-400);
 }
-#my-svg {
+.dark #my-svg {
   stroke: var(--white-400);
 }
 
-#my-svg:hover {
+.dark #my-svg:hover {
   stroke: white;
 }
 
-#my-svg:hover[class="disable"]
+.dark #my-svg:hover[class="disable"]
 line.handle {
   stroke: white !important;
 }
 
-#my-svg[class="disable"]
+.dark #my-svg[class="disable"]
 line.handle {
   stroke: var(--white-400) !important;
 }
 
-#my-svg-he:hover[class="disable"]
+.dark #my-svg-he:hover[class="disable"]
 line.handle {
   stroke: white !important;
 }
 
-#my-svg-he[class="disable"]
-line.handle {
+.dark #my-svg-he[class="disable"]
+
+.dark line.handle {
   stroke: var(--white-400) !important;
 }
 
 
-.back-Icon1 {
+.dark .back-Icon1 {
   fill: hsla(221, 49%, 90%, .2);
 }
 
-.front-Icon1 {
+.dark .front-Icon1 {
   fill: hsla(221, 49%, 90%, .7);
 }
 
-#my-svg.clicked .glass { 
+.dark #my-svg.clicked .glass { 
   animation-name: zoom-out;
   animation-duration: .4s;
   animation-fill-mode: forwards;
   transition: all 0.3s ease-in-out
 }
 
-#my-svg.clicked .handle { 
+.dark #my-svg.clicked .handle { 
   animation-name: move-up;
   animation-duration: .4s;
   animation-fill-mode: forwards;
@@ -186,7 +186,7 @@ line.handle {
 }
 
 
-#my-svg.clicked .handle3 {
+.dark #my-svg.clicked .handle3 {
   animation-name: move-spin;
   animation-duration: .4s;
   animation-fill-mode: forwards;
@@ -253,54 +253,54 @@ line.handle {
 
 /* PARKS DARK CSS */
 
-.park-container {
+.dark .park-container {
   color: var(--white-600);
 }
-.park-container .park-menu .btn {
+.dark .park-container .park-menu .btn {
 color: var(--white-200);
 background-color: var(--black-600);
 }
 
-.park-container .park-menu .btn:hover {
+.dark .park-container .park-menu .btn:hover {
   background-color: var(--blue-400);
   color: var(--white-300);
 }
 
-.park-container .park-menu .btn.active {
+.dark .park-container .park-menu .btn.active {
 background-color: var(--blue-700);
 color: var(--white-500);
 }
-.itemImg {
+.dark .itemImg {
 background-color: var(--black-450)!important;
 }
 
-.gallery-text h2{
+.dark .gallery-text h2{
 color: var(--white-500);
 }
 
 /*SEARCH BAR DARK CSS */
 
-.search-box {
+.dark .search-box {
   background: hsla(0, 0%, 13%, 1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
-.searchRow input {
+.dark .searchRow input {
   color: var(--white-600);
   background: var(--black-600);}
 
-.result-box ul {
+  .dark .result-box ul {
   background: hsla(0, 0%, 13%, 1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
-.result-box ul li {
+.dark .result-box ul li {
 color: var(--white-400);
 }
 
-.result-box ul li:hover {
+.dark .result-box ul li:hover {
 color: white;
 }
 
@@ -309,31 +309,31 @@ color: white;
 
 /* ABOUT DARK CSS */
 
-.about-container {
+.dark .about-container {
 background-color: transparent;
 }
 
-.about {
+.dark .about {
 color: var(--ne-logo);
 }
 
-.about svg{fill: var(--orange-600);}
+.dark .about svg{fill: var(--orange-600);}
 
-.about h2 {color: var(--cyan-700);}
+.dark .about h2 {color: var(--cyan-700);}
 
-.about h1 {color: var(--cyan-600);}
+.dark .about h1 {color: var(--cyan-600);}
 
-.about h3 {color: var(--cyan-700);}
+.dark .about h3 {color: var(--cyan-700);}
 
-.about h4 {color: var(--orange-600);}
+.dark .about h4 {color: var(--orange-600);}
 
-.about p {color: var(--white-200);}
-.social button {
+.dark .about p {color: var(--white-200);}
+.dark .social button {
   background: var(--blue-600);
   color: var(--white-300);
 }
 
-.social button:hover {
+.dark .social button:hover {
   background: var(--blue-700);
   color: var(--white-300);
 }
@@ -342,36 +342,36 @@ color: var(--ne-logo);
 /* CONTACT DARK CSS */
 
 
-.container-con svg{fill: var(--orange-600);}
+.dark .container-con svg{fill: var(--orange-600);}
 
-.container-con h3 {color: var(--white-300);}
+.dark .container-con h3 {color: var(--white-300);}
 
-.container-con p {color: var(--white-300);}
+.dark .container-con p {color: var(--white-300);}
 
-.container-con p a {color: var(--white-400);}
+.dark .container-con p a {color: var(--white-400);}
 
-.container-con p a:hover {color: var(--white-500);}
+.dark .container-con p a:hover {color: var(--white-500);}
 
-.contact-page form input, form textarea {background: var(--black-600);color: var(--white-500);}
+.dark .contact-page form input, form textarea {background: var(--black-600);color: var(--white-500);}
 
-.contact-page input{
+.dark .contact-page input{
   background: var(--black-600);
   color: var(--white-500);
 }
 
-.contact-page form ::placeholder {
+.dark .contact-page form ::placeholder {
 color: var(--white-200);
 } 
 
-.contact-page form:focus ::placeholder {
+.dark .contact-page form:focus ::placeholder {
 color: var(--white-400);
 }
 
-.contact-page button {
+.dark .contact-page button {
   background: var(--blue-500);
   color: var(--white-300);}
 
-.contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
+.dark .contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
 
 
 
@@ -382,99 +382,99 @@ color: var(--white-400);
 
 /* HOME DARK CSS */
 
-  #firstCon {
+.dark #firstCon {
     background-color: var(--black-450);
     background-image: url('/svg/EnbossWallpaperLight.075.png');
   }
-.topEnboss {
+  .dark .topEnboss {
 fill: var(--blue-500);
 }
 
-#line1 {
+.dark #line1 {
 border-color: var(--orange-600);
 }
 
-.heading{
+.dark .heading{
 color: var(--white-400);
 }
 
-.para {
+.dark .para {
 color: var(--white-400);
 }
 
-#contain1 button {
+.dark #contain1 button {
 color: var(--black-300);
 background-color: var(--orange-600);
 }
 
-#contain1 button:hover {
+.dark #contain1 button:hover {
   background-color: var(--orange-500);
 }
 
-.image-scroll {background-color: var(--black-450);}
+.dark .image-scroll {background-color: var(--black-450);}
 
-.newParks-div {
+.dark .newParks-div {
   background-color: var(--black-450);
 }
 
-.newParksTitle {
+.dark .newParksTitle {
 color: var(--white-400);
 }
 
-.viewMore {
+.dark .viewMore {
 color: var(--white-400);
 background-color: var(--blue-500);
 }
 
-.viewMore:hover {
+.dark .viewMore:hover {
   background-color: var(--blue-600);
 }
 
 
-#secondCon {
+.dark #secondCon {
   background-color: var(--black-450);
   }
 
 
 
-#heading2 {
+  .dark #heading2 {
   color: var(--cyan-600);
 }
 
-#line2 {
+.dark #line2 {
   border-color: var(--orange-600);
 }
 
-#weInvite {
+.dark #weInvite {
   color: var(--white-400);
 }
 
-.pageContainer {/* thirdCon */
+.dark .pageContainer {/* thirdCon */
   background-color: var(--black-450);
 }
 
-#headCount {
+.dark #headCount {
   color: var(--orange-600);
   }
 
-#heading3 {
+  .dark #heading3 {
   color: var(--orange-600);
 }
 
-#thisIs {
+.dark #thisIs {
   color: var(--white-400);
 }
 
-#doYou {
+.dark #doYou {
 color: var(--white-400);
 }
 
-.contact button {
+.dark .contact button {
 color: var(--white-400);
 background-color: var(--blue-500);
 }
 
-.contact button:hover {
+.dark .contact button:hover {
   background-color: var(--blue-600);
 }
 
@@ -484,82 +484,82 @@ background-color: var(--blue-500);
 
 
 
-.footer-main {  /* FOOTER DARK CSS */
+.dark .footer-main {  /* FOOTER DARK CSS */
   background: hsla(0, 0%, 13%, .1);-webkit-backdrop-filter: blur(15px);backdrop-filter: blur(3px);}
 
-#enbossLogo {fill: var(--blue-700);}
+  .dark #enbossLogo {fill: var(--blue-700);}
 
-.logo #enbossLogo:hover{
+  .dark .logo #enbossLogo:hover{
   fill: var(--cyan-500);
 }
 
-.logo-des {
+.dark .logo-des {
   color: var(--white-400);
 }
 
-.logo a {
+.dark .logo a {
   color: var(--white-400);
 }
 
-.logo a:hover {
+.dark .logo a:hover {
   color: white;
 }
 
-.back-Icon {
+.dark .back-Icon {
   fill: hsla(206, 43%, 74%, .1);
 }
-.front-Icon {
+.dark .front-Icon {
 fill: var(--cyan-600);}
 
-#orange-social {
+.dark #orange-social {
   fill: var(--orange-600);
 }
-.back-Icon:hover {
+.dark .back-Icon:hover {
 fill: hsla(206, 43%, 74%, .15);
 }
-.front-Icon:hover {
+.dark .front-Icon:hover {
 fill: hsla(206, 43%, 74%, .8);
 }
 
-.row h3 {
+.dark .row h3 {
 color: var(--white-300);
 }
 
-.main-foot h3:hover {
+.dark .main-foot h3:hover {
 color: white;
 }
 
-.footer-header{
+.dark .footer-header{
 color: var(--white-400);
 }
 
-.skateparks-des a{
+.dark .skateparks-des a{
 color: var(--white-400);
 }
 
-.skateparks-des a:hover{
+.dark .skateparks-des a:hover{
   color: var(--white-300);
 }
 
-#link-all {
+.dark #link-all {
   color: var(--white-300);
 }
 
-::-webkit-scrollbar-track {
+.dark ::-webkit-scrollbar-track {
   background: #333;
  }
 
-::-webkit-scrollbar-thumb {
+ .dark ::-webkit-scrollbar-thumb {
   background: hsla(0, 0%, 0%, 0.5);
   opacity: 0.75 ;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.dark ::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 0%);
 }
 
 
-}
+
 
 
 /* Anti or Flat DARK CSS - - - infoZone Dark CSS*/

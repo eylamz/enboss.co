@@ -42,43 +42,44 @@
 
 .parkBody {
   background-color: var(--background);
+    background-repeat: repeat;
+  background-size: 25%;  
+  overflow-x: hidden;
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+  background-attachment: fixed;
 }
 
-.body-move {
-  background-repeat: repeat;
-background-size: 25%;  
-overflow-x: hidden;
-background-image: url('/svg/EnbossWallpaper0.075.png');
-background-attachment: fixed;
-}
-
-.dark .body-move {
+  
+.dark.parkBody {
   background-image: url('/svg/EnbossWallpaperLight.075.png');
+  backdrop-filter: blur(0.75px);
+  -webkit-backdrop-filter: blur(0.75px);
 }
 
-@media only screen and (max-width: 1440px){
-  .body-move {
-    background-size: 30%;  
-}
-}
-
-@media only screen and (max-width: 1024px){
-  .body-move {
-    background-size: 35%;  
-}
-}
-
-@media only screen and (max-width: 768px){
-  .body-move {
-    background-size: 50%;  
-}
-}
-
-@media only screen and (max-width: 480px){
-  .body-move {
-    background-size: 100%;  
-}
-}
+  
+  @media only screen and (max-width: 1440px){
+  .parkBody {
+  background-size: 30%;  
+  }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  .parkBody {
+      background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  .parkBody {
+      background-size: 50%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  .parkBody {
+      background-size: 100%;  
+  }
+  }
 
 
 .parkMain {
