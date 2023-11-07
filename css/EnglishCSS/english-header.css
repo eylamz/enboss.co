@@ -87,18 +87,36 @@ table {
       --black-100: #050505; /* darker black copyright background */
       --black-200: #0A0A0A; /* darker black footer background */
       --black-300: #111111; /* dark black background */
-      --black-400: #121212; /* black background */
-      --white-300: #E5E1DD; /* grey background */
+      --black-400: #171717; /* black background */
+      --black-450: #202020;  /*test black background test */
+      --black-500: #292929; 
+      --black-600: hsl(228 3% 22% / 1); 
+      --black-700: #545459; /* grey text for white background */
+
+      --white-200: #A1A1A1; /* grey background */
+      --white-300: #e0e0e0; /* grey background */
       --white-400: #EDEDEB; /* white text & background */
+      --white-500: #f8f8f7; /* whiter  background */
+      --white-600: #fefefe; /* grey background */
+
       --orange-500: #F87434 ; /* light orange */
       --orange-600: #F6834A; /* dark orange */
+      --orange-700: hsl(20, 91%, 73%); /* dark orange */
+
       --blue-100: #14191D; /* even darker blue text */
       --blue-200: #171E24; /* darker blue text */
+      --blue-300: hsl(209, 91%, 20%); /* dark blue */
+      --blue-400: #074E92; /* dark blue */
       --blue-500: #065AAA; /* dark blue */
       --blue-600: #0670BA; /* light blue */
+      --blue-700: #0580D6; /* light blue */
+      --blue-800: #0694f9; /* light blue */
+
+      --cyan-200: hsl(207, 44%, 40%); /* light cyan */
+      --cyan-400: #6c9dc6; /* light cyan */
       --cyan-500: #A7C5DD; /* light cyan */
       --cyan-600: #A0C0D9; /* dark cyan */
-
+      --cyan-700: hsl(206, 43%, 84%); 
 
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);
@@ -192,13 +210,14 @@ header {
       z-index: 100;
     }
     
-    .navi { 
+    .navi {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: var(--anti-white);
+      background: hsla(0, 0%, 90%, 0.8);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);      
       z-index: 100;
-      box-shadow:  var(--shadow-bottom);
       transition: all 0.3s ease-in-out;
     }
 
@@ -214,22 +233,21 @@ header {
       width: 100%;
       height: 64px;
       margin: 0 auto;
-      background: var(--anti-white);
-      transition: all 0.3s ease-in-out; 
+      transition: all 0.3s ease-in-out;
     }
 
 
     
     .brand {
-      width: 140px;
-      height: 55px;
-      fill: var(--blue);
+      width: 80px;
+      height: 44px;
+      fill: var(--black-200);
       z-index: 100;
-      transition: all 0.3s ease-in-out; 
+      transition: all 0.3s ease-in-out;
     }
 
     .brand:hover{
-      fill: var(--light-blue);
+      fill: var(--blue-100);
     }
 
 
@@ -250,9 +268,8 @@ header {
       right: 0;
       font-size: 1.25rem;
       font-weight: 600;
-      background-color: var(--anti-white);
+      background-color: var(--white-300);
       z-index: 10;
-
     }
 
     .menu-inner {
@@ -266,29 +283,27 @@ header {
 
     .menu-link {
       line-height: 1;
-      color: var(--blue);
-
+      color: var(--black-200);
     }
 
     .menu-link:hover {
-      color: var(--light-blue);
+      color: var(--blue-100);
     }
 
 
     .menu-block {
-      fill: var(--blue);
+      fill: var(--black-200);
       text-align: center;
       width: 26px;
       height: 26px;
       margin-top: 5px;
       padding: 0;
       transition: all .3s ease-in-out;
-
     }
 
 
     .menu-block:hover{
-      fill: var(--light-blue);
+      fill: var(--black-100);
     }
 
     .menu-item:hover{
@@ -329,7 +344,7 @@ header {
     .search-icon svg {
       width: 100%;
       max-width: 23px;
-      fill: var(--blue);
+      fill: var(--black-200);
       margin-bottom: 1px;
     }
 
@@ -412,7 +427,7 @@ header {
       border: none;
       outline: none;
       border-radius: 1rem;
-      background-color: var(--blue);
+      background-color: var(--black-200);
       transition: 0.25s ease-in-out;
     }
 
@@ -447,9 +462,7 @@ header {
       top: 1rem;
       rotate: 135deg;
       width: 80%;
-      background-color: var(--ne-conq);
-
- 
+      background-color: var(--orange-500);
     }
     .burger.is-active > #burger {
       top: 1rem;
@@ -467,9 +480,7 @@ header {
       top: 1rem;
       rotate: -135deg;
       width: 80%;
-      background-color: var(--ne-conq);
-
-
+      background-color: var(--orange-500);
     }
 /*
     .translate{
@@ -564,10 +575,10 @@ header {
     }
   /* ------ End of Header CSS ------ */
   #my-svg {
-    stroke: var(--blue);
+    stroke: var(--black-200);
   }
   #my-svg:hover {
-    stroke: var(--light-blue);
+    stroke: var(--black-100);
   }
 
   #my-svg.clicked .glass { 

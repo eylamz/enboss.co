@@ -32,7 +32,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
  
            <!--English PrimaryYellowVid CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryYellowVid.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlueVid.css" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

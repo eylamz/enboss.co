@@ -197,7 +197,7 @@ background-color: var(--ne-grey)!important;
 .searchRow input {color: var(--ne-logo);background: var(--dark-200);}
 
 .result-box ul {
-  background: rgba(18, 18, 18, 0.5);
+  background: hsla(0, 0%, 0%, 0.5);
   -webkit-backdrop-filter: blur(5px);
    backdrop-filter: blur(5px);
                }

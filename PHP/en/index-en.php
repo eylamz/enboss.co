@@ -40,12 +40,6 @@
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-home.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/english-header.css" />
-           <link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/EnglishCSS/dark.css" />
-
-
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
             <script>
@@ -163,7 +157,7 @@
               .images .text2 {
               font-family: 'Open Sans', sans-serif;
               color: var(--anti-white); 
-              background-color: var(--sham); 
+              background-color: var(--orange-500); 
               box-shadow: var(--img-shadow);
               border-radius: 50%; 
               text-shadow: none; 
@@ -178,10 +172,10 @@
 
               @keyframes pulse {
                 from { transform: scale(0.8) rotate(-25deg);
-                  background-color: var(--sham);
+                  background-color: var(--orange-500);
                 }
                 to { transform: scale(1.2)rotate(-17.5deg);
-                  background-color: var(--light-sham); 
+                  background-color: var(--orange-600); 
                 }
               }
             </style>

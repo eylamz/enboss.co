@@ -34,7 +34,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English PrimaryYellowVid CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryYellowVid.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlueVid.css" />
            <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->

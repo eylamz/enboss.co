@@ -1,3 +1,4 @@
+/* English dark.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
@@ -55,7 +56,7 @@
           --ne-light-blue : hsl(219 60% 50%);
           --ne-lighter-blue : hsl(219 60% 60%);
           --ne-dark-anti: #9AA0A6;
-          --ne-light-grey: #35363A;
+          --ne-light-grey: hsl(228 3% 22% / 1);
           --ne-light-anti: #BDC1C6;
           --ne-sec-text: #cacaca;
           --ne-amber: hsl(45 100% 48% / 1);
@@ -64,8 +65,6 @@
           --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
-          
-
 }
 
 
@@ -73,8 +72,10 @@
 
 .dark{ 
 
-.navbar, .navi {/*dark header*/
-background: var(--ne-grey);  
+.navi {/*dark header*/
+  background: hsla(0, 0%, 13%, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .menu.is-active {
@@ -82,83 +83,83 @@ background: var(--ne-grey);
 }
 
 .brand {
-fill: var(--ne-logo);
+fill: var(--white-400);
 
 }
 
 .brand:hover{
-fill: var(--anti-white);
+fill: white;
 }
 
 .menu-link {
-color: var(--ne-logo);
+color: var(--white-400);
 }
 
 .menu-link:hover{
-color: var(--anti-white);
+color: white;
 }
 
 .menu-block {
-fill: var(--ne-logo);
+  fill: var(--white-400);
 }
 
 .menu-block:hover{
-fill: var(--anti-white);
+fill: white;
 }
 
 .menu-item:hover{
-color: var(--anti-white);
+  color: white;
 }
 
 .is-active.menu-item:hover{
-color: var(--anti-white);
+  color: white;
 }
 
 .search-icon svg {
-  fill: var(--ne-logo);
+  fill: var(--white-400);
 }
 
 .search-icon svg:hover {
-  fill: var(--anti-white);
+  fill: white;
 }
 
 .burger-line {
-  background-color: var(--ne-logo);
+  background-color: var(--white-400);
 }
   
 .burger.is-active > .burger-line:nth-child(1) {
-  background-color: var(--ne-conq);
+  background-color: var(--white-400);
 }
   
 .burger.is-active > .burger-line:nth-child(3) {
-  background-color: var(--ne-conq);
+  background-color: var(--white-400);
 }
 #my-svg {
-  stroke: var(--ne-logo);
+  stroke: var(--white-400);
 }
 
 #my-svg:hover {
-  stroke: var(--anti-white);
+  stroke: white;
 }
 
 #my-svg:hover[class="disable"]
 line.handle {
-  stroke: var(--anti-white) !important;
+  stroke: white !important;
 }
 
 #my-svg[class="disable"]
 line.handle {
-  stroke: var(--ne-logo) !important;
+  stroke: var(--white-400) !important;
 }
 
 #my-svg-he:hover[class="disable"]
 line.handle {
-  stroke: var(--anti-white) !important;
+  stroke: white !important;
 }
 
 #my-svg-he[class="disable"]
 line.handle {
-  stroke: var(--ne-logo) !important;
+  stroke: var(--white-400) !important;
 }
 
 
@@ -200,7 +201,7 @@ line.handle {
 100% {
   stroke-width: 1.5px;
   transform: scale(1.125);
-  stroke: var(--light-blue);
+  stroke: white;
 }
 }
 
@@ -220,7 +221,7 @@ line.handle {
     transform: translate(-37%, -37%);
     stroke-width:1.1px;
     transform: scale(1.4);
-    stroke: var(--light-blue);
+    stroke: white;
   }
 }
 
@@ -228,7 +229,7 @@ line.handle {
   0% {
     transform-origin: 100% 100%;
     transform: translate(-50%, 50%);
-    stroke: var(--blue);
+    stroke: var(--white-400);
     opacity: 0;
   }
 
@@ -238,7 +239,7 @@ line.handle {
 
   }
   100% {
-    stroke: var(--light-blue);
+    stroke: white;
     transform: translate(0, 0);
     opacity: 1;
   }
@@ -251,42 +252,56 @@ line.handle {
 
 
 /* PARKS DARK CSS */
+
+.park-container {
+  color: var(--white-600);
+}
 .park-container .park-menu .btn {
-color: var(--body-dark);
-background-color: hsla(45, 100%, 40%, 0.788);
+color: var(--white-200);
+background-color: var(--black-600);
+}
+
+.park-container .park-menu .btn:hover {
+  background-color: var(--blue-400);
+  color: var(--white-300);
 }
 
 .park-container .park-menu .btn.active {
-background-color: hsla(45, 100%, 50%, 0.788);
-color: var(--body-dark);
+background-color: var(--blue-700);
+color: var(--white-500);
 }
 .itemImg {
 background-color: var(--ne-grey)!important;
 }
 
-
+.gallery-text h2{
+color: var(--white-500);
+}
 
 /*SEARCH BAR DARK CSS */
 
 .search-box {
-background-color: var(--ne-grey);
+  background: hsla(0, 0%, 13%, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .searchRow input {
-color: var(--ne-logo);
-background: var(--ne-light-grey);
-}
+  color: var(--white-600);
+  background: var(--black-600);}
 
 .result-box ul {
-background: var(--ne-grey);
+  background: hsla(0, 0%, 13%, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .result-box ul li {
-color: var(--ne-dark-anti);
+color: var(--white-400);
 }
 
 .result-box ul li:hover {
-color: var(--ne-logo);
+color: white;
 }
 
 
@@ -302,87 +317,61 @@ background-color: transparent;
 color: var(--ne-logo);
 }
 
-.about svg{
-fill: var(--ne-amber);
-}
+.about svg{fill: var(--orange-600);}
 
-.about h2 {
-color: var(--ne-amber);
-}
+.about h2 {color: var(--cyan-700);}
 
-.about h3 {
-color: var(--ne-amber);
-}
+.about h1 {color: var(--cyan-600);}
 
-.about h4 {
-color: var(--ne-logo);
-}
+.about h3 {color: var(--cyan-700);}
 
-.about p {
-color: var(--ne-sec-text);
+.about h4 {color: var(--orange-600);}
 
-}
+.about p {color: var(--white-200);}
 .social button {
-background: var(--ne-amber);
-color: var(--ne-blue);
+  background: var(--blue-600);
+  color: var(--white-300);
 }
 
 .social button:hover {
-background: var(--ne-amber-act);
-color: var(--ne-blue);
+  background: var(--blue-700);
+  color: var(--white-300);
 }
 
 
 /* CONTACT DARK CSS */
 
 
-.container-con svg{
-fill: var(--anti-white);
-}
+.container-con svg{fill: var(--orange-600);}
 
-.container-con h3 {
-color: var(--anti-white);
-}
+.container-con h3 {color: var(--white-300);}
 
-.container-con p {
-color: var(--anti-white);
-}
+.container-con p {color: var(--white-300);}
 
-.container-con p a {
-color: var(--white);
-}
+.container-con p a {color: var(--white-400);}
 
-.container-con p a:hover {
-color: var(--ne-light-blue);
-}
+.container-con p a:hover {color: var(--white-500);}
 
-.contact-page form input, form textarea {
-background: var(--ne-light-grey);
-color: var(--white);
-}
+.contact-page form input, form textarea {background: var(--black-600);color: var(--white-500);}
 
 .contact-page input{
-background: var(--ne-light-grey);
-color: var(--white);
+  background: var(--black-600);
+  color: var(--white-500);
 }
 
 .contact-page form ::placeholder {
-color: var(--ne-dark-anti);
+color: var(--white-200);
 } 
 
 .contact-page form:focus ::placeholder {
-color: var(--ne-dark-anti);
+color: var(--white-400);
 }
 
 .contact-page button {
-background: var(--ne-light-grey);
-color: var(--anti-white);
-}
+  background: var(--blue-500);
+  color: var(--white-300);}
 
-.contact-page button:hover {
-background: var(--light-blue);
-color: var(--anti-white);
-}
+.contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
 
 
 
@@ -393,93 +382,101 @@ color: var(--anti-white);
 
 /* HOME DARK CSS */
 
+  #firstCon {
+    background-color: var(--black-450);
+    background-image: url('/svg/EnbossWallpaperLight.075.png');
+  }
 .topEnboss {
-fill: var(--ne-light-blue);
+fill: var(--blue-500);
 }
 
 #line1 {
-border-color: var(--ne-light-blue);
+border-color: var(--orange-600);
 }
 
 .heading{
-color: var(--ne-anti);
+color: var(--white-400);
 }
 
 .para {
-color: var(--ne-sec-text);
+color: var(--white-400);
 }
 
 #contain1 button {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
+color: var(--black-300);
+background-color: var(--orange-600);
 }
 
 #contain1 button:hover {
-  background-color: var(--ne-lighter-blue);
+  background-color: var(--orange-500);
 }
 
-.image-scroll {
-background-color: var(--ne-light-anti);
-}
+.image-scroll {background-color: var(--black-450);}
 
 .newParks-div {
-background-color: var(--ne-light-anti);
+  background-color: var(--black-450);
 }
 
 .newParksTitle {
-color: var(--ne-blue);
+color: var(--white-400);
 }
 
 .viewMore {
-color: var(--ne-blue);
-background-color: var(--ne-light-blue);
+color: var(--white-400);
+background-color: var(--blue-500);
 }
 
 .viewMore:hover {
-  background-color: var(--ne-lighter-blue);
+  background-color: var(--blue-600);
 }
 
-#contain2 {
-background-color: var(--ne-conq);
-}
 
 #secondCon {
-background-color: var(--ne-conq);
+  background-color: var(--black-450);
+  }
+
+
+
+#heading2 {
+  color: var(--cyan-600);
 }
 
-.pageContainer {
-background-color: var(--ne-amber);
+#line2 {
+  border-color: var(--orange-600);
 }
 
-#contain3 {
-background-color: var(--ne-amber);
+#weInvite {
+  color: var(--white-400);
+}
+
+.pageContainer {/* thirdCon */
+  background-color: var(--black-450);
 }
 
 #headCount {
-color: var(--ne-grey);
-}
+  color: var(--orange-600);
+  }
 
 #heading3 {
-color: var(--ne-grey);
+  color: var(--orange-600);
 }
 
 #thisIs {
-color: var(--ne-light-grey);
+  color: var(--white-400);
 }
 
 #doYou {
-color: var(--ne-light-grey);
+color: var(--white-400);
 }
 
 .contact button {
-color: var(--ne-anti);
-background-color: var(--ne-conq);
+color: var(--white-400);
+background-color: var(--blue-500);
 }
 
 .contact button:hover {
-  color: var(--ne-anti);
-  background-color: var(--ne-light-conq);
-  }
+  background-color: var(--blue-600);
+}
 
 
 
@@ -488,93 +485,126 @@ background-color: var(--ne-conq);
 
 
 .footer-main {  /* FOOTER DARK CSS */
+  background: hsla(0, 0%, 13%, .1);-webkit-backdrop-filter: blur(15px);backdrop-filter: blur(3px);}
 
-background-color: var(--ne-grey);
-
-
-#enbossLogo {
-fill: var(--ne-light-blue);
-}
+#enbossLogo {fill: var(--blue-700);}
 
 .logo #enbossLogo:hover{
-fill: var(--ne-lighter-blue);
+  fill: var(--cyan-500);
 }
 
 .logo-des {
-color:var(--ne-dark-anti);
+  color: var(--white-400);
 }
 
 .logo a {
-color: var(--ne-logo);
+  color: var(--white-400);
 }
 
 .logo a:hover {
-color: var(--ne-light-blue);
+  color: white;
 }
 
 .back-Icon {
-  fill: hsla(221, 49%, 90%, .1);
+  fill: hsla(206, 43%, 74%, .1);
 }
 .front-Icon {
-  fill: hsla(221, 49%, 90%, .7);
+fill: var(--cyan-600);}
+
+#orange-social {
+  fill: var(--orange-600);
 }
 .back-Icon:hover {
-fill: hsla(221, 49%, 90%, .15);
+fill: hsla(206, 43%, 74%, .15);
 }
 .front-Icon:hover {
-fill: hsla(221, 49%, 90%, 1);
+fill: hsla(206, 43%, 74%, .8);
 }
 
 .row h3 {
-color: var(--ne-anti);
+color: var(--white-300);
 }
 
 .main-foot h3:hover {
-color: var(--anti-white);
+color: white;
 }
 
 .footer-header{
-color: var(--ne-anti);
+color: var(--white-400);
 }
 
 .skateparks-des a{
-color: var(--ne-anti);
+color: var(--white-400);
 }
 
 .skateparks-des a:hover{
-color: var(--ne-dark-anti);
+  color: var(--white-300);
 }
 
 #link-all {
-color: var(--anti-white);
+  color: var(--white-300);
 }
 
-/* EDITED IN ENLIGSH-FOOTER.CSS
-.copyright {
-background-color: var(--ne-light-grey);
+::-webkit-scrollbar-track {
+  background: #333;
+ }
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 0%, 0.5);
+  opacity: 0.75 ;
 }
 
-.copyright p{
-color: var(--ne-light-anti);
-} */     
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 0%);
 }
-/*            --ne-anti: #d9e1f2;
-          --anti-white: hsl(210, 15%, 95%);
-          --ne-blue: #0C1017;
-          --ne-dark-anti: #C7D1E6; 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
+
+
+/* Anti or Flat DARK CSS - - - infoZone Dark CSS*/
+
+
+.dark .articleLinks{
+  color: var(--orange-600);
+}
+
+.dark .articleLinks:hover {
+  color: var(--orange-700);
+}
+
+.dark .article {
+  color: var(--white-300);
+}
+
+.dark .article h1{
+  color: var(--cyan-500);
+}
+
+.dark .titleHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
+
+.dark .article h2 {
+  color: var(--cyan-700);
+}
+
+.dark .article h3 {
+  color: var(--cyan-700);
+}
+
+.dark .strongSubs {
+  color: var(--cyan-400);
+}
+
+.dark .secHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
+
+
+
+
+
+

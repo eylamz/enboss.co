@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="StyleSheet" href="/css/EnglishCSS/header1.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
 <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
-
-<link rel="StyleSheet" href="/css/SFProText.css" />
-<link rel="StyleSheet" href="http://localhost/projects/enboss.co/css/SFProText.css" />
-
 <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
 
@@ -84,10 +80,10 @@
       <span class="active-mode"><svg id="lightMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.82 29.82"><defs>
         <style>
           .g{opacity:1;}
-          .g{fill:#d9e1f2;}
+          .g{fill:var(--white-400);}
         </style></defs><g id="a"/><g id="b"><g id="c"><g id="d" class="f"><g id="e"><g><circle class="g" cx="14.91" cy="14.91" r="6.59"/><path class="g" d="M14.9,0h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97h0c-.53,0-.97-.43-.97-.97V.97c0-.54,.43-.97,.97-.97Z"/><path class="g" d="M14.91,29.82h0c-.53,0-.97-.43-.97-.97v-3.69c0-.54,.43-.97,.97-.97h0c.53,0,.97,.43,.97,.97v3.69c0,.54-.43,.97-.97,.97Z"/><path class="g" d="M29.82,14.91h0c0,.53-.43,.97-.97,.97h-3.69c-.54,0-.97-.43-.97-.97h0c0-.53,.43-.97,.97-.97h3.69c.54,0,.97,.43,.97,.97Z"/><path class="g" d="M0,14.9H0c0-.53,.43-.96,.97-.96h3.69c.54,0,.97,.43,.97,.96h0c0,.53-.43,.97-.97,.97H.97c-.54,0-.97-.43-.97-.97Z"/><path class="g" d="M25.46,4.37h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0Z"/><path class="g" d="M4.37,25.45h0c-.38-.38-.38-.99,0-1.37l2.61-2.61c.38-.38,.99-.38,1.37,0h0c.38,.38,.38,.99,0,1.37l-2.61,2.61c-.38,.38-.99,.38-1.37,0Z"/><path class="g" d="M25.46,25.46h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37Z"/><path class="g" d="M4.37,4.37h0c.38-.38,.99-.38,1.37,0l2.61,2.61c.38,.38,.38,.99,0,1.37h0c-.38,.38-.99,.38-1.37,0l-2.61-2.61c-.38-.38-.38-.99,0-1.37Z"/></g></g></g></g></g></svg></span>
       <span class="inactive-mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.57 30.32"><defs>
-        <style>.f{fill:#1c3054;}</style>
+        <style>.f{fill:var(--black-200);}</style>
       </defs><g id="a"/><g id="b"><g id="c"><g id="d"><g id="e"><path class="f" d="M23.96,20.8c-8.2,0-14.84-6.65-14.84-14.84,0-2.12,.45-4.13,1.25-5.96C4.33,2.16,0,7.92,0,14.7c0,8.63,7,15.62,15.62,15.62,7.05,0,13.01-4.68,14.95-11.1-1.99,1-4.24,1.57-6.62,1.57h0Z"/></g></g></g></g></svg></span>
    </button>
 </ul>
@@ -163,7 +159,7 @@
       document.body.classList.add('dark');
       var colorButton = document.getElementById('colorButton');
       colorButton.classList.add('active');
-      updateMetaThemeColor('#202124'); // var(--ne-grey)
+      updateMetaThemeColor('var(--black-450)'); // var(--ne-grey)
     }
 
     const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
@@ -172,7 +168,7 @@
         document.body.classList.toggle('dark');
         e.preventDefault();
         const isDarkMode = document.body.classList.contains('dark');
-        updateMetaThemeColor(isDarkMode ? '#202124' : '#f0f2f4');
+        updateMetaThemeColor(isDarkMode ? '#202020' : '#e0e0e0'); 
       });
     }
   });
@@ -192,11 +188,11 @@
     if (isActive) {
       colorButton.classList.add('active');
       body.classList.add('dark');
-      updateMetaThemeColor('#202124'); // var(--ne-grey)
+      updateMetaThemeColor('#202020'); // black notification bar color
     } else {
       colorButton.classList.remove('active');
       body.classList.remove('dark');
-      updateMetaThemeColor('#f0f2f4');
+      updateMetaThemeColor('#e0e0e0'); // white notification bar color
     }
   });
 
@@ -217,9 +213,9 @@
   if (prefersDark) {
     isActive = true;
     isColorChanged = true;
-    updateMetaThemeColor('#000000');
+    updateMetaThemeColor('#202020'); // black notification bar color
   } else {
-    updateMetaThemeColor('#f0f2f4');
+    updateMetaThemeColor('#e0e0e0'); // white notification bar color
   }
 
   </script>  
