@@ -132,38 +132,6 @@ ini_set('display_errors', 1);
     </div>
   <section>    
 
-  <div class="outer-div">
-    <div class="centered-div">
-        <div class="two-column-list">
-        <div class="column left-column">
-        <ul class="iron-swords">
-                    <li> <!-- Ariel -->
-  <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="water" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg>
-                      </li>
-                    <li> <!-- Be'er Sheva -->
-  <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="park" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><path d="M12.81,5.82h-3.49c-.64,0-1.16,.52-1.16,1.16v9.31c0,.64,.52,1.16,1.16,1.16s1.16-.52,1.16-1.16v-2.33h2.33c1.93,0,3.49-1.56,3.49-3.49v-1.16c0-1.93-1.56-3.49-3.49-3.49Zm1.16,4.66c0,.64-.52,1.16-1.16,1.16h-2.33v-3.49h2.33c.64,0,1.16,.52,1.16,1.16v1.16ZM11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm0,20.96c-5.14,0-9.31-4.17-9.31-9.31S6.5,2.33,11.64,2.33s9.31,4.17,9.31,9.31-4.17,9.31-9.31,9.31Z"/></g></g></svg>
-                      <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="water" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg>
-                     </li>
-                    <li> <!-- Be'er Sheva Bike -->
- <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="water" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg>
-                      </li>
-
-                  </ul>
-              </div>
-            <div class="column right-column">
-                <ul class="iron-swords">
-                    <li><a href="#link3">באר שבע</a></li>
-                    <li><a href="#link4">באר שבע בייק</a></li>
-                    <li><a href="#link5">בת ים</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-
-
-
-
    </section>
 
 </section>
@@ -188,7 +156,7 @@ ini_set('display_errors', 1);
                .images .text2 {
                   font-family: 'Open Sans', sans-serif;
                   color: var(--anti-white); 
-                  background-color: var(--sham); 
+                  background-color: var(--orange-500); 
                   box-shadow: var(--img-shadow);
                   border-radius: 50%; 
                   text-shadow: none; 
@@ -203,10 +171,10 @@ ini_set('display_errors', 1);
 
               @keyframes pulse {
                 from { transform: scale(0.8) rotate(-25deg);
-                  background-color: var(--sham);
+                  background-color: var(--orange-500);
                 }
                 to { transform: scale(1.2)rotate(-17.5deg);
-                  background-color: var(--light-sham); 
+                  background-color: var(--orange-600); 
                 }
               }
             </style>

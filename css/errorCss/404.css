@@ -1,6 +1,6 @@
 
 .Body404 {
-  background: var(--light-blue);
+  background: var(--white-300);
       overflow-x: hidden;
       transition: all 0.3s ease-in-out ;
 
@@ -10,7 +10,6 @@
   height: 100vh;
   width:100vw;
   margin-top: -20vh;
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -49,8 +48,8 @@
         text-transform: uppercase;
         letter-spacing: 0.15rem;
         font-weight: 700;
-        color: var(--anti-white);
-        background: var(--blue);
+        color: var(--white-300);
+        background: var(--blue-600);
         border-radius: 1000px;
         padding: 10px 50px;
         transition: all 0.3s ease-in-out ;
@@ -59,8 +58,7 @@
 
       
       .Btn:hover{
-        background: hsla(219, 50%, 50%, 1);
-        color: var(--anti-white);
+        background: var(--blue-700);
       }
       
 .Btn {
@@ -71,10 +69,14 @@
       40% {transform: translateY(-20px);}
       60% {transform: translateY(-10px);}
   }
-      
-  .st1, .st3, .st4, .st5, .st6, .st7{
+      .st1 {
+  animation: bounce-in-down 2s ease, blinkingLight 1.25s infinite 2s;
+      }
+
+  .st3, .st4, .st5, .st6, .st7, .st8{
     animation: bounce-in-down 2s ease;
   }
+
   @keyframes bounce-in-down {
     0% {
       opacity: 0;
@@ -84,11 +86,17 @@
       opacity: 1;
       transform: translateY(30px);
     }
-    80% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0); 
+      }
   }
+
+
   .st2 {
-    animation: bounce-in-right 2s ease;
+    animation: bounce-in-right 2s ease, move-around 15s infinite 2s;
   }
 
   @keyframes bounce-in-right {
@@ -104,6 +112,16 @@
     100% { transform: translateX(0); }
   }
 
+  @keyframes move-around {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(40px) translateY(-5px);
+    }
+    100% { transform: translateX(0); }
+  }
+  
   .st22 {
     animation: bounce-in-left 3s ease;
   }
@@ -127,20 +145,114 @@
 
 
     .dark.Body404 {
-      background: var(--dark-blue);
+      background: var(--black-400);
     }
 
-    .dark .st7 {
-      fill: var(--ne-logo);
-    }
+
     
     .dark .Btn {
-      background-color: var(--blue);
-      color: var(--ne-logo);
+      background-color: var(--blue-500);
     }
 
     .dark .Btn:hover {
-      background-color: var(--ne-light-blue);
-      color: var(--anti-white);
+      background-color: var(--blue-600);
     }
   
+    .st1 { /*  number  */
+      fill: var(--blue-400);
+      filter: drop-shadow(0px 0px 3px hsla(205, 95%, 43%, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 3px hsla(205, 95%, 43%, 0.2));
+
+    }
+
+    .dark .st1 { /* number  */
+      fill: var(--blue-600);
+    }
+    
+    .st2 { /* clouds */
+      fill: var(--white-600);
+      filter: drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.2));
+			-webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));
+    }
+
+    .dark .st2 { /* clouds */
+      fill: var(--white-400);
+    }
+
+    .st3 { /* center button */
+      fill: #ca7f32;
+    }
+
+    .st4 {/* right button */
+      fill: #469346;
+    }
+
+    .st5 { /* text */
+      fill: var(--blue-200);
+    }
+
+    .dark .st5 { /* text */
+      fill: var(--white-200);
+    }
+
+    .st6 { /* left button */
+      fill: #b94343;
+    }
+
+    .st7 { /* window bg */
+      fill: var(--white-500);
+      filter: drop-shadow(-3px 4px 2px rgba(0, 0, 0, 0.2));
+		-webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));
+ 
+    }
+    
+    @keyframes blinkingLight {
+      0% {
+      fill: var(--blue-500);
+      filter: drop-shadow(0px 0px 50px hsla(205, 95%, 20%, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 50px hsla(205, 95%, 43%, 0.2));
+
+
+      }
+            25% {
+      fill: var(--blue-600);
+      filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
+      -webkit-filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
+
+      }
+      50% {
+      fill: var(--blue-700);
+      filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
+      -webkit-filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
+
+      }
+      100% {
+      fill: var(--blue-600);
+      filter: drop-shadow(0px 0px 50px hsla(205, 95%, 20%, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 50px hsla(205, 95%, 43%, 0.2));
+
+      }
+    }
+
+    .dark .st7 {
+      fill: var(--black-450);
+    }
+
+    .st8 { /* header bg */
+      fill: var(--blue-400);
+    }
+
+    .dark .st8 { /* header bg */
+      fill: var(--cyan-400);
+    }
+
+    .st22 { /* left lines */
+      fill : var(--white);
+      filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15)); 
+      -webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));
+    }
+
+
+    .dark .st22 {
+      fill : var(--white-200);
+    }

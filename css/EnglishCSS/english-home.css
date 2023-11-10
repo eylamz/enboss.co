@@ -3,8 +3,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
-  background-color: white;
-
+  background-color: var(--white-600);
 }
 
 .dark .body-move {
@@ -28,8 +27,8 @@ body {
         background-color: var(--white-400);
         position: relative;
         background-repeat: repeat;
-        background-size: 25%;
-  background-image: url('/svg/EnbossWallpaper0.075.png');
+        background-size: 17.5%;  
+        background-image: url('/svg/EnbossWallpaper0.075.png');
         background-attachment: fixed;
         transition: background-color 0.2s ease-in-out;
   }
@@ -42,7 +41,7 @@ body {
     
     @media only screen and (max-width: 1440px){
       .dark#firstCon, #firstCon{
-        background-size: 30%;  
+        background-size: 25%;  
       }
     }
     
@@ -54,13 +53,13 @@ body {
     
     @media only screen and (max-width: 768px){
       .dark#firstCon, #firstCon{
-        background-size: 50%;  
+        background-size: 45%;  
       }
     }
     
     @media only screen and (max-width: 480px){
       .dark#firstCon, #firstCon{
-        background-size: 80%;  
+        background-size: 75%;  
       }
     }
 
@@ -136,6 +135,8 @@ body {
     color: var(--orange-500);
     word-spacing: 0.1em;
     letter-spacing: 1px;
+    transition: color .3s ease-in-out;
+
   }
 
 
@@ -222,6 +223,7 @@ body {
   #heading3 {
     letter-spacing: 0.1rem;
     font-weight: 900;
+    color: var(--orange-500);
   }
   
   #heading3.animate {
@@ -292,6 +294,7 @@ body {
     border-radius: 36px;
     padding: 7px 20px;
     font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
   }
   
   .contact button:hover {
@@ -322,6 +325,7 @@ body {
   .newParksTitle {
     color: var(--blue-200);
     font-weight: 600;
+    transition: all 0.2s ease-in-out;
   }
   
   .viewMore {
@@ -334,7 +338,6 @@ body {
     border-radius: 20px;
     font-size: 1.25rem;
     font-weight:700;
-    transition: background-color 0.2s ease-in-out;
   }
   
   .viewMore:hover {

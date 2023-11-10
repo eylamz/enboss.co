@@ -31,8 +31,8 @@
           <!--- hebrew Header CSS File -->
           <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
-           <!--Hebrew PrimaryYellowVid CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryYellowVid.css" />
+           <!--Hebrew PrimaryBlueVid CSS File-->
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlueVid.css" />
 
            <!--- hebrew Footer CSS File -->
            <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />

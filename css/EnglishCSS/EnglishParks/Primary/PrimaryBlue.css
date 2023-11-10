@@ -52,8 +52,7 @@
   
 .dark.parkBody {
   background-image: url('/svg/EnbossWallpaperLight.075.png');
-  backdrop-filter: blur(0.75px);
-  -webkit-backdrop-filter: blur(0.75px);
+
 }
 
   
@@ -86,7 +85,8 @@
       padding-top: 100px;
       font-family: 'Poppins', sans-serif;
       display: grid;
-  
+      backdrop-filter: blur(0.75px);
+      -webkit-backdrop-filter: blur(0.75px);
   }
 
 .parkHead h1{

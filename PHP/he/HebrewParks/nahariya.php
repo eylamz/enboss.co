@@ -31,8 +31,8 @@
           <!--- hebrew Header CSS File -->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
-           <!--Hebrew PrimaryGreen CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryGreen.css" />
+           <!--Hebrew PrimaryBlue CSS File-->
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue.css" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

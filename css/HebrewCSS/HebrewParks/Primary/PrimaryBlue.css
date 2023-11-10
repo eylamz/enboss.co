@@ -1,45 +1,43 @@
-/* Start of English-Park CSS */
+/* Start of Hebrew-Park CSS */
 
 :root {
-  --map-front-icons: hsl(45, 100%, 50%);
-  --map-back-icons: hsla(219, 50%, 40%, 1);
-  --h4: hsl(45, 100%, 50%);
-  --hr-text: hsl(45, 100%, 50%);
-  --video-text: hsla(219, 50%, 50%, 1);
-  --video-svg: hsla(219, 50%, 50%, 1);
-  --box1-svg: hsl(45, 100%, 45%);
-  --box1-strong: hsl(45, 100%, 50%);
-  --box1-txt: hsl(210, 15%, 95%);
-  --close-btn: hsl(45, 100%, 50%);
-  --img-back: #eaeaea;
-  --icon-list-svg:hsl(45, 100%, 50%);
-  --icon-list: hsl(210, 15%, 95%);
-  --list: hsl(210, 15%, 95%);
-  --list-strong:hsl(45, 100%, 50%);
-  --head :hsl(45, 100%, 50%);
-  --background: hsla(219, 50%, 22%, 1);
-  --hr: hsl(45, 100%, 50%);
+  --map-front-icons: var(--blue-500);
+  --map-back-icons: var(--cyan-600);
+  --h4: var(--blue-200);
+  --hr-text: var(--blue-500);
+  --video-text: var(--orange-500);
+  --video-svg: var(--orange-500);
+  --box1-svg: var(--blue-500);
+  --box1-strong: var(--orange-500);
+  --box1-txt: var(--blue-200);
+  --img-back: var(--white-300);
+  --icon-list-svg:var(--orange-500);
+  --icon-list: var(--blue-200);
+  --list: var(--blue-200);
+  --list-strong:var(--orange-500);
+  --head :var(--blue-500);
+  --background: var(--white-400);
+  --hr: var(--cyan-500);
 }
 
 .dark {
-  --map-front-icons: hsl(45 100% 48% / 1);
-  --map-back-icons: hsl(219, 50%, 22%);
-  --h4: hsl(200, 12%, 95%);
-  --hr-text: hsl(45 100% 48% / 1);
-  --video-text: hsla(219, 50%, 40%, 1);
-  --video-svg: hsla(219, 50%, 40%, 1);
-  --box1-svg: hsl(45 100% 48% / 1);
-  --box1-strong: hsl(45 100% 48% / 1);
+  --map-front-icons: var(--cyan-500);
+  --map-back-icons: var(--blue-200);
+  --h4: var(--white-400);
+  --hr-text: var(--cyan-600);
+  --video-text: var(--blue-500);
+  --video-svg: var(--blue-500);
+  --box1-svg: var(--orange-600);
+  --box1-strong: var(--blue-600);
   --box1-txt: hsl(200, 12%, 95%);
-  --close-btn: hsl(45 100% 48% / 1);
-  --img-back: hsl(200, 12%, 95%);
-  --icon-list-svg:hsla(45, 100%, 50%, 1);
-  --icon-list: hsl(200, 12%, 95%);
-  --list: hsl(200, 12%, 95%);
-  --list-strong:hsla(45, 100%, 50%, 1);
-  --head :hsl(45 100% 48% / 1);;
-  --background: #0C1017;
-  --hr: hsl(45 100% 48% / 1);
+  --img-back: hsl(200, 12%, 15%);
+  --icon-list-svg:var(--blue-600);
+  --icon-list: var(--white-400);
+  --list: var(--white-400);
+  --list-strong: var(--blue-600);
+  --head :var(--cyan-600);
+  --background: var(--black-450);
+  --hr: var(--orange-600)
 }
 
 
@@ -80,6 +78,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   display: grid;
   padding-top: 100px;
+  backdrop-filter: blur(0.75px);
+  -webkit-backdrop-filter: blur(0.75px);
+
 
 }
 

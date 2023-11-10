@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,8 +45,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
     :root {
       --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
          0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -57,47 +57,73 @@ table {
       --img-shadow: 0px 0px 14px 3px rgba(0,0,0,0.15);
 
 
+      --white: #fff;
       --img-back: #eaeaea;
-      --text: hsl(240, 1%, 65%);
+      --text: #a5a5a7;
       --text-dark: #545459;
-      --text-light: hsl(240, 1%, 75%);
+      --text-light: #bfbfc0;
 
-      --dark-blue: #132139;
-      --blue: #1c3054;
+      --dark-blue: hsl(219, 50%, 15%);
+      --blue: hsl(219, 50%, 22%);
       --light-blue: hsla(219, 50%, 40%, 1);
       --lighter-blue: hsla(219, 50%, 95%, 1);
       --anti-white: hsl(210, 15%, 95%);
+
+      --anti-text:hsl(210, 15%, 95%);
+      --anti-text-2:hsl(210, 15%, 95%);
+      
       --anti-grey: hsla(210, 14%, 90%, 1);
       --dark-grey: hsla(210, 14%, 85%, 1);
       --darker-grey: hsl(210, 0%, 35%);
       --dark-violet: #262671;
       --violet: #292977;
       --light-violet: #AB7FFB;
+      --lighter-violet: #BB96FD;
       --yellow: #FDC632;
       --light-yellow: #ffd25a;
       --new-grey: #F3F5F4;
-      --navy-300: #002031;
-      --navy-400: hsl(200.82deg, 100%, 15%);
-      --card-bg: #212529;
-      --dark-600: #8B8B8B;
-      --dark-300: #3F3F3F;
-      --dark-200: #282828;
-      --dark-100: #121212;
-      --violet-600: #E5DBFF;
-      --violet-550: #BB96FD;
-      --violet-500: #A688FA;
-      --violet-300: #2E3366;
-      --violet-200: #282C52;
-      --violet-100: #1D172B;
-      --violet-0: #1A1721;
-      --black: #000;
+      --navy: #002031;
 
+      --black-100: #050505; /* darker black copyright background */
+      --black-200: #0A0A0A; /* darker black footer background */
+      --black-300: #111111; /* dark black background */
+      --black-400: #171717; /* black background */
+      --black-450: #202020;  /*test black background test */
+      --black-500: #292929; 
+      --black-600: hsl(228 3% 22% / 1); 
+      --black-700: #545459; /* grey text for white background */
+
+      --white-200: #A1A1A1; /* grey background */
+      --white-300: #e0e0e0; /* grey background */
+      --white-400: #EDEDEB; /* white text & background */
+      --white-350: #F2F2F7;
+      --white-500: #f8f8f7; /* whiter  background */
+      --white-600: #fefefe; /* grey background */
+
+      --orange-500: #F87434 ; /* light orange */
+      --orange-600: #F6834A; /* dark orange */
+      --orange-700: hsl(20, 91%, 73%); /* dark orange */
+
+      --blue-100: #14191D; /* even darker blue text */
+      --blue-200: #171E24; /* darker blue text */
+      --blue-300: hsl(209, 91%, 20%); /* dark blue */
+      --blue-400: #074E92; /* dark blue */
+      --blue-500: #065AAA; /* dark blue */
+      --blue-600: #0670BA; /* light blue */
+      --blue-700: #0580D6; /* light blue */
+      --blue-800: #0694f9; /* light blue */
+
+      --cyan-200: hsl(207, 44%, 40%); /* light cyan */
+      --cyan-400: #6c9dc6; /* light cyan */
+      --cyan-500: #A7C5DD; /* light cyan */
+      --cyan-600: #A0C0D9; /* dark cyan */
+      --cyan-700: hsl(206, 43%, 84%); 
 
       --zomp: hsla(168, 58%, 41%, 1);
       --light-munsell: hsla(192, 73%,46%,1);
       --munsell: hsla(192, 73%, 36%,1);
       --light-amber: hsl(45, 100%, 60%);
-      --amber: #ffbf00;
+      --amber: hsl(45, 100%, 50%);
       --light-conq: hsl(13, 90%, 61%);
       --dark-conq: hsl(13, 90%, 41%);
       --conq: hsl(13, 90%, 51%); 
@@ -106,6 +132,7 @@ table {
       --light-sham: hsl(140, 33%, 56%);
               /*   g#7DDF64    */
     }
+
 
     *,
     *::before,
@@ -154,7 +181,7 @@ table {
     
     ::selection {
       background-color: var(--anti-white);
-      color: var(--blue);
+      color: var(--blue-200);
     }
     
     body{
@@ -186,9 +213,10 @@ header {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: var(--anti-white);
+      background: hsla(0, 0%, 90%, 0.8);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
       z-index: 100;
-      box-shadow:  var(--shadow-bottom);
       transition: all .3s ease-in-out;
 
     }
@@ -210,12 +238,12 @@ header {
     .brand {
       width: 140px;
       height: 55px;
-      fill: var(--navy-300);
+      fill: var(--black-200);
       transition: all .15s ease-in-out;
     }
 
     .brand:hover{
-      fill: var(--navy-400);
+      fill: var(--blue-100);
     }
 
     .menu {
@@ -233,7 +261,7 @@ header {
       right: 0;
       font-size: 1.25rem;
       font-weight: 700;
-      background-color: var(--anti-white);
+      background-color: var(--white-300);
       z-index: 10;
       transition: all .3s ease-in-out;
     }
@@ -249,15 +277,15 @@ header {
     .menu-link {
       line-height: 1;
       transition: all 0.15s ease-in-out;
-      color: var(--blue);
+      color: var(--black-200);
     }
 
     .menu-link:hover {
-      color: var(--light-blue);
+      color: var(--blue-100);
     }
 
     .menu-block {
-      fill: var(--navy-300);
+      fill: var(--black-200);
       text-align: center;
       width: 26px;
       height: 26px;
@@ -271,7 +299,7 @@ header {
 
 
     .menu-block:hover{
-      fill: var(--navy-400);
+      fill: var(--black-100);
     }
 
     .menu-item:hover{
@@ -310,7 +338,7 @@ header {
     .search-icon-he svg {
       width: 100%;
       max-width: 23px;
-      fill: var(--blue);
+      fill: var(--black-200);
       margin-bottom: 1px;
     }
 
@@ -391,7 +419,7 @@ header {
       border: none;
       outline: none;
       border-radius: 1rem;
-      background-color: var(--navy-300);
+      background-color: var(--black-200);
       transition: 0.25s ease-in-out;
     }
     .burger-line:nth-child(1) {
@@ -426,7 +454,7 @@ header {
       top: 1rem;
       rotate: 135deg;
       width: 80%;
-      background-color: var(--ne-conq);
+      background-color: var(--orange-500);
 
  
     }
@@ -446,7 +474,7 @@ header {
       top: 1rem;
       rotate: -135deg;
       width: 80%;
-      background-color: var(--ne-conq);
+      background-color: var(--orange-500);
 
 
     }
@@ -542,10 +570,10 @@ header {
 
   /* ------ End of Header CSS ------ */
   #my-svg-he {
-    stroke: var(--navy-300);
+    stroke: var(--black-200);
   }
   #my-svg-he:hover {
-    stroke: var(--navy-400);
+    stroke: var(--black-100);
   }
 
   #my-svg-he.clicked .glass { 
@@ -578,7 +606,7 @@ header {
     100% {
       stroke-width: 1.5px;
       transform: scale(1.125);
-      stroke: var(--violet-500);
+      stroke: var(--orange-600);
     }
   }
   
@@ -598,7 +626,7 @@ header {
       transform: translate(-37%, -37%);
       stroke-width:1.1px;
       transform: scale(1.4);
-      stroke: var(--violet-500);
+      stroke: var(--orange-600);
     }
   }
   
@@ -606,7 +634,7 @@ header {
     0% {
       transform-origin: 100% 100%;
       transform: translate(-50%, 50%);
-      stroke: var(--blue);
+      stroke: var(--blue-200);
       opacity: 0;
     }
 
@@ -616,7 +644,7 @@ header {
 
     }
     100% {
-      stroke: var(--violet-500);
+      stroke: var(--orange-500);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -694,7 +722,7 @@ header {
 
   @keyframes move-spin-rev {
     0% {
-      stroke: var(--violet-500);
+      stroke: var(--orange-500);
       transform: translate(0, 0);
       opacity: 1;
     }

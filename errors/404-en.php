@@ -50,16 +50,6 @@
 	<div class="div404">
 			<svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-		<style type="text/css">
-			.st7{fill:var(--anti-white); filter: drop-shadow(-3px 4px 2px rgba(0, 0, 0, 0.2));-webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));}
-			.st1{fill:#1C3054;}
-			.st2{fill:var(--anti-white); filter: drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.2));-webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));}
-			.st22{fill:var(--anti-white); filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15)); -webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));}
-			.st3{fill:var(--light-conq);}
-			.st4{fill:var(--sham);}
-			.st5{fill:#1D3054;}
-			.st6{fill:var(--dark-conq)}
-		</style>
 		<g>
 			<g>
 				<g>
@@ -68,7 +58,7 @@
 					<g>
 						<path class="st7" d="M340.8,277.9l-166.9-19.5c-7.1-0.8-13.6,4.3-14.4,11.4l-12.5,106.8c-0.8,7.1,4.3,13.6,11.4,14.4l166.9,19.5
 							c7.1,0.8,13.6-4.3,14.4-11.4l12.5-106.8C353,285.2,347.9,278.8,340.8,277.9z"/>
-						<path class="st1" d="M351,302.9l1.2-10.6c0.8-7.1-4.3-13.6-11.4-14.4l-166.9-19.5c-7.1-0.8-13.6,4.3-14.4,11.4l-1.2,10.6
+						<path class="st8" d="M351,302.9l1.2-10.6c0.8-7.1-4.3-13.6-11.4-14.4l-166.9-19.5c-7.1-0.8-13.6,4.3-14.4,11.4l-1.2,10.6
 							L351,302.9z"/>
 						<g>
 							<g>

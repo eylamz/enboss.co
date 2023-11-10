@@ -54,6 +54,11 @@ body {
     -webkit-backdrop-filter: blur(1.5px);
 }
 
+.dark .about-container {
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
+
 .about {
     font-family: 'Poppins',sans-serif ;
     color: var(--blue-200);

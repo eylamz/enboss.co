@@ -131,7 +131,7 @@ function shuffle(array) {
 <div class="background-image"></div>
 
   <!-- Header Section -->
-  <?php include('../../view/he/hebrew-header.php'); ?>
+  <?php include('http://localhost/projects/enboss.co/view/he/hebrew-header.php'); ?>
 <!-- End of Header Section-->
 <main class="body-move">
     <div class="park-container">
@@ -523,7 +523,7 @@ function shuffle(array) {
     </div>
 
 <!--   Footer Section    -->
-<?php include('../../view/he/hebrew-footer.php'); ?>
+<?php include('http://localhost/projects/enboss.co/view/he/hebrew-footer.php'); ?>
   </main>
 </body>
 

@@ -1,9 +1,5 @@
 
 /* foot-flex.css */
-body {
-    background-color: var(--ne-white);
-}
-
 footer {
     display: block;
 }
@@ -36,13 +32,6 @@ footer {
 }
 
 .logo {
-
-
-
-
-
-
-
     width: 100%;
     max-width: 300px;
     font-size: 1.05rem;
@@ -114,11 +103,12 @@ footer {
     font-weight: 500;
     margin: 25px 0 20px;
     color: var(--blue-100);
+    transition: all .15s ease-in-out;
+
 }
 
 .main-foot h3:hover {
     color: var(--blue-200);
-    transition: linear 0.15s;
 }
 
 

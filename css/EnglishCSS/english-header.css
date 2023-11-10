@@ -95,6 +95,7 @@ table {
 
       --white-200: #A1A1A1; /* grey background */
       --white-300: #e0e0e0; /* grey background */
+      --white-350: #F2F2F7;
       --white-400: #EDEDEB; /* white text & background */
       --white-500: #f8f8f7; /* whiter  background */
       --white-600: #fefefe; /* grey background */
@@ -107,9 +108,9 @@ table {
       --blue-200: #171E24; /* darker blue text */
       --blue-300: hsl(209, 91%, 20%); /* dark blue */
       --blue-400: #074E92; /* dark blue */
-      --blue-500: #065AAA; /* dark blue */
+      --blue-500: hsl(209, 93%, 35%); /* dark blue */
       --blue-600: #0670BA; /* light blue */
-      --blue-700: #0580D6; /* light blue */
+      --blue-700: hsl(205, 95%, 43%); /* light blue */
       --blue-800: #0694f9; /* light blue */
 
       --cyan-200: hsl(207, 44%, 40%); /* light cyan */
@@ -182,7 +183,7 @@ table {
     
 ::selection {
   background-color: var(--anti-white);
-  color: var(--blue);
+  color: var(--blue-200);
 }
 
 body{
@@ -609,7 +610,7 @@ header {
     100% {
       stroke-width: 1.5px;
       transform: scale(1.125);
-      stroke: var(--ne-conq);
+      stroke: var(--orange-600);
     }
   }
   
@@ -629,7 +630,7 @@ header {
       transform: translate(-37%, -37%);
       stroke-width:1.1px;
       transform: scale(1.4);
-      stroke: var(--conq);
+      stroke: var(--orange-600);
     }
   }
   
@@ -637,7 +638,7 @@ header {
     0% {
       transform-origin: 100% 100%;
       transform: translate(-50%, 50%);
-      stroke: var(--blue);
+      stroke: var(--blue-200);
       opacity: 0;
     }
 
@@ -647,7 +648,7 @@ header {
 
     }
     100% {
-      stroke: var(--conq);
+      stroke: var(--orange-500);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -724,7 +725,7 @@ header {
 
   @keyframes move-spin-rev {
     0% {
-      stroke: var(--conq);
+      stroke: var(--orange-500);
       transform: translate(0, 0);
       opacity: 1;
     }
