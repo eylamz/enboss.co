@@ -100,6 +100,7 @@ table {
       --white-500: #f8f8f7; /* whiter  background */
       --white-600: #fefefe; /* grey background */
 
+      --orange-400: hsl(20 93% 50% / 1) ; /* light orange */
       --orange-500: #F87434 ; /* light orange */
       --orange-600: #F6834A; /* dark orange */
       --orange-700: hsl(20, 91%, 73%); /* dark orange */

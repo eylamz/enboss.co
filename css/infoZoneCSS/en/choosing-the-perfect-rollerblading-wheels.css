@@ -1,4 +1,4 @@
-/* Choosing-the-perfect-rollerblading-wheels.css */
+/* english Choosing-the-perfect-rollerblading-wheels.css */
 :root {
     --article-body: var(--white-600);
     --article-dark-back: var(--black-450);
@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 150px 0;
+    padding: 120px 0;
     backdrop-filter:blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
 }
@@ -200,9 +200,15 @@ hr {
 
   /* Media Queries */
 
+  @media only screen and ( max-width: 767px ){
+    .article-container {
+        padding: 85px 0;
+    }
+}
+
   @media only screen and ( max-width: 480px ){
     .article-container {
-        padding: 120px 0;
+        padding: 80px 0;
     }
     
     .article h1 {
@@ -270,3 +276,15 @@ hr {
         width: 280px; /* Allow HEADER text to wrap onto multiple lines */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

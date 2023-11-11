@@ -54,17 +54,8 @@
 
 
     <div class="article-container">
-        <!-- colorMode Button -->
-        <div class="colorMode">
-
-          </div>
     <!--- First Container-->
     <div class="article">
-        <button id="colorButton" class="toggle-button">
-            <span class="inactive-mode"><img src="/images/SVG/darkMode.svg" style="vertical-align: middle;" alt="dark mode"></span>
-            <span class="active-mode"><img src="/images/SVG/lightMode.svg" style="vertical-align: middle;" alt="light mode"></span>
-            <div class="toggle-circle"></div>
-          </button>
         <h1>בחירת הפריים הנכון בשבילך</h1>
         <hr class="titleHr">
           <p>בחירת הפריים הנכון לרולר האגרסיב שלך היא חיונית להשגת הביצועים ויכולת התמרון הטובה ביותר. במדריך זה, נעבור על שלושה סוגי פריים שונים: פריים פלאט, פריים אנטי רוקר ופריים אנטי רוקר עם גלגלי פלסטיק. נסביר את המאפיינים והיתרונות של כל סוג פריים. בואו נתחיל!</p>
@@ -120,111 +111,16 @@
               בנוסף לבחירת הפריים הנכון, חשוב לבחור את הגלגלים המתאימים לסגנון הרכיבה שלך.
               <br>
               למידע נוסף על איך לבחור את הגלגלים הנכונים, אתם יכולים לעיין במדריך המקיף שלנו בנושא
-              "<a class="articleLinks" href="https://enboss.co/he/info-zone/choosing-the-perfect-rollerblading-wheels">איך לבחור גלגלים לרולר שלכם</a>".
+              "<a class="articleLinks" href="https://enboss.co/he/info-zone/choosing-rollerblading-wheels">איך לבחור גלגלים לרולר שלכם</a>".
               <br>
               מאמר זה מספק תובנות וטיפים חשובים לבחירת הגלגלים האידיאליים לצרכים הספציפיים שלכם.
             </p>
     </div>
 </div>
+</div>
 <!--   Footer Section    -->
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
-
-<script>
-  var colorButton = document.getElementById('colorButton');
-  var isColorChanged = false;
-  var isActive = false;
-
-
-  colorButton.addEventListener('click', function() {
-    var body = document.body;
-    var activeMode = document.querySelector('.active-mode');
-  var inactiveMode = document.querySelector('.inactive-mode');
-  var toggleCircle = document.querySelector('.toggle-circle');
-  var toggleButton = document.querySelector('.toggle-button');
-
-  isActive = !isActive;
-
-    var articleH1 = document.querySelector('.article h1');
-    var articleH2List = document.querySelectorAll('.article h2');
-    var articleH3List = document.querySelectorAll('.article h3');
-    var articleLinks = document.querySelectorAll('.articleLinks');
-    var articleText = document.querySelector('.article');
-    var titleHr = document.querySelector('.titleHr');
-    var secHr = document.querySelector('.secHr');
-    var strongSubs = document.querySelectorAll('.strongSubs');
-    var flat = document.querySelector('.dynamic-flat');
-    var plastic = document.querySelector('.dynamic-plastic');
-    var anti = document.querySelector('.dynamic-anti');
-    
-
-    if (isColorChanged) {
-      body.style.backgroundColor = 'var(--white)'
-      toggleButton.style.backgroundColor = '#f0f2f4';
-      articleH1.style.color = 'var(--dark-blue)';
-      articleText.style.color = 'var(--text-dark)';
-      titleHr.style.borderColor = 'var(--light-blue)';
-      secHr.style.borderColor = 'var(--amber)';
-      plastic.classList.remove('plastic-amber');
-      flat.classList.remove('flat-amber');
-      anti.classList.remove('anti-amber');
-
-      strongSubs.forEach(function(element) {
-        element.style.color = 'var(--dark-blue)';
-      });
-
-      articleH2List.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      articleH3List.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      articleLinks.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      isColorChanged = false;
-    } else {
-      body.style.backgroundColor = 'var(--dark-blue)';
-      toggleButton.style.backgroundColor = 'var(--light-blue)';
-      articleH1.style.color = 'var(--anti-white)';
-      articleText.style.color = 'var(--text-light)';
-      titleHr.style.borderColor = 'var(--amber)';
-      secHr.style.borderColor = 'var(--anti-white)';
-      plastic.classList.add('plastic-amber');
-      flat.classList.add('flat-amber');
-      anti.classList.add('anti-amber');
-
-      strongSubs.forEach(function(element) {
-        element.style.color = 'var(--anti-white)';
-      });
-
-      articleH2List.forEach(function(element) {
-        element.style.color = 'var(--amber)';
-      });
-      
-      articleH3List.forEach(function(element) {
-        element.style.color = 'var(--amber)';
-      });
-      
-      articleLinks.forEach(function(element) {
-        element.style.color = 'var(--anti-white)';
-      });
-
-      isColorChanged = true;
-    }
-
-  if (isActive) {
-    toggleCircle.style.backgroundColor = 'var(--blue)';
-    colorButton.classList.add('active');
-  } else {
-    toggleCircle.style.backgroundColor = '#ffffff';
-    colorButton.classList.remove('active');
-  }
-});
-  </script>
 </body>
 </html>
 

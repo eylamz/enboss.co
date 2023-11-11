@@ -138,7 +138,7 @@ body.dark {
     animation-fill-mode: forwards;
   }
 
-  #contain1 button{
+.firstBtn {
     font-weight: 800;
     color: var(--white-400);
     background-color: var(--blue-500);
@@ -154,7 +154,7 @@ body.dark {
     font-size: 1.25rem;
     transition: all 0.2s ease-in-out;
   }
-  #contain1 button:hover {
+  .firstBtn:hover {
     background-color: var(--blue-500);
   }
 
@@ -268,7 +268,7 @@ body.dark {
     font-weight: 700;
     font-size: 1.1rem;
     background-color: var(--blue-500);
-    border-radius: 36px;
+    border-radius: 30px;
     padding: 7px 20px;
     transition: all .15s ease-in-out;
   }
@@ -476,8 +476,8 @@ body.dark {
   }
 }
   @media only screen and (max-width: 500px) {
-  #contain1 button{
-    font-size: 1rem;
+    .firstBtn {
+      font-size: 1rem;
     padding: 7px 20px;
   }
 
@@ -830,4 +830,215 @@ body.dark {
 
 .two-column-list li:hover{
   padding: 10px 0;
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.overlay.active {
+  animation: alert-opacity .5s ease-in-out;
+
+}
+
+@keyframes alert-opacity {
+  0% {
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* VARIABLES */
+:root {
+  --card-bg: var(--white-300);
+  --color-header: var(--black-300);
+  --color-btn-text: var(--white-400);
+  --color-btn-background: var(--orange-500);
+  --color-btn1-background: var(--blue-700);
+  --hover-btn-background: var(--orange-400);
+  --hover-btn1-background: var(--blue-600);
+  --transition: 0.2s;
+}
+
+
+/* MAIN CONTENT */
+.customAlert {
+  display: none;
+  width: 35vw;
+  margin-top: -15vh;
+  z-index:1
+  
+}
+
+.customAlert.active {
+  display: grid;
+  animation: alert-bounce 0.5s ease;
+
+}
+
+@keyframes alert-bounce {
+  0% {
+    transform:scale(0.25);
+    opacity: 0; 
+  }
+  50% {
+    transform: scale(1.15) ;
+    }
+  100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.grid__item {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 1.5rem 3rem 3rem;
+}
+
+.card__header {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-header);
+  margin-bottom: 15px;
+}
+
+.card__text {
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  color: darken(var(--color-text), 1%);
+  margin-bottom: 2.5rem;
+}
+
+#alertBtn, #alertBtn1{
+  display: inline-block;
+  width: 40%;
+  margin-right: 10px;
+    padding: 10px 40px;
+    font-size: 1.25rem;
+  text-align: center;
+  color: var(--color-btn-text);
+  background-color: var(--color-btn-background);
+  border: none;
+  border-radius: 30px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+#alertBtn1 {
+  color: var(--color-btn-text);
+  background-color: var(--color-btn1-background);
+}
+
+#alertBtn:hover{
+    background-color: var(--hover-btn-background);
+}
+
+ #alertBtn1:hover{
+    background-color: var(--hover-btn1-background);
+}
+
+
+@media only screen and (max-width: 1025px){
+  .customAlert {
+      width: 35vw;
+  }
+  .card__img {
+    height: 10rem;
+  } 
+  .card__content {
+    padding: 0.75rem 1.5rem 2rem;
+  }
+  .card__header {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .card__text {
+    font-size: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
+  #alertBtn, #alertBtn1{
+    margin-right: 5px;
+    font-size: 1.3rem;
+    padding: 8px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .customAlert {
+    width: 50vw;
+  }
+  .card__img {
+    height: 8rem;
+  } 
+  .card__content {
+    padding: 0.75rem 1.5rem 2rem;
+  }
+  .card__header {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .card__text {
+    font-size: 1rem;
+    margin-bottom: 1.125rem;
+  }
+  #alertBtn, #alertBtn1{
+    margin-right: 5px;
+    font-size: 1.3rem;
+    padding: 8px 0px;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .customAlert {
+    width: 60vw;
+    height: 350px;
+  }
+  .card__content {
+    padding: 0.5rem 1.25rem 1.25rem;
+  }
+  .card__header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .card__text {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+  }
+  
+  #alertBtn, #alertBtn1{
+    margin-right: 5px;
+    font-size: 1rem;
+    padding: 8px 0px;
+  }
 }

@@ -56,7 +56,7 @@ ini_set('display_errors', 1);
   <section class= "pageContainer" id="firstCon">
     <div class="background-image"></div>
 
-  <div class="top-container" id="contain1">
+  <div class="top-container contain1">
       <div class="topEnboss" aria-label="enboss">
         <svg version="1.1" id="Layer_1" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 825.8 176.3" style="enable-background:new 0 0 825.8 176.3;" xml:space="preserve">
@@ -114,21 +114,73 @@ ini_set('display_errors', 1);
       <div class="para" id="atEnboss">
         <p>אנבוס מאחדים את חובבי ספורט האקסטרים יחד בהרפתקה כוללנית ומשותפת שאין בה בוס. הקהילה שלנו חוגגת את החופש שיש ברכיבה.</p>
         </div>
-      <button onclick="showConfirm()">הצטרפו לקהילה</button>
-      <script>
-        function showConfirm() {
-          // Create a message with the button inside
-          var message = document.createElement('div');
-          message.textContent = 'מעוניינים לעבור לאינסטגרם של ENBOSS?';
-        
-          // Show the confirm box with the message
-          var result = confirm(message.innerHTML);
-          if (result) {
-            // If the user clicks OK, go to the specified URL
-            window.location.href = 'https://instagram.com/enboss_official';
-          }
-        }
-        </script>
+
+        <!-- Custom Instagram Alert Message -->
+        <div class="overlay"></div>
+
+        <button class="firstBtn" onclick="showCustomAlert()">הצטרפו לקהילה</button>
+
+        <div class="customAlert" id="customAlert">
+  <div class="grid__item">
+    <div class="card">
+      <img class="card__img" src="/images/ParkGallery-webp/kiryat-ata3.webp" alt="Kiryat Ata Skatepark">
+      <div class="card__content message">
+        <h1 class="card__header">Want to see for yourself?</h1>
+        <p class="card__text ">
+          Look up at the ENBOSS instagram, and find yourself <strong>immersed</strong> in amazing extreme experiance.
+        </p>
+        <button onclick="cancelAction()"class="card__btn" id="alertBtn">Return</button>
+        <button onclick="confirmAction()" class="card__btn1" id="alertBtn1">Explore</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <script> // Instagram Alert JavaScript<script>
+                  function showCustomAlert() {
+                    var customAlert = document.getElementById('customAlert');
+                    var overlay = document.querySelector('.overlay');
+
+                    customAlert.classList.add('active');
+                    overlay.classList.add('active');
+                    overlay.style.display = 'grid';
+
+                    updateAlertPosition();
+                    window.addEventListener('scroll', updateAlertPosition);
+
+                    // Disable body scroll
+                    document.body.style.overflow = 'hidden';
+                  }
+
+                  function updateAlertPosition() {
+                    var customAlert = document.getElementById('customAlert');
+                    customAlert.style.top = window.innerHeight / 2 + window.scrollY + 'px';
+                  }
+
+                  function confirmAction() {
+                    window.location.href = 'https://instagram.com/enboss_official';
+                    hideCustomAlert();
+                  }
+
+                  function cancelAction() {
+                    hideCustomAlert();
+                  }
+
+                  function hideCustomAlert() {
+                    var customAlert = document.getElementById('customAlert');
+                    var overlay = document.querySelector('.overlay');
+
+                    customAlert.classList.remove('active');
+                    overlay.classList.remove('active');
+                    overlay.style.display = 'none';
+
+                    window.removeEventListener('scroll', updateAlertPosition);
+
+                    // Enable body scroll
+                    document.body.style.overflow = '';
+                  }
+                </script>
+
     </div>
   <section>    
 

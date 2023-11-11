@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+  background: url('your-blur-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-alert {
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.custom-alert button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #04B486;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-alert button:hover {
+  background-color: #05cd99;
+}
+
+</style>  <title>Custom Alert Box</title>
+</head>
+<body>
+
+<button onclick="showCustomAlert()">הצטרפו לקהילה</button>
+
+<div id="customAlert" class="custom-alert">
+  <p class="message">מעוניינים לעבור לאינסטגרם של ENBOSS?</p>
+  <button onclick="confirmAction()">אישור</button>
+  <button onclick="cancelAction()">ביטול</button>
+</div>
+
+<script>
+    function showCustomAlert() {
+  var customAlert = document.getElementById('customAlert');
+  customAlert.style.display = 'block';
+}
+
+function confirmAction() {
+  window.location.href = 'https://instagram.com/enboss_official';
+}
+
+function cancelAction() {
+  var customAlert = document.getElementById('customAlert');
+  customAlert.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>

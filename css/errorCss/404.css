@@ -215,13 +215,13 @@
 
       }
             25% {
-      fill: var(--blue-600);
+      fill: var(--blue-700);
       filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
       -webkit-filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
 
       }
       50% {
-      fill: var(--blue-700);
+      fill: var(--blue-800);
       filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
       -webkit-filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
 
