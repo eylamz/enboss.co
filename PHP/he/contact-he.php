@@ -7,9 +7,9 @@
   <title>צור קשר | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="צור קשר | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:description" content="ENBOSS - Be in control">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
+  <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/contact">
   <meta property="og:site_name" content="ENBOSS">
   <meta name="theme-color" content="#f0f2f4">

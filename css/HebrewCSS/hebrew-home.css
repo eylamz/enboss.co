@@ -101,7 +101,6 @@ body.dark {
     width: 100%;
     max-width: 350px;
     fill: var(--blue-500);
-    z-index: 1;
     animation: bounce 0.5s ease;
     transition: all .3s ease-in-out;
   }
@@ -646,7 +645,7 @@ body.dark {
   font-family: 'Open Sans', sans-serif;
   color: var(--anti-white);
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-  z-index: 200;
+  z-index: 1;
 }
 
 .image-scroll {
@@ -761,78 +760,6 @@ body.dark {
   /*       End of English Home CSS */
 
 
-  .iron-swords svg {
-    width: 15px;
-    height: 15px;
-    margin: 1.125px;
-    fill: var(--white);
-  }
-  .iron-swords a{
-    color: white;
-  }
-
-
-  
-
-  .outer-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-}
-
-.centered-div {
-    max-width: 350px;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    padding: 20px;
-    position: relative; /* Needed for horizontal lines */
-}
-
-.two-column-list {
-  font-family: 'Noto Sans Hebrew', Sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-column,
-.right-column {
-    flex: 1;
-    padding: 0 10px; /* Add padding to separate columns */
-}
-
-.left-column {
-  border-right: 1px solid black; /* Vertical line between columns */
-}
-
-
-.left-column ul,
-.right-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.left-column ul li,
-.right-column ul li {
-    border-bottom: 1px solid black; /* Horizontal lines under each list item */
-    padding: 5px 0; /* Add padding above and below each list item */
-}
-
-.left-column ul li {
-  text-align: left; /* Align text in the left column to the left */
-}
-
-.right-column ul li {
-  text-align: right; /* Align text in the right column to the right */
-}
-
-.two-column-list li:hover{
-  padding: 10px 0;
-}
-
-
 .overlay {
   display: none;
   position: fixed;
@@ -840,12 +767,18 @@ body.dark {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 1;
-}
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+  overflow-y: hidden;
+    /* background-size: 110%;
+  background-position-x: center;
+  background-image: url("https://docs-assets.developer.apple.com/published/89fce336773682d220039e98bcca759d/alert-ios~dark@2x.png");
+ */}
 
 .overlay.active {
+  display: block;
   animation: alert-opacity .5s ease-in-out;
 
 }
@@ -863,16 +796,29 @@ body.dark {
 
 
 
-/* VARIABLES */
+/* ALERT MESSAGE  */
 :root {
   --card-bg: var(--white-300);
   --color-header: var(--black-300);
+  --color-text: var(--black-500);
   --color-btn-text: var(--white-400);
   --color-btn-background: var(--orange-500);
   --color-btn1-background: var(--blue-700);
+  --hover-btn-background: var(--orange-300);
+  --hover-btn1-background: var(--blue-600);
+  --alert-boss: var(--blue-500);
+}
+
+.dark {
+  --card-bg: var(--black-450);
+  --color-header: var(--white-300);
+  --color-text: var(--white-200);
+  --color-btn-text: var(--white-300);
+  --color-btn-background: var(--orange-400);
+  --color-btn1-background: var(--blue-400);
   --hover-btn-background: var(--orange-400);
   --hover-btn1-background: var(--blue-600);
-  --transition: 0.2s;
+  --alert-boss: var(--blue-800);
 }
 
 
@@ -880,14 +826,18 @@ body.dark {
 .customAlert {
   display: none;
   width: 35vw;
-  margin-top: -15vh;
-  z-index:1
-  
+  position: fixed;
+  z-index:11;
+    top: 50%;
+  left: 50%;
+  margin-top: -15vh; /* Half of the element's height */
+  margin-left: -37vw; /* Half of the element's width */  
 }
 
 .customAlert.active {
-  display: grid;
+  display: block;
   animation: alert-bounce 0.5s ease;
+
 
 }
 
@@ -897,7 +847,7 @@ body.dark {
     opacity: 0; 
   }
   50% {
-    transform: scale(1.15) ;
+    transform: scale(1.15);
     }
   100% { 
     transform: scale(1);
@@ -907,11 +857,12 @@ body.dark {
 
 .grid__item {
   background-color: var(--card-bg);
-  border-radius: 16px;
+  border-radius: 10px;
+  opacity:0.51;
   overflow: hidden;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--img-shadow);
   cursor: pointer;
-  transition: var(--transition);
+  transition: all .3s ease-in-out;
 }
 
 
@@ -935,9 +886,7 @@ body.dark {
 
 .card__text {
   font-size: 1.25rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
-  color: darken(var(--color-text), 1%);
+  color: var(--color-text);
   margin-bottom: 2.5rem;
 }
 
@@ -952,7 +901,7 @@ body.dark {
   background-color: var(--color-btn-background);
   border: none;
   border-radius: 30px;
-  transition: var(--transition);
+  transition: all .3s ease-in-out;
   cursor: pointer;
 }
 #alertBtn1 {
@@ -969,57 +918,60 @@ body.dark {
 }
 
 
-@media only screen and (max-width: 1025px){
-  .customAlert {
-      width: 35vw;
-  }
-  .card__img {
-    height: 10rem;
-  } 
-  .card__content {
-    padding: 0.75rem 1.5rem 2rem;
-  }
-  .card__header {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  .card__text {
-    font-size: 1.125rem;
-    margin-bottom: 1.125rem;
-  }
-  #alertBtn, #alertBtn1{
-    margin-right: 5px;
-    font-size: 1.3rem;
-    padding: 8px 20px;
-  }
-}
 
 @media only screen and (max-width: 600px){
+.grid__item {
+    opacity:1.2; 
+  }
   .customAlert {
-    width: 50vw;
+    width: 75%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 145px;
   }
   .card__img {
-    height: 8rem;
+    display: none;
   } 
   .card__content {
-    padding: 0.75rem 1.5rem 2rem;
+    padding: 25px 0 0;
   }
   .card__header {
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 15px;
   }
   .card__text {
     font-size: 1rem;
-    margin-bottom: 1.125rem;
+    margin-bottom: 30px;
+    padding: 0 20px;
   }
   #alertBtn, #alertBtn1{
-    margin-right: 5px;
-    font-size: 1.3rem;
-    padding: 8px 0px;
+    margin-right: 0px;
+    font-size: 1rem;
   }
+  #alertBtn, #alertBtn1{
+  width: 50%;
+  padding: 10px 24px 13px;
+  border-radius: 0px;
+}
+#alertBoss {
+  fill: var(--alert-boss);
+  width: 50px;
+  margin-bottom: -1px;
+
+}
+}
+#alertBtn {
+   float: left;
+}
+#alertBtn1 {
+  font-weight: 600;
+   float: right;
+  color: var(--color-btn-text);
+  background-color: var(--color-btn1-background);
 }
 
-@media only screen and (max-width: 390px){
+
+/* @media only screen and (max-width: 390px){
   .customAlert {
     width: 60vw;
     height: 350px;
@@ -1041,4 +993,4 @@ body.dark {
     font-size: 1rem;
     padding: 8px 0px;
   }
-}
+} */

@@ -359,12 +359,12 @@ color: var(--white-400);
 color: var(--white-400);
 }
 
-.dark #contain1 button {
+.dark .firstBtn {
 color: var(--black-300);
 background-color: var(--orange-600);
 }
 
-.dark #contain1 button:hover {
+.dark .firstBtn:hover {
 background-color: var(--orange-500);
 }
 

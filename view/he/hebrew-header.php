@@ -218,7 +218,8 @@
   }
 
   </script>  
-  <script>
+  
+<script>// URL CHAGNER BUTTON SCRIPT
     document.getElementById("urlChanger").addEventListener("click", function(event) {
       event.preventDefault();
       

@@ -151,7 +151,8 @@
    </div>
   <?php include('english-search.php'); ?>
   </header>
-<script> // Dark Mode switcher  
+  
+  <script> // Dark Mode switcher  
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -159,7 +160,7 @@
       document.body.classList.add('dark');
       var colorButton = document.getElementById('colorButton');
       colorButton.classList.add('active');
-      updateMetaThemeColor('var(--black-450)'); // var(--ne-grey)
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
     }
 
     const darkModeSwitcher = document.querySelector('.dark-mode-switcher');
@@ -168,7 +169,7 @@
         document.body.classList.toggle('dark');
         e.preventDefault();
         const isDarkMode = document.body.classList.contains('dark');
-        updateMetaThemeColor(isDarkMode ? '#202020' : '#e0e0e0'); 
+        updateMetaThemeColor(isDarkMode ? '#202124' : '#f0f2f4');
       });
     }
   });
@@ -188,11 +189,11 @@
     if (isActive) {
       colorButton.classList.add('active');
       body.classList.add('dark');
-      updateMetaThemeColor('#202020'); // black notification bar color
+      updateMetaThemeColor('#202124'); // var(--ne-grey)
     } else {
       colorButton.classList.remove('active');
       body.classList.remove('dark');
-      updateMetaThemeColor('#e0e0e0'); // white notification bar color
+      updateMetaThemeColor('#f0f2f4');
     }
   });
 
@@ -213,12 +214,13 @@
   if (prefersDark) {
     isActive = true;
     isColorChanged = true;
-    updateMetaThemeColor('#202020'); // black notification bar color
+    updateMetaThemeColor('#000000');
   } else {
-    updateMetaThemeColor('#e0e0e0'); // white notification bar color
+    updateMetaThemeColor('#f0f2f4');
   }
 
   </script>  
+  
 <script>// URL CHAGNER BUTTON SCRIPT
     document.getElementById("urlChanger").addEventListener("click", function(event) {
       event.preventDefault();
