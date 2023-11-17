@@ -812,13 +812,8 @@ body {
   }
 }
 
-  /*       End of English Home CSS */
 
 
-
-
-
-  
 
   .overlay {
     display: none;
@@ -827,20 +822,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(1.25px);
+    -webkit-backdrop-filter: blur(1.25px);
     background-color: rgba(0,0,0,0.5);
     z-index: 10;
     overflow-y: hidden;
-      /* background-size: 110%;
-    background-position-x: center;
-    background-image: url("https://docs-assets.developer.apple.com/published/89fce336773682d220039e98bcca759d/alert-ios~dark@2x.png");
-   */}
+    transition: background-color .3s ease-in-out;
+  }
   
   .overlay.active {
     display: block;
     animation: alert-opacity .5s ease-in-out;
+  }
   
+  .dark .overlay {
+    background-color:transparent;
   }
   
   @keyframes alert-opacity {
@@ -855,201 +851,360 @@ body {
   
   
   
-/* ALERT MESSAGE  */
-:root {
-  --card-bg: var(--white-300);
-  --color-header: var(--black-300);
-  --color-text: var(--black-500);
-  --color-btn-text: var(--white-400);
-  --color-btn-background: var(--orange-500);
-  --color-btn1-background: var(--blue-700);
-  --hover-btn-background: var(--orange-300);
-  --hover-btn1-background: var(--blue-600);
-  --alert-boss: var(--blue-500);
-}
-
-.dark {
-  --card-bg: var(--black-450);
-  --color-header: var(--white-300);
-  --color-text: var(--white-200);
-  --color-btn-text: var(--white-300);
-  --color-btn-background: var(--orange-400);
-  --color-btn1-background: var(--blue-400);
-  --hover-btn-background: var(--orange-400);
-  --hover-btn1-background: var(--blue-600);
-  --alert-boss: var(--blue-800);
-}
-
-
-/* MAIN CONTENT */
-.customAlert {
-  display: none;
-  width: 35vw;
-  position: fixed;
-  z-index:11;
-    top: 50%;
-  left: 50%;
-  margin-top: 0vh; /* Half of the element's height */
-  margin-left: -37vw; /* Half of the element's width */  
-}
-
-.customAlert.active {
-  display: block;
-  animation: alert-bounce 0.5s ease;
-
-
-}
-
-@keyframes alert-bounce {
-  0% {
-    transform:scale(0.25);
-    opacity: 0; 
+  
+  /* ALERT MESSAGE  */
+  :root {
+    --card-bg: var(--white-300);
+    --color-header: var(--black-300);
+    --color-text: var(--black-500);
+    --color-btn-text: var(--black-500);
+    --color-btn1-text:  var(--black-500);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-300);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--black-500);
+    --alertBorder: var(--white-400);
   }
-  50% {
-    transform: scale(1.15);
-    }
-  100% { 
-    transform: scale(1);
-    opacity: 1;
+  
+  .dark {
+    --card-bg: var(--black-400);
+    --color-header: var(--white-300);
+    --color-text: var(--white-200);
+    --color-btn-text: var(--white-250);
+    --color-btn1-text: var(--white-300);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-400);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--white-250);
+    --alertBorder: var(--black-300);
+  
   }
-}
-
-.grid__item {
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  opacity:0.51;
-  overflow: hidden;
-  box-shadow: var(--img-shadow);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: 14rem;
-  object-fit: cover;
-}
-
-.card__content {
-  padding: 1.5rem 3rem 3rem;
-}
-
-.card__header {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--color-header);
-  margin-bottom: 15px;
-}
-
-.card__text {
-  font-size: 1.25rem;
-  color: var(--color-text);
-  margin-bottom: 2.5rem;
-}
-
-#alertBtn, #alertBtn1{
-  display: inline-block;
-  width: 40%;
-  margin-right: 10px;
-    padding: 10px 40px;
-    font-size: 1.25rem;
-  text-align: center;
-  color: var(--color-btn-text);
-  background-color: var(--color-btn-background);
-  border: none;
-  border-radius: 30px;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-}
-#alertBtn1 {
-  color: var(--color-btn-text);
-  background-color: var(--color-btn1-background);
-}
-
-#alertBtn:hover{
-    background-color: var(--hover-btn-background);
-}
-
- #alertBtn1:hover{
-    background-color: var(--hover-btn1-background);
-}
-
-
-
-@media only screen and (max-width: 600px){
-.grid__item {
-    opacity:1.2; 
-  }
+  
+  
+  /* MAIN CONTENT */
   .customAlert {
-    width: 75%;
-    max-width: 500px;
-    height: 100%;
-    max-height: 145px;
-  }
-  .card__img {
     display: none;
-  } 
-  .card__content {
-    padding: 25px 0 0;
+    width: 35vw;
+    position: fixed;
+    z-index:11;
+      top: 50%;
+    left: 50%;
+    margin-top: 0vh; /* Half of the element's height */
+    margin-left: -37vw; /* Half of the element's width */  
   }
+  
+  .customAlert.active {
+    display: block;
+    animation: alert-bounce 0.5s ease;
+  
+  
+  }
+  
+  @keyframes alert-bounce {
+    0% {
+      transform:scale(0.25);
+      opacity: 0; 
+    }
+    50% {
+      transform: scale(1.15);
+      }
+    100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .grid__item {
+    background-color: var(--card-bg);
+    /*background-size: 145%;
+    background-position: 50% 40%;
+    background-image: url("https://docs-assets.developer.apple.com/published/51e2fa3a1c47d547d033a0334fbc6e0b/components-alert-intro~dark@2x.png");
+    */ border-radius: 18px;
+    opacity:0.51;
+    overflow: hidden;
+    box-shadow: var(--img-shadow);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  
+  .card__content {
+    padding: 1.5rem 3rem 3rem;
+  }
+  
   .card__header {
+    letter-spacing: -1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-header);
+    margin-bottom: 15px;
+  }
+  
+  .card__text {
     font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-  .card__text {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    padding: 0 20px;
-  }
-  #alertBtn, #alertBtn1{
-    margin-right: 0px;
-    font-size: 1rem;
-  }
-  #alertBtn, #alertBtn1{
-  width: 50%;
-  padding: 10px 24px 13px;
-  border-radius: 0px;
-}
-#alertBoss {
-  fill: var(--alert-boss);
-  width: 57px;
-  margin-bottom: -1px;
-
-}
-}
-#alertBtn {
-   float: left;
-}
-#alertBtn1 {
-  font-weight: 600;
-   float: right;
-  color: var(--color-btn-text);
-  background-color: var(--color-btn1-background);
-}
-
-
-/* @media only screen and (max-width: 390px){
-  .customAlert {
-    width: 60vw;
-    height: 350px;
-  }
-  .card__content {
-    padding: 0.5rem 1.25rem 1.25rem;
-  }
-  .card__header {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  .card__text {
-    font-size: 0.9rem;
-    margin-bottom: 1em;
+    color: var(--color-text);
+    margin-bottom: 2.5rem;
   }
   
   #alertBtn, #alertBtn1{
-    margin-right: 5px;
-    font-size: 1rem;
-    padding: 8px 0px;
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+      padding: 10px 40px;
+      font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-btn-text);
+    background-color: var(--color-btn-background);
+    border-top: 2px solid var(--alertBorder);
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
   }
-} */
+  #alertBtn1 {
+    border-left: 2px solid var(--alertBorder);
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
+  #alertBtn:hover{
+      background-color: var(--hover-btn-background);
+  }
+  
+   #alertBtn1:hover{
+      background-color: var(--hover-btn1-background);
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px){
+  .grid__item {
+      opacity:1.2; 
+      max-height: 147px;
+  
+    }
+    .customAlert {
+      width: 75%;
+      max-width: 500px;
+      height: 100%;
+      max-height: 140px;
+    }
+    .card__img {
+      display: none;
+    } 
+    .card__content {
+      padding: 20px 0 0;
+    }
+    .card__header {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+    .card__text {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+    #alertBtn, #alertBtn1{
+      margin-right: 0px;
+      font-size: 1.125rem;
+    }
+    #alertBtn, #alertBtn1{
+    width: 50%;
+    padding: 8px 20px 10px;
+    border-radius: 0px;
+  }
+  #alertBoss {
+    fill: var(--alert-boss);
+    width: 50px;
+  
+  }
+  }
+  #alertBtn {
+     float: left;
+      font-weight: 500;
+  
+  }
+  #alertBtn1 {
+     float: right;
+        font-weight: 600;
+  
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
+  /*       End of English Home CSS */
+
+
+  
+    /* Your CSS styles for the overlay go here */
+    #overlay1 {
+      display: none;
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      backdrop-filter: blur(1.25px);
+      -webkit-backdrop-filter: blur(1.25px);
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      overflow: hidden;
+      transition: background-color .3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .dark #overlay1 {
+      background-color:transparent;
+    }
+
+    #newIconAlert { 
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--card-bg);
+      box-shadow: var(--img-shadow);
+      padding: 25px 30px;
+      border-radius: 18px;
+      width: 80%;
+      max-width: 400px;
+      min-width: 200px;
+      margin: 0 10px;
+      font-family: 'Poppins', sans-serif;
+      animation: alert-fade-in 0.5s ease-in-out; /* Fade-in animation */
+    }
+
+    /* Your CSS styles for the message box go here */
+    #messageBox {
+      text-align: center;
+      border-radius: 18px;
+      transition: all .3s ease-in-out;
+    }
+
+    #messageBox h1 {
+      color: var(--color-header);
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    #messageBox p {
+      color: var(--color-text);
+      margin-bottom: 10px;
+      line-height: 1.25rem;
+      text-align: left;
+    }
+
+    #understandAction {
+      font-size: 1rem;
+      font-weight:500 ;
+      margin-top: 10px;
+      padding: 7px 20px;
+      background-color: var(--white-350);
+      color: var(--black-600);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+    }
+
+    #understandAction:hover {
+      color: var(--white-400);
+      background-color: var(--blue-600);
+    }
+
+    .dark #understandAction {
+      color: var(--white-250);
+      background-color: var(--black-200);
+    }
+
+    .dark #understandAction:hover {
+            color: var(--white-300);
+      background-color: var(--blue-600)
+    }
+
+
+
+    /* Keyframes for fade-in and fade-out animations */
+    @keyframes alert-fade-in {
+    0% {
+      transform:scale(0.25);
+      opacity: 0.25; 
+    }
+    50% {
+      transform: scale(1.15);
+      }
+    100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+    @keyframes alert-fade-out {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+          50% {
+      transform: scale(1.15);
+      }
+      to {
+        opacity: 0;
+        transform:scale(0.25);
+      }
+    }
+
+
+  .shieldSvg {
+  fill: var(--orange-500);
+  max-width: 30px;
+  animation: shieldAnimation 1.9s ease-in-out forwards;
+  transform-origin: center;
+  }
+
+#shield {
+  transform-origin: center;
+}
+
+.dark .shieldSvg {
+  fill: var(--orange-600);
+}
+
+
+@keyframes shieldAnimation {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+    20% {
+    transform: rotate(-40deg);
+  }
+      40% {
+    transform: rotate(40deg);
+  }
+        60% {
+    transform: rotate(-20deg);
+  }
+          80% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shieldSize {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

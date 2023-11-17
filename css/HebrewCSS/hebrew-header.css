@@ -97,6 +97,7 @@ table {
       --black-700: #545459; /* grey text for white background */
 
       --white-200: #A1A1A1; 
+      --white-250: hsl(0, 0%, 73%); 
       --white-300: #e0e0e0; 
       --white-350: #F2F2F7;
       --white-400: #EDEDEB; /* white text & background */

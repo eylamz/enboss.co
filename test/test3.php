@@ -8,7 +8,6 @@
   <meta name="description" content="Discover ENBOSS - Unite & Ride: Your Ultimate Hub for Thrilling Urban Sports and Adventure. Engage in an exhilarating community that transcends boundaries and welcomes enthusiasts of all disciplines. From skateboarding and rollerblading to scootering and more, ENBOSS is your gateway to adrenaline-pumping experiences. Join us today and embrace the spirit of unity and adventure. Explore the limitless possibilities at ENBOSS.co!">  
 
             <!-- NO CAHCE META TAG -->
-            <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 
 
   <meta property="og:type" content="website">

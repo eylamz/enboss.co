@@ -92,13 +92,14 @@ table {
       --black-200: #0A0A0A; /* darker black footer background */
       --black-300: #111111; /* dark black background */
       --black-400: #171717; /* black background */
-      --black-450: #202020;  /*test black background test */
-      --black-500: #292929; 
+      --black-450: #212121;  /*test black background test */
+      --black-500: hsl(0, 0%, 16%); 
       --black-600: hsl(228 3% 22% / 1); 
       --black-700: #545459; /* grey text for white background */
 
-      --white-200: #A1A1A1; 
-      --white-300: #e0e0e0; 
+      --white-200: hsl(0, 0%, 63%); 
+      --white-250: hsl(0, 0%, 73%); 
+      --white-300: hsl(0, 0%, 88%); 
       --white-350: #F2F2F7;
       --white-400: #EDEDEB; /* white text & background */
       --white-500: #f8f8f7; /* whiter  background */
@@ -114,7 +115,7 @@ table {
       --blue-200: #171E24; /* darker blue text */
       --blue-300: hsl(209, 91%, 20%); 
       --blue-400: #074E92; 
-      --blue-500: hsl(209, 93%, 35%); 
+      --blue-500: #055bab;
       --blue-600: #0670BA; 
       --blue-700: hsl(205, 95%, 43%); /* light blue */
       --blue-800: #0694f9; /* lighter blue */

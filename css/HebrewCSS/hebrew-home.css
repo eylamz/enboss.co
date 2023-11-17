@@ -760,237 +760,252 @@ body.dark {
   /*       End of English Home CSS */
 
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
-  background-color: rgba(0,0,0,0.5);
-  z-index: 10;
-  overflow-y: hidden;
-    /* background-size: 110%;
-  background-position-x: center;
-  background-image: url("https://docs-assets.developer.apple.com/published/89fce336773682d220039e98bcca759d/alert-ios~dark@2x.png");
- */}
-
-.overlay.active {
-  display: block;
-  animation: alert-opacity .5s ease-in-out;
-
-}
-
-@keyframes alert-opacity {
-  0% {
-    opacity: 0; 
-  }
-  100% { 
-    opacity: 1;
-  }
-}
-
-
-
-
-
-/* ALERT MESSAGE  */
-:root {
-  --card-bg: var(--white-300);
-  --color-header: var(--black-300);
-  --color-text: var(--black-500);
-  --color-btn-text: var(--white-400);
-  --color-btn-background: var(--orange-500);
-  --color-btn1-background: var(--blue-700);
-  --hover-btn-background: var(--orange-300);
-  --hover-btn1-background: var(--blue-600);
-  --alert-boss: var(--blue-500);
-}
-
-.dark {
-  --card-bg: var(--black-450);
-  --color-header: var(--white-300);
-  --color-text: var(--white-200);
-  --color-btn-text: var(--white-300);
-  --color-btn-background: var(--orange-400);
-  --color-btn1-background: var(--blue-400);
-  --hover-btn-background: var(--orange-400);
-  --hover-btn1-background: var(--blue-600);
-  --alert-boss: var(--blue-800);
-}
-
-
-/* MAIN CONTENT */
-.customAlert {
-  display: none;
-  width: 35vw;
-  position: fixed;
-  z-index:11;
-    top: 50%;
-  left: 50%;
-  margin-top: -15vh; /* Half of the element's height */
-  margin-left: -37vw; /* Half of the element's width */  
-}
-
-.customAlert.active {
-  display: block;
-  animation: alert-bounce 0.5s ease;
-
-
-}
-
-@keyframes alert-bounce {
-  0% {
-    transform:scale(0.25);
-    opacity: 0; 
-  }
-  50% {
-    transform: scale(1.15);
-    }
-  100% { 
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.grid__item {
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  opacity:0.51;
-  overflow: hidden;
-  box-shadow: var(--img-shadow);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: 14rem;
-  object-fit: cover;
-}
-
-.card__content {
-  padding: 1.5rem 3rem 3rem;
-}
-
-.card__header {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--color-header);
-  margin-bottom: 15px;
-}
-
-.card__text {
-  font-size: 1.25rem;
-  color: var(--color-text);
-  margin-bottom: 2.5rem;
-}
-
-#alertBtn, #alertBtn1{
-  display: inline-block;
-  width: 40%;
-  margin-right: 10px;
-    padding: 10px 40px;
-    font-size: 1.25rem;
-  text-align: center;
-  color: var(--color-btn-text);
-  background-color: var(--color-btn-background);
-  border: none;
-  border-radius: 30px;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-}
-#alertBtn1 {
-  color: var(--color-btn-text);
-  background-color: var(--color-btn1-background);
-}
-
-#alertBtn:hover{
-    background-color: var(--hover-btn-background);
-}
-
- #alertBtn1:hover{
-    background-color: var(--hover-btn1-background);
-}
-
-
-
-@media only screen and (max-width: 600px){
-.grid__item {
-    opacity:1.2; 
-  }
-  .customAlert {
-    width: 75%;
-    max-width: 500px;
-    height: 100%;
-    max-height: 145px;
-  }
-  .card__img {
+  .overlay {
     display: none;
-  } 
-  .card__content {
-    padding: 25px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.25px);
+    -webkit-backdrop-filter: blur(1.25px);
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    overflow-y: hidden;
+    transition: background-color .3s ease-in-out;
   }
+  
+  .overlay.active {
+    display: block;
+    animation: alert-opacity .5s ease-in-out;
+  }
+  
+  .dark .overlay {
+    background-color:transparent;
+  }
+  
+  @keyframes alert-opacity {
+    0% {
+      opacity: 0; 
+    }
+    100% { 
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  /* ALERT MESSAGE  */
+  :root {
+    --card-bg: var(--white-300);
+    --color-header: var(--black-300);
+    --color-text: var(--black-500);
+    --color-btn-text: var(--black-500);
+    --color-btn1-text:  var(--black-500);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-300);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--black-500);
+    --alertBorder: var(--white-400);
+  }
+  
+  .dark {
+    --card-bg: var(--black-400);
+    --color-header: var(--white-300);
+    --color-text: var(--white-200);
+    --color-btn-text: var(--white-250);
+    --color-btn1-text: var(--white-300);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-400);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--white-250);
+    --alertBorder: var(--black-300);
+  
+  }
+  
+  
+  /* MAIN CONTENT */
+  .customAlert {
+    display: none;
+    width: 35vw;
+    position: fixed;
+    z-index:11;
+      top: 50%;
+    left: 50%;
+    margin-top: -15vh; /* Half of the element's height */
+    margin-left: -37vw; /* Half of the element's width */  
+  }
+  
+  .customAlert.active {
+    display: block;
+    animation: alert-bounce 0.5s ease;
+  
+  
+  }
+  
+  @keyframes alert-bounce {
+    0% {
+      transform:scale(0.25);
+      opacity: 0; 
+    }
+    50% {
+      transform: scale(1.15);
+      }
+    100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .grid__item {
+    background-color: var(--card-bg);
+    /*background-size: 145%;
+    background-position: 50% 40%;
+    background-image: url("https://docs-assets.developer.apple.com/published/51e2fa3a1c47d547d033a0334fbc6e0b/components-alert-intro~dark@2x.png");
+    */ border-radius: 18px;
+    opacity:0.51;
+    overflow: hidden;
+    box-shadow: var(--img-shadow);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  
+  .card__content {
+    padding: 1.5rem 3rem 3rem;
+  }
+  
   .card__header {
-    font-size: 1.25rem;
+    letter-spacing: -1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-header);
     margin-bottom: 15px;
   }
+  
   .card__text {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    padding: 0 20px;
-  }
-  #alertBtn, #alertBtn1{
-    margin-right: 0px;
-    font-size: 1rem;
-  }
-  #alertBtn, #alertBtn1{
-  width: 50%;
-  padding: 10px 24px 13px;
-  border-radius: 0px;
-}
-#alertBoss {
-  fill: var(--alert-boss);
-  width: 50px;
-  margin-bottom: -1px;
-
-}
-}
-#alertBtn {
-   float: left;
-}
-#alertBtn1 {
-  font-weight: 600;
-   float: right;
-  color: var(--color-btn-text);
-  background-color: var(--color-btn1-background);
-}
-
-
-/* @media only screen and (max-width: 390px){
-  .customAlert {
-    width: 60vw;
-    height: 350px;
-  }
-  .card__content {
-    padding: 0.5rem 1.25rem 1.25rem;
-  }
-  .card__header {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  .card__text {
-    font-size: 0.9rem;
-    margin-bottom: 1em;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-bottom: 2.5rem;
   }
   
   #alertBtn, #alertBtn1{
-    margin-right: 5px;
-    font-size: 1rem;
-    padding: 8px 0px;
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+      padding: 10px 40px;
+      font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-btn-text);
+    background-color: var(--color-btn-background);
+    border-top: 2px solid var(--alertBorder);
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
   }
-} */
+  #alertBtn1 {
+    border-left: 2px solid var(--alertBorder);
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
+  #alertBtn:hover{
+      background-color: var(--hover-btn-background);
+  }
+  
+   #alertBtn1:hover{
+      background-color: var(--hover-btn1-background);
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px){
+  .grid__item {
+      opacity:1.2; 
+      max-height: 147px;
+  
+    }
+    .customAlert {
+      width: 75%;
+      max-width: 500px;
+      height: 100%;
+      max-height: 140px;
+    }
+    .card__img {
+      display: none;
+    } 
+    .card__content {
+      padding: 20px 0 0;
+    }
+    .card__header {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+    .card__text {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+    #alertBtn, #alertBtn1{
+      margin-right: 0px;
+      font-size: 1.125rem;
+    }
+    #alertBtn, #alertBtn1{
+    width: 50%;
+    padding: 8px 20px 10px;
+    border-radius: 0px;
+  }
+  #alertBoss {
+    fill: var(--alert-boss);
+    width: 50px;
+  
+  }
+  }
+  #alertBtn {
+     float: left;
+      font-weight: 500;
+  
+  }
+  #alertBtn1 {
+     float: right;
+        font-weight: 600;
+  
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
+  
+  /* @media only screen and (max-width: 390px){
+    .customAlert {
+      width: 60vw;
+      height: 350px;
+    }
+    .card__content {
+      padding: 0.5rem 1.25rem 1.25rem;
+    }
+    .card__header {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card__text {
+      font-size: 0.9rem;
+      margin-bottom: 1em;
+    }
+    
+    #alertBtn, #alertBtn1{
+      margin-right: 5px;
+      font-size: 1rem;
+      padding: 8px 0px;
+    }
+  } */

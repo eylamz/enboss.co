@@ -125,8 +125,8 @@ ini_set('display_errors', 1);
     <div class="card">
       <img class="card__img" src="/images/ParkGallery-webp/kiryat-ata3.webp" alt="Kiryat Ata Skatepark">
       <div class="card__content message">
-        <h1 class="card__header">Get ready</h1>
-        <p class="card__text ">Explore <svg version="1.1" id="alertBoss" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <h1 class="card__header">היו מוכנים</h1>
+        <p class="card__text "><svg version="1.1" id="alertBoss" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 825.8 176.3" style="enable-background:new 0 0 825.8 176.3;" xml:space="preserve">
             <g id="a">
             </g>
@@ -172,59 +172,67 @@ ini_set('display_errors', 1);
                 </g>
               </g>
           </g>
-        </svg> on instagram
+        </svg>
+        המשיכו לעמוד האינסטגרם של
         </p>
-        <button onclick="cancelAction()"class="card__btn" id="alertBtn">Return</button>
-        <button onclick="confirmAction()" class="card__btn1" id="alertBtn1">Explore</button>
+        <button onclick="cancelAction()"class="card__btn" id="alertBtn">חזרה</button>
+        <button onclick="confirmAction()" class="card__btn1" id="alertBtn1">המשך</button>
       </div>
     </div>
   </div>
 </div>
 
-          <script> // Instagram Alert JavaScript<script>
-                  function showCustomAlert() {
-                    var customAlert = document.getElementById('customAlert');
-                    var overlay = document.querySelector('.overlay');
+<script> // Instagram Alert JavaScript
+  function showCustomAlert() {
+    // Check if the screen width is greater than 600px
+    if (window.innerWidth > 600) {
+      // Redirect the user to the Instagram profile
+      window.location.href = 'https://instagram.com/enboss_official';
+      return;
+    }
 
-                    customAlert.classList.add('active');
-                    overlay.classList.add('active');
-                    overlay.style.display = 'block';
+    var customAlert = document.getElementById('customAlert');
+    var overlay = document.querySelector('.overlay');
 
-                    updateAlertPosition();
-                    window.addEventListener('scroll', updateAlertPosition);
+    customAlert.classList.add('active');
+    overlay.classList.add('active');
+    overlay.style.display = 'block';
 
-                    // Disable body scroll
-                    document.body.style.overflow = 'hidden';
-                  }
+    updateAlertPosition();
+    window.addEventListener('scroll', updateAlertPosition);
 
-                  function updateAlertPosition() {
-                    var customAlert = document.getElementById('customAlert');
-                    customAlert.style.top = window.innerHeight / 2 + window.scrollY + 'px';
-                  }
+    // Disable body scroll
+    document.body.style.overflow = 'hidden';
+  }
 
-                  function confirmAction() {
-                    window.location.href = 'https://instagram.com/enboss_official';
-                    hideCustomAlert();
-                  }
+  function updateAlertPosition() {
+    var customAlert = document.getElementById('customAlert');
+    customAlert.style.top = window.innerHeight / 2 + window.scrollY + 'px';
+  }
 
-                  function cancelAction() {
-                    hideCustomAlert();
-                  }
+  function confirmAction() {
+    window.location.href = 'https://instagram.com/enboss_official';
+    hideCustomAlert();
+  }
 
-                  function hideCustomAlert() {
-                    var customAlert = document.getElementById('customAlert');
-                    var overlay = document.querySelector('.overlay');
+  function cancelAction() {
+    hideCustomAlert();
+  }
 
-                    customAlert.classList.remove('active');
-                    overlay.classList.remove('active');
-                    overlay.style.display = 'none';
+  function hideCustomAlert() {
+    var customAlert = document.getElementById('customAlert');
+    var overlay = document.querySelector('.overlay');
 
-                    window.removeEventListener('scroll', updateAlertPosition);
+    customAlert.classList.remove('active');
+    overlay.classList.remove('active');
+    overlay.style.display = 'none';
 
-                    // Enable body scroll
-                    document.body.style.overflow = '';
-                  }
-                </script>
+    window.removeEventListener('scroll', updateAlertPosition);
+
+    // Enable body scroll
+    document.body.style.overflow = '';
+  }
+</script>
     </div>
 </section>
  <!--- Image Horizontal Scroller Section-->
