@@ -279,6 +279,22 @@ ini_set('display_errors', 1);
               }
             </style>
     <div class="scroll-parent" id="scroll">
+      
+    <div class="images">
+        <a href="/he/skateparks/tel-aviv-2">
+          <picture>
+          <source media="(max-width: 480px)" srcset="/images/Park480-webp/tel-aviv(2).webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/tel-aviv(2)1.webp">
+            <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/tel-aviv(2)1.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)1.webp">
+            <img src="/images/ParkGallery-webp/tel-aviv(2)1.webp" alt="סקייטפארק תל אביב" />
+          </picture>
+        </a>
+          <div class="text1"><h2>תל אביב</h2></div>
+          <div class="text2"><h2>חדש</h2></div>
+      </div>
+
+
       <div class="images">
         <a href="/he/skateparks/bat-yam">
           <picture>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en_US" class="notranslate" translate="no">
 <head>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -35,9 +40,9 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Home CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css?v=1.001" />
            <link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+           <link rel="StyleSheet" href="/enboss.co/css/EnglishCSS/dark.css?v=1.005" />
 
 
             <!-- Enboss.co Google tag (gtag.js) -->
@@ -77,32 +82,53 @@
   // Get the current count from localStorage
   let messageCount = localStorage.getItem('messageCount') || 0;
 
+  // Set the initial display of overlay1 to 'none'
+  const overlay1 = document.getElementById('overlay1');
+  overlay1.style.display = 'none';
+
   // If the message has been shown less than 3 times, display the message box after 3 seconds
   if (messageCount < 3) {
+           // Increment the count
+           messageCount++;
+
+          // Save the count in localStorage
+          localStorage.setItem('messageCount', messageCount);
     // Set a timeout to display the overlay after 3 seconds
     setTimeout(() => {
       const overlay1 = document.getElementById('overlay1');
       overlay1.style.display = 'flex';
-    }, 3000);
+      // document.body.style.overflowY = 'hidden';
+      console.log('Overlay1 changed to flex, messageCount:', messageCount);
+    }, 2000);
+ 
   }
 
-  function understandAction() {
-    // Increment the count
-    messageCount++;
+        function understandAction() {
+        const overlay1 = document.getElementById('overlay1');
+        
+        // Set the animation to alert-fade-out
+        overlay1.style.animation = 'alert-fade-out 1s ease-in-out';
+        // document.body.style.overflowY = 'auto';
 
-    // Save the count in localStorage
-    localStorage.setItem('messageCount', messageCount);
 
-    // If the message has been shown 3 times, apply fade-out animation and hide the message box
-    if (messageCount >= 3) {
-      const overlay1 = document.getElementById('overlay1');
-      overlay1.style.animation = 'alert-fade-out 1s ease-in'; /* Fade-out animation */
-      setTimeout(() => {
-        overlay1.style.display = 'none';
-      }, 1000);
-    }
-  }
+        // After 1 second, set the display to none
+        setTimeout(() => {
+          overlay1.style.display = 'none';
+          console.log('Overlay1 changed to none, messageCount:', messageCount);
+        }, 1000);
+      }
+
+      function hideOverlayBasedOnCount() {
+        // If the message count is 3 or more, set the overlay display to none
+        if (messageCount >= 3) {
+          const overlay1 = document.getElementById('overlay1');
+          overlay1.style.display = 'none';
+          // document.body.style.overflowY = 'auto';
+        }
+      }
+
 </script>
+
 
 
   <!--- First Container-->
@@ -329,6 +355,20 @@
               }
             </style>
     <div class="scroll-parent" id="scroll">
+    <div class="images">
+        <a href="/en/skateparks/tel-aviv-2">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/tel-aviv(2).webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/tel-aviv(2)1.webp">
+            <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/tel-aviv(2)1.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)1.webp">
+            <img src="/images/ParkGallery-webp/tel-aviv(2)1.webp" alt="tel aviv skatepark" />
+          </picture>
+        </a>
+          <div class="text1"><h2>Tel Aviv</h2></div>
+          <div class="text2"><h2>NEW</h2></div>
+      </div>
+
       <div class="images">
         <a href="/en/skateparks/bat-yam">
           <picture>

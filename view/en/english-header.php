@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css?v=1.0" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css?v=1.0" />
 <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
 
@@ -257,7 +263,6 @@
         const navbarMenu = document.getElementById("menu");
     const burgerMenu = document.getElementById("burger");
     const headerMenu = document.getElementById("header");
-    const bodyMove = document.querySelector('.body-move');
     const innerMenu = document.querySelector('.menu-inner');
     
 
@@ -268,7 +273,6 @@
           burgerMenu.classList.toggle("is-active");
           navbarMenu.classList.toggle("is-active");
           innerMenu.classList.toggle("is-active");
-          bodyMove.classList.toggle("slide");
           burgerMenu.classList.toggle("slide");
               // Check if svgElement has clicked class
           if (svgElement.classList.contains('clicked')) {
@@ -291,8 +295,6 @@
           burgerMenu.classList.remove("is-active");
           navbarMenu.classList.remove("is-active");
           innerMenu.classList.remove("is-active");
-          bodyMove.classList.remove("slide");
-
        });
     });
     
@@ -303,8 +305,6 @@
           navbarMenu.classList.remove("is-active");
           burgerMenu.classList.remove("is-active");
           innerMenu.classList.remove("is-active");
-          bodyMove.classList.remove("slide");
-
        }
     });
     
@@ -315,14 +315,39 @@
              navbarMenu.classList.remove("is-active");
              burgerMenu.classList.remove("is-active");
              innerMenu.classList.remove("is-active");
-             bodyMove.classList.remove("slide");
-
           }
        }
     });
     
     // End of Header JavaScript
-    </script>
+    </script> 
+
+
+
+
+<!-- Audio element for the mobile menu whoosh sound effect -->
+<audio id="whooshSound" src="../../sound/whoosh.mp3"></audio>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the burger menu element
+  const burgerMenu = document.getElementById("burger");
+
+  // Get the audio element for the whoosh sound effect
+  const whooshSound = document.getElementById("whooshSound");
+
+  // Add a click event listener
+  burgerMenu.addEventListener("click", function() {
+    // Set the volume (0.0 to 1.0, where 0.0 is muted and 1.0 is full volume)
+    whooshSound.volume = 0.1; // Set your desired volume (e.g., 0.5 for half volume)
+    // Set custom playback speed (1.0 is normal speed)
+    whooshSound.playbackRate = 1.85; // Adjust the speed as needed (1.0 is normal speed)
+
+    // Play the whoosh sound effect
+    whooshSound.play();
+  });
+});
+</script>
 
 
 

@@ -96,28 +96,3 @@
 
 
 
-
-<script>
-  // Get the current count from localStorage
-  let messageCount = localStorage.getItem('messageCount') || 0;
-
-  // If the message has been shown less than 3 times, display the message box
-  if (messageCount < 3) {
-    const messageBox = document.getElementById('messageBox');
-    messageBox.style.display = 'block';
-  }
-
-  function confirmAction() {
-    // Increment the count
-    messageCount++;
-
-    // Save the count in localStorage
-    localStorage.setItem('messageCount', messageCount);
-
-    // If the message has been shown 3 times, hide the message box
-    if (messageCount >= 3) {
-      const messageBox = document.getElementById('messageBox');
-      messageBox.style.display = 'none';
-    }
-  }
-</script>

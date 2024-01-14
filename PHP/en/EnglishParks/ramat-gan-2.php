@@ -12,7 +12,7 @@
   <meta property="og:image" content="http://www.enboss.co/images/ParkFav/ramat-gan(2).png">
   <meta property="og:image:secure_url" content="https://www.enboss.co/images/ParkFav/ramat-gan(2).png">
   <meta property="og:description" content="Push Boundaries and Experience Thrilling Excitement at a Vibrant Skatepark">  
-  <meta property="og:url" content="http://www.enboss.co/en/skateparks/ramat-gan(2)">
+  <meta property="og:url" content="http://www.enboss.co/en/skateparks/ramat-gan-2-">
   <meta property="og:site_name" content="ENBOSS">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">

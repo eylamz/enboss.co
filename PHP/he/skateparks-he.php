@@ -128,6 +128,8 @@ function shuffle(array) {
 </head>
 
 <body>
+    <!-- Header Section -->
+    <?php include('../../view/he/hebrew-header.php'); ?>
 <div class="background-image"></div>
 
   <!-- Header Section -->
@@ -518,13 +520,48 @@ function shuffle(array) {
               </a>
           </div>
 
+          <div class="item center">
+          <a href="/he/skateparks/tel-aviv-2">
+                      <div class="itemImg">
+                  <img src="/images/Park480-webp/tel-aviv(2).webp" alt="סקייטפארק תל אביב" loading="lazy">
+                    </div>
+                  <div class="gallery-text"><h2>תל אביב - רמת החייל</h2></div>
+              </a>
+          </div>
+
 
         </div>
     </div>
 
-<!--   Footer Section    -->
-<?php include('http://localhost/projects/enboss.co/view/he/hebrew-footer.php'); ?>
-  </main>
+        <!--   Footer Section    -->
+        <?php include('../../view/he/hebrew-footer.php'); ?>
+</main>
 </body>
+
+<script>
+  // Wait for the DOM to be fully loaded before executing the script
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all elements with the class 'itemImg'
+    var itemImgs = document.querySelectorAll('.itemImg');
+
+    // Iterate over each 'itemImg' element
+    itemImgs.forEach(function (itemImg) {
+      // Attach a 'mouseover' event listener to each 'itemImg'
+      itemImg.addEventListener('mouseover', function () {
+        // Create an audio element
+        var audio = new Audio('../../sound/ipad_click-99325.mp3');
+
+        // Set custom volume (0.0 to 1.0)
+        audio.volume = 0.4; // Adjust the volume as needed (0.0 to 1.0)
+
+        // Set custom playback speed (1.0 is normal speed)
+        audio.playbackRate = 1.0; // Adjust the speed as needed (1.0 is normal speed)
+
+        // Play the audio
+        audio.play();
+      });
+    });
+  });
+</script>
 
 </html>

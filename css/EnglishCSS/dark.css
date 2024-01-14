@@ -399,9 +399,7 @@ color: var(--white-400);
     background-color: var(--black-450);
     background-image: url('/svg/EnbossWallpaperLight.075.png');
   }
-  .dark .topEnboss {
-fill: var(--blue-500);
-}
+  .dark .topEnboss {fill: var(--blue-500);}
 
 .dark #line1 {
 border-color: var(--orange-600);
@@ -415,10 +413,7 @@ color: var(--white-400);
 color: var(--white-400);
 }
 
-.dark .firstBtn {
-color: var(--black-300);
-background-color: var(--orange-600);
-}
+.dark .firstBtn {color: var(--black-300);background-color: var(--orange-600);}
 
 .dark .firstBtn:hover {
   background-color: var(--orange-500);
@@ -434,10 +429,7 @@ background-color: var(--orange-600);
 color: var(--white-400);
 }
 
-.dark .viewMore {
-color: var(--white-400);
-background-color: var(--blue-500);
-}
+.dark .viewMore {color: var(--black-200);background-color: var(--blue-500);}
 
 .dark .viewMore:hover {
   background-color: var(--blue-600);
@@ -482,10 +474,7 @@ background-color: var(--blue-500);
 color: var(--white-400);
 }
 
-.dark .contact button {
-color: var(--white-400);
-background-color: var(--blue-500);
-}
+.dark .contact button {color: var(--black-200);background-color: var(--blue-500);}
 
 .dark .contact button:hover {
   background-color: var(--blue-600);
