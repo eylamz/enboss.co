@@ -1,5 +1,4 @@
-/* English dark.css */
-
+/* Hebrew dark.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
   --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -56,7 +55,7 @@
           --ne-light-blue : hsl(219 60% 50%);
           --ne-lighter-blue : hsl(219 60% 60%);
           --ne-dark-anti: #9AA0A6;
-          --ne-light-grey: hsl(228 3% 22% / 1);
+          --ne-light-grey: #35363A;
           --ne-light-anti: #BDC1C6;
           --ne-sec-text: #cacaca;
           --ne-amber: hsl(45 100% 48% / 1);
@@ -65,45 +64,45 @@
           --ne-light-conq: hsl(13, 84%, 53%);
           --gold: #d7c179;
           --gold-hover: #e9cb67;
+          
+
 }
 
 
 
 
-
-.dark .navi {/*dark header*/
+.dark .navi, .dark .navi-he {
   background: hsla(0, 0%, 13%, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
-.dark .menu.is-active {
-background: var(--black-450);
-}
+  .dark .menu.is-active {
+    background: var(--black-450);
+  }
 
 .dark .brand {
-fill: var(--white-400);
-
+  fill: var(--white-400);
 }
 
 .dark .brand:hover{
-fill: white;
+  fill: white;
 }
 
 .dark .menu-link {
-color: var(--white-400);
+  color: var(--white-400);
 }
 
 .dark .menu-link:hover{
-color: white;
+  color: white;
 }
 
 .dark .menu-block {
   fill: var(--white-400);
 }
 
-.dark .dark .menu-block:hover{
-fill: white;
+.dark .menu-block:hover{
+  fill: var(--white);
 }
 
 .dark .menu-item:hover{
@@ -125,15 +124,16 @@ fill: white;
 .dark .burger-line {
   background-color: var(--white-400);
 }
-  
+
 .dark .burger.is-active > .burger-line:nth-child(1) {
   background-color: var(--white-400);
 }
-  
+
 .dark .burger.is-active > .burger-line:nth-child(3) {
   background-color: var(--white-400);
 }
-.dark #my-svg {
+
+.dark #my-svg, .dark #my-svg-he {
   stroke: var(--white-400);
 }
 
@@ -151,99 +151,39 @@ line.handle {
   stroke: var(--white-400) !important;
 }
 
+
+
+.dark #my-svg-he:hover {stroke: var(--white);}
+
 .dark #my-svg-he:hover[class="disable"]
 line.handle {
   stroke: white !important;
 }
 
 .dark #my-svg-he[class="disable"]
+line.handle {
+  stroke: var(--white-400) !important;
+}
 
+.dark #my-svg-he:hover[class="disable"]
+line.handle {
+  stroke: white !important;
+}
+
+.dark #my-svg-he[class="disable"]
 line.handle {
   stroke: var(--white-400) !important;
 }
 
 
 .dark .back-Icon1 {
-  fill: hsla(221, 49%, 90%, .2);
+fill: hsla(221, 49%, 90%, .2);
 }
 
 .dark .front-Icon1 {
-  fill: hsla(221, 49%, 90%, .7);
+fill: hsla(221, 49%, 90%, .7);
 }
 
-.dark #my-svg.clicked .glass { 
-  animation-name: zoom-out;
-  animation-duration: .4s;
-  animation-fill-mode: forwards;
-  transition: all 0.3s ease-in-out
-}
-
-.dark #my-svg.clicked .handle { 
-  animation-name: move-up;
-  animation-duration: .4s;
-  animation-fill-mode: forwards;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.dark #my-svg.clicked .handle3 {
-  animation-name: move-spin;
-  animation-duration: .4s;
-  animation-fill-mode: forwards;
-  transition: all 0.3s ease-in-out;
-}
-
-@keyframes zoom-outDark {
-0% {
-  transform: scale(1);
-}
-
-100% {
-  stroke-width: 1.5px;
-  transform: scale(1.125);
-  stroke: white;
-}
-}
-
-@keyframes move-up {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    troke-width:2.1px;
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1);
-    stroke-width:1.8px;
-
-  }
-  100% {
-    transform-origin: 165% 165%;
-    transform: translate(-37%, -37%);
-    stroke-width:1.1px;
-    transform: scale(1.4);
-    stroke: white;
-  }
-}
-
-@keyframes move-spin {
-  0% {
-    transform-origin: 100% 100%;
-    transform: translate(-50%, 50%);
-    stroke: var(--white-400);
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 0;
-    transform: translate(-20%, 20%);
-
-  }
-  100% {
-    stroke: white;
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
 
 
 
@@ -252,7 +192,6 @@ line.handle {
 
 
 /* PARKS DARK CSS */
-
 .dark .park-container {
   color: var(--white-600);
 }
@@ -282,26 +221,29 @@ background-color: var(--black-450)!important;
 color: var(--white-500);
 }
 
+
+
 /*SEARCH BAR DARK CSS */
 
-.dark .search-box {
+.dark .search-box, .dark .search-box-he {
   background: hsla(0, 0%, 13%, 1);
 }
 
 .dark .searchRow input {
   color: var(--white-600);
-  background: var(--black-600);}
+  background: var(--black-600);
+}
 
-  .dark .result-box ul {
+.dark .result-box ul {
   background: hsla(0, 0%, 13%, 1);
 }
 
 .dark .result-box ul li {
-color: var(--white-400);
+  color: var(--white-400);
 }
 
 .dark .result-box ul li:hover {
-color: white;
+  color: white;
 }
 
 
@@ -310,49 +252,50 @@ color: white;
 /* ABOUT DARK CSS */
 
 .dark .about-container {
-background-color: transparent;
-}
-
-.dark .about {
-color: var(--ne-logo);
-}
-
-.dark .about svg{
-  fill: var(--orange-600);
-}
-
-.dark .about h2 {
-  color: var(--cyan-700);
-}
-
-.dark .about h1 {
-  color: var(--cyan-600);
-}
-
-.dark .about h3 {
-  color: var(--cyan-700);
-}
-
-.dark .about h4 {
-  color: var(--orange-600);
-}
-
-.dark .about p {
-  color: var(--white-200);
-}
-
-.dark .social button {
-  background: var(--blue-600);
-  color: var(--white-300);
-}
-
-.dark .social button:hover {
-  background: var(--blue-700);
-  color: var(--white-300);
-}
+  background-color: transparent;
+  }
+  
+  .dark .about {
+  color: var(--ne-logo);
+  }
+  
+  .dark .about svg{
+    fill: var(--orange-600);
+  }
+  
+  .dark .about h2 {
+    color: var(--cyan-700);
+  }
+  
+  .dark .about h1 {
+    color: var(--cyan-600);
+  }
+  
+  .dark .about h3 {
+    color: var(--cyan-700);
+  }
+  
+  .dark .about h4 {
+    color: var(--orange-600);
+  }
+  
+  .dark .about p {
+    color: var(--white-200);
+  }
+  
+  .dark .social button {
+    background: var(--blue-600);
+    color: var(--white-300);
+  }
+  
+  .dark .social button:hover {
+    background: var(--blue-700);
+    color: var(--white-300);
+  }
 
 
 /* CONTACT DARK CSS */
+
 
 
 .dark .container-con svg{fill: var(--orange-600);}
@@ -388,6 +331,7 @@ color: var(--white-400);
 
 
 
+
 /* ERRORS DARK CSS */
 
 
@@ -396,10 +340,11 @@ color: var(--white-400);
 /* HOME DARK CSS */
 
 .dark #firstCon {
-    background-color: var(--black-450);
-    background-image: url('/svg/EnbossWallpaperLight.075.png');
-  }
-  .dark .topEnboss {fill: var(--blue-500);}
+  background-image: url('/svg/EnbossWallpaperLight.075.png');
+}
+.dark .topEnboss {
+fill: var(--blue-500);
+}
 
 .dark #line1 {
 border-color: var(--orange-600);
@@ -413,72 +358,84 @@ color: var(--white-400);
 color: var(--white-400);
 }
 
-.dark .firstBtn {color: var(--black-300);background-color: var(--orange-600);}
+.dark .firstBtn {
+color: var(--black-300);
+background-color: var(--orange-600);
+}
 
 .dark .firstBtn:hover {
-  background-color: var(--orange-500);
+background-color: var(--orange-500);
 }
 
 .dark .image-scroll {background-color: var(--black-450);}
 
 .dark .newParks-div {
-  background-color: var(--black-450);
+background-color: var(--black-450);
 }
 
 .dark .newParksTitle {
 color: var(--white-400);
 }
 
-.dark .viewMore {color: var(--black-200);background-color: var(--blue-500);}
+.dark .viewMore {
+color: var(--white-400);
+background-color: var(--blue-500);
+}
 
 .dark .viewMore:hover {
-  background-color: var(--blue-600);
+background-color: var(--blue-600);
 }
 
 
 .dark #secondCon {
-  background-color: var(--black-450);
-  }
+background-color: var(--black-450);
+}
 
 
 
-  .dark #heading2 {
-  color: var(--cyan-600);
+.dark #heading2 {
+color: var(--cyan-600);
 }
 
 .dark #line2 {
-  border-color: var(--orange-600);
+border-color: var(--orange-600);
 }
 
 .dark #weInvite {
-  color: var(--white-400);
+color: var(--white-400);
 }
 
-.dark .pageContainer {/* thirdCon */
-  background-color: var(--black-450);
+.dark #ThirdCon {/* thirdCon */
+background-color: var(--black-450);
 }
 
 .dark #headCount {
-  color: var(--orange-600);
-  }
+color: var(--orange-600);
+}
 
-  .dark #heading3 {
-  color: var(--orange-600);
+.dark #heading3 {
+color: var(--orange-600);
 }
 
 .dark #thisIs {
-  color: var(--white-400);
+color: var(--white-400);
 }
 
 .dark #doYou {
 color: var(--white-400);
 }
 
-.dark .contact button {color: var(--black-200);background-color: var(--blue-500);}
+.dark .contact button {
+color: var(--white-400);
+background-color: var(--blue-500);
+}
 
 .dark .contact button:hover {
-  background-color: var(--blue-600);
+background-color: var(--blue-600);
 }
+
+
+
 
 
 
@@ -494,7 +451,8 @@ color: var(--white-400);
   .dark .logo #enbossLogo:hover{
     fill: var(--blue-700);
     transition: fill .15s ease-in-out;
-  }
+  
+}
 
 .dark .logo-des {
   color: var(--white-400);
@@ -562,8 +520,20 @@ color: var(--white-400);
 }
 
 
+/* EDITED IN ENLIGSH-FOOTER.CSS
+.copyright {
+background-color: var(--ne-light-grey);
+}
 
+.copyright p{
+color: var(--ne-light-anti);
+} */
 
+/*            --ne-anti: #d9e1f2;
+          --anti-white: hsl(210, 15%, 95%);
+          --ne-blue: #0C1017;
+          --ne-dark-anti: #C7D1E6; 
+*/
 
 /* Anti or Flat DARK CSS - - - infoZone Dark CSS*/
 
@@ -605,6 +575,12 @@ color: var(--white-400);
   border-color: var(--orange-600);
   opacity: 0.5;
 }
+
+
+
+
+
+
 
 
 

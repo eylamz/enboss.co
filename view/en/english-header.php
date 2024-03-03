@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0">
 
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css?v=1.0" />
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css?v=1.0" />
+<link rel="StyleSheet" href="/css/EnglishCSS/dark.css?v=1.006" />
 <link rel="icon" href="/svg/EnbossFavIcon.svg">
 
 

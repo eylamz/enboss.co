@@ -3,7 +3,6 @@
 <head>
           <!--- English Footer CSS File -->
 <link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 </head>
 <body>

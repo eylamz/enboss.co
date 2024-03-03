@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en_US">
 <head>
+  <!-- Updated 03/03/2024 -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -31,11 +32,11 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css"/>
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/english-header.css"/>
+<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/dark.css" />
  
            <!--English PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
+           <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css?v=1.001" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -96,7 +97,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)1.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)1.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">1 / 12</div>
+            <div class="number">1 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -106,7 +107,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)2.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)2.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">2 / 12</div>
+            <div class="number">2 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -116,7 +117,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)3.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)3.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">3 / 12</div>
+            <div class="number">3 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -126,7 +127,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)4.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)4.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">4 / 12</div>
+            <div class="number">4 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -136,7 +137,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)5.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)5.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">5 / 12</div>
+            <div class="number">5 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -146,7 +147,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)6.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)6.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">6 / 12</div>
+            <div class="number">6 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -156,7 +157,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)7.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)7.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">7 / 12</div>
+            <div class="number">7 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -166,7 +167,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)8.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)8.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">8 / 12</div>
+            <div class="number">8 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -176,7 +177,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)9.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)9.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">9 / 12</div>
+            <div class="number">9 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -186,7 +187,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)10.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)10.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">10 / 12</div>
+            <div class="number">10 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -196,7 +197,7 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)11.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)11.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">11 / 12</div>
+            <div class="number">11 / 13</div>
         </div>
 
         <div class="mySlides">
@@ -206,9 +207,18 @@
                 <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)12.webp">
                 <img src="/images/ParkGallery-webp/tel-aviv(2)12.webp" alt="tel aviv skatepark" />
             </picture>
-            <div class="number">12 / 12</div>
+            <div class="number">12 / 13</div>
         </div>
     
+        <div class="mySlides">
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/tel-aviv(2)13.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/tel-aviv(2)13.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/tel-aviv(2)13.webp">
+                <img src="/images/ParkGallery-webp/tel-aviv(2)13.webp" alt="tel aviv skatepark" />
+            </picture>
+            <div class="number">13 / 13</div>
+        </div>
         
         <!-- Next and previous buttons -->
         <a class="prev" onclick="prevSlide()">&#10094;</a>
@@ -228,6 +238,7 @@
             <span class="dots" onclick="currentSlide(10)"></span>
             <span class="dots" onclick="currentSlide(11)"></span>
             <span class="dots" onclick="currentSlide(12)"></span>
+            <span class="dots" onclick="currentSlide(13)"></span>
 
         </div>
   
@@ -256,12 +267,18 @@
 <hr class="mobile-hr">
 
 <div class="list-img">
-  <ul>
-    <li><strong>Address :</strong></li>
-      <li>HaArad St, Tel Aviv</li>
-    <li>Opening this year</li>
-    <li><strong>* </strong>More information coming soon</li>
-
+<ul>
+      <li><strong>Opening hours :</strong></li>
+      <li><strong>Everyday :</strong> 07:00-22:30</li>
+      <hr>
+      <li><strong>Address :</strong></li>
+      <li>HaBarzel St 38, Tel Aviv.</li>
+      <br>
+      <li><strong>* </strong>Surround the building along St. 2390 until the entrance to Ganei Yehoshua Park.</li>
+      <hr>
+      <li><strong>* </strong>Bike riders are not allowed to enter.</li>
+      <hr>
+      <li>Open since 2024.</li>
     </ul>
     
 </div>
@@ -287,7 +304,7 @@
 </svg>
 
   <br>
-  <span><strong>Address :</strong><br>HaArad St, Tel Aviv</span>
+  <span><strong>Address :</strong><br>HaBarzel St 38, Tel Aviv</span>
 </div>
 <div class="social-maps"> 
   <div class="map-icon">

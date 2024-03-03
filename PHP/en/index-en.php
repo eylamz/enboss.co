@@ -40,9 +40,7 @@
 <link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
  
            <!--English Home CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css?v=1.001" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
-           <link rel="StyleSheet" href="/enboss.co/css/EnglishCSS/dark.css?v=1.005" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/english-home.css?v=1.003" />
 
 
             <!-- Enboss.co Google tag (gtag.js) -->
@@ -66,6 +64,7 @@
 <main class="body-move">
 
 <!-- newIconAlert message box -->
+<!-- 
 <div id="overlay1">
   <div id="newIconAlert">
   <div id="messageBox">
@@ -127,12 +126,13 @@
         }
       }
 
-</script>
+</script> -->
 
 
 
   <!--- First Container-->
-  <section class= "pageContainer" id="firstCon">
+<section class="firstSec">
+  <div class= "pageContainer" id="firstCon">
   <div class="top-container" id="contain1">
     <div class="topEnboss" aria-label="enboss">
 <svg version="1.1" id="Layer_1" width=100% height="100%" fill="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -309,6 +309,7 @@
   }
 </script>
 
+</div>
 </div>
 </section>
 
@@ -532,7 +533,7 @@
 
 </main>
 
-<script type="text/javascript" src="/js/index-en.js"></script>
+<script type="text/javascript" src="/js/index-en.js?v=1.002"></script>
 
 </body>
 </html>

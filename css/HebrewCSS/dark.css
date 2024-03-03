@@ -340,7 +340,6 @@ color: var(--white-400);
 /* HOME DARK CSS */
 
 .dark #firstCon {
-  background-color: var(--black-450);
   background-image: url('/svg/EnbossWallpaperLight.075.png');
 }
 .dark .topEnboss {
@@ -406,7 +405,7 @@ border-color: var(--orange-600);
 color: var(--white-400);
 }
 
-.dark .pageContainer {/* thirdCon */
+.dark #ThirdCon {/* thirdCon */
 background-color: var(--black-450);
 }
 

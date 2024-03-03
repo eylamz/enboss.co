@@ -162,6 +162,7 @@
   font-size: 1.125rem;
   margin-left: 7%;
   line-height: 1.5rem;
+  max-width: 600px;
 }
 
 .list-img hr {

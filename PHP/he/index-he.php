@@ -29,9 +29,10 @@ ini_set('display_errors', 1);
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
            <!--Hebrew Home CSS File-->
-<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-home.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-home.css?v=1.002" />
              <!--Hebrew Header CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/dark.css?v=1.008" />
 
 
             <!-- Enboss.co Google tag (gtag.js) -->
@@ -53,7 +54,8 @@ ini_set('display_errors', 1);
 
   <main class="body-move">
     <!--- First Container-->
-  <section class= "pageContainer" id="firstCon">
+    <section class="firstSec">
+  <div class= "pageContainer" id="firstCon">
     <div class="background-image"></div>
 
   <div class="top-container contain1">
@@ -234,6 +236,8 @@ ini_set('display_errors', 1);
   }
 </script>
     </div>
+</div>
+
 </section>
  <!--- Image Horizontal Scroller Section-->
  <div class="scroller">
@@ -458,6 +462,6 @@ ini_set('display_errors', 1);
 </main>
 
 
-<script src="/js/index-en.js"></script>
+<script src="/js/index-en.js?v=1.002"></script>
 </body>
 </html>

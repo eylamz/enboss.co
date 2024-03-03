@@ -14,15 +14,42 @@ body.dark {
 /* first and second Container CSS */
 .pageContainer {
   width: 100%;
-  background-color: var(--white-400);
   transition: all 0.2s ease-in-out;
   margin-bottom: 10px;
 }
 
+#ThirdCon {
+    background-color: var(--white-400);
+
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.firstSec {
+		background: linear-gradient(-150deg,hsl(20, 91%, 43%, 0.5),hsl(20, 91%, 53%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 40%, 0.5));
+
+  background-size: 400% 400%;
+	animation: gradient 7.55s ease infinite;
+}
+
+.dark .firstSec {
+	background: linear-gradient(-150deg,hsl(20, 91%, 63%, 0.5),hsl(20, 91%, 63%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 50%, 0.5));
+	background-size: 400% 400%;
+	animation: gradient 7.5s ease infinite;
+}
 
 #firstCon {
       width: 100%;
-      background-color: var(--white-400);
       position: relative;
       background-repeat: repeat;
       background-size: 17.5%;  
@@ -32,7 +59,6 @@ body.dark {
     }
 
   .dark #firstCon {
-    background-color: var(--black-300);
     background-image: url('/svg/EnbossWallpaperLight0.075.png');
   }
   
@@ -137,6 +163,15 @@ body.dark {
     animation-fill-mode: forwards;
   }
 
+  @keyframes shinyEffect1 {
+    0%, 100% {
+        left: -125%;
+    }
+    25%, 75% {
+        left: 125%;
+    }
+}
+
 .firstBtn {
     font-weight: 800;
     color: var(--white-400);
@@ -152,7 +187,23 @@ body.dark {
     animation-fill-mode: forwards;
     font-size: 1.25rem;
     transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
   }
+
+  .firstBtn::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: -125%;
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(5px);
+    transform: skew(45deg);
+    animation: shinyEffect1 7s ease-in-out infinite; /* Use the defined keyframes for shiny effect */
+}
   .firstBtn:hover {
     background-color: var(--blue-500);
   }
