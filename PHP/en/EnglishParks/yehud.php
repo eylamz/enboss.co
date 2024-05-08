@@ -191,7 +191,7 @@
         <li><strong>Address :</strong></li>
         <li>Sderot Menachem Begin corner of Road 461, Yehud-Monosson.</li>
         <hr>
-        <li>Opening year unknown</li>
+        <li>Open since 2016.</li>
       </ul> 
   </div>
   </div>

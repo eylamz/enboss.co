@@ -32,11 +32,10 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
-<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/english-header.css"/>
-<link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/dark.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css"/>
  
            <!--English PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css?v=1.001" />
+           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css?v=1.001" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

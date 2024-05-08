@@ -173,9 +173,9 @@
   <div class="list-img">
     <ul>
       <li><strong>שעות פתיחה :</strong></li>
-      <li><strong>ימי א-ה :</strong> 14:00-22:00</li>
-      <li><strong>יום ו :</strong> 13:00-18:00</li>
-      <li><strong>שבתות וחגים :</strong> 10:00-22:00</li>
+      <li><strong>ימי א-ה :</strong> 16:00-22:00</li>
+      <li><strong>יום ו :</strong> 12:00-18:00</li>
+      <li><strong>שבתות וחגים :</strong> 12:00-22:00</li>
       <hr>
       <li><strong>כתובת :</strong></li>
       <li>גן הבנים, קרסל 6,חולון.</li>

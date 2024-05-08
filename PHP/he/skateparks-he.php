@@ -31,6 +31,7 @@
  
           <!--Hebrew Skateparks CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/parks.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
 
           <!--- Hebrew Footer CSS File -->
           <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />

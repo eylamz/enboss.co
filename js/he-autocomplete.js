@@ -25,7 +25,7 @@ let availableKeywords = [
   'Lod',
   'Mitzpe Ramon',
   "Modi'in Buchman Park",
-  "Modi'in Park Moriah",
+  "Modi'in Moriah Park",
   'Nahariya',
   'Netanya',
   'Petah Tikva',
@@ -176,12 +176,12 @@ const urlMap = {
 "Jerusalem Gan Sacher": '/en/skateparks/jerusalem-gan-sacher',
 'Kadima Zoran': '/en/skateparks/kadima-zoran',
 'Kfar Saba': '/en/skateparks/kfar-saba',
-'Kfar Yona': '/en/skateparks/Kfar-yona',
+'Kfar Yona': '/en/skateparks/kfar-yona',
 'Kiryat Ata': '/en/skateparks/kiryat-ata',
 'Lod': '/en/skateparks/lod',
 'Mitzpe Ramon': '/en/skateparks/mitzpe-ramon',
 "Modi'in Buchman Park": '/en/skateparks/modiin-buchman-park',
-"Modi'in Park Moriah": '/en/skateparks/modiin-moriah-park',
+"Modi'in Moriah Park": '/en/skateparks/modiin-moriah-park',
 'Nahariya': '/en/skateparks/nahariya',
 'Netanya': '/en/skateparks/netanya',
 'Petah Tikva': '/en/skateparks/petah-tikva',
@@ -362,12 +362,12 @@ resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
   searchIconHe.addEventListener('click', function() {
     if (!searchBoxHe.classList.contains('active')) {
       searchBoxHe.classList.add('active');
-      naviHe.classList.add('active');
+      naviHe.classList.add('active-search');
       svgElementHe.classList.add('clicked');
       svgElementHe.classList.remove('disable');
     } else {
       searchBoxHe.classList.remove('active');
-      naviHe.classList.remove('active');
+      naviHe.classList.remove('active-search');
       if (svgElementHe.classList.contains('clicked')) {
         svgElementHe.classList.remove('clicked');
         svgElementHe.classList.add('disable');
@@ -380,7 +380,7 @@ resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
   searchBtnHe.addEventListener('click', function() {
     if (searchBoxHe.classList.contains('active')) {
       searchBoxHe.classList.remove('active');
-      naviHe.classList.add('active');
+      naviHe.classList.add('active-search');
       if (svgElementHe.classList.contains('clicked')) {
         svgElementHe.classList.remove('clicked');
         svgElementHe.classList.add('disable');

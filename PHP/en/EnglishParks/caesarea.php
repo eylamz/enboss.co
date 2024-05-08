@@ -186,7 +186,7 @@
     <li><strong>Address :</strong></li>
     <li>Ha-Rakia St, Caesarea.</li>
     <hr>
-    <li>Open since 207.</li>
+    <li>Open since 2017.</li>
   </ul>
     
 </div>

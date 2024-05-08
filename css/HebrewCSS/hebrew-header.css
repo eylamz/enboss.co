@@ -226,7 +226,7 @@ header {
       transition: all .3s ease-in-out;
 
     }
-    .navi-he.active {
+    .navi-he.active-search {
       box-shadow:  none;
     }
      
@@ -357,7 +357,10 @@ header {
       .navbar {
         height: 80px;
       } 
-
+      
+      .active-search .navbar {
+        height: 120px;
+      }
 
       .menu {
         position: relative;

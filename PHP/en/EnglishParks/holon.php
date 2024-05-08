@@ -179,9 +179,9 @@
 <div class="list-img">
   <ul>
     <li><strong>Opening hours :</strong></li>
-    <li><strong>Sun-Thu :</strong> 14:00-22:00</li>
-    <li><strong>Fri :</strong> 13:00-18:00</li>
-    <li><strong>Sat and Holidays :</strong> 10:00-22:00</li>
+    <li><strong>Sun-Thu :</strong> 16:00-22:00</li>
+    <li><strong>Fri :</strong> 12:00-18:00</li>
+    <li><strong>Sat and Holidays :</strong> 12:00-22:00</li>
     <hr>
     <li><strong>Address :</strong></li>
       <li>Gan HaBanim park, Karsel Street 6, Holon.​</li>
