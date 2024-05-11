@@ -3,18 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eylam Zrihan - Code Artist</title>
+  <title>Header with Stacked Divs</title>
+  <link rel="stylesheet" href="/css/NewHeader.css">
 </head>
 <body>
-  <div id="codeWithMe">
-    <span>// Hello, I'm Eylam Zrihan, a passionate</span><br>
-    <span>// web developer from Israel.</span><br><br>
-    <span>// Crafting digital experiences with love.</span><br>
-    <span>// Let's code something extraordinary!</span><br>
-    <span>// <span id="cursor"></span></span>
-  </div>
-  <script>
-    // You can customize the code or add more JavaScript logic here
-  </script>
+  <header>
+    <div class="top-section">
+      <div class="logo">Site Name</div> 
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class.button">
+        <a href="#">Get Started</a>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+  </header>
+
 </body>
 </html>
