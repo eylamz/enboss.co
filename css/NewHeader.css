@@ -104,8 +104,10 @@ table {
       --white-500: #f8f8f7; /* whiter  background */
       --white-600: #fefefe; /* grey background */
 
+      --orange-200: hsl(20, 69%, 39%);
       --orange-300: hsl(20deg 73.75% 38.27%) ; 
       --orange-400: hsl(20deg 81.29% 42.93%) ;
+      --orange-450: hsl(20, 96%, 53%);
       --orange-500: #F87434 ; /* light orange */
       --orange-600: #F6834A; /* dark orange */
       --orange-700: hsl(20, 91%, 73%); /* dark orange */
@@ -187,19 +189,27 @@ table {
 
     
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: "Open Sans", Sans-serif;
         padding: 0rem 2rem;
-        top: 0;
-        left: 0;
         z-index: 100;
-        background: hsla(0, 0%, 90%, 0.8);
-      -webkit-backdrop-filter: blur(8px);
-      backdrop-filter: blur(8px);
+        background-color: hsla(0, 0%, 90%, 0.8);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      transition: all 0.4s ease;
     }
-  
+
+    header.active-search {
+      -webkit-backdrop-filter: blur(9px);
+      backdrop-filter: blur(9px);
+    }
+    
 .header-div {
     max-width: 1200px;
     width: 100%;
@@ -214,23 +224,48 @@ table {
 
   .header-middle, .header-bottom {
     display: none;
-    animation: search-grow 0.5s ease forwards;
+    align-items: center;
+    opacity: 0%;
   }
-
-  @keyframes search-grow {
-    from {
-        height: 0px;
-    }
-    to {
-        height: 60px;
-    }
-}
 
   .header-middle.active-search {
     display: flex;
-    align-items: center;
+    animation: search-grow 0.4s ease forwards;
+  }
+
+  @keyframes search-grow {
+    0% {
+        height: 0px;
+        opacity: 0%;
+        padding: 0rem;
+
+    }
+    100% {
+        height: 60px;
+        opacity: 100%;
+        padding: 0.5rem 0rem 1rem;
+    }
+}  
+
+.header-middle.searched  {
+  display: flex;
+  animation: search-shrink 0.4s ease forwards;
+}
+
+@keyframes search-shrink {
+  0% {
+    height: 60px;
+    opacity: 100%;
     padding: 0.5rem 0rem 1rem;
   }
+  100% {
+      
+      height: 0px;
+      opacity: 0%;
+      padding: 0rem;
+  }
+}  
+
   
   .header-bottom.active-search {
     display:block;
@@ -249,10 +284,11 @@ table {
     height: 350px;
     fill: var(--black-200);
     margin-right: 1rem;
+    transition: fill 0.2s ease;
   }
   
   header .logo:hover{
-    fill: var(--blue-100);
+    fill: var(--black-500);
   }
   
   .head-nav ul {
@@ -260,7 +296,7 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 1.25rem;
+    column-gap: 10px;
   }
   
   .head-nav li {
@@ -271,10 +307,16 @@ table {
     line-height: 0rem;
   }
   
-  a {
+  .head-nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--black-100);
+    transition: color 0.2s ease;
   }
+
+  .head-nav a:hover{
+    color: var(--black-600);
+  }
+
   
   .head-icons {
     display: flex;
@@ -290,6 +332,11 @@ table {
     height: 100%;
     max-width:26px;
     max-height: 26px;
+    transition: fill 0.2s ease;
+  }
+
+  .translateBtn:hover {
+    fill: var(--black-600);
   }
   
   .search-icon{
@@ -305,10 +352,11 @@ table {
     max-width: 23px;
     fill: var(--black-200);
     margin-bottom: 1px;
+    transition: fill 0.2s ease;
   }
 
   .search-svg:hover {
-    fill: var(--light-blue);
+    fill: var(--black-600);
   }
   
   header .search-bar { /*search-bar div */
@@ -317,7 +365,8 @@ table {
     display: flex;
     justify-content: center
   }
-  
+
+    
   header .search-bar input {
     font-size: 1.25rem;
     font-weight: 500;
@@ -327,20 +376,63 @@ table {
     border-radius: 10px;
     width: 40%; 
     color: var(--dark-blue);
-    background: hsl(206, 14%, 93%);
+    background: hsl(206, 14%, 100%);
   }
 
   header .search-bar input:focus {
     outline: none;
   }
-  
+
+  .active-search .search-bar input {
+    animation: search-bar-grow 0.4s ease forwards;
+  }
+
+  @keyframes search-bar-grow {
+    0% {
+        width: 0%;
+        padding: 0rem;
+      }
+    50% {
+      opacity: 1%;
+      width: 0%;
+      padding: 0rem;
+    }
+    100% {
+      opacity: 100%;
+      width: 40%;
+      padding: 0.5rem 1rem;
+    }
+  } 
+
+  .searched .search-bar input {
+    animation: search-bar-shrink 0.4s ease forwards;
+  }
+
+  @keyframes search-bar-shrink {
+    0% {
+      opacity: 100%;
+      width: 40%;
+      padding: 0.5rem 1rem;
+      }
+    50% {
+      opacity: 1%;
+      width: 0%;
+      padding: 0rem;
+    }
+    100% {
+      width: 0%;
+      padding: 0rem;
+    }
+  } 
+
+
 
   
   .search-svg {
     stroke: var(--black-200);
   }
   .search-svg:hover {
-    stroke: var(--black-100);
+    stroke: var(--black-600);
   }
 
   .search-svg.clicked .glass { 
@@ -373,7 +465,7 @@ table {
     100% {
       stroke-width: 1.5px;
       transform: scale(1.125);
-      stroke: var(--orange-600);
+      stroke: var(--orange-450);
     }
   }
   
@@ -393,7 +485,7 @@ table {
       transform: translate(-37%, -37%);
       stroke-width:1.1px;
       transform: scale(1.4);
-      stroke: var(--orange-600);
+      stroke: var(--orange-450);
     }
   }
   
@@ -411,7 +503,7 @@ table {
 
     }
     100% {
-      stroke: var(--orange-500);
+      stroke: var(--orange-450);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -441,7 +533,7 @@ table {
 
   .search-svg:hover[class="disabled"]
   line.handle {
-    stroke: var(--black-200) !important;
+    stroke: var(--black-600) !important;
   }
 
     .search-svg[class="disabled"]
@@ -452,7 +544,7 @@ table {
   @keyframes zoom-out-rev {
     0% {
       transform: scale(1.15);
-      stroke: var(--blue);
+      stroke: var(--black-100);
       stroke-width: 1.4px;
 
     }
@@ -478,7 +570,7 @@ table {
     100%{
       transform: translate(0, 0) rotate(0deg);
           stroke-width:2.1px;
-          stroke: var(--blue);
+          stroke: var(--black-100);
           transform: scale(1);
 
     }
@@ -486,7 +578,7 @@ table {
 
   @keyframes move-spin-rev {
     0% {
-      stroke: var(--orange-500);
+      stroke: var(--orange-450);
       transform: translate(0, 0);
       opacity: 1;
     }
@@ -580,8 +672,15 @@ table {
 
   /* ------ End of ColorButton icon CSS ------ */
 
+ .image {
+  margin-top: -80px;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/139/513/small_2x/vector-grey-gradient-palette.jpg'); /* Replace 'your-image.jpg' with your image path */
+  background-size: cover; /* Cover the entire area of the div */
+  background-position: center; /* Center the background image */
+ }
 
-
-  body {
-    background: rgb(122, 166, 223);
-  }
+ body {
+  overflow-x: hidden;
+ }

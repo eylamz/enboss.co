@@ -351,19 +351,28 @@ headerBottom.classList.add('active-search');
 
 
 const searchSVG = document.querySelector('.search-svg');
+const theHeader = document.querySelector('header');
 const headerMiddle = document.querySelector('.header-middle');
 const headerBottom = document.querySelector('.header-bottom');
 
 searchSVG.addEventListener('click', function() {
     if (headerMiddle.classList.contains('active-search')) {
         headerMiddle.classList.remove('active-search');
+        theHeader.classList.remove('active-search');
         headerBottom.classList.remove('active-search');
+        headerMiddle.classList.add('searched');
+        setTimeout(function() {
+            headerMiddle.classList.remove('searched');
+        }, 400); // Remove the searched class after 0.4 seconds
         searchSVG.classList.remove('clicked');
         searchSVG.classList.add('disabled');
     } else {
         headerMiddle.classList.add('active-search');
+        theHeader.classList.add('active-search');
+        headerMiddle.classList.remove('searched');
         searchSVG.classList.add('clicked');
         searchSVG.classList.remove('disabled');
     }
 });
+
 
