@@ -337,12 +337,13 @@ inputBox.addEventListener('input', function() {
 
 
 
-    // Suggest parks when the inputBox is clicked on
-inputBox.addEventListener("focus", function() {
-    resultsBox.classList.add('active-searched');
-    display(["תל אביב - רמת החייל", "רמת גן - פארק לאומי", "אשדוד"]);
-});
-
+    // Suggest parks when the inputBox is clicked on but nothing is typed
+    inputBox.addEventListener("focus", function() {
+      if (inputBox.value.trim() === '') {
+          resultsBox.classList.add('active-searched');
+          display(["תל אביב - רמת החייל", "רמת גן - פארק לאומי", "אשדוד"]);
+      }
+  });
 
 
 

@@ -8,7 +8,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Header with Stacked Divs</title>
-  <link rel="stylesheet" href="/css/NewHeader.css">
+  <link rel="stylesheet" href="/css/NewHeader.css?v=1.000">
 
     <!-- Google Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,15 +135,20 @@
                             </button>
                         </a>
                         <div class="burger" id="burger" aria-label="navigation">
-                            <span class="burger-line"></span>
-                            <span class="burger-line"></span>
-                            <span class="burger-line"></span>
+                            <label for="check">
+                                <input type="checkbox" id="check"/> 
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
                         </div>
                 </div>
             </div>
             <div class="header-middle">
+                <div class="search-div">
                 <div class="search-bar">
                     <input type="text" id="input-box" placeholder="מחפשים פארק מסוים?" autocomplete="off" onchange="openPage()">
+                </div>
                 </div>
             </div>
             <div class="header-bottom">
@@ -156,12 +161,6 @@
             </div>
         </div>
     </header>
-    <section>
-    <img src="https://s.ftcdn.net/v2013/pics/all/curated/3jM2YSThW28W9Kh58QSabuTIbDUmzr9t_hero_1555.jpg?r=328e94d4d2cef7400ca2e1227268055dbd672a8f" alt="Description of the image">
-    <img src="https://s.ftcdn.net/v2013/pics/all/curated/3jM2YSThW28W9Kh58QSabuTIbDUmzr9t_hero_1555.jpg?r=328e94d4d2cef7400ca2e1227268055dbd672a8f" alt="Description of the image">
-    <img src="https://s.ftcdn.net/v2013/pics/all/curated/3jM2YSThW28W9Kh58QSabuTIbDUmzr9t_hero_1555.jpg?r=328e94d4d2cef7400ca2e1227268055dbd672a8f" alt="Description of the image">
-    <img src="https://s.ftcdn.net/v2013/pics/all/curated/3jM2YSThW28W9Kh58QSabuTIbDUmzr9t_hero_1555.jpg?r=328e94d4d2cef7400ca2e1227268055dbd672a8f" alt="Description of the image">
-    </section>
 
     <script src="/js/he-autocomplete1.js"> </script>
     <script src="/js/header.js"> </script>
