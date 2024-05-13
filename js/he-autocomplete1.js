@@ -158,9 +158,6 @@ const content = result.slice(0, maxResults).map((list)=>{
 
 resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 
- // Add 'active-search' class to 'header-div' 
-  const headerMiddle = document.querySelector('.header-div');
-  headerMiddle.classList.add('active-search');
 }
 
 const urlMap = {
@@ -326,9 +323,25 @@ const content = result
 resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
 
 const headerBottom = document.querySelector('.header-bottom');
-headerBottom.classList.add('active-search');
+headerBottom.classList.add('active-searched');
 
 }
+
+inputBox.addEventListener('input', function() {
+  if (inputBox.value.trim() === '') {
+    headerBottom.classList.remove('active-searched');
+  } else {
+    headerBottom.classList.add('active-searched');
+  }
+});
+
+
+
+    // Suggest parks when the inputBox is clicked on
+inputBox.addEventListener("focus", function() {
+    resultsBox.classList.add('active-searched');
+    display(["תל אביב - רמת החייל", "רמת גן - פארק לאומי", "אשדוד"]);
+});
 
 
 
@@ -355,14 +368,16 @@ const theHeader = document.querySelector('header');
 const headerMiddle = document.querySelector('.header-middle');
 const headerBottom = document.querySelector('.header-bottom');
 
+    // Function to close and open search bar on search icon click
 searchSVG.addEventListener('click', function() {
     if (headerMiddle.classList.contains('active-search')) {
         headerMiddle.classList.remove('active-search');
+        headerBottom.classList.remove('active-searched');
         theHeader.classList.remove('active-search');
-        headerBottom.classList.remove('active-search');
         headerMiddle.classList.add('searched');
         setTimeout(function() {
             headerMiddle.classList.remove('searched');
+            inputBox.value = '';
         }, 400); // Remove the searched class after 0.4 seconds
         searchSVG.classList.remove('clicked');
         searchSVG.classList.add('disabled');
@@ -376,3 +391,20 @@ searchSVG.addEventListener('click', function() {
 });
 
 
+
+    // Function to close search bar on Click Outside of the header
+document.addEventListener("click", (event) => {
+  const isClickInsideMenu = theHeader.contains(event.target);
+  if (!isClickInsideMenu && theHeader.classList.contains("active-search")) {
+    headerMiddle.classList.remove('active-search');
+    headerBottom.classList.remove('active-searched');
+    theHeader.classList.remove('active-search');
+    headerMiddle.classList.add('searched');
+    setTimeout(function() {
+        headerMiddle.classList.remove('searched');
+        inputBox.value = '';
+    }, 400);
+    searchSVG.classList.remove('clicked');
+    searchSVG.classList.add('disabled');
+  }
+});

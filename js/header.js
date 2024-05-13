@@ -25,3 +25,11 @@
       }
     });
 
+
+    
+
+    // BURGER MENU SCRIPT
+    document.getElementById("burger").addEventListener("click", function() {
+      var headNav = document.querySelector(".head-nav");
+      headNav.classList.toggle("active-menu");
+  });
