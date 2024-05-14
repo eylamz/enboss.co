@@ -321,9 +321,9 @@ table {
     display: inline-block;
     margin-right: 1rem;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 0rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
   }
   
   .head-nav a {
@@ -365,8 +365,6 @@ table {
     fill: var(--blue-over);
   }
   
-  .search-icon{/* margin-right:5px; */}
-
   .search-svg {
     width: 100%;
     max-width: 23px;
@@ -736,7 +734,7 @@ table {
      margin: 3.3px 0;
      transition: .25s  ease;
    }
-   
+  
    
    .burger span:nth-of-type(1){
      width:70%;
@@ -759,21 +757,22 @@ table {
   
   #burger input[type="checkbox"]:checked ~ span:nth-of-type(1){
     transform-origin:bottom;
+    background: var(--orange-over);
     width: 50%;
     transform:rotatez(45deg) translate(-5px,11px)
   }
   
   
   #burger input[type="checkbox"]:checked ~ span:nth-of-type(2){
-    
     transform-origin:center;
+    background: var(--orange-over);
     transform:rotatez(-45deg)
   }
   
   
   #burger input[type="checkbox"]:checked ~ span:nth-of-type(3){
-    
     transform-origin:center;
+    background: var(--orange-over);
     width:50%;
     transform: translate(-2px,-4px) rotatez(45deg);
   
@@ -814,8 +813,70 @@ table {
     padding: 0rem 1.5rem;
   }
 
-  .head-nav { 
-    display: none;   
+  header .active-menu {
+    background-color: hsla(0, 0%, 90%, 0.65);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+  }
+
+  .head-nav {
+	  display:none;
+  }
+
+  .head-nav.disabled {
+    animation: menu-shrink 0.4s ease forwards;
+}
+@keyframes menu-grow {
+from {right: -200px;}
+to { right: 0px;}
+}  
+@keyframes menu-shrink {
+from {right: 0px;}
+to { right: -200px;}
+}  
+   .head-nav.active-menu {
+	  display:block;
+      position: fixed;
+      top: 0px;
+      width: 200px;
+	  right: -200px;
+      height: 100vh;
+	  padding-top:5.5rem;
+      font-family: "Open Sans", Sans-serif;
+	  background-color: hsla(0, 0%, 90%, 0.65);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,.3);  
+      transition: all .3s ease;
+	  animation: menu-grow 0.4s ease forwards;
+}
+
+.head-nav.disabled {
+		  animation: menu-shrink 0.4s ease forwards;
+}
+@keyframes menu-grow {
+  from {right: -200px;}
+	to { right: 0px;}
+}  
+	@keyframes menu-shrink {
+  from {right: 0px;}
+	to { right: -200px;}
+}  
+
+   .head-nav.active-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 2rem;
+  }
+  
+   .head-nav li.active-menu {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 0rem;
+    letter-spacing: 0px;
   }
 
   .burger label{
@@ -885,6 +946,9 @@ table {
 
 
 
+.dark::selection {
+  color: var(--white-400);
+}
 
 .dark header {
   background: hsla(0, 0%, 13%, 0.6);
@@ -902,12 +966,20 @@ table {
   fill: var(--blue-over);
 }
 
+.dark .head-nav.active-menu {
+  background: hsla(0, 0%, 13%, 0.6);
+}
 .dark .head-nav a {
   color: var(--white-400);
 }
 
 .dark .head-nav a:hover {
   color: var(--blue-over);
+}
+
+.dark .head-nav li {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .dark .search-svg {
@@ -928,4 +1000,14 @@ table {
 
 .dark .burger span{
   background: var(--white-400);
+}
+
+.dark .search-bar input {
+  color: var(--white-400);
+  background-color: hsla(150, 3%, 11%, 0.6);
+}
+
+
+.dark .result-box ul li {
+  color: var(--white-400);
 }

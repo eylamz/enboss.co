@@ -35,6 +35,74 @@
   });
 
 
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const checkbox = document.getElementById("check");
+    const headNav = document.querySelector(".head-nav");
+    const searchSVG = document.querySelector('.search-svg');
+
+    checkbox.addEventListener("change", function() {
+        if (this.checked) {
+            headNav.classList.add("active-menu");
+            theHeader.classList.add('active-menu');
+            theHeader.classList.remove('active-search');
+            if (headerMiddle.classList.contains('active-search')) {
+                headerMiddle.classList.remove('active-search');
+                headerBottom.classList.remove('active-searched');
+                headerMiddle.classList.add('searched');
+                setTimeout(function() {
+                    headerMiddle.classList.remove('searched');
+                    inputBox.value = '';
+                }, 400);
+            }
+        } else {
+            headNav.classList.remove("active-menu");
+            theHeader.classList.remove('active-menu');
+            headNav.classList.add('disabled');
+            setTimeout(function() {
+              headNav.classList.remove('disabled');
+          }, 400);
+        }
+
+        // Toggle clicked and disabled classes on searchSVG
+        if (searchSVG.classList.contains('clicked')) {
+            searchSVG.classList.remove('clicked');
+            searchSVG.classList.add('disabled');
+        }
+    });
+});
+
+
+
+function moveHeadNav() {
+  const screenWidth = window.innerWidth;
+  const headNav = document.querySelector(".head-nav");
+  const mobileMenuSection = document.querySelector(".mobile-menu");
+  const headerTopSection = document.querySelector(".header-top");
+
+  if (screenWidth < 1025 && !mobileMenuSection.contains(headNav)) {
+      // If screen width is under 1025px and head-nav is not already in mobile-menu section
+      mobileMenuSection.appendChild(headNav);
+  } else if (screenWidth >= 1025 && mobileMenuSection.contains(headNav)) {
+      // If screen width is 1025px or more and head-nav is in mobile-menu section
+      const secondChild = headerTopSection.children[1];
+      if (secondChild) {
+          headerTopSection.insertBefore(headNav, secondChild);
+      } else {
+          headerTopSection.appendChild(headNav);
+      }
+  }
+}
+
+// Initial call to move the head-nav and change its position on page load
+moveHeadNav();
+
+// Listen for window resize events to move head-nav dynamically
+window.addEventListener("resize", moveHeadNav);
+
+
+
+
   // Dark Mode switcher  
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
