@@ -31,8 +31,6 @@ ini_set('display_errors', 1);
            <!--Hebrew Home CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-home.css?v=1.002" />
              <!--Hebrew Header CSS File-->
-<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
-
 
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

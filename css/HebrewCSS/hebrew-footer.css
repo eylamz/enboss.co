@@ -29,12 +29,12 @@ footer {
     margin-bottom: 20px;
 }
 
-.logo #enbossLogo:hover{
+footer .logo #enbossLogo:hover{
     fill: var(--cyan-600);
     transition: all .3s ease-in-out;
 }
 
-.logo {
+footer .logo {
     width: 100%;
     max-width: 300px;
     font-size: 1.05rem;
@@ -53,19 +53,19 @@ footer {
     margin-top: -5px;
     transition: color .3s ease-in-out;
 }
-.logo a {
+footer .logo a {
     text-decoration: none;
     color: var(--blue-100);
     font-weight: 600;
     transition: all .3s ease-in-out;
 }
 
-.logo a:hover {
+footer .logo a:hover {
     color: var(--blue-100);
     font-weight: 700;
 }
 
-.social-icons {
+footer .social-icons {
     direction: ltr;
     display: flex;
     align-items: center;
