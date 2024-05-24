@@ -28,9 +28,7 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- Hebrew Header CSS File -->
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
- 
+
            <!--Hebrew PrimaryBlue CSS File-->
            <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue.css" />
 
@@ -189,7 +187,7 @@
       <li><strong>כתובת :</strong></li>
       <li>שדרות מנחם בגין פינת כביש לוד 461, יהוד-מונוסון</li>
       <hr>
-      <li>שנת פתיחה לא ידועה.</li>
+      <li>נפתח בשנת 2016.</li>
     </ul>
       
   </div>

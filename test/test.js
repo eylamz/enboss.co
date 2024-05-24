@@ -1,147 +1,38 @@
-var carousel = (function () {
- 
-    //
-   var activeID = 0,
-       itemW = 940,
-       carousel_count = $('.carousel_item').length,
-       $carouselItems = $('.carousel_items'),
-       $carouselItem = $('.carousel_item'),
-       $arrowPrev = $('.item_prev'),
-       $arrowNext = $('.item_next'),
-   $itemArrow = $('.item_arrow'),
-       $navDot,
-   $navDots = $('.nav_dots'),
-       swipeDir,
-       slideSpeed = .45,
-       slideMeth = Power2.EaseInOut;
-   
-   //
- function init() {
-    
-   $carouselItems.css({'width': (itemW * carousel_count) + 'px'});
-   $navDots.css({'width': (25 * carousel_count) + 'px'});
-   $itemArrow.css({'opacity': .8});
-   
-   setupDraggable();
-   setupDots();
-   navigateSlide();
-   }
- init();
-   
-   //
- function setupDraggable() { 
-     
-   Draggable.create($carouselItems, {
-           type:'x',
-           edgeResistance: 0.90,
-           dragResistance: 0.0,
-           bounds:'.carousel_container',
-           onDrag:updateDirections,
-           onThrowUpdate:updateDirections,
-           throwProps:true,
-           onDragStart:function(evt) {},
-           onDragEnd :function() {
+// scrolling-images.js
 
-             if(swipeDir == 'left') {activeID++}
-             else if(swipeDir == 'right') {activeID--};
-             
-             navigateSlide();
-           }
-     });    
- };
-               
- // set up dots
- function setupDots() {    
-   for(var i = 0; i < carousel_count; i++) {
-     $navDots.append('<div class="nav_dot" id="dot_' + i + '"></div>');
-   }    
-   $navDot = $('.nav_dot');
- }  
- 
- // navigate slide
-   function navigateSlide() {
-       
-       if(activeID >= carousel_count-1) activeID = carousel_count-1;
-       if(activeID <= 0) activeID = 0;		
-                       
-       var xTarget = ((activeID * itemW) * -1);
-       
-       TweenMax.to($carouselItems, slideSpeed, {x: xTarget, ease: slideMeth, onComplete: slideDone});
-   }
-   
-   function slideDone() {
-       
-       $navDot.css({backgroundColor: '#fff'});
-   
-   //
-       TweenMax.to($navDot, .35, {scale: 1, color: 0xFFFFFF});
-       TweenMax.to($('#dot_' + activeID), .35, {scale: 1.5, backgroundColor: 'transparent',color: 0xCC0000});
-   
-   //
-   if(activeID == 0) {$arrowPrev.fadeOut()} 
-   else {$arrowPrev.fadeIn()}
-   
-   if(activeID + 1 == carousel_count) {$arrowNext.fadeOut()}
-   else {$arrowNext.fadeIn()}
-   }
-   
-   //
-   function updateDirections() {
-       swipeDir = this.getDirection("start");
-   }
-     
- //$itemArrow.click(function() {
- $itemArrow.on('click', function() {
-   
-   if(Modernizr.touch) return;
-   
-   if($(this).hasClass('item_next')) {activeID++}
-   else {activeID--};
-   
-   navigateSlide();
-   });
- 
- $itemArrow.on('touchstart', function() {
-   if($(this).hasClass('item_next')) {activeID++}
-   else {activeID--};
-   
-   navigateSlide();
-   });
- 
-   $navDot.hover(		
-       function() {			
-           TweenMax.to($(this), .35, {scale: 1.5});
-       }, function() {
-            if($(this).attr('id').split('_')[1] == activeID) return;
-          TweenMax.to($(this), .35, {scale: 1.0});
-       }  
-   );
-   
- $navDot.click(function() {		
-   var dotID = $(this).attr('id').split('_')[1];
-       activeID = dotID;
-           
-     navigateSlide();		
-   });
- 
-   //
-   $carouselItem.mousedown(function() {		
-       activeID = $(this).attr('id').split('_')[1];
-   
-   $(this).removeClass('grab');
-   $(this).addClass('grabbing');
-   
-   });
- 
- //   
- $carouselItem.mouseenter(function() {        
-   $(this).removeClass('grabbing');
-   $(this).addClass('grab');
- });
+// Add a scroll event listener to handle image scrolling
+document.addEventListener("scroll", scrollImages);
 
- $carouselItem.mouseup(function() {        
-   $(this).removeClass('grabbing');
-   $(this).addClass('grab');
- });  
- 
-})();
+// Function to scroll the images inside the .itemImg containers
+function scrollImages() {
+    const items = document.querySelectorAll(".item");
+
+    items.forEach((item) => {
+        const itemImg = item.querySelector(".itemImg");
+        const image = item.querySelector("img");
+
+        if (isElementInViewport(item)) {
+            const scrollY = window.scrollY;
+            const itemOffset = item.getBoundingClientRect().top + scrollY;
+            const imageOffset = itemImg.getBoundingClientRect().top + scrollY;
+            const itemHeight = item.clientHeight;
+            const imageHeight = itemImg.clientHeight;
+
+            const scrollFactor = (scrollY - itemOffset) / (itemHeight - imageHeight);
+
+            // Scroll the image inside the .itemImg container while keeping the container fixed
+            image.style.transform = `translateY(${-scrollFactor * (imageHeight - itemHeight) * 0.035}px)`; // Adjust the scroll factor (0.2) for the desired effect
+        }
+    });
+}
+
+// Helper function to check if an element is in the viewport
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}

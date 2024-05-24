@@ -8,8 +8,8 @@
   <title>אזור המידע | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="אזור המידע | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/info-zone">
   <meta property="og:site_name" content="ENBOSS">
@@ -27,13 +27,9 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
           <!--Hebrew Skateparks CSS File-->
 <link rel="StyleSheet" href="/css/infoZoneCSS/he/infoZone.css">
-
-          <!--- Hebrew Footer CSS File -->
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
 
 <script> // filtering parks function
   // Wait for the document to load
@@ -143,7 +139,7 @@ function shuffle(array) {
                 <div class="items">
                     
                     <div class="item roller">
-                        <a href="/he/info-zone/choosing-the-perfect-rollerblading-wheels">
+                        <a href="/he/info-zone/choosing-rollerblading-wheels">
                       <div class="itemImg">
                           <img src="/images/SVG/ChooseYourWheelThumb-he.svg" alt="איך לבחור הגלגלים לרולר שלכם" loading="lazy">
                       </div>

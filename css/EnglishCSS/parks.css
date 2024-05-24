@@ -3,7 +3,7 @@
 body {
   background-color: var(--white-300);
   background-repeat: repeat;
-  background-size: 25%;  
+  background-size: 17.5%;  
   background-image: url('/svg/EnbossWallpaper0.075.png');
   background-attachment: fixed;
   transition: all .3s ease-in-out;
@@ -11,13 +11,13 @@ body {
 
 body.dark {
 background-color: var(--black-450);      
-background-image: url('/svg/EnbossWallpaperLight.1.png');
+background-image: url('/svg/EnbossWallpaperLight.075.png');
 
 }
 
 @media only screen and (max-width: 1440px){
 body {
-  background-size: 30%;  
+  background-size: 25%;  
 }
 }
 
@@ -29,16 +29,15 @@ body{
 
 @media only screen and (max-width: 768px){
 body{
-  background-size: 50%;  
+  background-size: 45%;  
 }
 }
 
 @media only screen and (max-width: 480px){
 body {
-  background-size: 100%;  
+  background-size: 80%;  
 }
 }
-
 
 .park-container {
   max-width: 1220px;
@@ -127,6 +126,7 @@ background-color: var(--white-400);
   object-fit: cover;
   border-radius: 10px;
   box-shadow: var(--img-shadow);
+  color: var(--black-500);
   transition: transform .1s ease-in-out;
 }
 
@@ -150,7 +150,6 @@ background-color: var(--white-400);
 .item img:hover {
   filter: saturate(2);
   transform: scale(1.05);
-  color: var(--amber);
 }
 
 

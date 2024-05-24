@@ -3,8 +3,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
-  background-color: white;
-
+  background-color: var(--white-600);
 }
 
 .dark .body-move {
@@ -16,33 +15,57 @@ body {
 .pageContainer {
     width: 100%;
     margin-bottom: 10px;
-    background-color: var(--white-400);
     transition: background-color 0.2s ease-in-out;
   }
 
+  #ThirdCon {
+    background-color: var(--white-400);
+}
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .firstSec {
+      background: linear-gradient(-150deg,hsl(20, 91%, 43%, 0.5),hsl(20, 91%, 53%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 40%, 0.5));
+  
+    background-size: 400% 400%;
+    animation: gradient 10s5s ease infinite;
+  }
+  
+  .dark .firstSec {
+    background: linear-gradient(-150deg,hsl(20, 91%, 63%, 0.5),hsl(20, 91%, 63%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 50%, 0.5));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
   
   #firstCon {
         width: 100%;    
         margin-top:-100px;
         padding-top: 100px;
-        background-color: var(--white-400);
         position: relative;
         background-repeat: repeat;
-        background-size: 25%;
-  background-image: url('/svg/EnbossWallpaper0.075.png');
+        background-size: 17.5%;  
+        background-image: url('/svg/EnbossWallpaper0.075.png');
         background-attachment: fixed;
         transition: background-color 0.2s ease-in-out;
   }
   
     .dark#firstCon {
-      background-color: var(--black-300);
       background-image: url('/svg/EnbossWallpaperLight0.075.png');
     
     }
     
     @media only screen and (max-width: 1440px){
       .dark#firstCon, #firstCon{
-        background-size: 30%;  
+        background-size: 25%;  
       }
     }
     
@@ -54,13 +77,13 @@ body {
     
     @media only screen and (max-width: 768px){
       .dark#firstCon, #firstCon{
-        background-size: 50%;  
+        background-size: 45%;  
       }
     }
     
     @media only screen and (max-width: 480px){
       .dark#firstCon, #firstCon{
-        background-size: 80%;  
+        background-size: 75%;  
       }
     }
 
@@ -104,7 +127,7 @@ body {
     margin-bottom: 15px;
     width: 100%;
     max-width: 350px;
-    fill: var(--blue-500);
+    fill: var(--blue-400);
   }
 
   .topEnboss {
@@ -136,6 +159,8 @@ body {
     color: var(--orange-500);
     word-spacing: 0.1em;
     letter-spacing: 1px;
+    transition: color .3s ease-in-out;
+
   }
 
 
@@ -148,11 +173,20 @@ body {
       animation-fill-mode: forwards;
     }
 
-    #contain1 button{
+    @keyframes shinyEffect1 {
+      0%, 100% {
+          left: -125%;
+      }
+      25%, 75% {
+          left: 125%;
+      }
+  }
+
+    .firstBtn {
       font-size: 1.25rem;
       font-weight: 800;
       color: var(--white-400);
-      background-color: var(--blue-500);
+      background-color: var(--blue-400);
       border-radius: 30px;
       padding: 10px 40px;
       margin-top: 25px;
@@ -161,9 +195,24 @@ body {
       animation-duration: .6s;
       animation-delay: .65s;
       animation-fill-mode: forwards;
-      transition: background-color .2s ease-in-out;
-    }
-    #contain1 button:hover {
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      }
+      
+  .firstBtn::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: -125%;
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(5px);
+    transform: skew(45deg);
+    animation: shinyEffect1 7s ease-in-out infinite; /* Use the defined keyframes for shiny effect */
+}
+    .firstBtn:hover {
       background-color: var(--blue-500);
     }
 
@@ -209,7 +258,7 @@ body {
 
   #heading2 {
     font-size: 3rem;
-    color: var(--blue-500);
+    color: var(--blue-400);
     line-height: 3.1rem;
   }
 
@@ -222,6 +271,7 @@ body {
   #heading3 {
     letter-spacing: 0.1rem;
     font-weight: 900;
+    color: var(--orange-500);
   }
   
   #heading3.animate {
@@ -285,13 +335,14 @@ body {
     margin-top: 20px;
   }
   .contact button {
-    color: var(--white-300);
+    color: var(--white-400);
     font-family: 'Poppins', sans-serif;
     font-size: 1.05rem;
-    background-color: var(--blue-500);
+    background-color: var(--blue-400);
     border-radius: 36px;
     padding: 7px 20px;
     font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
   }
   
   .contact button:hover {
@@ -322,6 +373,7 @@ body {
   .newParksTitle {
     color: var(--blue-200);
     font-weight: 600;
+    transition: all 0.2s ease-in-out;
   }
   
   .viewMore {
@@ -329,16 +381,15 @@ body {
     text-align: right;
     cursor: pointer;
     color: var(--white-300);
-    background-color: var(--blue-500);
+    background-color: var(--blue-400);
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 1.25rem;
     font-weight:700;
-    transition: background-color 0.2s ease-in-out;
   }
   
   .viewMore:hover {
-    background-color: var(--blue-600);
+    background-color: var(--blue-500);
   }
 
 
@@ -514,7 +565,7 @@ body {
 
 }
   @media only screen and (max-width: 500px) {
-    #contain1 button{
+    .firstBtn {
       font-size: 1rem;
       padding: 7px 20px;
     }
@@ -809,6 +860,396 @@ body {
   }
 }
 
+
+
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.25px);
+    -webkit-backdrop-filter: blur(1.25px);
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    overflow-y: hidden;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .overlay.active {
+    display: block;
+    animation: alert-opacity .5s ease-in-out;
+  }
+  
+  .dark .overlay {
+    background-color:transparent;
+  }
+  
+  @keyframes alert-opacity {
+    0% {
+      opacity: 0; 
+    }
+    100% { 
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  /* ALERT MESSAGE  */
+  :root {
+    --card-bg: var(--white-300);
+    --color-header: var(--black-300);
+    --color-text: var(--black-500);
+    --color-btn-text: var(--black-500);
+    --color-btn1-text:  var(--black-500);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-300);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--black-500);
+    --alertBorder: var(--white-400);
+  }
+  
+  .dark {
+    --card-bg: var(--black-400);
+    --color-header: var(--white-300);
+    --color-text: var(--white-200);
+    --color-btn-text: var(--white-250);
+    --color-btn1-text: var(--white-300);
+    --color-btn-background: transparent;
+    --color-btn1-background: transparent;
+    --hover-btn-background: var(--orange-400);
+    --hover-btn1-background: var(--blue-600);
+    --alert-boss: var(--white-250);
+    --alertBorder: var(--black-300);
+  
+  }
+  
+  
+  /* MAIN CONTENT */
+  .customAlert {
+    display: none;
+    width: 35vw;
+    position: fixed;
+    z-index:11;
+      top: 50%;
+    left: 50%;
+    margin-top: 0vh; /* Half of the element's height */
+    margin-left: -37vw; /* Half of the element's width */  
+  }
+  
+  .customAlert.active {
+    display: block;
+    animation: alert-bounce 0.5s ease;
+  
+  
+  }
+  
+  @keyframes alert-bounce {
+    0% {
+      transform:scale(0.25);
+      opacity: 0; 
+    }
+    50% {
+      transform: scale(1.15);
+      }
+    100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .grid__item {
+    background-color: var(--card-bg);
+    /*background-size: 145%;
+    background-position: 50% 40%;
+    background-image: url("https://docs-assets.developer.apple.com/published/51e2fa3a1c47d547d033a0334fbc6e0b/components-alert-intro~dark@2x.png");
+    */ border-radius: 18px;
+    opacity:0.51;
+    overflow: hidden;
+    box-shadow: var(--img-shadow);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  
+  .card__content {
+    padding: 1.5rem 3rem 3rem;
+  }
+  
+  .card__header {
+    letter-spacing: -1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-header);
+    margin-bottom: 15px;
+  }
+  
+  .card__text {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-bottom: 2.5rem;
+  }
+  
+  #alertBtn, #alertBtn1{
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+      padding: 10px 40px;
+      font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-btn-text);
+    background-color: var(--color-btn-background);
+    border-top: 2px solid var(--alertBorder);
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  #alertBtn1 {
+    border-left: 2px solid var(--alertBorder);
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
+  #alertBtn:hover{
+      background-color: var(--hover-btn-background);
+  }
+  
+   #alertBtn1:hover{
+      background-color: var(--hover-btn1-background);
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px){
+  .grid__item {
+      opacity:1.2; 
+      max-height: 147px;
+  
+    }
+    .customAlert {
+      width: 75%;
+      max-width: 500px;
+      height: 100%;
+      max-height: 140px;
+    }
+    .card__img {
+      display: none;
+    } 
+    .card__content {
+      padding: 20px 0 0;
+    }
+    .card__header {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+    .card__text {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+    #alertBtn, #alertBtn1{
+      margin-right: 0px;
+      font-size: 1.125rem;
+    }
+    #alertBtn, #alertBtn1{
+    width: 50%;
+    padding: 8px 20px 10px;
+    border-radius: 0px;
+  }
+  #alertBoss {
+    fill: var(--alert-boss);
+    width: 50px;
+  
+  }
+  }
+  #alertBtn {
+     float: left;
+      font-weight: 500;
+  
+  }
+  #alertBtn1 {
+     float: right;
+        font-weight: 600;
+  
+    color: var(--color-btn1-text);
+    background-color: var(--color-btn1-background);
+  }
+  
   /*       End of English Home CSS */
 
 
+  
+    /* Your CSS styles for the overlay go here */
+    #overlay1 {
+      display: none;
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      backdrop-filter: blur(1.25px);
+      -webkit-backdrop-filter: blur(1.25px);
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      overflow: hidden;
+      transition: background-color .3s ease-in-out;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .dark #overlay1 {
+      background-color:transparent;
+    }
+
+    #newIconAlert { 
+      background-color: var(--card-bg);
+      box-shadow: var(--img-shadow);
+      padding: 25px 30px;
+      border-radius: 18px;
+      width: 80%;
+      max-width: 400px;
+      min-width: 200px;
+      margin: 0 10px;
+      font-family: 'Poppins', sans-serif;
+      animation: alert-fade-in 0.5s ease-in-out; /* Fade-in animation */
+    }
+
+    /* Your CSS styles for the message box go here */
+    #messageBox {
+      text-align: center;
+      border-radius: 18px;
+      transition: all .3s ease-in-out;
+    }
+
+    #messageBox h1 {
+      color: var(--color-header);
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    #messageBox p {
+      color: var(--color-text);
+      margin-bottom: 10px;
+      line-height: 1.25rem;
+      text-align: left;
+    }
+
+    #understandAction {
+      font-size: 1rem;
+      font-weight:500 ;
+      margin-top: 10px;
+      padding: 7px 20px;
+      background-color: var(--white-350);
+      color: var(--black-600);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+    }
+
+    #understandAction:hover {
+      color: var(--white-400);
+      background-color: var(--blue-600);
+    }
+
+    .dark #understandAction {
+      color: var(--white-250);
+      background-color: var(--black-200);
+    }
+
+    .dark #understandAction:hover {
+            color: var(--white-300);
+      background-color: var(--blue-600)
+    }
+
+
+
+    /* Keyframes for fade-in and fade-out animations */
+    @keyframes alert-fade-in {
+    0% {
+      transform:scale(0.25);
+      opacity: 0.25; 
+    }
+    50% {
+      transform: scale(1.15);
+      }
+    100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+    @keyframes alert-fade-out {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+          50% {
+      transform: scale(1.15);
+      }
+      to {
+        opacity: 0;
+        transform:scale(0.25);
+      }
+    }
+
+
+  .shieldSvg {
+  fill: var(--orange-500);
+  max-width: 30px;
+  animation: shieldAnimation 1.9s ease-in-out forwards;
+  transform-origin: center;
+  }
+
+#shield {
+  transform-origin: center;
+}
+
+.dark .shieldSvg {
+  fill: var(--orange-600);
+}
+
+
+@keyframes shieldAnimation {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+    20% {
+    transform: rotate(-40deg);
+  }
+      40% {
+    transform: rotate(40deg);
+  }
+        60% {
+    transform: rotate(-20deg);
+  }
+          80% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shieldSize {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

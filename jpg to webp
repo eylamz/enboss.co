@@ -29,7 +29,7 @@ if you type :
                             cd <!--file path--->
                             for %f in (*.jpg) do cwebp "%f" -q 100 -o "%~nf.webp"
 
-                            FOR %F IN (*.jpg) DO cwebp "%F" -q 100 -o "%~nF.webp"
+                            FOR %F IN (*.png) DO cwebp "%F" -q 100 -o "%~nF.webp"
 
 
 it will convert all the files in the folder to .webp in the best quality available

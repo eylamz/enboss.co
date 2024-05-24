@@ -1,14 +1,47 @@
 /* english-about.css */
-
+body {
+    background-color: var(--white-400);
+    background-repeat: repeat;
+    background-size: 17.5%;  
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+    background-attachment: fixed;
+       transition: all .3s ease-in-out;
+  }
+  
+  body.dark {
+  background-color: var(--black-450);     
+    background-image: url('/svg/EnbossWallpaperLight.1.png');
+  
+  }
+  
+  @media only screen and (max-width: 1440px){
+  body.dark, body {
+    background-size: 25%;  
+  }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  body.dark, body {
+    background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  body.dark, body {
+    background-size: 45%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  body.dark, body {
+    background-size: 60%;  
+  }
+  }
+  
 .body-move {
-    background: var(--white-400);
     margin: 0px;
 }
 
-.dark .body-move {
-    background-color: var(--black-450);
-  }
-  
 .about-container {
     padding-top: 100px;
     width: 100%;
@@ -17,6 +50,13 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
+
+.dark .about-container {
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
 
 .about {

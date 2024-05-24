@@ -8,8 +8,8 @@
   <title>פארקים | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="פארקים | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.webp">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.webp">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/skateparks">
   <meta property="og:site_name" content="ENBOSS">
@@ -27,14 +27,12 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
           <!--Hebrew Skateparks CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/parks.css" />
+<link rel="StyleSheet" href="/css/HebrewCSS/dark.css" />
 
-          <!--- Hebrew Footer CSS File -->
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
- 
+
 <script> // filtering parks function
   // Wait for the document to load
   document.addEventListener("DOMContentLoaded", function () {
@@ -128,10 +126,12 @@ function shuffle(array) {
 </head>
 
 <body>
+    <!-- Header Section -->
+    <?php include('../../view/he/hebrew-header.php'); ?>
 <div class="background-image"></div>
 
   <!-- Header Section -->
-  <?php include('../../view/he/hebrew-header.php'); ?>
+  <?php include('http://localhost/projects/enboss.co/view/he/hebrew-header.php'); ?>
 <!-- End of Header Section-->
 <main class="body-move">
     <div class="park-container">
@@ -518,13 +518,48 @@ function shuffle(array) {
               </a>
           </div>
 
+          <div class="item center">
+          <a href="/he/skateparks/tel-aviv-2">
+                      <div class="itemImg">
+                  <img src="/images/Park480-webp/tel-aviv(2).webp" alt="סקייטפארק תל אביב" loading="lazy">
+                    </div>
+                  <div class="gallery-text"><h2>תל אביב - רמת החייל</h2></div>
+              </a>
+          </div>
+
 
         </div>
     </div>
 
-<!--   Footer Section    -->
-<?php include('../../view/he/hebrew-footer.php'); ?>
-  </main>
+        <!--   Footer Section    -->
+        <?php include('../../view/he/hebrew-footer.php'); ?>
+</main>
 </body>
+
+<script>
+  // Wait for the DOM to be fully loaded before executing the script
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all elements with the class 'itemImg'
+    var itemImgs = document.querySelectorAll('.itemImg');
+
+    // Iterate over each 'itemImg' element
+    itemImgs.forEach(function (itemImg) {
+      // Attach a 'mouseover' event listener to each 'itemImg'
+      itemImg.addEventListener('mouseover', function () {
+        // Create an audio element
+        var audio = new Audio('../../sound/ipad_click-99325.mp3');
+
+        // Set custom volume (0.0 to 1.0)
+        audio.volume = 0.4; // Adjust the volume as needed (0.0 to 1.0)
+
+        // Set custom playback speed (1.0 is normal speed)
+        audio.playbackRate = 1.0; // Adjust the speed as needed (1.0 is normal speed)
+
+        // Play the audio
+        audio.play();
+      });
+    });
+  });
+</script>
 
 </html>

@@ -25,7 +25,7 @@ let availableKeywords = [
   'Lod',
   'Mitzpe Ramon',
   "Modi'in Buchman Park",
-  "Modi'in Park Moriah",
+  "Modi'in Moriah Park",
   'Nahariya',
   'Netanya',
   'Petah Tikva',
@@ -45,6 +45,7 @@ let availableKeywords = [
   "Kiryat Gat",
   "Bat Yam",
   'Eilat',
+  'Tel Aviv - Ramat Hayal',
   'אשדוד',
   "באר שבע",
   "באר שבע בייק פארק",
@@ -85,7 +86,8 @@ let availableKeywords = [
   'שדרות',
   'קרית גת',
   'בת ים',
-  'אילת'
+  'אילת',
+  'תל אביב - רמת החיל'
 ];
 
 const resultsBox = document.querySelector(".result-box");
@@ -174,12 +176,12 @@ const urlMap = {
 "Jerusalem Gan Sacher": '/en/skateparks/jerusalem-gan-sacher',
 'Kadima Zoran': '/en/skateparks/kadima-zoran',
 'Kfar Saba': '/en/skateparks/kfar-saba',
-'Kfar Yona': '/en/skateparks/Kfar-yona',
+'Kfar Yona': '/en/skateparks/kfar-yona',
 'Kiryat Ata': '/en/skateparks/kiryat-ata',
 'Lod': '/en/skateparks/lod',
 'Mitzpe Ramon': '/en/skateparks/mitzpe-ramon',
 "Modi'in Buchman Park": '/en/skateparks/modiin-buchman-park',
-"Modi'in Park Moriah": '/en/skateparks/modiin-park-moriah',
+"Modi'in Moriah Park": '/en/skateparks/modiin-moriah-park',
 'Nahariya': '/en/skateparks/nahariya',
 'Netanya': '/en/skateparks/netanya',
 'Petah Tikva': '/en/skateparks/petah-tikva',
@@ -199,6 +201,7 @@ const urlMap = {
 "Kiryat Gat": '/en/skateparks/kiryat-gat',
 "Bat Yam": '/en/skateparks/bat-yam',
 "Eilat": '/en/skateparks/eilat',
+"Tel Aviv - Ramat HaHayam": '/en/skateparks/tel-aviv-2',
 'אשדוד': '/he/skateparks/ashdod',
 "באר שבע": '/he/skateparks/beer-sheva',
 "באר שבע בייק פארק": '/he/skateparks/beer-sheva-bike-park',
@@ -239,7 +242,8 @@ const urlMap = {
 "שדרות": '/he/skateparks/sderot',
 "קרית גת": '/he/skateparks/kiryat-gat',
 "בת ים": '/he/skateparks/bat-yam',
-"אילת": '/he/skateparks/eilat'
+"אילת": '/he/skateparks/eilat',
+"תל אביב - רמת החייל": '/he/skateparks/tel-aviv-2'
 };
 
 function selectInput(list, index) {

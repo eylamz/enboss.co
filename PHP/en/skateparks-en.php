@@ -7,8 +7,8 @@
   <title>Skateparks | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Skateparks | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="Discover the perfect skatepark for your next thrilling adventure!">  
   <meta property="og:url" content="http://www.enboss.co/en/skateparks">
   <meta property="og:site_name" content="ENBOSS">
@@ -24,12 +24,9 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
- 
+
            <!--English Skateparks CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/parks.css" />
-           <link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
 <script> // filtering parks function
   // Wait for the document to load
@@ -512,6 +509,15 @@ function shuffle(array) {
               </a>
           </div>
 
+          <div class="item center">
+                <a href="/en/skateparks/tel-aviv-2">
+                      <div class="itemImg">
+                  <img src="/images/Park480-webp/tel-aviv(2).webp" alt="Tel Aviv" loading="lazy">
+                      </div>
+                  <div class="gallery-text"><h2>Tel Aviv - Ramat HaHayal</h2></div>
+              </a>
+          </div>
+
         </div>
     </div>
 
@@ -519,5 +525,45 @@ function shuffle(array) {
 <?php include('../../view/en/english-footer.php'); ?>
   </main>
 </body>
+
+<script>
+  // Wait for the DOM to be fully loaded before executing the script
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all elements with the class 'itemImg'
+    var itemImgs = document.querySelectorAll('.itemImg');
+
+    // Iterate over each 'itemImg' element
+    itemImgs.forEach(function (itemImg) {
+      // Attach a 'mouseover' event listener to each 'itemImg'
+      itemImg.addEventListener('mouseover', function () {
+        // Create an audio element
+        var clickSound = new Audio('../../sound/ipad_click-99325.mp3');
+
+        // Set custom volume (0.0 to 1.0)
+        clickSound.volume = 0.4; // Adjust the volume as needed (0.0 to 1.0)
+
+        // Set custom playback speed (1.0 is normal speed)
+        clickSound.playbackRate = 1.0; // Adjust the speed as needed (1.0 is normal speed)
+
+        // Set the start time in seconds (e.g., starting from 10 seconds)
+        var startTime = 0;
+        clickSound.currentTime = startTime;
+
+        // Play the audio
+        clickSound.play();
+
+        // Set the end time in seconds (e.g., ending at 20 seconds)
+        var endTime = 2;
+
+        // Stop the audio after the specified duration
+        clickSound.addEventListener('timeupdate', function () {
+          if (clickSound.currentTime > endTime) {
+            clickSound.pause();
+          }
+        });
+      });
+    });
+  });
+</script>
 
 </html>

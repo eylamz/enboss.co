@@ -54,17 +54,9 @@
 
 
     <div class="article-container">
-        <!-- colorMode Button -->
-        <div class="colorMode">
-
-          </div>
     <!--- First Container-->
     <div class="article">
-        <button id="colorButton" class="toggle-button">
-            <span class="active-mode"><img src="/images/SVG/lightMode.svg" style="vertical-align: middle;" alt="light mode"></span>
-            <span class="inactive-mode"><img src="/images/SVG/darkMode.svg" style="vertical-align: middle;" alt="dark mode"></span>
-            <div class="toggle-circle"></div>
-          </button>
+
         <h1>Choosing Rollerblading Wheels</h1>
         <hr class="titleHr">
         <p>Selecting the right wheels for rollerblading is crucial for optimal performance and enjoyment. Whether you're into recreational skating, fitness skating, or aggressive inline skating, understanding different wheel characteristics is essential. In this comprehensive guide, we will explore factors to consider when choosing rollerblading wheels, including size, hardness, and profile. We'll also delve into the specific requirements for aggressive inline skating. So, let's dive in and find the perfect wheels for your rollerblading adventures.</p>
@@ -143,106 +135,6 @@
 </main>
 <!--   Footer Section    -->
 <?php include('../../../view/en/english-footer.php'); ?>
-
-
-<script>
-  var colorButton = document.getElementById('colorButton');
-  var isColorChanged = false;
-  var isActive = false;
-
-
-  colorButton.addEventListener('click', function() {
-    var body = document.body;
-    var activeMode = document.querySelector('.active-mode');
-  var inactiveMode = document.querySelector('.inactive-mode');
-  var toggleCircle = document.querySelector('.toggle-circle');
-  var toggleButton = document.querySelector('.toggle-button');
-
-  isActive = !isActive;
-
-    var articleH1 = document.querySelector('.article h1');
-    var articleH2List = document.querySelectorAll('.article h2');
-    var articleH3List = document.querySelectorAll('.article h3');
-    var articleLinks = document.querySelectorAll('.articleLinks');
-    var articleText = document.querySelector('.article');
-    var titleHr = document.querySelector('.titleHr');
-    var secHr = document.querySelector('.secHr');
-    var strongSubs = document.querySelectorAll('.strongSubs');
-    var size = document.querySelector('.dynamic-size');
-    var hardness = document.querySelector('.dynamic-hardness');
-    var profile = document.querySelector('.dynamic-profile');
-    var hub = document.querySelector('.dynamic-hub');
-    
-
-    if (isColorChanged) {
-      body.style.backgroundColor = 'var(--white)'
-      toggleButton.style.backgroundColor = '#f0f2f4';
-      articleH1.style.color = 'var(--dark-blue)';
-      articleText.style.color = 'var(--text-dark)';
-      titleHr.style.borderColor = 'var(--light-blue)';
-      secHr.style.borderColor = 'var(--amber)';
-      profile.classList.remove('profile-amber');
-      hardness.classList.remove('hardness-amber');
-      hub.classList.remove('hub-amber');
-      size.classList.remove('size-amber');
-
-      strongSubs.forEach(function(element) {
-        element.style.color = 'var(--dark-blue)';
-      });
-
-      articleH2List.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      articleH3List.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      articleLinks.forEach(function(element) {
-        element.style.color = 'var(--light-blue)';
-      });
-
-      isColorChanged = false;
-    } else {
-      body.style.backgroundColor = 'var(--dark-blue)';
-      toggleButton.style.backgroundColor = 'var(--light-blue)';
-      articleH1.style.color = 'var(--anti-white)';
-      articleText.style.color = 'var(--text-light)';
-      titleHr.style.borderColor = 'var(--amber)';
-      secHr.style.borderColor = 'var(--anti-white)';
-      profile.classList.add('profile-amber');
-      hardness.classList.add('hardness-amber');
-      hub.classList.add('hub-amber');
-      size.classList.add('size-amber');
-
-      strongSubs.forEach(function(element) {
-        element.style.color = 'var(--anti-white)';
-      });
-
-      articleH2List.forEach(function(element) {
-        element.style.color = 'var(--amber)';
-      });
-      
-      articleH3List.forEach(function(element) {
-        element.style.color = 'var(--amber)';
-      });
-      
-      articleLinks.forEach(function(element) {
-        element.style.color = 'var(--anti-white)';
-      });
-
-      isColorChanged = true;
-    }
-
-  if (isActive) {
-    toggleCircle.style.backgroundColor = 'var(--blue)';
-    colorButton.classList.add('active');
-  } else {
-    toggleCircle.style.backgroundColor = '#ffffff';
-    colorButton.classList.remove('active');
-  }
-});
-  </script>
 </body>
 </html>
 

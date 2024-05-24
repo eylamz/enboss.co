@@ -12,7 +12,7 @@
   <meta property="og:image" content="http://www.enboss.co/images/ParkFav/ramat-gan(2).png">
   <meta property="og:image:secure_url" content="https://www.enboss.co/images/ParkFav/ramat-gan(2).png">
   <meta property="og:description" content="Push Boundaries and Experience Thrilling Excitement at a Vibrant Skatepark">  
-  <meta property="og:url" content="http://www.enboss.co/en/skateparks/ramat-gan(2)">
+  <meta property="og:url" content="http://www.enboss.co/en/skateparks/ramat-gan-2-">
   <meta property="og:site_name" content="ENBOSS">
   <link rel="icon" href="/svg/EnbossFavIcon.svg">
   <meta property="og:locale" content="en_US">
@@ -30,10 +30,7 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css"/>
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
- 
+
            <!--English PrimaryBlueVid CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlueVid.css" />
 

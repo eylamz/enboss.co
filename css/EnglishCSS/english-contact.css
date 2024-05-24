@@ -1,12 +1,15 @@
+/* english-contact.css */
 
 body {
-  background: var(--white-400);
+  background: var(--white-350);
   margin: 0px;
   font-family: 'Poppins',sans-serif !important;
     background-repeat: repeat;
   background-size: 17.5%;  
   background-image: url('/svg/EnbossWallpaper0.075.png');
   background-attachment: fixed;
+  overflow-x: hidden;
+
 }
 
 body.dark {
@@ -25,6 +28,8 @@ background-color: var(--black-450);
   justify-content: center;
   flex-direction: column;
   padding-bottom: 50px;
+  backdrop-filter:blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
 
 }
 
@@ -63,6 +68,7 @@ form {
   max-width: 600px;
   border-radius: 10px;
   margin: 0 auto 50px;
+  
 }
 
 .container-con svg{
@@ -72,19 +78,56 @@ form {
 }
 
 .container-con h3 {
+  align-self: center; /* Center horizontally within the .article container */
   color: var(--blue-200);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 14px;
   text-align: center;
+  word-wrap: break-word;
 }
+
+@media (max-width: 420px) {
+    .container-con h3 {
+        width: 300px; /* Allow HEADER text to wrap onto multiple lines */
+    }
+}
+
+
 .container-con p {
   color: var(--blue-100);
   font-weight: 500;
   font-size: 1.15rem;
   text-align: center;
   line-height: 1.5rem;
+    word-wrap: break-word;
+
 }
+
+@media (max-width: 600px) {
+.container-con p {
+  text-align: left;
+  padding: 0 70px;
+  width: 500px;
+  }
+}
+
+@media (max-width: 390px) {
+.container-con p {
+  text-align: left;
+  padding: 0 40px;
+  width: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+.container-con p {
+  text-align: left;
+  padding: 0 40px;
+  width: 350px;
+  }
+}
+
 
 .container-con p a {
   color: var(--blue-500);
@@ -109,11 +152,12 @@ form {
 }
 
 form input, form textarea {
+  font-family: 'Poppins', sans-serif;
   border: 0;
   margin: 10px 0;
   padding: 20px;
   outline: none;
-  background: var(--white-400);
+    background: white;
   font-size: 1.15rem;
   border-radius: 15px;
   color: var(--black-100);

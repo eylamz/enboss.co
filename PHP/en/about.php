@@ -7,8 +7,8 @@
   <title>About us | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="About us | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
   <meta property="og:description" content="Explore ENBOSS - Unite, Ride, and Experience Urban Sports!">  
   <meta property="og:url" content="http://www.enboss.co/en/about">
   <meta property="og:site_name" content="ENBOSS">
@@ -25,10 +25,7 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
- 
+
            <!--English About CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/english-about.css" />
   

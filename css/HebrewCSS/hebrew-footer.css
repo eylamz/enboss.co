@@ -7,7 +7,9 @@ footer {
 
 }
 .footer-main {
-    background-color: var(--violet-300);
+    background: hsla(60, 7%, 97%, 0.3);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);    
     position: relative;
     width: 100vw;
     height: 100%;
@@ -22,17 +24,17 @@ footer {
 #enbossLogo {
     width: 100%;
     max-width: 180px;
-    height: 50px;
-    fill: var(--light-yellow);
+    height: 35px;
+    fill: var(--cyan-500);
     margin-bottom: 20px;
 }
 
-.logo #enbossLogo:hover{
-    fill: var(--light-yellow);
+footer .logo #enbossLogo:hover{
+    fill: var(--cyan-600);
     transition: all .3s ease-in-out;
 }
 
-.logo {
+footer .logo {
     width: 100%;
     max-width: 300px;
     font-size: 1.05rem;
@@ -44,26 +46,26 @@ footer {
 }
 
 .logo-des {
-    color: var(--new-grey);
+    color: var(--blue-200);
     line-height: 1.25rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
     margin-top: -5px;
     transition: color .3s ease-in-out;
 }
-.logo a {
+footer .logo a {
     text-decoration: none;
-    color: var(--violet-600);
+    color: var(--blue-100);
     font-weight: 600;
     transition: all .3s ease-in-out;
 }
 
-.logo a:hover {
-    color: var(--violet-500);
+footer .logo a:hover {
+    color: var(--blue-100);
     font-weight: 700;
 }
 
-.social-icons {
+footer .social-icons {
     direction: ltr;
     display: flex;
     align-items: center;
@@ -73,16 +75,20 @@ footer {
     gap: 15px;
 }
 .back-Icon {
-    fill: hsla(44, 100%, 68%, .1);
+    fill: hsla(26, 93%, 63%, .1);
 }
 .front-Icon {
-    fill: hsla(44, 100%, 68%, .7);
+    fill: var(--blue-500);
+}
+
+#orange-social {
+    fill: var(--orange-500);
 }
 .back-Icon:hover {
-    fill: hsla(44, 100%, 68%, .2);
+    fill: hsla(26, 93%, 63%, .1);
 }
 .front-Icon:hover {
-    fill: hsla(44, 100%, 68%, 1);
+    fill: hsla(240, 3.33%, 11.76%, 1);
 }
 
 #skatepark1 {
@@ -95,17 +101,18 @@ footer {
 .row h3 {
     font-weight: 700;
     margin: 25px 0 20px;
-    color: var(--white);
-    transition: all .3s ease-in-out;
+    color: var(--blue-100);
+    transition: all .15s ease-in-out;
 }
 
+
 .skateparks-des a {
-    color: var(--new-grey);
+    color: var(--blue-200);
     line-height: 1.3rem;
 }
 
 .main-foot h3:hover {
-    color: var(--violet-500);
+    color: var(--blue-200);
 }
 
 
@@ -115,9 +122,9 @@ footer {
     max-width: 1200px;
     max-height: 550px;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .footer-header{
@@ -136,16 +143,17 @@ footer {
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.3rem;
+    color: var(--blue-200);
     transition: all .15s ease-in-out;
 }
 
 .skateparks-des a:hover{
-    color: var(--violet-500);
+    color: var(--blue-200);
 }
 
 
 #link-all {
-    color: var(--white);
+    color: var(--blue-100);
     font-weight: 800;
 }
 
@@ -160,74 +168,38 @@ footer {
 
 
 
-
-@media (max-width: 960px) {
-    footer {
-        width: 100%;
-        top: 120px;
-    }
-
-    .main-foot {
-        margin: 5px;
-        margin-top: 30px;    }
-
-    .logo{
-        grid-column: 1/2;
-    }
- 
-    #skatepark {
-        grid-column: 1/3;
-    }
-    #skatepark1 {
-        grid-column: 2/3;
-    }
-
+@media only screen and (max-width: 850px) {
+    
     #skatepark2 {
-        grid-column: 3/3;
+        display: none;
     }
-    
-    
 }
-
-@media (max-width: 850px) {
-    
-#skatepark2 {
-    display: none;
-}
-}
-
 
 
 @media (max-width: 660px) {
     .main-foot {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
     }
     .skateparks {
         display: none;
     }
-    .logo a {
-        fill: var(--green);
-    }
+}
 
-    .logo {
-        margin-top: 0;
-    }
-}
 .copyright {
-    max-width: 100%;
-    background-color: var(--anti-white);
-}
+    max-width: 100vw;
+    background: hsla(60, 6%, 93%, 0.5);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);  
+    transition: background-color 0.3s ease-in-out;
+  }
 
 .copyright p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
     padding: 15px 0;
-    color: var(--white);
+    color: var(--blue-200);
     text-align: center;
-    background-color: var(--violet-200);
     transition: all .3s ease-in-out;
 }
 
@@ -246,12 +218,13 @@ footer {
 
 
 .dark #copyright {
-    background-color: var(--light-violet);
+    background: hsla(0, 0%, 0%, 0.4);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
   }
 
 .dark #copyright p{
-    color: var(--white);
-    background-color: var(--violet-0);
+    color: var(--white-400);
   }
 
 

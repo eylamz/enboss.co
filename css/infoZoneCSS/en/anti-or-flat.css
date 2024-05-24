@@ -1,22 +1,68 @@
+/* english flat-or-anti.css */
+:root {
+    --article-body: var(--white-600);
+    --article-dark-back: var(--black-450);
 
-body {
-    background: var(--white-500);
-    margin: 0px;
-    transition: 0.2s ease-in-out;
-}
+    --article-link:var(--blue-500);
+    --article-link-hover:var(--blue-500);
 
-body.dark {
-    background-color: var(--black-300);
-}
+    --article-text: var(--black-700);
+    --article-h1: var(--blue-300);
+    --title-hr: var(--orange-500);
+    --article-h2: var(--blue-400);
+    --article-h3: var(--blue-400);
+    --strong-subs: var(--blue-200);
+    --article-hr: var(--orange-500);
+ }
+
+
+ body {
+    background-color: var(--article-body);
+    background-repeat: repeat;
+    background-size: 17.5%;  
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+    background-attachment: fixed;
+       transition: all .3s ease-in-out;
+  }
+  
+  body.dark {
+  background-color: var(--article-dark-back);     
+    background-image: url('/svg/EnbossWallpaperLight.1.png');
+  
+  }
+  
+  @media only screen and (max-width: 1440px){
+  body.dark, body {
+    background-size: 25%;  
+  }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  body.dark, body {
+    background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  body.dark, body {
+    background-size: 45%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  body.dark, body {
+    background-size: 60%;  
+  }
+  }
 
 .articleLinks{
-    color: var(--blue-500);
+    color: var(--article-link);
     font-weight: 500;
     transition: color 0.15s ease-in-out;
 }
 
 .articleLinks:hover {
-    color: var(--blue-700);
+    color: var(--articel-link-hover);
 }
 
 
@@ -26,14 +72,16 @@ body.dark {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 150px 0;
+    padding: 120px 0;
+    backdrop-filter:blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
 
 
 
 .article {
     font-family: 'Poppins',sans-serif;
-    color: var(--black-700);
+    color: var(--article-text);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -43,22 +91,28 @@ body.dark {
 }
 
 .article h1 {
+    align-self: center; /* Center horizontally within the .article container */
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
     line-height: 1.2;
-    color: var(--blue-300);
+    color: var(--article-h1);
+    word-wrap: break-word;
 }
+
+
+
+
 
 .titleHr {
     margin: 10px auto 20px;
-    border: 1px solid  var(--orange-500);
+    border: 1px solid  var(--title-hr);
     width: 75%;
     padding: 0 20px;
   }
 
 .article h2 {
-    color: var(--blue-400);
+    color: var(--article-h2);
     font-weight: 600;
     font-size: 2.125rem;
     margin: 30px 0 5px;
@@ -66,7 +120,7 @@ body.dark {
 }
 
 .article h3 {
-    color: var(--blue-400);
+    color: var(--article-h3);
     font-weight: 600;
     font-size: 1.75rem;
     margin: 30px 0 5px;
@@ -86,7 +140,7 @@ body.dark {
 }
 
 .strongSubs {
-    color: var(--blue-200);
+    color: var(--strong-subs);
     font-weight: 500;
 }
 
@@ -142,7 +196,7 @@ body.dark {
 
 hr {
     margin: 50px auto 0;
-    border: 1px solid  var(--orange-500);
+    border: 1px solid  var(--article-hr);
     width: 100%;
     padding: 0 20px;
   }
@@ -150,9 +204,16 @@ hr {
 
   /* Media Queries */
 
+
+  @media only screen and ( max-width: 767px ){
+    .article-container {
+        padding: 85px 0;
+    }
+}
+
   @media only screen and ( max-width: 480px ){
     .article-container {
-        padding: 120px 0;
+        padding: 80px 0;
     }
     
     .article h1 {
@@ -200,14 +261,17 @@ hr {
         margin: 10px 0 20px;
         padding: 0 20px;
     }
-    
-    
-    hr {
-        margin: 50px auto 0;
-        border: 1px solid  var(--orange-500);
-        width: 100%;
-        padding: 0 20px;
-      }
+
     }
 
+@media (max-width: 567px) {
+    .article h1 {
+        width: 340px; /* Allow HEADER text to wrap onto multiple lines */
+    }
+}
 
+@media (max-width: 480px) {
+    .article h1 {
+        width: 200px; /* Allow HEADER text to wrap onto multiple lines */
+    }
+}

@@ -1,4 +1,4 @@
-/* Start of English-Park CSS */
+/* Start of English-Park Vid CSS */
 
 :root {
   --map-front-icons: var(--blue-500);
@@ -36,56 +36,59 @@
   --list: var(--white-400);
   --list-strong: var(--blue-600);
   --head :var(--cyan-600);
-  --background: var(--black-300);
+  --background: var(--black-450);
   --hr: var(--orange-600)
 }
 
 .parkBody {
   background-color: var(--background);
+    background-repeat: repeat;
+  background-size: 25%;  
+  overflow-x: hidden;
+  background-image: url('/svg/EnbossWallpaper0.075.png');
+  background-attachment: fixed;
 }
 
-.body-move {
-  background-repeat: repeat;
-background-size: 25%;  
-overflow-x: hidden;
-background-image: url('/svg/EnbossWallpaper0.075.png');
-background-attachment: fixed;
-}
-
-.dark .body-move {
+  
+.dark.parkBody {
   background-image: url('/svg/EnbossWallpaperLight.075.png');
+  backdrop-filter: blur(0.75px);
+  -webkit-backdrop-filter: blur(0.75px);
 }
 
-@media only screen and (max-width: 1440px){
-  .body-move {
-    background-size: 30%;  
-}
-}
-
-@media only screen and (max-width: 1024px){
-  .body-move {
-    background-size: 35%;  
-}
-}
-
-@media only screen and (max-width: 768px){
-  .body-move {
-    background-size: 50%;  
-}
-}
-
-@media only screen and (max-width: 480px){
-  .body-move {
-    background-size: 100%;  
-}
-}
+  
+  @media only screen and (max-width: 1440px){
+  .parkBody {
+  background-size: 30%;  
+  }
+  }
+  
+  @media only screen and (max-width: 1024px){
+  .parkBody {
+      background-size: 35%;  
+  }
+  }
+  
+  @media only screen and (max-width: 768px){
+  .parkBody {
+      background-size: 50%;  
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  .parkBody {
+      background-size: 100%;  
+  }
+  }
 
 
 .parkMain {
     padding-top: 100px;
     font-family: 'Poppins', sans-serif;
     display: grid;
-
+    backdrop-filter: blur(0.75px);
+    -webkit-backdrop-filter: blur(0.75px);
+  
 }
 
 .parkHead h1{
@@ -161,6 +164,8 @@ background-attachment: fixed;
   font-size: 1.125rem;
   margin-left: 7%;
   line-height: 1.5rem;
+  max-width: 600px;
+
 }
 
 .list-img hr {

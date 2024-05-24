@@ -7,9 +7,9 @@
   <title>צור קשר | ENBOSS</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="צור קשר | ENBOSS">
-  <meta property="og:image" content="http://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:image:secure_url" content="https://enboss.co/svg/EnbossColorImg.jpg">
-  <meta property="og:description" content="ENBOSS - Be in control">
+  <meta property="og:image" content="http://enboss.co/svg/wall-link.png">
+  <meta property="og:image:secure_url" content="https://enboss.co/svg/wall-link.png">
+  <meta property="og:description" content="ENBOSS - Unite & Ride">
   <meta property="og:url" content="http://www.enboss.co/he/contact">
   <meta property="og:site_name" content="ENBOSS">
   <meta name="theme-color" content="#f0f2f4">
@@ -27,7 +27,6 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
           <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
  
            <!--English Contact CSS File-->
 <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-contact.css" />
@@ -36,8 +35,7 @@
 <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/hebrew-contact.css" />
 <link rel="StyleSheet" href="http://localhost/PROJECTS/enboss.co/css/HebrewCSS/dark.css" />
 
-           <!--- English Footer CSS File -->
-           <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
+
 
             <!-- Enboss.co Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>

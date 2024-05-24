@@ -1,6 +1,39 @@
+  
 
+    :root {
+      --header-bg: var(--blue-400);
+      --left-btn: #b94343;
+      --center-btn: #ca7f32;
+      --right-btn: #469346;
+      --error-number: var(--blue-400);
+      --error-text: var(--blue-200);
+      --window-bg: var(--white-500);
+      --clouds: var(--white-600);
+      --lines: var(--white);
+      --body-403: var(--white-300);
+      --home-color: var(--white-300);
+      --home-bg: var(--blue-600);
+      --home-hover: var(--blue-700);
+    }
+
+    .dark {
+        --header-bg: var(--cyan-400);
+        --left-btn: #b94343;
+        --center-btn: #ca7f32;
+        --right-btn: #469346;
+        --error-number: var(--blue-600);
+        --error-text: var(--white-200);
+        --window-bg: var(--black-450);
+        --clouds: var(--white-400);
+        --lines: var(--white-200);
+        --body-403: var(--black-400);
+        --home-color: var(--white-300);
+        --home-bg: var(--blue-500);
+        --home-hover: var(--blue-600);
+    }
+    
 body {
-  background: var(--sham);
+  background: var(--white-300);
   overflow-x: hidden;
   transition: all 0.3s ease-in-out ;
 }
@@ -47,8 +80,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.15rem;
         font-weight: 700;
-        color: var(--anti-white);
-        background: var(--dark-sham);
+        color: var(--home-color);
+        background: var(--home-bg);
         border-radius: 1000px;
         padding: 10px 50px;
         transition: all 0.3s ease-in-out ;
@@ -56,7 +89,7 @@ body {
 
       
       .Btn:hover{
-        background: var(--light-sham);
+        background: var(--home-hover);
       }
       
 .Btn {
@@ -67,8 +100,38 @@ body {
       40% {transform: translateY(-20px);}
       60% {transform: translateY(-10px);}
   }
-      
-  .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st0{
+      .st20 {
+  animation: bounce-in-down 2s ease, blinkingLight 1.25s infinite 2s;
+      }
+
+    @keyframes blinkingLight {
+      0% {
+      fill: var(--blue-500);
+      filter: drop-shadow(0px 0px 50px hsla(205, 95%, 20%, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 50px hsla(205, 95%, 43%, 0.2));
+
+
+      }
+            25% {
+      fill: var(--blue-600);
+      filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
+      -webkit-filter: drop-shadow(0px 0px 5px hsla(205, 95%, 43%, 0.35));
+
+      }
+      50% {
+      fill: var(--blue-700);
+      filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
+      -webkit-filter: drop-shadow(0px 0px 25px hsla(205, 95%, 43%, 0.5));
+
+      }
+      100% {
+      fill: var(--blue-600);
+      filter: drop-shadow(0px 0px 50px hsla(205, 95%, 20%, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 50px hsla(205, 95%, 43%, 0.2));
+
+      }
+    }
+  .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8{
     animation: bounce-in-down 2s ease;
   }
   @keyframes bounce-in-down {
@@ -84,7 +147,7 @@ body {
     100% { transform: translateY(0); }
   }
   .st9 {
-    animation: bounce-in-right 2s ease;
+    animation: bounce-in-right 2s ease, move-around 15s infinite 2s;
   }
 
   @keyframes bounce-in-right {
@@ -104,6 +167,20 @@ body {
     animation: bounce-in-left 3s ease;
   }
 
+  @keyframes move-around {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(40px) translateY(-5px);
+    }
+    100% { transform: translateX(0); }
+  }
+  
+  .st22 {
+    animation: bounce-in-left 3s ease;
+  }
+
   @keyframes bounce-in-left {
     0% {
       opacity: 0;
@@ -118,28 +195,35 @@ body {
   }
 
 
+  
+.st0, .st20{
+  fill: var(--error-number);
+}
+.st1{fill:var(--window-bg);
+     transition: all 0.3s ease-in-out ;
+}
+.st2{fill: var(--header-bg);}
+.st3{display:none;}
+.st4{display:inline;}
+
+.st5{ /* window bg */
+  fill: var(--white-500);
+  filter: drop-shadow(-3px 4px 2px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(-3px 2px 2px rgba(0, 0, 0, 0.15));
+}
+.st6{fill: var(--left-btn);}
+.st7{fill: var(--center-btn);}
+.st8{fill:var(--right-btn);}
+.st9{fill:var(--clouds);}
+.st11{fill:var(--lines);}
+.st10{display:inline;fill:#1D3054;}
+
+
     /* DARK 403 CSS */
 
 
 
     .dark.Body403 {
-      background: #2f6a42;
-    }
-
-    .dark .st0 {
-      fill: var(--ne-logo);
-    }
-    .dark .st2 {
-      fill: var(--sham);
+      background: var(--body-403);
     }
     
-    .dark .Btn {
-      background-color: var(--dark-sham);
-      color: var(--ne-logo);
-    }
-
-    .dark .Btn:hover {
-      background-color: var(--light-sham);
-      color: var(--anti-white);
-    }
-  

@@ -38,7 +38,8 @@ const items = [
   {img: "/images/Park480-webp/sderot.webp", heading: "שדרות", link: "/he/skateparks/sderot"},
   {img: "/images/Park480-webp/kiryat-gat.webp", heading: "קרית גת", link: "/he/skateparks/kiryat-gat"},
   {img: "/images/Park480-webp/bat-yam.webp", heading: "בת ים", link: "/he/skateparks/bat-yam"},
-  {img: "/images/Park480-webp/eilat.webp", heading: "אילת", link: "/he/skateparks/eilat"}
+  {img: "/images/Park480-webp/eilat.webp", heading: "אילת", link: "/he/skateparks/eilat"},
+  {img: "/images/Park480-webp/tel-aviv(2).webp", heading: "תל אביב - רמת החייל", link: "/he/skateparks/tel-aviv-2"}
 ];
  
 

@@ -30,9 +30,6 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- English Header CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/english-header.css" />
-<link rel="StyleSheet" href="/css/EnglishCSS/dark.css" />
 
            <!--English PrimaryBlue CSS File-->
            <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
@@ -179,9 +176,9 @@
 <div class="list-img">
   <ul>
     <li><strong>Opening hours :</strong></li>
-    <li><strong>Sun-Thu :</strong> 14:00-22:00</li>
-    <li><strong>Fri :</strong> 13:00-18:00</li>
-    <li><strong>Sat and Holidays :</strong> 10:00-22:00</li>
+    <li><strong>Sun-Thu :</strong> 16:00-22:00</li>
+    <li><strong>Fri :</strong> 12:00-18:00</li>
+    <li><strong>Sat and Holidays :</strong> 12:00-22:00</li>
     <hr>
     <li><strong>Address :</strong></li>
       <li>Gan HaBanim park, Karsel Street 6, Holon.​</li>

@@ -1,4 +1,4 @@
-
+/* Hebrew dark.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
   --shadow-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -71,99 +71,116 @@
 
 
 
-.dark{ 
-.navi, .navi-he {/*dark header*/background: var(--dark-100);}
-
-.menu.is-active {
-background: var(--ne-grey);
+.dark .navi, .dark .navi-he {
+  background: hsla(0, 0%, 13%, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
-.brand {fill: #E5DBFF;}
+  .dark .menu.is-active {
+    background: var(--black-450);
+  }
 
-.brand:hover{fill: var(--white);}
-
-.menu-link {color: var(--violet-600);}
-
-.menu-link:hover{color: var(--white);}
-
-.menu-block {fill: var(--violet-600);}
-
-.menu-block:hover{fill: var(--white);}
-
-.menu-item:hover{
-color: var(--anti-white);
+.dark .brand {
+  fill: var(--white-400);
 }
 
-.is-active.menu-item:hover{
-color: var(--anti-white);
+.dark .brand:hover{
+  fill: white;
 }
 
-.search-icon svg {
-fill: var(--ne-logo);
+.dark .menu-link {
+  color: var(--white-400);
 }
 
-.search-icon svg:hover {
-fill: var(--anti-white);
+.dark .menu-link:hover{
+  color: white;
 }
 
-.burger-line {
-background-color: var(--ne-logo);
+.dark .menu-block {
+  fill: var(--white-400);
 }
 
-.burger.is-active > .burger-line:nth-child(1) {
-background-color: var(--ne-conq);
+.dark .menu-block:hover{
+  fill: var(--white);
 }
 
-.burger.is-active > .burger-line:nth-child(3) {
-    background-color: var(--ne-conq);
+.dark .menu-item:hover{
+  color: white;
 }
 
-#my-svg, #my-svg-he {stroke: var(--violet-600);}
-
-#my-svg:hover {
-stroke: var(--anti-white);
+.dark .is-active.menu-item:hover{
+  color: white;
 }
 
-#my-svg:hover[class="disable"]
+.dark .search-icon svg {
+  fill: var(--white-400);
+}
+
+.dark .search-icon svg:hover {
+  fill: white;
+}
+
+.dark .burger-line {
+  background-color: var(--white-400);
+}
+
+.dark .burger.is-active > .burger-line:nth-child(1) {
+  background-color: var(--white-400);
+}
+
+.dark .burger.is-active > .burger-line:nth-child(3) {
+  background-color: var(--white-400);
+}
+
+.dark #my-svg, .dark #my-svg-he {
+  stroke: var(--white-400);
+}
+
+.dark #my-svg:hover {
+  stroke: white;
+}
+
+.dark #my-svg:hover[class="disable"]
 line.handle {
-stroke: var(--anti-white) !important;
+  stroke: white !important;
 }
 
-#my-svg[class="disable"]
+.dark #my-svg[class="disable"]
 line.handle {
-stroke: var(--ne-logo) !important;
+  stroke: var(--white-400) !important;
 }
 
 
 
-#my-svg-he:hover {stroke: var(--white);}
+.dark #my-svg-he:hover {stroke: var(--white);}
 
-#my-svg-he:hover[class="disable"]
+.dark #my-svg-he:hover[class="disable"]
 line.handle {
-stroke: var(--anti-white) !important;
+  stroke: white !important;
 }
 
-#my-svg-he[class="disable"]
+.dark #my-svg-he[class="disable"]
 line.handle {
-stroke: var(--ne-logo) !important;
+  stroke: var(--white-400) !important;
 }
 
-#my-svg-he:hover[class="disable"]
+.dark #my-svg-he:hover[class="disable"]
 line.handle {
-stroke: var(--anti-white) !important;
+  stroke: white !important;
 }
 
-#my-svg-he[class="disable"]
+.dark #my-svg-he[class="disable"]
 line.handle {
-stroke: var(--ne-logo) !important;
+  stroke: var(--white-400) !important;
 }
 
 
-.back-Icon1 {
+.dark .back-Icon1 {
 fill: hsla(221, 49%, 90%, .2);
 }
 
-.front-Icon1 {
+.dark .front-Icon1 {
 fill: hsla(221, 49%, 90%, .7);
 }
 
@@ -175,135 +192,122 @@ fill: hsla(221, 49%, 90%, .7);
 
 
 /* PARKS DARK CSS */
-.park-container .park-menu .btn {
-color: var(--body-dark);
-background-color: hsla(45, 100%, 40%, 0.788);
+.dark .park-container {
+  color: var(--white-600);
+}
+.dark .park-container .park-menu .btn {
+color: var(--white-200);
+background-color: var(--black-600);
 }
 
-.park-container .park-menu .btn.active {
-background-color: hsla(45, 100%, 50%, 0.788);
-color: var(--body-dark);
+.dark .park-container .park-menu .btn:hover {
+  background-color: var(--blue-400);
+  color: var(--white-300);
 }
-.itemImg {
-background-color: var(--ne-grey)!important;
+
+.dark .park-container .park-menu .btn.active {
+background-color: var(--blue-700);
+color: var(--white-500);
+}
+.dark .itemImg {
+background-color: var(--black-450)!important;
+}
+
+.dark .park-container .items .item img {
+  color: var(--white-200);
+}
+
+.dark .gallery-text h2{
+color: var(--white-500);
 }
 
 
 
 /*SEARCH BAR DARK CSS */
 
-.search-box, .search-box-he {background-color: var(--dark-100);}
-
-.searchRow input {color: var(--ne-logo);background: var(--dark-200);}
-
-.result-box ul {
-  background: hsla(0, 0%, 0%, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-   backdrop-filter: blur(5px);
-               }
-
-.result-box ul li {
-color: var(--violet-500);
-}
-
-.result-box ul li:hover {
-color: var(--violet-550);
-}
-
 
 
 
 /* ABOUT DARK CSS */
 
-.about-container {
-background-color: transparent;
-}
-
-.about {
-color: var(--ne-logo);
-}
-
-.about svg{
-fill: var(--ne-amber);
-}
-
-.about h2 {
-color: var(--ne-amber);
-}
-
-.about h3 {
-color: var(--ne-amber);
-}
-
-.about h4 {
-color: var(--ne-logo);
-}
-
-.about p {
-color: var(--ne-sec-text);
-
-}
-.social button {
-background: var(--ne-amber);
-color: var(--ne-blue);
-}
-
-.social button:hover {
-background: var(--ne-amber-act);
-color: var(--ne-blue);
-}
+.dark .about-container {
+  background-color: transparent;
+  }
+  
+  .dark .about {
+  color: var(--ne-logo);
+  }
+  
+  .dark .about svg{
+    fill: var(--orange-600);
+  }
+  
+  .dark .about h2 {
+    color: var(--cyan-700);
+  }
+  
+  .dark .about h1 {
+    color: var(--cyan-600);
+  }
+  
+  .dark .about h3 {
+    color: var(--cyan-700);
+  }
+  
+  .dark .about h4 {
+    color: var(--orange-600);
+  }
+  
+  .dark .about p {
+    color: var(--white-200);
+  }
+  
+  .dark .social button {
+    background: var(--blue-600);
+    color: var(--white-300);
+  }
+  
+  .dark .social button:hover {
+    background: var(--blue-700);
+    color: var(--white-300);
+  }
 
 
 /* CONTACT DARK CSS */
 
 
-.container-con svg{
-fill: var(--anti-white);
+
+.dark .container-con svg{fill: var(--orange-600);}
+
+.dark .container-con h3 {color: var(--white-300);}
+
+.dark .container-con p {color: var(--white-300);}
+
+.dark .container-con p a {color: var(--white-400);}
+
+.dark .container-con p a:hover {color: var(--white-500);}
+
+.dark .contact-page form input, .dark form textarea {background: var(--black-600);color: var(--white-500);}
+
+.dark .contact-page input{
+  background: var(--black-600);
+  color: var(--white-500);
 }
 
-.container-con h3 {
-color: var(--anti-white);
-}
-
-.container-con p {
-color: var(--anti-white);
-}
-
-.container-con p a {
-color: var(--white);
-}
-
-.container-con p a:hover {
-color: var(--ne-light-blue);
-}
-
-.contact-page form input, form textarea {
-background: var(--ne-light-grey);
-color: var(--white);
-}
-
-.contact-page input{
-background: var(--ne-light-grey);
-color: var(--white);
-}
-
-.contact-page form ::placeholder {
-color: var(--ne-dark-anti);
+.dark .contact-page form ::placeholder {
+color: var(--white-200);
 } 
 
-.contact-page form:focus ::placeholder {
-color: var(--ne-dark-anti);
+.dark .contact-page form:focus ::placeholder {
+color: var(--white-400);
 }
 
-.contact-page button {
-background: var(--ne-light-grey);
-color: var(--anti-white);
-}
+.dark .contact-page button {
+  background: var(--blue-500);
+  color: var(--white-300);}
 
-.contact-page button:hover {
-background: var(--light-blue);
-color: var(--anti-white);
-}
+.dark .contact-page button:hover {background: var(--blue-600);color: var(--white-300);}
+
 
 
 
@@ -314,146 +318,186 @@ color: var(--anti-white);
 
 /* HOME DARK CSS */
 
-.topEnboss {fill: var(--yellow);}
-
-#line1 {border-color: var(--violet-500);
+.dark #firstCon {
+  background-image: url('/svg/EnbossWallpaperLight.075.png');
+}
+.dark .topEnboss {
+fill: var(--blue-500);
 }
 
-#line2 {border-color: var(--violet-550);
-       }
-
-.heading{
-color: var(--ne-anti);
+.dark #line1 {
+border-color: var(--orange-600);
 }
 
-.para {color: var(--white);}
-
-#contain1 button {color: var(--black);background-color: var(--violet-500);}
-
-#contain1 button:hover {
-  background-color: var(--violet-550);
+.dark .heading{
+color: var(--white-400);
 }
 
-.image-scroll {background-color: var(--card-bg);}
-
-.newParks-div {background-color: var(--card-bg);}
-
-.newParksTitle {color: var(--violet-500);}
-
-.viewMore {color: var(--black);background-color: var(--violet-500);}
-
-.viewMore:hover {
-  background-color: var(--violet-550);
+.dark .para {
+color: var(--white-400);
 }
 
-#secondCon {background-color: var(--card-bg);}
-
-.pageContainer {background-color: var(--card-bg);}
-
-#headCount {color: var(--white);}
-
-#heading3 {color: var(--white);}
-
-#heading2 {color: var(--white);}
-
-#weInvite {color: var(--dark-600);}
-
-#thisIs {color: var(--dark-600);}
-
-#doYou {color: var(--dark-600);}
-
-.contact button {color: var(--black);background-color: var(--violet-500);}
-
-.contact button:hover {
-  color: var(--black);
-  background-color: var(--violet-550);
-  }
-
-
-
-
-
-
-
-.footer-main {  /* FOOTER DARK CSS */
-
-background-color: var(--violet-100);
-
-
-#enbossLogo {
-
-fill: var(--yellow);
+.dark .firstBtn {
+color: var(--black-300);
+background-color: var(--orange-600);
 }
 
-.logo #enbossLogo:hover{
-fill: var(--ne-lighter-blue);
+.dark .firstBtn:hover {
+background-color: var(--orange-500);
 }
 
-.logo-des {
+.dark .image-scroll {background-color: var(--black-450);}
 
-color:var(--ne-dark-anti);
+.dark .newParks-div {
+background-color: var(--black-450);
 }
 
-.logo
-
-a {
-color: var(--ne-logo);
+.dark .newParksTitle {
+color: var(--white-400);
 }
 
-.logo
-
-a:hover {
-color: var(--ne-light-blue);
+.dark .viewMore {
+color: var(--white-400);
+background-color: var(--blue-500);
 }
 
-.back-Icon {
-
-fill: hsla(221, 49%, 90%, .1);
-}
-.front-Icon {
-
-fill: hsla(221, 49%, 90%, .7);
-}
-.back-Icon:hover {
-fill: hsla(221, 49%, 90%, .15);
-}
-.front-Icon:hover {
-fill: hsla(221, 49%, 90%, 1);
+.dark .viewMore:hover {
+background-color: var(--blue-600);
 }
 
-.row
 
-h3 {
-color: var(--ne-anti);
+.dark #secondCon {
+background-color: var(--black-450);
 }
 
-.main-foot
 
-h3:hover {
-color: var(--anti-white);
+
+.dark #heading2 {
+color: var(--cyan-600);
 }
 
-.footer-header{
-
-color: var(--ne-anti);
+.dark #line2 {
+border-color: var(--orange-600);
 }
 
-.skateparks-des
-
-a{
-color: var(--ne-anti);
+.dark #weInvite {
+color: var(--white-400);
 }
 
-.skateparks-des
-
-a:hover{
-color: var(--ne-dark-anti);
+.dark #ThirdCon {/* thirdCon */
+background-color: var(--black-450);
 }
 
-#link-all {
-
-color: var(--anti-white);
+.dark #headCount {
+color: var(--orange-600);
 }
+
+.dark #heading3 {
+color: var(--orange-600);
+}
+
+.dark #thisIs {
+color: var(--white-400);
+}
+
+.dark #doYou {
+color: var(--white-400);
+}
+
+.dark .contact button {
+color: var(--white-400);
+background-color: var(--blue-500);
+}
+
+.dark .contact button:hover {
+background-color: var(--blue-600);
+}
+
+
+
+
+
+
+
+
+
+
+.dark .footer-main {  /* FOOTER DARK CSS */
+  background: hsla(0, 0%, 13%, .1);-webkit-backdrop-filter: blur(15px);backdrop-filter: blur(3px);}
+
+  .dark #enbossLogo {fill: var(--blue-600);}
+
+  .dark .logo #enbossLogo:hover{
+    fill: var(--blue-700);
+    transition: fill .15s ease-in-out;
+  
+}
+
+.dark .logo-des {
+  color: var(--white-400);
+}
+
+.dark .logo a {
+  color: var(--white-400);
+}
+
+.dark .logo a:hover {
+  color: white;
+}
+
+.dark .back-Icon {
+  fill: hsla(206, 43%, 74%, .1);
+}
+.dark .front-Icon {
+fill: var(--cyan-600);}
+
+.dark #orange-social {
+  fill: var(--orange-600);
+}
+.dark .back-Icon:hover {
+fill: hsla(206, 43%, 74%, .15);
+}
+.dark .front-Icon:hover {
+fill: hsla(206, 43%, 74%, .8);
+}
+
+.dark .row h3 {
+color: var(--white-300);
+}
+
+.dark .main-foot h3:hover {
+color: white;
+}
+
+.dark .footer-header{
+color: var(--white-400);
+}
+
+.dark .skateparks-des a{
+color: var(--white-400);
+}
+
+.dark .skateparks-des a:hover{
+  color: var(--white-300);
+}
+
+.dark #link-all {
+  color: var(--white-300);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #333;
+ }
+
+ .dark ::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 0%, 0.5);
+  opacity: 0.75 ;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 0%);
+}
+
 
 /* EDITED IN ENLIGSH-FOOTER.CSS
 .copyright {
@@ -463,24 +507,62 @@ background-color: var(--ne-light-grey);
 .copyright p{
 color: var(--ne-light-anti);
 } */
-}
+
 /*            --ne-anti: #d9e1f2;
           --anti-white: hsl(210, 15%, 95%);
           --ne-blue: #0C1017;
           --ne-dark-anti: #C7D1E6; 
 */
 
+/* Anti or Flat DARK CSS - - - infoZone Dark CSS*/
 
 
-
-
-
-
-
-
-
-
-
-
-
+.dark .articleLinks{
+  color: var(--orange-600);
 }
+
+.dark .articleLinks:hover {
+  color: var(--orange-700);
+}
+
+.dark .article {
+  color: var(--white-300);
+}
+
+.dark .article h1{
+  color: var(--cyan-500);
+}
+
+.dark .titleHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
+
+.dark .article h2 {
+  color: var(--cyan-700);
+}
+
+.dark .article h3 {
+  color: var(--cyan-700);
+}
+
+.dark .strongSubs {
+  color: var(--cyan-400);
+}
+
+.dark .secHr {
+  border-color: var(--orange-600);
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+

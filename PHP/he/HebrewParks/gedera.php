@@ -28,15 +28,10 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-          <!--- Hebrew Header CSS File -->
-          <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-header.css" />
- 
-           <!--Hebrew PrimaryYellowVid CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryYellowVid.css" />
 
-           <!--- Hebrew Footer CSS File -->
-           <link rel="StyleSheet" href="/css/HebrewCSS/hebrew-footer.css" />
-           
+           <!--Hebrew PrimaryBlueVid CSS File-->
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlueVid.css" />
+
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
                     <script>
