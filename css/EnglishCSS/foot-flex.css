@@ -25,11 +25,11 @@ footer {
   margin-bottom: 20px;
 }
 
-.logo #enbossLogo:hover {
+footer .logo #enbossLogo:hover {
   fill: var(--cyan-600);
 }
 
-.logo {
+footer .logo {
   width: 100%;
   max-width: 300px;
   font-size: 1.05rem;
@@ -40,7 +40,7 @@ footer {
   margin-top: 10px;
 }
 
-.logo-des {
+footer .logo-des {
   color: var(--blue-200);
   line-height: 1.4rem;
   word-spacing: 0.1rem;
@@ -48,14 +48,14 @@ footer {
   margin-top: -5px;
   padding: 5px;
 }
-.logo a {
+footer .logo a {
   text-decoration: none;
   color: var(--blue-100);
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
 
-.logo a:hover {
+footer .logo a:hover {
   color: var(--blue-100);
   font-weight: 700;
 }

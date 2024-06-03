@@ -28,49 +28,61 @@ document.getElementById("urlChanger").addEventListener("click", function(event) 
 
 
 
-// BURGER MENU SCRIPT
 document.getElementById("burger").addEventListener("click", function() {
-  var headNav = document.querySelector(".head-nav");
-  headNav.classList.toggle("active-menu");
+    var headNav = document.querySelector(".head-nav");
+    headNav.classList.toggle("active-menu");
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
-const checkbox = document.getElementById("check");
-const headNav = document.querySelector(".head-nav");
-const searchSVG = document.querySelector('.search-svg');
+    const checkbox = document.getElementById("check");
+    const headNav = document.querySelector(".head-nav");
+    const searchSVG = document.querySelector('.search-svg');
+    const theHeader = document.querySelector('header');
+    const headerMiddle = document.querySelector('.header-middle');
 
-checkbox.addEventListener("change", function() {
-    if (this.checked) {
-        headNav.classList.add("active-menu");
-        theHeader.classList.add('active-menu');
-        theHeader.classList.remove('active-search');
-        if (headerMiddle.classList.contains('active-search')) {
-            headerMiddle.classList.remove('active-search');
-            headerBottom.classList.remove('active-searched');
-            headerMiddle.classList.add('searched');
-            setTimeout(function() {
-                headerMiddle.classList.remove('searched');
-                inputBox.value = '';
-            }, 400);
+    function handleOutsideClick(event) {
+        if (checkbox.checked && !headNav.contains(event.target) && !event.target.closest("#burger")) {
+            executeCheckboxUncheckedLogic();
         }
-    } else {
-        headNav.classList.remove("active-menu");
-        theHeader.classList.remove('active-menu');
-        headNav.classList.add('disabled');
-        setTimeout(function() {
+    }
+
+    checkbox.addEventListener("change", function() {
+        if (this.checked) {
+            headNav.classList.add("active-menu");
+            theHeader.classList.add('active-menu');
+            headerMiddle.classList.add('searched');
+      setTimeout(function() {
+        headerMiddle.classList.remove('searched');
+      }, 400);
+            theHeader.classList.remove('active-search');
+            headerMiddle.classList.remove('active-search');
+            // Other checkbox checked logic
+        } else {
+            executeCheckboxUncheckedLogic();
+        }
+
+        // Toggle clicked and disabled classes on searchSVG
+        if (searchSVG.classList.contains('clicked')) {
+            searchSVG.classList.remove('clicked');
+            searchSVG.classList.add('disabled');
+        }
+    });
+
+    document.addEventListener("click", handleOutsideClick);
+
+    function executeCheckboxUncheckedLogic() {
+      headNav.classList.add('disabled');
+      setTimeout(function() {
           headNav.classList.remove('disabled');
       }, 400);
+        headNav.classList.remove("active-menu");
+        theHeader.classList.remove('active-menu');
+        checkbox.checked = false;
     }
+});
 
-    // Toggle clicked and disabled classes on searchSVG
-    if (searchSVG.classList.contains('clicked')) {
-        searchSVG.classList.remove('clicked');
-        searchSVG.classList.add('disabled');
-    }
-});
-});
+
+
 
 
 

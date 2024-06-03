@@ -37,13 +37,13 @@ body {
       background: linear-gradient(-150deg,hsl(20, 91%, 43%, 0.5),hsl(20, 91%, 53%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 40%, 0.5));
   
     background-size: 400% 400%;
-    animation: gradient 7.55s ease infinite;
+    animation: gradient 10s5s ease infinite;
   }
   
   .dark .firstSec {
     background: linear-gradient(-150deg,hsl(20, 91%, 63%, 0.5),hsl(20, 91%, 63%, 0.2) 30%, hsl(210, 100%, 50%, 0.2), hsl(210, 100%, 50%, 0.5));
     background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
+    animation: gradient 10s ease infinite;
   }
   
   #firstCon {

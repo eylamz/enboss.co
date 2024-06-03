@@ -93,62 +93,57 @@ let availableKeywords = [
 const resultsBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
 
+inputBox.onkeyup = function() {
+  let input = inputBox.value.toLowerCase().replace("'", "");
+  let result = [];
 
-inputBox.onkeyup = function(){
-let input = inputBox.value;
-if(input.length){
-    result = availableKeywords.filter((keyword)=>{
-        return keyword.toLowerCase().replace("'", "").includes(input.toLowerCase().replace("'", ""));
-    });
-  
-  // Map user input to a keyword if necessary
-  if (input.toLowerCase().startsWith('ג')) {
-    result = [ ...result,'תל אביב'];
-    } else if (input.toLowerCase().startsWith('ג')) {
-      result = [ ...result,'תל אביב'];        
-    } else if (input.toLowerCase() === 'גל') {
-      result = [ ...result,'תל אביב'];
-    } else if (input.toLowerCase() === 'g') {
-        result = [...result, 'Tel Aviv'];
-    } else if (input.toLowerCase() === 'ga') {
-        result = [...result, 'Tel Aviv'];
-    } else if (input.toLowerCase() === 'gal') {
-        result = [...result, 'Tel Aviv'];
-    } else if (input.toLowerCase() === 'gali') {
-        result = [...result, 'Tel Aviv'];
-    } else if (input.toLowerCase() === 'galit') {
-        result = [...result, 'Tel Aviv'];
-  }
-  
-  
-  // Sort the results by whether they start with the input text
-  result = result.sort((a, b) => {
-      // Check if the keywords are in Hebrew or not
-      const regex = /^[\u0590-\u05FF]+$/;
-      if (regex.test(a) && regex.test(b)) {
-          // Use localeCompare to sort Hebrew keywords alphabetically
-          return a.localeCompare(b, 'he');
-      } else if (a.toLowerCase().startsWith(input.toLowerCase()) && !b.toLowerCase().startsWith(input.toLowerCase())) {
-          return -1;
-      } else if (!a.toLowerCase().startsWith(input.toLowerCase()) && b.toLowerCase().startsWith(input.toLowerCase())) {
-          return 1;
-      } else {
-          return 0;
+  if (input.length) {
+      result = availableKeywords.filter(keyword => 
+          keyword.toLowerCase().replace("'", "").includes(input)
+      );
+
+      const inputMapping = {
+          'ג': 'תל אביב',
+          'גל': 'תל אביב',
+          'גלי': 'תל אביב',
+          'גלית': 'תל אביב',
+          'g': 'Tel Aviv',
+          'ga': 'Tel Aviv',
+          'gal': 'Tel Aviv',
+          'gali': 'Tel Aviv',
+          'galit': 'Tel Aviv',
+      };
+
+      if (inputMapping[input]) {
+          result.push(inputMapping[input]);
       }
-  });
 
-    // Check if there are any results to display
-    if (!result.length) {
+      // Sort the results by whether they start with the input text
+      result = result.sort((a, b) => {
+          const regex = /^[\u0590-\u05FF]+$/;
+          if (regex.test(a) && regex.test(b)) {
+              return a.localeCompare(b, 'he');
+          } else if (a.toLowerCase().startsWith(input) && !b.toLowerCase().startsWith(input)) {
+              return -1;
+          } else if (!a.toLowerCase().startsWith(input) && b.toLowerCase().startsWith(input)) {
+              return 1;
+          } else {
+              return 0;
+          }
+      });
+
+      // Check if there are any results to display
+      if (!result.length) {
+          resultsBox.innerHTML = '';
+          const notFoundMessage = "<li class='not-found'>פארק לא נמצא.</li>";
+          resultsBox.innerHTML = "<ul>" + notFoundMessage + "</ul>";
+      } else {
+          display(result);
+      }
+  } else {
       resultsBox.innerHTML = '';
-      const notFoundMessage = "<li class='not-found'>פארק לא נמצא.</li>";
-      resultsBox.innerHTML = "<ul>" + notFoundMessage + "</ul>";
-    } else {
-      display(result);
-    }
-} else {
-  resultsBox.innerHTML = '';
-}
-};
+  }
+}; 
 
 function display(result){
 const maxResults = 6; // set the maximum number of results to display
@@ -376,6 +371,13 @@ inputBox.addEventListener('input', function() {
           headNav.classList.remove('active-menu');
           theHeader.classList.remove('active-menu');
           checkbox.checked = false; // Change the label to unchecked
+          headNav.classList.add('disabled');
+      setTimeout(function() {
+          headNav.classList.remove('disabled');
+      }, 400);
+        headNav.classList.remove("active-menu");
+        theHeader.classList.remove('active-menu');
+          
       }
   
       if (headerMiddle.classList.contains('active-search')) {

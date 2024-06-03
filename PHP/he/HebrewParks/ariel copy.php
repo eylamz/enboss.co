@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en_US">
+<html lang="he_IL">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Sderot | ENBOSS</title>
-  <meta name="description" content="Sderot Skatepark: Unleash Your Skills in Extreme Sports. Experience the heart-pounding action at Sderot Skatepark, a hub for adrenaline enthusiasts. Discover diverse ramps, rails, and obstacles, and push your limits among a vibrant community of extreme sports enthusiasts. Join us for an unforgettable ride at Sderot Skatepark.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>אריאל | ENBOSS</title>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sderot Skatepark">
-  <meta property="og:image" content="http://www.enboss.co/images/ParkFav/sderot.png">
-  <meta property="og:image:secure_url" content="https://www.enboss.co/images/ParkFav/sderot.png">
-  <meta property="og:description" content="Unleash Your Skills in Extreme Sports at AshSderotdod Skatepark.">  
-  <meta property="og:url" content="http://www.enboss.co/en/skateparks/sderot">
+  <meta property="og:title" content="סקייטפארק אריאל">
+  <meta property="og:image" content="http://www.enboss.co/images/ParkFav/ariel.png">
+  <meta property="og:image:secure_url" content="https://www.enboss.co/images/ParkFav/ariel.png">
+  <meta property="og:description" content="ENBOSS - Unite & Ride">
+  <meta property="og:url" content="http://www.enboss.co/he/skateparks/ariel">
   <meta property="og:site_name" content="ENBOSS">
-  <link rel="icon" href="/svg/EnbossFavIcon.svg">
-  <meta property="og:locale" content="en_US">
-  <meta name="keywords" content="israel, skatepark, rollerblade, skate, hebrew, sderot, roller, israeli, scoot, jerusalem, tel aviv, middle east, enboss.co">
+  <link rel="icon" href="/svg/EnbossFavIcon.svg">  
+  <meta property="og:locale" content="he_IL">
+  <meta name="keywords" content="ישראל, סקייטפארק, רולרבלייד, סקייט, עברית, הרצליה, רולר, ישראלי, קרוקינט, המזרח התיכון, enboss.co">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +29,9 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-           <!--English PrimaryYellow CSS File-->
-           <link rel="StyleSheet" href="/css/EnglishCSS/EnglishParks/Primary/PrimaryBlue.css" />
+           <!--Hebrew PrimaryBlue CSS File-->
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.004" />
+
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -49,106 +48,97 @@
 
       
 <body class="parkBody">
-
-  <!-- Header Section -->
-  <?php include('../../../view/en/english-header.php'); ?>
-
-  
-<main class="parkMain body-move">
-    
-  <div class="parkHead">
-    <h1>Sderot</h1>
-      <!-- slideshow html -->
+<!-- Header Section -->
+<?php include('../../../view/he/hebrew-header.php'); ?>
+  <main class="parkMain body-move">
+    <div class="parkHead">
+  <h1>אריאל</h1>
+  <div id="picDiv">
+          <style>
+        .slideshowDiv img {
+            filter: saturate(1);
+        }
+      </style>
       <div class="slideshowDiv" >
-        <div class="carousel-container">
+        <div class="carousel-container" id="carousel">
         <div class="mySlides">
             <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot.webp">
-                <img src="/images/ParkGallery-webp/sderot.webp" alt="sderot skatepark" />
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel.webp">
+                <img src="/images/ParkGallery-webp/ariel.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">1 / 9</div>
+            <div class="number">1 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot1.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot1.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot1.webp">
-                <img src="/images/ParkGallery-webp/sderot1.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel1.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel1.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel1.webp">
+                <img src="/images/ParkGallery-webp/ariel1.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">2 / 9</div>
+            <div class="number">2 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot2.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot2.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot2.webp">
-                <img src="/images/ParkGallery-webp/sderot2.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel2.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel2.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel2.webp">
+                <img src="/images/ParkGallery-webp/ariel2.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">3 / 9</div>
+            <div class="number">3 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot3.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot3.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot3.webp">
-                <img src="/images/ParkGallery-webp/sderot3.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel3.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel3.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel3.webp">
+                <img src="/images/ParkGallery-webp/ariel3.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">4 / 9</div>
+            <div class="number">4 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot4.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot4.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot4.webp">
-                <img src="/images/ParkGallery-webp/sderot4.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel4.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel4.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel4.webp">
+                <img src="/images/ParkGallery-webp/ariel4.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">5 / 9</div>
+            <div class="number">5 / 8</div>
         </div>
         
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot5.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot5.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot5.webp">
-                <img src="/images/ParkGallery-webp/sderot5.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel5.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel5.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel5.webp">
+                <img src="/images/ParkGallery-webp/ariel5.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">6 / 9</div>
+            <div class="number">6 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot6.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot6.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot6.webp">
-                <img src="/images/ParkGallery-webp/sderot6.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel6.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel6.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel6.webp">
+                <img src="/images/ParkGallery-webp/ariel6.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">7 / 9</div>
+            <div class="number">7 / 8</div>
         </div>
     
         <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot7.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot7.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot7.webp">
-                <img src="/images/ParkGallery-webp/sderot7.webp" alt="sderot skatepark" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel7.webp">
+                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/ariel7.webp">
+                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/ariel7.webp">
+                <img src="/images/ParkGallery-webp/ariel7.webp" alt="ariel skatepark" />
             </picture>
-            <div class="number">8 / 9</div>
-        </div>
-        
-        <div class="mySlides">
-        <picture>
-                <source media="(max-width: 768px)" srcset="/images/Park768-webp/sderot8.webp">
-                <source media="(max-width: 1199px)" srcset="/images/ParkGallery-webp/sderot8.webp">
-                <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/sderot8.webp">
-                <img src="/images/ParkGallery-webp/sderot8.webp" alt="sderot skatepark" />
-            </picture>
-            <div class="number">9 / 9</div>
+            <div class="number">8 / 8</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -165,45 +155,79 @@
             <span class="dots" onclick="currentSlide(6)"></span>
             <span class="dots" onclick="currentSlide(7)"></span>
             <span class="dots" onclick="currentSlide(8)"></span>
-            <span class="dots" onclick="currentSlide(9)"></span>
         </div>
   
-        <button class="scale-button" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
+        <button class="scale-button" id="scaleBtn" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
         </div>
-        <script src="/js/slideShow.js"></script>
-
+        <script src="/js/slideShow-copy.js?v=1.001"></script>
     </div>
-      <!-- image slideshow html end -->
 </div>
-  
-  <div class="icon-list-div">
+<script>
+    // Function to toggle fullscreen
+    function toggleFullscreen() {
+        var picDiv = document.getElementById('picDiv');
+        var carousel = document.getElementById('carousel');
+        var header = document.querySelector('header');
+        
+        if (!picDiv.classList.contains('fullscreen')) {
+          picDiv.classList.add('fullscreen');
+          carousel.classList.add('fullscreen');
+          header.style.zIndex = '0';
+          picDiv.style.overflow = "hidden";
+          window.scrollTo(0, 0);
+
+        } else {
+          picDiv.classList.remove('fullscreen');
+          carousel.classList.remove('fullscreen');
+          header.style.zIndex = '';
+          picDiv.style.overflow = "auto";
+        }
+    }
+
+    // Add event listener to the fullscreen button
+    document.getElementById('scaleBtn').addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent the event from bubbling up to the document
+        toggleFullscreen();
+    });
+
+    // Add event listener to the document for detecting clicks outside the carousel
+    document.addEventListener('click', function(event) {
+        var picDiv = document.getElementById('picDiv');
+        var carousel = document.getElementById('carousel');
+
+        // Check if the clicked target is not within the carousel or the button
+        if (!carousel.contains(event.target) && !event.target.closest('#scaleBtn')) {
+            if (picDiv.classList.contains('fullscreen')) {
+                toggleFullscreen();
+            }
+        }
+    });
+</script>
+
+<div class="icon-list-div">
   <hr class="desktop-hr">
-    <ul class="icon-list">
-      <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.08 23.27"><g id="a"/><g id="b"><g id="c"><g><path d="M20.08,0c-1.1,0-2,.9-2,2v15.68s-.05,.69-.46,1.09c-.41,.4-1.09,.49-1.33,.5h-6.33V9.04c0-1.1-.9-2-2-2s-2,.9-2,2v12.23c0,1.1,.9,2,2,2h8.35c.41,0,2.5-.08,4.1-1.62,1.63-1.58,1.68-3.72,1.68-3.96V2C22.08,.9,21.18,0,20.08,0Z"/><path d="M12.12,14.23c0,1.1,.9,2,2,2s2-.9,2-2V2C16.12,.9,15.23,0,14.12,0H5.83c-.26-.02-2.47,0-4.15,1.62C.05,3.2,0,5.35,0,5.59v15.68c0,1.1,.9,2,2,2s2-.9,2-2V5.59s.05-.69,.46-1.09c.41-.4,1.09-.49,1.33-.5h6.33V14.23Z"/></g></g></g></svg>
-          Free entry</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><g><path d="M12.81,8.15h-2.33v3.49h2.33c.64,0,1.16-.52,1.16-1.16v-1.16c0-.64-.52-1.16-1.16-1.16Z"/><path d="M11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm4.66,10.48c0,1.93-1.56,3.49-3.49,3.49h-2.33v2.33c0,.64-.52,1.16-1.16,1.16s-1.16-.52-1.16-1.16V6.99c0-.64,.52-1.16,1.16-1.16h3.49c1.93,0,3.49,1.56,3.49,3.49v1.16Z"/></g></g></g></svg>
-          Parking available</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg>
-          Water fountain</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.93 23.42"><g id="a"/><g id="b"><g id="c"><g><path d="M22.93,15.42c0-1.27-1.04-2.31-2.31-2.31H2.31c-1.27,0-2.31,1.04-2.31,2.31,0,1.16,.88,2.12,2,2.28v5.72h3.69v-5.69h11.54v5.69h3.69v-5.72c1.12-.15,2-1.11,2-2.28Z"/><path d="M4.98,11.41c0-.08-.01-.16-.01-.24v-3.63c0-2.04,1.1-3.82,2.74-4.79V11.41h1.97V2.04c.28-.04,.57-.07,.86-.07h2c.19,0,.37,0,.55,.03V11.41h1.97V2.58c1.81,.92,3.05,2.8,3.05,4.96v3.63c0,.08,0,.16-.01,.24h1.97c0-.08,.01-.16,.01-.24v-3.63c0-4.15-3.39-7.54-7.54-7.54h-2C6.39,0,3,3.39,3,7.54v3.63c0,.08,0,.16,.01,.24h1.97Z"/></g></g></g></svg>
-          Seating area</li>
-          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.02 195.84"><g id="a"/><g id="b"><g id="c"><g><path d="M48.43,0c-3.04,0-5.53,2.49-5.53,5.53v61.88c-1.01,1.39-2.64,2.29-4.47,2.29-2.78,0-5.09-2.08-5.47-4.76V5.53c0-3.04-2.49-5.53-5.53-5.53s-5.53,2.49-5.53,5.53v59.94c-.59,2.42-2.78,4.23-5.37,4.23-2.78,0-5.09-2.08-5.47-4.76V5.53C11.06,2.49,8.57,0,5.53,0S0,2.49,0,5.53V78.17s0,.02,0,.04c0,.02,0,.04,0,.06H0c0,11.87,7.77,22.01,18.48,25.59v82.71c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V103.29c9.9-4,16.94-13.73,16.94-25.02h0c0-.7-.04-1.39-.09-2.07,.06-.31,.09-.63,.09-.96V5.53c0-3.04-2.49-5.53-5.53-5.53Z"/><path d="M107.75,0c-5.1,0-9.27,4.17-9.27,9.27v-2.53c-13.36,23.03-22.19,55.59-22.19,76.96s8.73,39.34,22.19,50.84v52.03c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V9.27c0-5.1-4.17-9.27-9.27-9.27Z"/></g></g></g></svg>
-         Nearby restaurants</li>
-  </ul>
+  <ul class="icon-list">
+    <li>חנויות קרובות<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.02 195.84"><g id="a"/><g id="b"><g id="c"><g><path d="M48.43,0c-3.04,0-5.53,2.49-5.53,5.53v61.88c-1.01,1.39-2.64,2.29-4.47,2.29-2.78,0-5.09-2.08-5.47-4.76V5.53c0-3.04-2.49-5.53-5.53-5.53s-5.53,2.49-5.53,5.53v59.94c-.59,2.42-2.78,4.23-5.37,4.23-2.78,0-5.09-2.08-5.47-4.76V5.53C11.06,2.49,8.57,0,5.53,0S0,2.49,0,5.53V78.17s0,.02,0,.04c0,.02,0,.04,0,.06H0c0,11.87,7.77,22.01,18.48,25.59v82.71c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V103.29c9.9-4,16.94-13.73,16.94-25.02h0c0-.7-.04-1.39-.09-2.07,.06-.31,.09-.63,.09-.96V5.53c0-3.04-2.49-5.53-5.53-5.53Z"/><path d="M107.75,0c-5.1,0-9.27,4.17-9.27,9.27v-2.53c-13.36,23.03-22.19,55.59-22.19,76.96s8.73,39.34,22.19,50.84v52.03c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V9.27c0-5.1-4.17-9.27-9.27-9.27Z"/></g></g></g></svg></li>
+      <li>חניה זמינה<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><g><path d="M12.81,8.15h-2.33v3.49h2.33c.64,0,1.16-.52,1.16-1.16v-1.16c0-.64-.52-1.16-1.16-1.16Z"/><path d="M11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm4.66,10.48c0,1.93-1.56,3.49-3.49,3.49h-2.33v2.33c0,.64-.52,1.16-1.16,1.16s-1.16-.52-1.16-1.16V6.99c0-.64,.52-1.16,1.16-1.16h3.49c1.93,0,3.49,1.56,3.49,3.49v1.16Z"/></g></g></g></svg></li>
+      <li>ברזייה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg></li>
+      <li>אזור ישיבה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.93 23.42"><g id="a"/><g id="b"><g id="c"><g><path d="M22.93,15.42c0-1.27-1.04-2.31-2.31-2.31H2.31c-1.27,0-2.31,1.04-2.31,2.31,0,1.16,.88,2.12,2,2.28v5.72h3.69v-5.69h11.54v5.69h3.69v-5.72c1.12-.15,2-1.11,2-2.28Z"/><path d="M4.98,11.41c0-.08-.01-.16-.01-.24v-3.63c0-2.04,1.1-3.82,2.74-4.79V11.41h1.97V2.04c.28-.04,.57-.07,.86-.07h2c.19,0,.37,0,.55,.03V11.41h1.97V2.58c1.81,.92,3.05,2.8,3.05,4.96v3.63c0,.08,0,.16-.01,.24h1.97c0-.08,.01-.16,.01-.24v-3.63c0-4.15-3.39-7.54-7.54-7.54h-2C6.39,0,3,3.39,3,7.54v3.63c0,.08,0,.16,.01,.24h1.97Z"/></g></g></g></svg></li>
+      <li>כניסה חופשית<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.08 23.27"><g id="a"/><g id="b"><g id="c"><g><path d="M20.08,0c-1.1,0-2,.9-2,2v15.68s-.05,.69-.46,1.09c-.41,.4-1.09,.49-1.33,.5h-6.33V9.04c0-1.1-.9-2-2-2s-2,.9-2,2v12.23c0,1.1,.9,2,2,2h8.35c.41,0,2.5-.08,4.1-1.62,1.63-1.58,1.68-3.72,1.68-3.96V2C22.08,.9,21.18,0,20.08,0Z"/><path d="M12.12,14.23c0,1.1,.9,2,2,2s2-.9,2-2V2C16.12,.9,15.23,0,14.12,0H5.83c-.26-.02-2.47,0-4.15,1.62C.05,3.2,0,5.35,0,5.59v15.68c0,1.1,.9,2,2,2s2-.9,2-2V5.59s.05-.69,.46-1.09c.41-.4,1.09-.49,1.33-.5h6.33V14.23Z"/></g></g></g></svg></li>
+      <li>מקלט ציבורי<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1559.69 1855.65"><g id="a"/><g id="b"><g id="c"><path d="M1557.22,343.41c.18-45.37-30.74-73.27-75.84-75.37-69.16-3.21-138.74-7.49-206.97-18.56-131.18-21.3-250.73-72.94-356.85-153.62-40.55-30.83-79.45-63.84-119.1-95.85h-36.27c-17.32,13.55-34.83,26.86-51.89,40.73-12.65,10.28-24.46,21.6-37.07,31.92-135.15,110.65-290.92,171.08-463.8,188.51-45.59,4.6-91.57,5.4-137.38,7.71-39.4,1.99-67.26,27.24-67.73,63.66-2.42,187.81-11.42,375.68,7.02,563.27,10.41,105.89,28.59,210.11,62.38,311.22,57.4,171.75,153.41,317.41,293.23,433.48,116.2,96.46,248.68,163.05,390.56,211.83,14.64,5.03,34.16,4.02,49.04-1.09,101.81-34.93,198.88-80.13,289.41-138.9,197.25-128.07,329.44-305,398.66-529.43,44.47-144.17,61.66-292.65,64.37-442.56,2.39-132.27-2.33-264.65-1.79-396.97ZM264.12,562.62l463.65-228.78c18-8.88,39.79-1.49,48.67,16.51,8.88,18,1.49,39.79-16.51,48.67l-463.65,228.78c-5.17,2.55-10.65,3.76-16.05,3.76-13.4,0-26.29-7.44-32.62-20.27-8.88-18-1.49-39.79,16.51-48.67Zm-67.83,345.02c-9.86-20.13-1.54-44.43,18.59-54.29l926.14-453.65c20.12-9.86,44.43-1.54,54.29,18.59,9.86,20.12,1.54,44.43-18.59,54.29L250.58,926.23c-5.74,2.81-11.83,4.15-17.82,4.15-15,0-29.43-8.35-36.47-22.74Zm111.39,291.53c-7.24,3.55-14.92,5.23-22.48,5.23-18.93,0-37.12-10.54-46.01-28.69-12.44-25.39-1.94-56.06,23.46-68.49l1030.77-504.9c25.39-12.44,56.05-1.94,68.49,23.45,12.44,25.39,1.94,56.06-23.46,68.49L307.68,1199.17Zm924.8,104.73l-562.33,275.44c-5.14,2.52-10.59,3.71-15.96,3.71-13.44,0-26.35-7.48-32.66-20.36-8.83-18.02-1.38-39.79,16.65-48.62l562.33-275.44c18.03-8.83,39.79-1.38,48.62,16.65,8.83,18.02,1.37,39.79-16.65,48.62Zm151.92-334.37l-933.36,457.18c-5.74,2.81-11.83,4.15-17.82,4.15-15,0-29.43-8.35-36.47-22.74-9.86-20.12-1.54-44.43,18.59-54.29l933.36-457.18c20.12-9.86,44.43-1.54,54.29,18.59,9.86,20.13,1.54,44.43-18.59,54.29Z"/></g></g></svg></li>
+    </ul>
   <hr class="mobile-hr">
   
   <div class="list-img">
     <ul>
-        <li><strong>Opening hours :</strong> 24/7</li>
-        <hr>
-        <li><strong>Lighting hours :</strong></li>
-        <li>From sunset until 22:00.</li>
-        <hr>
-        <li><strong>Address :</strong></li>
-        <li>Derech HaRav Shalom Ephirgen, Sderot.</li>
-        <hr>
-        <li>Open since 2011.</li>
-      </ul>
+      <li><strong>שעות פתיחה :</strong> 24/7</li>
+      <hr>
+      <li><strong>שעות תאורה :</strong></li>
+      <li>משקיעת השמש עד 23:00</li>
+      <hr>
+      <li><strong>כתובת :</strong></li>
+      <li>דרך הציונות 59, אריאל.</li>
+      <hr>
+      <li>נפתח בשנת 2010.</li>
+    </ul>
       
   </div>
   </div>
@@ -228,11 +252,11 @@
   </svg>
   
     <br>
-    <span><strong>Address :</strong><br>Derech HaRav Shalom Ephirgen, Sderot.​</span>
+    <span><strong>כתובת :</strong><br>דרך הציונות 59, אריאל</span>
   </div>
   <div class="social-maps"> 
     <div class="map-icon">
-      <a href="https://waze.com/ul/hsv8e71ggx" target="_blank" class="waze" id="sderot-waze">
+    <a href="https://waze.com/ul/hsv9n8udue" target="_blank" class="waze" id="ariel-waze">
        <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
        <g>
@@ -264,7 +288,7 @@
        </svg>
     </a>
   <div class="map-icon">
-    <a href="https://goo.gl/maps/o7kEVEvDYoFwVJey7" target="_blank" class="google" id="sderot-google">
+    <a href="https://maps.app.goo.gl/3APJ7sCo32Z8u4bk8?g_st=iw" target="_blank" class="google" id="ariel-google">
      <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
      <style type="text/css">
@@ -310,7 +334,7 @@
     </a>
   </div>
   <div class="map-icon">
-    <a href="https://maps.apple.com/?ll=31.519286,34.590359&q=Dropped%20Pin&t=h" target="_blank" class="apple" id="sderot-apple">
+   <a href="https://maps.apple.com/?ll=32.105346,35.193283&q=Dropped%20Pin&t=h" target="_blank" class="apple" id="ariel-apple">
        <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
        <style type="text/css">
@@ -351,21 +375,20 @@
   
   <div class="vid-map">
     <div class="iconBox2">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.08 45.08"><g id="a"/><g id="b"><g id="c"><path d="M22.54,0C10.09,0,0,10.09,0,22.54s10.09,22.54,22.54,22.54,22.54-10.09,22.54-22.54S34.99,0,22.54,0Zm0,37.9c-2.85,0-5.16-2.31-5.16-5.16s2.31-5.16,5.16-5.16,5.16,2.31,5.16,5.16-2.31,5.16-5.16,5.16Zm3.95-14.05c0,1.18-.83,2.14-1.85,2.14h-4.78c-1.02,0-1.85-.96-1.85-2.14l-.92-14.53c0-1.18,.83-2.14,1.85-2.14h7.21c1.02,0,1.85,.96,1.85,2.14l-1.51,14.53Z"/></g></g></svg>      
+    <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 56.69 56.69"><path class="b" d="M41.23,37.3l-11.17-19.69c-.68-1.21-2.42-1.22-3.12-.02l-11.47,19.69c-.7,1.2,.17,2.7,1.55,2.7h22.63c1.38,0,2.24-1.49,1.56-2.69Zm-12.88-.34c-1.13,0-2.04-.92-2.04-2.04s.92-2.05,2.04-2.05,2.05,.92,2.05,2.05-.92,2.04-2.05,2.04Zm1.56-5.57c0,.47-.33,.85-.73,.85h-1.9c-.4,0-.73-.38-.73-.85l-.37-5.76c0-.47,.33-.85,.73-.85h2.86c.4,0,.73,.38,.73,.85l-.6,5.76Z"/></svg>
     <br>
-          <span>Video Coming Soon</span>
+        <span>סרטון בקרוב</span>
+      </div>
+      <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3379.6664588443864!2d35.191017815165125!3d32.10529908118006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDA2JzE5LjEiTiAzNcKwMTEnMzUuNSJF!5e0!3m2!1sen!2sil!4v1686670316551!5m2!1sen!2sil" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-    <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d850.2933335563878!2d34.59085567029623!3d31.519398934694117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sil!4v1687717721981!5m2!1sen!2sil"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-
+ <!--   otherParks Section    -->
+ <?php include('../../../view/he/hebrewOtherParks.php'); ?>
+<!--   Footer Section    -->
+<?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
- <!--   otherParks Section    -->
- <?php include('../../../view/en/englishOtherParks.php'); ?>
-<!--   Footer Section    -->
-<?php include('../../../view/en/english-footer.php'); ?>
 
 </body>
 </html>

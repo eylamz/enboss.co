@@ -225,27 +225,6 @@ color: var(--white-500);
 
 /*SEARCH BAR DARK CSS */
 
-.dark .search-box, .dark .search-box-he {
-  background: hsla(0, 0%, 13%, 1);
-}
-
-.dark .searchRow input {
-  color: var(--white-600);
-  background: var(--black-600);
-}
-
-.dark .result-box ul {
-  background: hsla(0, 0%, 13%, 1);
-}
-
-.dark .result-box ul li {
-  color: var(--white-400);
-}
-
-.dark .result-box ul li:hover {
-  color: white;
-}
-
 
 
 

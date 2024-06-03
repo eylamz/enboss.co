@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
           <!--- English Footer CSS File -->
-<link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css" />
+<link rel="StyleSheet" href="/css/EnglishCSS/foot-flex.css?v=1.000" />
 
 </head>
 <body>
