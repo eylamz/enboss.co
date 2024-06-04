@@ -30,7 +30,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
            <!--Hebrew PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.004" />
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.008" />
 
 
                     <!-- Enboss.co Google tag (gtag.js) -->
@@ -159,50 +159,9 @@
   
         <button class="scale-button" id="scaleBtn" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
         </div>
-        <script src="/js/slideShow-copy.js?v=1.001"></script>
     </div>
 </div>
-<script>
-    // Function to toggle fullscreen
-    function toggleFullscreen() {
-        var picDiv = document.getElementById('picDiv');
-        var carousel = document.getElementById('carousel');
-        var header = document.querySelector('header');
-        
-        if (!picDiv.classList.contains('fullscreen')) {
-          picDiv.classList.add('fullscreen');
-          carousel.classList.add('fullscreen');
-          header.style.zIndex = '0';
-          picDiv.style.overflow = "hidden";
-          window.scrollTo(0, 0);
 
-        } else {
-          picDiv.classList.remove('fullscreen');
-          carousel.classList.remove('fullscreen');
-          header.style.zIndex = '';
-          picDiv.style.overflow = "auto";
-        }
-    }
-
-    // Add event listener to the fullscreen button
-    document.getElementById('scaleBtn').addEventListener('click', function(event) {
-        event.stopPropagation(); // Prevent the event from bubbling up to the document
-        toggleFullscreen();
-    });
-
-    // Add event listener to the document for detecting clicks outside the carousel
-    document.addEventListener('click', function(event) {
-        var picDiv = document.getElementById('picDiv');
-        var carousel = document.getElementById('carousel');
-
-        // Check if the clicked target is not within the carousel or the button
-        if (!carousel.contains(event.target) && !event.target.closest('#scaleBtn')) {
-            if (picDiv.classList.contains('fullscreen')) {
-                toggleFullscreen();
-            }
-        }
-    });
-</script>
 
 <div class="icon-list-div">
   <hr class="desktop-hr">
@@ -370,7 +329,7 @@
    </a>
   </div>
   </div>
-  <script src="/js/socialMapsAnimate.js"></script>
+
   </div>
   
   <div class="vid-map">
@@ -389,6 +348,8 @@
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
+<script src="/js/slideShow-copy.js?v=1.00113"></script>
 
+<script src="/js/socialMapsAnimate.js"></script>
 </body>
 </html>
