@@ -419,3 +419,5 @@ document.addEventListener("click", (event) => {
     searchSVG.classList.add('disabled');
   }
 });
+
+

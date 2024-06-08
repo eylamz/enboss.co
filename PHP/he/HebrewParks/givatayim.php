@@ -30,7 +30,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
            <!--Hebrew PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue.css" />
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.008" />
 
    
                     <!-- Enboss.co Google tag (gtag.js) -->
@@ -55,6 +55,8 @@
   <main class="parkMain body-move">
     <div class="parkHead">
   <h1>גבעתיים</h1>
+    <div id="picDiv">
+
       <!-- slideshow html -->
       <style>
         .slideshowDiv img {
@@ -62,7 +64,7 @@
         }
       </style>
       <div class="slideshowDiv" >
-        <div class="carousel-container">
+      <div class="carousel-container" id="carousel">
         <div class="mySlides">
             <picture>
                 <source media="(max-width: 768px)" srcset="/images/Park768-webp/givatayim.webp">
@@ -171,9 +173,8 @@
             <span class="dots" onclick="currentSlide(10)"></span>
         </div>
   
-        <button class="scale-button" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
+        <button class="scale-button" id="scaleBtn"  onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
         </div>
-        <script src="/js/slideShow.js"></script>
     </div>
       <!-- image slideshow html end -->
   </div>
@@ -342,7 +343,6 @@
    </a>
   </div>
   </div>
-  <script src="/js/socialMapsAnimate.js"></script>
 </div>
     
   <div class="vid-map">
@@ -360,6 +360,8 @@
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
+<script src="/js/slideShow-copy.js?v=1.00113"></script>
+<script src="/js/socialMapsAnimate.js"></script>
 
 </body>
 </html>

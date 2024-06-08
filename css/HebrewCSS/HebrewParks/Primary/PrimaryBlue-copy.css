@@ -584,7 +584,10 @@ main img {
   max-height: 360px;
   filter: saturate(1.2);
   transition: all 0.1s linear;
+  border-radius: 12px;
+
 }
+
 
 .box img:hover {
   filter: saturate(1.75);
