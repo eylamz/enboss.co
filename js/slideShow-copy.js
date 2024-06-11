@@ -143,56 +143,63 @@
         }
           
 
+// Function to toggle fullscreen from the image carousel
+function toggleFullscreen() {
+  var picDiv = document.getElementById('picDiv');
+  var carousel = document.getElementById('carousel');
+  var header = document.querySelector('header');
+  var parkHead = document.querySelector('.parkHead');
 
-        // Function to toggle fullscreen from the image carousel
+  if (!picDiv.classList.contains('fullscreen')) {
+      // Move picDiv to be the first child of the body
+      document.body.insertBefore(picDiv, document.body.firstChild);
 
-        
-        function toggleFullscreen() {
-          var picDiv = document.getElementById('picDiv');
-          var carousel = document.getElementById('carousel');
-          var header = document.querySelector('header');
-          var parkHead = document.querySelector('.parkHead');
-      
-          if (!picDiv.classList.contains('fullscreen')) {
-              // Move picDiv to be the first child of the body
-              document.body.insertBefore(picDiv, document.body.firstChild);
-      
-              picDiv.classList.add('fullscreen');
-              carousel.classList.add('fullscreen');
-              header.style.zIndex = '0';
-              picDiv.style.overflow = "hidden";
-              window.scrollTo(0, 0);
-      
-          } else {
-              // Move picDiv back to its original location inside parkHead as its second child
-              var secondChild = parkHead.children[1];
-              parkHead.insertBefore(picDiv, secondChild);
-      
-              picDiv.classList.remove('fullscreen');
-              carousel.classList.remove('fullscreen');
-              header.style.zIndex = '';
-              picDiv.style.overflow = "auto";
-              window.scrollTo(0, 0);
+      picDiv.classList.add('fullscreen');
+      carousel.classList.add('fullscreen');
+      header.style.zIndex = '0';
+      picDiv.style.overflow = "hidden";
+      window.scrollTo(0, 0);
 
-          }
+  } else {
+      // Move picDiv back to its original location inside parkHead as its second child
+      var secondChild = parkHead.children[1];
+      parkHead.insertBefore(picDiv, secondChild);
+
+      picDiv.classList.remove('fullscreen');
+      carousel.classList.remove('fullscreen');
+      header.style.zIndex = '';
+      picDiv.style.overflow = "auto";
+      window.scrollTo(0, 0);
+  }
+}
+
+// Function to close fullscreen mode when Esc key is pressed
+function closeFullscreenOnEsc(event) {
+  var picDiv = document.getElementById('picDiv');
+  if (event.key === 'Escape' && picDiv.classList.contains('fullscreen')) {
+      toggleFullscreen();
+  }
+}
+
+// Add event listener to the fullscreen button
+document.getElementById('scaleBtn').addEventListener('click', function(event) {
+  event.stopPropagation(); // Prevent the event from bubbling up to the document
+  toggleFullscreen();
+});
+
+// Add event listener to the document for detecting clicks outside the carousel
+document.addEventListener('click', function(event) {
+  var picDiv = document.getElementById('picDiv');
+  var carousel = document.getElementById('carousel');
+
+  // Check if the clicked target is not within the carousel or the button
+  if (!carousel.contains(event.target) && !event.target.closest('#scaleBtn')) {
+      if (picDiv.classList.contains('fullscreen')) {
+          toggleFullscreen();
       }
-      
-    
-        // Add event listener to the fullscreen button
-        document.getElementById('scaleBtn').addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent the event from bubbling up to the document
-            toggleFullscreen();
-        });
-    
-        // Add event listener to the document for detecting clicks outside the carousel
-        document.addEventListener('click', function(event) {
-            var picDiv = document.getElementById('picDiv');
-            var carousel = document.getElementById('carousel');
-    
-            // Check if the clicked target is not within the carousel or the button
-            if (!carousel.contains(event.target) && !event.target.closest('#scaleBtn')) {
-                if (picDiv.classList.contains('fullscreen')) {
-                    toggleFullscreen();
-                }
-            }
-        });
+  }
+});
+
+// Add event listener for the Esc key to close fullscreen mode
+document.addEventListener('keydown', closeFullscreenOnEsc);
+

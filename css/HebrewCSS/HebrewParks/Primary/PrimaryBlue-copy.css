@@ -140,18 +140,13 @@ body {
 
 }
 
-@keyframes ease-zoom-in {
+@keyframes ease-fade-in {
   0% {
     opacity: 0;
-    transform: scale(0);
-  }
-  70% {
-    opacity: 0.5;
-    transform: scale(1.05);
+
   }
   100% {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -584,10 +579,8 @@ main img {
   max-height: 360px;
   filter: saturate(1.2);
   transition: all 0.1s linear;
-  border-radius: 12px;
-
+  border-radius:20px;
 }
-
 
 .box img:hover {
   filter: saturate(1.75);
@@ -858,7 +851,7 @@ header.fullscreeen {
   box-shadow: var(--img-shadow);
   background-color: rgba(240, 242, 244, 0.35);
   transition: all 0.3s ease-in-out;
-  animation: ease-zoom-in 0.5s forwards;
+   animation: ease-fade-in 0.3s forwards; 
 }
 
 .fullscreen.carousel-container {
@@ -1041,4 +1034,44 @@ header.fullscreeen {
 
 .scale-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (min-width:500px){
+
+  .scaleUp .number {
+    color: hsla(210, 15%, 95%, .8);
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+.scaleUp .dots-container {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translate(-50%);
+}
+
+.scaleUp .dots {
+cursor: pointer;
+height: 16px;
+width: 16px;
+margin: 0 4px;
+}
+
+.scaleUp .scale-button {
+position: absolute;
+top: 8px;
+right: 15px;
+padding: 0 7px;
+width: 40px;
+height: 40px;
+stroke-width: 2.5px;
+}
 }

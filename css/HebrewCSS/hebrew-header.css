@@ -480,7 +480,27 @@ table {
 
 .result-box ul li:hover {
 	font-weight: 700;
+	  color: var(--blue-over);
 }
+
+.dark .result-box ul li:hover {
+  color: var(--cyan-400);
+
+}
+
+.dark .result-box ul li {
+  color: var(--white-400);
+}
+
+.result-box ul li.selected {
+  font-weight: 700;
+  color: var(--blue-over);
+}
+
+.dark .result-box ul li.selected {
+  color: var(--cyan-400);
+}
+
 
 
   
@@ -693,6 +713,7 @@ table {
  .active#colorButton:hover {
     background-color: hsla(210, 100%, 50%, 0.5);
  }
+
   .active-mode {
     display:none;
   }
@@ -839,7 +860,9 @@ table {
    .head-nav.active-menu {
 	  animation: menu-grow 0.4s ease forwards;
 }
-	
+.dark .head-nav.active-menu {
+	background: hsla(0, 0%, 13%, 0.7);
+}	
 
 .head-nav.disabled {
 	  animation: menu-shrink 0.4s ease forwards;
@@ -990,19 +1013,16 @@ table {
 }
 
 .dark header #brand:hover{
-  fill: var(--blue-over);
+  fill: var(--cyan-400);
 }
 
-.dark .head-nav {
-	  background: hsla(0, 0%, 13%, 0.7);
 
-}
 .dark .head-nav a {
   color: var(--white-400);
 }
 
 .dark .head-nav a:hover {
-  color: var(--blue-over);
+  color: var(--cyan-400);
 }
 
 .dark .head-nav li {
@@ -1010,12 +1030,16 @@ table {
   letter-spacing: 0.5px;
 }
 
+.dark .active#colorButton:hover {
+	background-color: hsl(207 44% 60% / 0.5);
+}
+
 .dark .search-svg {
   stroke: var(--white-400);
 }
 
 .dark .search-svg:hover {
-  stroke: var(--blue-over);
+  stroke: var(--cyan-400);
 }
 
 .dark .translateBtn {
@@ -1023,7 +1047,7 @@ table {
 }
 
 .dark .translateBtn:hover {
-  fill: var(--blue-over);
+  fill: var(--cyan-400);
 }
 
 .dark .burger span{
@@ -1036,9 +1060,4 @@ table {
 }
 .dark ::placeholder {
 	color: var(--white-200);
-}
-
-
-.dark .result-box ul li {
-  color: var(--white-400);
 }
