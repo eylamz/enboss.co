@@ -334,12 +334,21 @@ inputBox.addEventListener('input', function() {
 
     // Suggest parks when the inputBox is clicked on but nothing is typed
     inputBox.addEventListener("focus", function() {
+      inputBox.style.backgroundColor = 'white';
+      inputBox.style.color = 'var(--dark-blue)';
+
       if (inputBox.value.trim() === '') {
           resultsBox.classList.add('active-searched');
           display(["תל אביב - רמת החייל", "רמת גן - פארק לאומי", "אשדוד"]);
       }
+
   });
 
+  inputBox.addEventListener("blur", function() {
+    // Change background color to normal when not focused
+    inputBox.style.backgroundColor = '';
+    inputBox.style.color = '';
+});
 
 
 

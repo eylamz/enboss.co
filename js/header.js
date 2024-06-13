@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchSVG = document.querySelector('.search-svg');
     const theHeader = document.querySelector('header');
     const headerMiddle = document.querySelector('.header-middle');
+    const headerBottom = document.querySelector('.header-bottom');
+
 
     function handleOutsideClick(event) {
         if (checkbox.checked && !headNav.contains(event.target) && !event.target.closest("#burger")) {
@@ -56,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 400);
             theHeader.classList.remove('active-search');
             headerMiddle.classList.remove('active-search');
+            headerBottom.classList.remove('active-searched');
             // Other checkbox checked logic
         } else {
             executeCheckboxUncheckedLogic();
