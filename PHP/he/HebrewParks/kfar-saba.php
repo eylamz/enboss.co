@@ -349,8 +349,23 @@
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
-<script src="/js/slideShow-copy.js?v=1.00113"></script>
+<script src="/js/slideShow-copy.js?v=1.00114"></script>
 <script src="/js/socialMapsAnimate.js"></script>
 
 </body>
 </html>
+
+
+<link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.008" />
+
+    <div id="picDiv">
+        <!-- slideshow html -->
+        <div class="slideshowDiv" >
+        <div class="carousel-container" id="carousel">
+
+<button class="scale-button" id="scaleBtn"  onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
+</div>
+
+
+<script src="/js/slideShow-copy.js?v=1.00114"></script>
+<script src="/js/socialMapsAnimate.js"></script>

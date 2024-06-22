@@ -648,42 +648,6 @@ body.dark {
 }
 
 
-/* Custom Scroll Bar */
-
-::-webkit-scrollbar {
-  height: 7px;
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 90%);
- }
-
-
- ::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 76%);
-  border-radius: 15px;
-  opacity: 0.5 ;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 66%);
-}
-
-.dark ::-webkit-scrollbar-track {
-  background: hsl(256, 70%, 95%);
- }
-
-
- .dark ::-webkit-scrollbar-thumb {
-  background: hsl(256, 70%, 75%);
-  border-radius: 15px;
-  opacity: 0.5 ;
-}
-
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: hsl(256, 70%, 70%);
-}
 /* image scroll section */
 
 .text1 {

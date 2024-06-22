@@ -30,7 +30,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
            <!--Hebrew PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue.css" />
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.008" />
 
                     <!-- Enboss.co Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RY353T78"></script>
@@ -54,6 +54,7 @@
 <main class="parkMain body-move">
 <div class="parkHead">
   <h1>פתח תקווה</h1>
+  <div id="picDiv">
         <!-- slideshow html -->
         <style>
           .slideshowDiv img {
@@ -61,7 +62,7 @@
           }
         </style>
         <div class="slideshowDiv" >
-          <div class="carousel-container">
+        <div class="carousel-container" id="carousel">
           <div class="mySlides">
               <picture>
                   <source media="(max-width: 768px)" srcset="/images/Park768-webp/petah-tikva.webp">
@@ -170,9 +171,8 @@
               <span class="dots" onclick="currentSlide(9)"></span>
           </div>
     
-          <button class="scale-button" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
+          <button class="scale-button" id="scaleBtn"  onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
           </div>
-          <script src="/js/slideShow.js"></script>
 
       </div>
         <!-- image slideshow html end -->
@@ -208,20 +208,20 @@
   <div class="iconBox1">
   <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
-  <g>
-    <path d="M150.3,77.8c0-5.6-2.5-7.1-7.6-4.8c-7,3.1-13.9,6.4-20.9,9.4c-2.4,1.1-3.5,2.5-3.5,5.3c0.2,8,0.1,15.9,0.1,23.9
-      c0,8.1,0.1,16.3-0.1,24.4c-0.1,3.5,0.9,4.5,4.3,3c7-2.9,14.1-5.8,21.3-8.4c4.5-1.7,6.5-4.7,6.4-9.5
-      C150.3,106.7,150.4,92.3,150.3,77.8z"/>
-    <path d="M68.7,84.9c0-3.9-2.6-6.8-3.6-10.3c-0.5-1.6-1.9-0.9-2.9-0.5c-6.9,2.8-13.8,5.6-20.8,8.4c-3,1.2-4.1,3.5-4,6.7
-      c0.1,7.6,0,15.3,0,22.9c0,8-0.1,16,0,23.9c0.1,4.4,1.7,5.4,5.6,3.6c7.4-3.3,14.8-6.8,22.2-10.1c2.5-1.1,3.4-2.7,3.4-5.4
-      C68.6,111.1,68.6,98,68.7,84.9z"/>
-    <path d="M111.5,93.5c-3.1,4-6.1,7.8-9.1,11.7c-5.7,7.5-12.1,7.4-17.9-0.1c-3-3.9-5.5-8.2-10-12.3c0,11.5,0,21.8,0,32.1
-      c0,2.4,0.9,3.5,3.2,4.2c10.3,3.3,20.5,6.7,30.7,10.2c3.3,1.1,4.1,0,4.1-3.1c-0.1-13,0-25.9-0.1-38.9
-      C112.5,96.2,113.1,94.8,111.5,93.5z"/>
-    <path d="M84.8,42c-11.9,4.8-19,17.6-15,28.9c4.4,12.6,12.6,22.9,21.5,32.6c2.1,2.3,3.7,1.1,5.3-0.8c6.3-7.1,11.9-14.7,16.7-22.8
-      c2.8-4.7,5-9.7,5-15.4C118.3,47.9,100.2,35.7,84.8,42z M93.1,73.1c-4.2-0.2-7.6-3.7-7.6-7.7c0-4.4,4-8.4,8.2-8.3
-      c4.4,0.1,7.8,3.7,7.7,8.1C101.5,69.8,97.8,73.3,93.1,73.1z"/>
-  </g>
+    <g>
+      <path d="M150.3,77.8c0-5.6-2.5-7.1-7.6-4.8c-7,3.1-13.9,6.4-20.9,9.4c-2.4,1.1-3.5,2.5-3.5,5.3c0.2,8,0.1,15.9,0.1,23.9
+        c0,8.1,0.1,16.3-0.1,24.4c-0.1,3.5,0.9,4.5,4.3,3c7-2.9,14.1-5.8,21.3-8.4c4.5-1.7,6.5-4.7,6.4-9.5
+        C150.3,106.7,150.4,92.3,150.3,77.8z"/>
+      <path d="M68.7,84.9c0-3.9-2.6-6.8-3.6-10.3c-0.5-1.6-1.9-0.9-2.9-0.5c-6.9,2.8-13.8,5.6-20.8,8.4c-3,1.2-4.1,3.5-4,6.7
+        c0.1,7.6,0,15.3,0,22.9c0,8-0.1,16,0,23.9c0.1,4.4,1.7,5.4,5.6,3.6c7.4-3.3,14.8-6.8,22.2-10.1c2.5-1.1,3.4-2.7,3.4-5.4
+        C68.6,111.1,68.6,98,68.7,84.9z"/>
+      <path d="M111.5,93.5c-3.1,4-6.1,7.8-9.1,11.7c-5.7,7.5-12.1,7.4-17.9-0.1c-3-3.9-5.5-8.2-10-12.3c0,11.5,0,21.8,0,32.1
+        c0,2.4,0.9,3.5,3.2,4.2c10.3,3.3,20.5,6.7,30.7,10.2c3.3,1.1,4.1,0,4.1-3.1c-0.1-13,0-25.9-0.1-38.9
+        C112.5,96.2,113.1,94.8,111.5,93.5z"/>
+      <path d="M84.8,42c-11.9,4.8-19,17.6-15,28.9c4.4,12.6,12.6,22.9,21.5,32.6c2.1,2.3,3.7,1.1,5.3-0.8c6.3-7.1,11.9-14.7,16.7-22.8
+        c2.8-4.7,5-9.7,5-15.4C118.3,47.9,100.2,35.7,84.8,42z M93.1,73.1c-4.2-0.2-7.6-3.7-7.6-7.7c0-4.4,4-8.4,8.2-8.3
+        c4.4,0.1,7.8,3.7,7.7,8.1C101.5,69.8,97.8,73.3,93.1,73.1z"/>
+    </g>
   </svg>
   
     <br>
@@ -343,7 +343,6 @@
    </a>
   </div>
   </div>
-  <script src="/js/socialMapsAnimate.js"></script>
   </div>
     
   <div class="vid-map">
@@ -362,6 +361,8 @@
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
+<script src="/js/slideShow-copy.js?v=1.00114"></script>
+<script src="/js/socialMapsAnimate.js"></script>
 
 </body>
 </html>

@@ -142,13 +142,13 @@
           startTouchX = 0;
         }
           
-
 // Function to toggle fullscreen from the image carousel
 function toggleFullscreen() {
   var picDiv = document.getElementById('picDiv');
   var carousel = document.getElementById('carousel');
   var header = document.querySelector('header');
   var parkHead = document.querySelector('.parkHead');
+  var mobileH1 = document.getElementById('mobileH1');
 
   if (!picDiv.classList.contains('fullscreen')) {
       // Move picDiv to be the first child of the body
@@ -161,9 +161,15 @@ function toggleFullscreen() {
       window.scrollTo(0, 0);
 
   } else {
-      // Move picDiv back to its original location inside parkHead as its second child
-      var secondChild = parkHead.children[1];
-      parkHead.insertBefore(picDiv, secondChild);
+      // Move picDiv back to its original location
+      if (mobileH1) {
+          // If mobileH1 exists, insert picDiv just after it inside parkHead
+          mobileH1.insertAdjacentElement('afterend', picDiv);
+      } else {
+          // If mobileH1 doesn't exist, insert picDiv as the second child of parkHead
+          var secondChild = parkHead.children[1];
+          parkHead.insertBefore(picDiv, secondChild);
+      }
 
       picDiv.classList.remove('fullscreen');
       carousel.classList.remove('fullscreen');
@@ -172,6 +178,7 @@ function toggleFullscreen() {
       window.scrollTo(0, 0);
   }
 }
+
 
 // Function to close fullscreen mode when Esc key is pressed
 function closeFullscreenOnEsc(event) {
