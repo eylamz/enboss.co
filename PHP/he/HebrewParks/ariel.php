@@ -30,7 +30,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
            <!--Hebrew PrimaryBlue CSS File-->
-           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue.css" />
+           <link rel="StyleSheet" href="/css/HebrewCSS/HebrewParks/Primary/PrimaryBlue-copy.css?v=1.008" />
 
 
                     <!-- Enboss.co Google tag (gtag.js) -->
@@ -53,14 +53,14 @@
   <main class="parkMain body-move">
     <div class="parkHead">
   <h1>אריאל</h1>
-      <!-- slideshow html -->
-      <style>
+  <div id="picDiv">
+          <style>
         .slideshowDiv img {
             filter: saturate(1);
         }
       </style>
       <div class="slideshowDiv" >
-        <div class="carousel-container">
+        <div class="carousel-container" id="carousel">
         <div class="mySlides">
             <picture>
                 <source media="(max-width: 768px)" srcset="/images/Park768-webp/ariel.webp">
@@ -157,14 +157,13 @@
             <span class="dots" onclick="currentSlide(8)"></span>
         </div>
   
-        <button class="scale-button" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
+        <button class="scale-button" id="scaleBtn" onclick="scaleSlideshow()"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.38 23.43"><defs><style>.d{fill:none;stroke:auto;stroke-linecap:round;stroke-linejoin:round;stroke-width:auto;}</style></defs><g id="a"/><g id="b"><g id="c"><polyline class="d" points="1.5 7.63 1.5 1.5 11.19 1.5"/><polyline class="d" points="1.5 15.42 1.5 21.93 11.19 21.93"/><polyline class="d" points="26.88 7.63 26.88 1.5 17.19 1.5"/><polyline class="d" points="26.88 15.42 26.88 21.93 17.19 21.93"/></g></g></svg></button>
         </div>
-        <script src="/js/slideShow.js"></script>
     </div>
-      <!-- image slideshow html end -->
 </div>
-  
-  <div class="icon-list-div">
+
+
+<div class="icon-list-div">
   <hr class="desktop-hr">
   <ul class="icon-list">
     <li>חנויות קרובות<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.02 195.84"><g id="a"/><g id="b"><g id="c"><g><path d="M48.43,0c-3.04,0-5.53,2.49-5.53,5.53v61.88c-1.01,1.39-2.64,2.29-4.47,2.29-2.78,0-5.09-2.08-5.47-4.76V5.53c0-3.04-2.49-5.53-5.53-5.53s-5.53,2.49-5.53,5.53v59.94c-.59,2.42-2.78,4.23-5.37,4.23-2.78,0-5.09-2.08-5.47-4.76V5.53C11.06,2.49,8.57,0,5.53,0S0,2.49,0,5.53V78.17s0,.02,0,.04c0,.02,0,.04,0,.06H0c0,11.87,7.77,22.01,18.48,25.59v82.71c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V103.29c9.9-4,16.94-13.73,16.94-25.02h0c0-.7-.04-1.39-.09-2.07,.06-.31,.09-.63,.09-.96V5.53c0-3.04-2.49-5.53-5.53-5.53Z"/><path d="M107.75,0c-5.1,0-9.27,4.17-9.27,9.27v-2.53c-13.36,23.03-22.19,55.59-22.19,76.96s8.73,39.34,22.19,50.84v52.03c0,5.1,4.17,9.27,9.27,9.27h0c5.1,0,9.27-4.17,9.27-9.27V9.27c0-5.1-4.17-9.27-9.27-9.27Z"/></g></g></g></svg></li>
@@ -330,7 +329,7 @@
    </a>
   </div>
   </div>
-  <script src="/js/socialMapsAnimate.js"></script>
+
   </div>
   
   <div class="vid-map">
@@ -349,6 +348,8 @@
 <?php include('../../../view/he/hebrew-footer.php'); ?>
 </main>
 
+<script src="/js/slideShow-copy.js?v=1.00113"></script>
 
+<script src="/js/socialMapsAnimate.js"></script>
 </body>
 </html>
