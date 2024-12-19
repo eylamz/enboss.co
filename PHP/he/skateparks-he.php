@@ -527,6 +527,14 @@ function shuffle(array) {
               </a>
           </div>
 
+                            <div class="item south">
+          <a href="/he/skateparks/jerusalem-har-homa">
+                      <div class="itemImg">
+                  <img src="/images/Park480-webp/har-homa.webp" alt="סקייטפארק ירושלים הר חומה" loading="lazy">
+                    </div>
+                  <div class="gallery-text"><h2>ירושלים - הר חומה</h2></div>
+              </a>
+          </div>
 
         </div>
     </div>
