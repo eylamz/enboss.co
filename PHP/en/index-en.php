@@ -422,6 +422,19 @@
         <div class="text1"><h2>Dimona</h2></div>
     </div>
 
+	<div class="images">
+        <a href="/en/skateparks/jerusalem-har-homa">
+          <picture>
+            <source media="(max-width: 480px)" srcset="/images/Park480-webp/har-homa.webp">
+            <source media="(max-width: 768px)" srcset="/images/Park768-webp/har-homa.webp">
+            <source media="(max-width: 769px)" srcset="/images/ParkGallery-webp/har-homa.webp">
+            <source media="(min-width: 1200px)" srcset="/images/Park1500-webp/har-homa.webp">
+            <img src="/images/ParkGallery-webp/har-homa.webp" alt="Jerusalem Har Homa Skatepark" />
+          </picture>
+        </a>
+        <div class="text1"><h2>Jerusalem</h2></div>
+    </div>
+	    
     <div class="images ">
           <a href="/en/skateparks/kiryat-gat">
             <picture>
