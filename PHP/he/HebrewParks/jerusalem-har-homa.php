@@ -266,19 +266,22 @@
   <ul class="icon-list">
     <li>ברזייה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16.85 23.43"><g id="a"/><g id="b"><g id="c"><path d="M16.85,15C16.85,10.35,8.43,0,8.43,0,8.43,0,0,10.35,0,15s3.77,8.43,8.43,8.43,8.43-3.77,8.43-8.43Z"/></g></g></svg></li>
     <li>חניה זמינה<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><g id="a"/><g id="b"><g id="c"><g><path d="M12.81,8.15h-2.33v3.49h2.33c.64,0,1.16-.52,1.16-1.16v-1.16c0-.64-.52-1.16-1.16-1.16Z"/><path d="M11.64,0C5.21,0,0,5.21,0,11.64s5.21,11.64,11.64,11.64,11.64-5.21,11.64-11.64S18.07,0,11.64,0Zm4.66,10.48c0,1.93-1.56,3.49-3.49,3.49h-2.33v2.33c0,.64-.52,1.16-1.16,1.16s-1.16-.52-1.16-1.16V6.99c0-.64,.52-1.16,1.16-1.16h3.49c1.93,0,3.49,1.56,3.49,3.49v1.16Z"/></g></g></g></svg></li>
+    <li>אזור ישיבה<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.93 23.42"><g id="a"/><g id="b"><g id="c"><g><path d="M22.93,15.42c0-1.27-1.04-2.31-2.31-2.31H2.31c-1.27,0-2.31,1.04-2.31,2.31,0,1.16,.88,2.12,2,2.28v5.72h3.69v-5.69h11.54v5.69h3.69v-5.72c1.12-.15,2-1.11,2-2.28Z"/><path d="M4.98,11.41c0-.08-.01-.16-.01-.24v-3.63c0-2.04,1.1-3.82,2.74-4.79V11.41h1.97V2.04c.28-.04,.57-.07,.86-.07h2c.19,0,.37,0,.55,.03V11.41h1.97V2.58c1.81,.92,3.05,2.8,3.05,4.96v3.63c0,.08,0,.16-.01,.24h1.97c0-.08,.01-.16,.01-.24v-3.63c0-4.15-3.39-7.54-7.54-7.54h-2C6.39,0,3,3.39,3,7.54v3.63c0,.08,0,.16,.01,.24h1.97Z"/></g></g></g></svg></li>
     <li>כניסה חופשית<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22.08 23.27"><g id="a"/><g id="b"><g id="c"><g><path d="M20.08,0c-1.1,0-2,.9-2,2v15.68s-.05,.69-.46,1.09c-.41,.4-1.09,.49-1.33,.5h-6.33V9.04c0-1.1-.9-2-2-2s-2,.9-2,2v12.23c0,1.1,.9,2,2,2h8.35c.41,0,2.5-.08,4.1-1.62,1.63-1.58,1.68-3.72,1.68-3.96V2C22.08,.9,21.18,0,20.08,0Z"/><path d="M12.12,14.23c0,1.1,.9,2,2,2s2-.9,2-2V2C16.12,.9,15.23,0,14.12,0H5.83c-.26-.02-2.47,0-4.15,1.62C.05,3.2,0,5.35,0,5.59v15.68c0,1.1,.9,2,2,2s2-.9,2-2V5.59s.05-.69,.46-1.09c.41-.4,1.09-.49,1.33-.5h6.33V14.23Z"/></g></g></g></svg></li>
 </ul>
   <hr class="mobile-hr">
   
   <div class="list-img">
     <ul>
-      <li><strong>שעות פתיחה :</strong></li>
-      <li><strong>כל השבוע :</strong> 08:00-23:00</li>
+      <li><strong>שעות פתיחה :</strong> 24/7</li>
+      <hr>
+      <li><strong>שעות תאורה :</strong></li>
+      <li>משקיעת השמש עד 23:00.</li>
       <hr>
       <li><strong>כתובת :</strong></li>
-      <li>פארק גן סאקר, שדרות יצחק רבין, ירושלים.</li>
+      <li>פארק הר חומה, הרב ישעיהו דוגלין, ירושלים.</li>
       <hr>
-      <li>נפתח בשנת 2021.</li>
+      <li>נפתח בשנת 2023.</li>
       </ul>
       
   </div>
@@ -304,11 +307,11 @@
   </svg>
   
     <br>
-    <span><strong>כתובת :</strong><br>פארק גן סאקר, שדרות יצחק רבין, ירושלים.</span>
+    <span><strong>כתובת :</strong><br>פארק הר חומה, הרב ישעיהו דוגלין, ירושלים.</span>
   </div>
   <div class="social-maps"> 
     <div class="map-icon">
-    <a href="https://waze.com/ul/hsv9hc1ufz" target="_blank" class="waze" id="jeruGanSacher-waze">
+    <a href="https://waze.com/ul/hsv9h3w5np" target="_blank" class="waze" id="har-homa-waze">
        <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
        <g>
@@ -340,7 +343,7 @@
        </svg>
     </a>
   <div class="map-icon">
-    <a href="https://maps.app.goo.gl/T3hzBS8mw5TNvWbQ9?g_st=iw" target="_blank" class="google" id="jeruGanSacher-google">
+    <a href="https://maps.app.goo.gl/TTb95NDnUx3LMjMr5" target="_blank" class="google" id="har-homa-google">
      <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
      <style type="text/css">
@@ -386,7 +389,7 @@
     </a>
   </div>
   <div class="map-icon">
-   <a href="https://maps.apple.com/?ll=31.782252,35.206414&q=Dropped%20Pin&t=m" target="_blank" class="apple" id="jeruGanSacher-apple">
+   <a href="https://maps.apple.com/place?ll=31.719236,35.227313&q=Marked%20Location&t=h" target="_blank" class="apple" id="har-homa-apple">
        <svg version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 187.7 190.5" style="enable-background:new 0 0 187.7 190.5;" xml:space="preserve">
        <style type="text/css">
@@ -432,8 +435,7 @@
         <span>סרטון בקרוב</span>
     </div>
     <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d27132.56528702646!2d35.206778!3d31.782194!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQ2JzU1LjkiTiAzNcKwMTInMjQuNCJF!5e0!3m2!1sen!2sus!4v1684533872935!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5618.4776323136475!2d35.22780023472081!3d31.721030392235356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQzJzA5LjIiTiAzNcKwMTMnMzguMyJF!5e0!3m2!1siw!2sil!4v1734588927707!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
   </div>
  <!--   otherParks Section    -->
  <?php include('../../../view/he/hebrewOtherParks.php'); ?>
