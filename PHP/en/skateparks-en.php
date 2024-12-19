@@ -196,7 +196,7 @@ function shuffle(array) {
                       <div class="itemImg">
                         <img src="/images/Park480-webp/jeruGanSacher.webp" alt="Jerusalem Gan Sacher" loading="lazy">
                         </div>
-                        <div class="gallery-text"><h2>Jerusalem Gan Sacher</h2></div>
+                        <div class="gallery-text"><h2>Jerusalem - Gan Sacher</h2></div>
                       </a>
                   </div>
 
@@ -252,7 +252,7 @@ function shuffle(array) {
                       <div class="itemImg">
                       <img src="/images/Park480-webp/jeruGanHapaamon.webp" alt="Jerusalem Gan Hapa'amon" loading="lazy">
                       </div>
-                      <div class="gallery-text"><h2>Jerusalem Gan Haapa'amon</h2></div>
+                      <div class="gallery-text"><h2>Jerusalem - Gan Haapa'amon</h2></div>
                   </a>
               </div>
 
@@ -279,7 +279,7 @@ function shuffle(array) {
                       <div class="itemImg">
                       <img src="/images/Park480-webp/beer-sheva-bike.webp" alt="Beer Sheva Bike Park" loading="lazy">
                       </div>
-                      <div class="gallery-text"><h2>Be'er Sheva Bike Park</h2></div>
+                      <div class="gallery-text"><h2>Be'er Sheva - Bike Park</h2></div>
                   </a>
               </div> 
 
@@ -332,7 +332,7 @@ function shuffle(array) {
                       <div class="itemImg">
                       <img src="/images/Park480-webp/modiinMoriah.webp" alt="Modiin Moriah Park" loading="lazy">
                       </div>
-                      <div class="gallery-text"><h2>Modi'in Moriah Park</h2></div>
+                      <div class="gallery-text"><h2>Modi'in - Moriah Park</h2></div>
                   </a>
               </div>  
 
@@ -387,7 +387,7 @@ function shuffle(array) {
                       <div class="itemImg">
                       <img src="/images/Park480-webp/modiinBuchman.webp" alt="Modiin Buchman Park" loading="lazy">
                       </div>
-                      <div class="gallery-text"><h2>Modi'in Buchman Park</h2></div>
+                      <div class="gallery-text"><h2>Modi'in - Buchman Park</h2></div>
                   </a>
               </div>  
 
