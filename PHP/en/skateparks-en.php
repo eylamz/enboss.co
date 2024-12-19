@@ -523,7 +523,7 @@ function shuffle(array) {
                       <div class="itemImg">
                   <img src="/images/Park480-webp/har-homa.webp" alt="Jerusalem Har Homa" loading="lazy">
                     </div>
-                  <div class="gallery-text"><h2>יJerusalem - Har Homa</h2></div>
+                  <div class="gallery-text"><h2>Jerusalem - Har Homa</h2></div>
               </a>
           </div>
 
